@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage[margin=1.7in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{physics}
+\usepackage{graphicx} % Required for inserting images
+\newcommand{\matr}[1]{\mathbf{#1}}
+
+\title{Thermodynamics project}
+\author{Christopher Shen}
+\date{November 2023}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+some blurb on report, results and analysis
+
+talk about why finding entropy change is useful
+
+\subsection{Order-disorder transitions in $\text{Cu}_3\text{Au}$}
+
+\subsection{Heat capacities}
+
+\subsection{Measuring $C_P$}
+Practically, $C_P$ is much easier to measure than $C_V$. Recall definition:
+$$C_P=\frac{\dd Q_p}{\dd T}=\left(\frac{\dd H}{\dd T}\right)_p$$
+where state function $H$ is the enthalpy. Since $H=U+PV$:
+$$\dd H=T\dd S+V\dd P$$
+and dividing by $\dd T$:
+$$\frac{\dd H}{\dd T}=T\frac{\dd S}{\dd T}+V\frac{\dd P}{\dd T}.$$
+If $\Delta P=0$ then:
+$$C_P(T)=T\left(\frac{\dd S}{\dd T}\right)_P.$$
+Rearranging and integrating gives us the change in entropy:
+$$\Delta S=\int_{(1)}^{(2)}\frac{C_P(T)}{T}\dd T.$$
+
+\subsection{Ideal entropy of mixing}
+Consider a box with separator, containing $n_A$ moles at $V_A$ of gas A on one side and $n_B$ moles at $V_B$ of gas B on the other. We set $\Delta T=0$, $\Delta P=0$ and proceed to \underline{mix} gases A and B.
+
+The \textbf{entropy of mixing} is:
+\begin{align*}
+    \Delta S
+    &=\Delta S_A+\Delta S_B \\
+    &=n_i R\ln\left(\frac{V_f}{V_i}\right) \\
+    &=n_A R\ln\left(\frac{V_A+V_B}{V_A}\right)
+    +n_B R\ln\left(\frac{V_A+V_B}{V_B}\right),
+\end{align*}
+Since $P$ and $T$ are fixed, the ideal state equation $PV=nRT$ implies that:
+$$\frac{V_A+V_B}{V_A}=\frac{n_A+n_B}{n_A}$$
+and so we define \textbf{inverse mole fractions} as:
+$$x_A=\frac{n_A}{n_A+n_B}$$
+and
+$$x_B=\frac{n_B}{n_A+n_B}.$$
+After substituting and dividing through by $n_A+n_B$ we find the \textbf{molar specific entropy of mixing}:
+$$\Delta s_{mix}=-R(x_A\ln x_A+x_B\ln x_B).$$
+
+\newpage
+
+\section{Data analysis}
+
+\subsection{Methodology and visualisations}
+
+\subsection{Numerical integration scheme}
+
+\newpage
+
+\section{Interpretation of results}
+
+\subsection{Comparison with ideal entropy of mixing}
+
+\subsection{Physical interpretations}
+
+\subsection{Conclusions}
+
+\end{document}

@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Order-disorder transitions in $\text {Cu}_3\text {Au}$}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Heat capacities}{2}{}%
+\contentsline {subsection}{\numberline {1.3}Measuring $C_P$}{2}{}%
+\contentsline {subsection}{\numberline {1.4}Ideal entropy of mixing}{2}{}%
+\contentsline {section}{\numberline {2}Data analysis}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Methodology and visualisations}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Numerical integration scheme}{4}{}%
+\contentsline {section}{\numberline {3}Interpretation of results}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Comparison with ideal entropy of mixing}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Physical interpretations}{5}{}%
+\contentsline {subsection}{\numberline {3.3}Conclusions}{5}{}%
