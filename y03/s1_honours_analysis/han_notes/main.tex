@@ -10,10 +10,16 @@
 \usepackage{graphicx} % Required for inserting images
 \newcommand{\matr}[1]{\mathbf{#1}}
 
+\title{Honours Analysis}
+\author{Notes by Christopher Shen}
+\date{Winter 2023}
+
 \begin{document}
 
-\tableofcontents
+\maketitle
+\newpage
 
+\tableofcontents
 \newpage
 
 \pagestyle{fancy}
@@ -99,6 +105,7 @@ i.e. that our function's area and height are defined. Therefore:
 $$\int_I f = \sum_{j=1}^{\infty} |c_j| \lambda(J_j)$$
 and integral value is \underline{invariant of interval type}. (open, semi-open or closed)
 
+\subsubsection{Properties of Lebesgue integrals}
 Let functions $f$, $g$ be Lebesgue integrable on I and $\alpha, \beta\in\mathbb{R}$. Then:
 \begin{enumerate}
     \item $\alpha f+\beta g$ is Lebesgue integrable on I, and:
@@ -123,7 +130,8 @@ Let functions $f$, $g$ be Lebesgue integrable on I and $\alpha, \beta\in\mathbb{
 
 \newpage
 
-We now consider \underline{integration on subintervals}. Let $J\subset I$:
+\subsubsection{Integration on subintervals}
+Let $J\subset I$. We then have the following statements.
 \begin{enumerate}
     \item If $f$ is integrable on $I$ then $f$ is integrable on $J$.
 
@@ -140,16 +148,18 @@ We now consider \underline{integration on subintervals}. Let $J\subset I$:
     and that the following equality holds:
     $$\int_I f=\sum_{n=1}^{\infty}\int_{I_n}f.$$
 \end{enumerate}
-Now let $f$ be a \underline{non-negative}, \textbf{monotone decreasing} function on $[p,\infty)$. Then:
-$$\sum_{n=p}^{\infty}f(n)<\infty\iff\text{$f$ is integrable on $[p,\infty)$}$$
-where $p\in\mathbb{Z}$. This is the Maclaurin-Cauchy integral test for series. Furthermore:
-$$\sum_{n=p}^{\infty}f(n)<\infty\iff\int_{p}^{\infty}f(x)dx<\infty.$$
 The regular integral calculus properties hold:
 \begin{enumerate}
     \item $$\int_{a}^{b}f(x)dx=-\int_{b}^{a}f(x)dx$$
 
     \item $$\int_{a}^{b}f(x)dx+\int_{b}^{c}f(x)dx=\int_{a}^{c}f(x)dx$$
 \end{enumerate}
+
+\subsubsection{Maclaurin-Cauchy integral test}
+Now let $f$ be a \underline{non-negative}, \textbf{monotone decreasing} function on $[p,\infty)$. Then:
+$$\sum_{n=p}^{\infty}f(n)<\infty\iff\text{$f$ is integrable on $[p,\infty)$}$$
+where $p\in\mathbb{Z}$. Furthermore:
+$$\sum_{n=p}^{\infty}f(n)<\infty\iff\int_{p}^{\infty}f(x)dx<\infty.$$
 
 \newpage
 
@@ -240,8 +250,7 @@ $f(x)=\displaystyle\sum_{n=1}^{\infty}f_n(x)$. Then:
 $$\text{$f$ is integrable on $I$}
 \iff\sum_{n=1}^{\infty}\int_I f_n<\infty.$$
 
-\textbf{Monotone convergence for integration:}
-
+\subsubsection{Monotone convergence for integration}
 Now consider a monotone increasing sequence of functions $(f_n)_{n\in\mathbb{N}}$:
 $$f_1\leq f_2\leq f_3\leq\dots.$$
 Let $f(x)=\displaystyle\lim_{n\rightarrow\infty}f_n(x)$. Then:
@@ -250,8 +259,7 @@ and furthermore:
 $$\sup_{n\in\mathbb{N}}\int_I f_n
 =\lim_{n\rightarrow\infty}\int_I f_n <\infty.$$
 
-\textbf{Fatoux's lemma}
-
+\subsubsection{Fatoux's lemma}
 Let $f_n>0$ be integrable functions on $I$ and that:
 $$f(x)=\liminf_{n\rightarrow\infty} f_n(x)$$
 for $\forall x\in I$. If
