@@ -1,0 +1,502 @@
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{EM S1 Handin 1}
+\fancyhead[R]{Winter 2023}
+
+\begin{enumerate}
+    \item Consider set $T_{ijk}$ with $3^3$ elements, satisfying:
+    $$v_i=T_{ijk}R_{jk}$$
+    where $v_i$ is a vector and $R_{jk}$ a rank 2 tensor. 
+    
+    Show that $T_{ijk}$ is a rank 3 tensor. \\
+
+    \begin{proof}
+    Direct proof.
+    
+    Firstly define $T'_{ijk}$ in frame $S'$ and $T_{ijk}$ in frame $S$, where our frames are related by $\boldsymbol{e}'_i=\ell_{ij}\boldsymbol{e}_j$.
+    We then have that:
+    \begin{align*}
+        v'_i
+        &=T'_{ijk}R'_{jk} \\
+        &=T'_{ijk}\ell_{jl}\ell_{km}R_{lm}
+    \end{align*}
+    and
+    \begin{align*}
+        v'_i
+        &=\ell_{ij}v_j \\
+        &=\ell_{ij}T_{jkl}R_{kl}.
+    \end{align*}
+    $$\therefore T'_{ijk}\ell_{jl}\ell_{km}R_{lm}
+    =\ell_{ij}T_{jkl}R_{kl}$$
+    Using the fact that $R_{lm}$ is a tensor, we multiply both sides by vector $a_m$:
+    $$T'_{ijk}\ell_{jl}\ell_{km}R_{lm}a_m
+    =\ell_{ij}T_{jkl}R_{kl}a_m.$$
+    The left hand side:
+    \begin{align*}
+        T'_{ijk}\ell_{jl}\ell_{km}R_{lm}a_m
+        &=T'_{ijk}\ell_{jl}\ell_{km}a_l \\
+        &=T'_{ijk}\ell_{jl}\ell_{km}\delta_{kl}a_k.
+    \end{align*}
+    The right hand side:
+    \begin{align*}
+        \ell_{ij}T_{jkl}R_{kl}a_m
+        &=\ell_{ij}T_{jkl}R_{kl}a_l\delta_{lm} \\
+        &=\ell_{ij}T_{jkl}\delta_{lm}a_k.
+    \end{align*}
+    Since equality still holds:
+    $$T'_{ijk}\ell_{jl}\ell_{km}\delta_{kl}a_k
+    =\ell_{ij}T_{jkl}\delta_{lm}a_k.$$
+    $$\therefore\Bigl(T'_{ijk}\ell_{jl}\ell_{km}\delta_{kl}
+    -\ell_{ij}T_{jkl}\delta_{lm}\Bigl)a_k=0$$
+    Because $a_k$ is a vector that is not always zero:
+    $$T'_{ijk}\ell_{jl}\ell_{km}\delta_{kl}=
+    \ell_{ij}T_{jkl}\delta_{lm}.$$
+    $$\therefore T'_{ijk}\ell_{jk}\ell_{km}=
+    \ell_{ij}T_{jkm}$$
+
+    \newpage
+
+    Then multiply both sides by $\ell_{in}$:
+    $$T'_{ijk}\ell_{jk}\ell_{km}\ell_{in}=
+    \ell_{ij}\ell_{in}T_{jkm}.$$
+    $$\therefore T'_{ijk}\ell_{jk}\ell_{km}\ell_{in}=
+    \delta_{jn}T_{jkm}$$
+    $$\therefore T'_{ijk}\ell_{jk}\ell_{km}\ell_{in}=T_{nkm}$$
+    $$\therefore T'_{ijk}\ell_{in}\ell_{jk}\ell_{km}=T_{nkm}$$
+    And this is by definition a third rank tensor.
+    \end{proof}
+    
+    \newpage
+
+    \item Define
+    $$\dd\boldsymbol{r}_i=\frac{\partial\boldsymbol{r}}
+    {\partial u_i}\dd u_i$$
+    and the volume of the infinitesimal parallelepiped with $\dd\boldsymbol{r}_1$,
+    $\dd\boldsymbol{r}_2$ and $\dd\boldsymbol{r}_3$:
+    $$\dd V=|\dd\boldsymbol{r}_1\cdot
+    (\dd\boldsymbol{r}_2\times\dd\boldsymbol{r}_3)|.$$
+
+    For part ($i$) show that:
+    $$\dd V=|J|\hspace{0.03in}\dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3$$
+    for $J=\det M$ where:
+    $$M_{ij}=\frac{\partial x_i}{\partial u_j}.$$ \\
+
+    Using our definition of $\dd\boldsymbol{r}_i$:
+    \begin{align*}
+    \dd V
+    &=|\dd\boldsymbol{r}_1\cdot(\dd\boldsymbol{r}_2\times\dd\boldsymbol{r}_3)| \\
+    &=|\frac{\partial\boldsymbol{r}}{\partial u_1}\dd u_1\cdot
+    (\frac{\partial\boldsymbol{r}}{\partial u_2}\dd u_2\times
+    \frac{\partial\boldsymbol{r}}{\partial u_3}\dd u_3)| \\
+    &=|\frac{\partial\boldsymbol{r}}{\partial u_1}\cdot
+    (\frac{\partial\boldsymbol{r}}{\partial u_2}\times\frac{\partial\boldsymbol{r}}{\partial u_3})|
+    \hspace{0.03in}
+    \dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3
+    \end{align*}
+    Since $\boldsymbol{r}=x_i\boldsymbol{e}_i$:
+    $$\frac{\partial\boldsymbol{r}}{\partial u_j}
+    =\frac{\partial x_i}{\partial u_j}\boldsymbol{e}_i.$$
+    Now the triple scalar product of three vectors is equivalent
+    to the determinant of a matrix consisting of these three vectors,
+    as either rows or columns. Therefore:
+    \begin{align*}
+        |\frac{\partial\boldsymbol{r}}{\partial u_1}\cdot
+        (\frac{\partial\boldsymbol{r}}{\partial u_2}\times
+        \frac{\partial\boldsymbol{r}}{\partial u_3})|
+        &=\det
+        \begin{bmatrix}
+            \displaystyle\frac{\partial x_1}{\partial u_1} & \displaystyle\frac{\partial x_1}{\partial u_2}
+            & \displaystyle\frac{\partial x_1}{\partial u_3} \\
+            \displaystyle\frac{\partial x_2}{\partial u_1} & \displaystyle\frac{\partial x_2}{\partial u_2}
+            & \displaystyle\frac{\partial x_2}{\partial u_3} \\
+            \displaystyle\frac{\partial x_3}{\partial u_1} & \displaystyle\frac{\partial x_3}{\partial u_2}
+            & \displaystyle\frac{\partial x_3}{\partial u_3}
+        \end{bmatrix} \\
+        &=\det M \\
+        &=J.
+    \end{align*}
+    Since volume is nonnegative:
+    $$\therefore\dd V=|J|\hspace{0.03in}\dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3.$$
+    
+    \newpage
+
+    For part ($ii$) show:
+    \begin{itemize}
+        \item $(M^T M)_{ij}=g_{ij}$ for $g_{ij}$ is the metric tensor.
+
+        \item $\dd V=\sqrt{g}\hspace{0.03in}\dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3$
+        for $g_{ij}=(G)_{ij}$ and $g=\det G$. \\
+    \end{itemize}
+
+    By the definition of the metric tensor:
+    \begin{align*}
+        g_{ij}
+        &=\frac{\partial x_k}{\partial u_i}
+        \frac{\partial x_k}{\partial u_j} \\
+        &=M_{ki}M_{kj} \\
+        &=(M^T)_{ik}(M)_{kj} \\
+        &=(M^T M)_{ij}.
+    \end{align*}
+    Since $G=M^T M$ taking the determinants gives:
+    \begin{align*}
+        \det G
+        &=\det (M^T M) \\
+        &=\det M^T\det M \\
+        &=(\det M)^2 \\
+        &=J^2.
+    \end{align*}
+    Then from part ($i$):
+    $$\therefore J=\pm\sqrt{g}$$
+    \begin{align*}
+        \therefore\dd V
+        &=|J|\hspace{0.03in}\dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3 \\
+        &=\sqrt{g}\hspace{0.03in}\dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3
+    \end{align*} \\
+
+    \newpage
+    
+    For part ($iii$) show that given \underline{orthogonal} curvilinear coordinates we have:
+    $$\dd V=h_1\hspace{0.03in}h_2\hspace{0.03in}h_3
+    \hspace{0.03in}\dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3$$ \\
+
+    For OCCs, $\boldsymbol{e}_3=\boldsymbol{e}_1\times\boldsymbol{e}_2$ and therefore:
+    \begin{align*}
+    \dd V
+    &=|\dd\boldsymbol{r}_1\cdot(\dd\boldsymbol{r}_2\times\dd\boldsymbol{r}_3)| \\
+    &=|\frac{\partial\boldsymbol{r}}{\partial u_1}\dd u_1\cdot
+    (\frac{\partial\boldsymbol{r}}{\partial u_2}\dd u_2\times
+    \frac{\partial\boldsymbol{r}}{\partial u_3}\dd u_3)| \\
+    &=|\boldsymbol{e}_1\cdot(\boldsymbol{e}_2\times\boldsymbol{e}_3)|
+    \hspace{0.03in}h_1\hspace{0.03in}h_2\hspace{0.03in}h_3\hspace{0.03in}
+    \dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3 \\
+    &=|\boldsymbol{e}_1\cdot\boldsymbol{e}_1|
+    \hspace{0.03in}h_1\hspace{0.03in}h_2\hspace{0.03in}h_3\hspace{0.03in}
+    \dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3 \\
+    &=h_1\hspace{0.03in}h_2\hspace{0.03in}h_3\hspace{0.03in}
+    \dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3
+    \end{align*}
+    where $h_i=|\displaystyle\frac{\partial\boldsymbol{r}}{\partial u_i}|$
+    and $\dd u_i=\displaystyle\frac{1}{h_i}
+    \displaystyle\frac{\partial\boldsymbol{r}}{\partial u_i}$.
+    \newpage
+
+    \item For the first part of this problem we need to
+    find the electric field $E(x)$ generated our rod of length $2a$
+    centered at $x=0$ with total charge $Q$.
+    
+    The thin rod is also assumed to have \underline{uniform} charge density of $\rho$.
+    
+    Then we can use the formula $F(x)=qE(x)$
+    to find force on our point charge $q$ at $x=R$. \\
+
+    By Coulomb's law:
+    \begin{align*}
+        E(x)
+        &=\int_{-a}^{a}\frac{\rho}{4\pi\epsilon_0}
+        \frac{x-x'}{(x-x')^3}\dd x' \\
+        &=\frac{\rho}{4\pi\epsilon_0}
+        \left[\frac{1}{x-x'}\right]_{x'=-a}^{x'=a} \\
+        &=\frac{\rho}{4\pi\epsilon_0}\frac{2a}{x^2-a^2}.
+    \end{align*}
+    Because we have a uniform charge density across $2a$:
+    $$\rho=\frac{Q}{2a}$$
+    then the electric field generated by the thin rod becomes:
+    \begin{align*}
+        E(x)
+        &=\frac{1}{4\pi\epsilon_0}\frac{Q}{2a}\frac{2a}{x^2-a^2} \\
+        &=\frac{Q}{4\pi\epsilon_0}\frac{1}{x^2-a^2}.
+    \end{align*}
+    The force on our point charge $q$ at $x=R$ is then:
+    \begin{align*}
+        F(R)
+        &=qE(R) \\
+        &=\frac{qQ}{4\pi\epsilon_0}\frac{1}{R^2-a^2}.
+    \end{align*}
+    
+    \newpage
+
+    The force on charge $q$ at $x=R$ by charge $Q$ at $x_1=0$ is given by:
+    \begin{align*}
+        F(x)
+        &=F(R) \\
+        &=\frac{qQ}{4\pi\epsilon_0}
+        \frac{x-x_1}{|x-x_1|^3} \\
+        &=\frac{qQ}{4\pi\epsilon_0}
+        \frac{R}{|R|^3} \\
+        &=\frac{qQ}{4\pi\epsilon_0}
+        \frac{1}{R^2}.
+    \end{align*}
+    Comparing these two forces:
+    $$F_{rod}=\frac{qQ}{4\pi\epsilon_0}\frac{1}{R^2-a^2}$$
+    $$F_{point}=\frac{qQ}{4\pi\epsilon_0}\frac{1}{R^2},$$
+    since
+    $$\frac{1}{R^2-a^2}>\frac{1}{R^2}$$
+    therefore $F_{rod}>F_{point}$.
+    
+    \newpage
+
+    \item For part ($i$) show that:
+    $$[T_i,T_j]=i\epsilon_{ijk}T_k$$ \\
+
+    The Lie brackets are defined:
+    $$[x,y]=xy-yx$$
+    and so
+    $$[T_i,T_j]
+    =T_iT_j-T_jT_i.$$
+    Because
+    $$(T_k)_{ij}=-i\epsilon_{ijk}$$
+    then we have:
+    $$(T_i)_{lk}=-i\epsilon_{lki}$$
+    $$(T_j)_{km}=-i\epsilon_{kmj}$$
+    and swapping order gives:
+    $$(T_j)_{lk}=-i\epsilon_{lkj}$$
+    $$(T_i)_{km}=-i\epsilon_{kmi}.$$
+    It is important to use more indices here:
+    \begin{align*}
+        \bigl(T_iT_j-T_jT_i\bigl)_{lm}
+        &=(T_i)_{lk}(T_j)_{km}
+        -(T_j)_{lk}(T_i)_{km} \\
+        &=-\epsilon_{lki}\epsilon_{kmj}
+        +\epsilon_{lkj}\epsilon_{kmi} \\
+        &=-\epsilon_{ilk}\epsilon_{kmj}
+        +\epsilon_{jlk}\epsilon_{kmi}.
+    \end{align*}
+    We first consider $-\epsilon_{ilk}\epsilon_{kmj}$. Because we have
+    \begin{align*}
+        \epsilon_{ijk}\epsilon_{klm}
+        &=\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl} \\
+        &=\delta_{im}\delta_{lj}-\delta_{ij}\delta_{lm} \\
+        &=\epsilon_{ilk}\epsilon_{kmj}
+    \end{align*}
+    where we swap $j\rightarrow l$, $l\rightarrow m$ and $m\rightarrow j$:
+    $$\therefore-\epsilon_{ilk}\epsilon_{kmj}
+    =-\bigl(\delta_{im}\delta_{lj}-\delta_{ij}\delta_{lm}\bigl)$$
+    $$\therefore\epsilon_{jlk}\epsilon_{kmi}
+    =\delta_{jm}\delta_{li}-\delta_{ij}\delta_{lm}$$
+
+    \newpage
+
+    Then:
+    \begin{align*}
+        \bigl(T_iT_j-T_jT_i\bigl)_{lm}
+        &=-\epsilon_{ilk}\epsilon_{kmj}
+        +\epsilon_{jlk}\epsilon_{kmi} \\
+        &=-\bigl(\delta_{im}\delta_{lj}-\delta_{ij}\delta_{lm}\bigl)\hspace{0.05in}
+        +\hspace{0.05in}\delta_{jm}\delta_{li}-\delta_{ij}\delta_{lm} \\
+        &=-\delta_{im}\delta_{lj}+\delta_{jm}\delta_{li}.
+    \end{align*}
+    Due to the symmetry of the Kronecker delta:
+    \begin{align*}
+        \bigl(T_iT_j-T_jT_i\bigl)_{lm}
+        &=-\delta_{im}\delta_{lj}+\delta_{jm}\delta_{li} \\
+        &=\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl} \\
+        &=\epsilon_{ijk}\epsilon_{klm} \\
+        &=\epsilon_{ijk}\epsilon_{lmk} \\
+        &=-i\epsilon_{ijk}\cdot -i\epsilon_{lmk} \\
+        &=-i\epsilon_{ijk}\cdot(T_k)_{lm}.
+    \end{align*}
+    $$\therefore [T_i,T_j]_{lm}=-i\epsilon_{ijk}\cdot(T_k)_{lm}$$
+    $$\therefore [T_i,T_j]=-i\epsilon_{ijk}T_k$$
+    
+    \newpage
+
+    For part ($ii$) we want to show:
+    \begin{itemize}
+        \item $T_i$ is hermitian
+
+        \item $\Tr(T_iT_j)=2\delta_{ij}$ \\
+    \end{itemize}
+
+    The definition of a hermitian matrix is as such:
+    $$H=(H^T)^*$$
+    $$H_{ij}=(H^T)^*_{ij}$$
+    where $*$ denotes the complex conjugate. So:
+    $$(T_i)_{jk}=-i\epsilon_{ijk}.$$
+    \begin{align*}
+        \therefore (T^T_i)_{jk}
+        &=(T_i)_{kj} \\
+        &=-i\epsilon_{kji} \\
+        &=-i\epsilon_{ikj} \\
+        &=i\epsilon_{ijk}
+    \end{align*}
+    Then by the definition of the complex conjugate:
+    $$\therefore (T^T_i)^*_{jk}=-i\epsilon_{ijk}.$$
+    Since $(T_i)_{jk}=(T^T_i)^*_{jk}$ our matrix $T_i$ is hermitian.
+
+    For the second part we firstly define:
+    $$(T_i)_{lk}=-i\epsilon_{lki}$$
+    and
+    $$(T_j)_{km}=-i\epsilon_{kmj}.$$
+    \begin{align*}
+        \therefore(T_i)_{lk}(T_j)_{km}
+        &=(T_iT_j)_{lm} \\
+        &=-\epsilon_{lki}\epsilon_{kmj} \\
+        &=-\epsilon_{ilk}\epsilon_{kmj}
+    \end{align*}
+    Now:
+    \begin{align*}
+        \epsilon_{ijk}\epsilon_{klm}
+        &=\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl} \\
+        &=\delta_{im}\delta_{lj}-\delta_{ij}\delta_{lm} \\
+        &=\epsilon_{ilk}\epsilon_{kmj}
+    \end{align*}
+    if we swap $j\rightarrow l$, $l\rightarrow m$ and $m\rightarrow j$.
+
+    \newpage
+
+    \begin{align*}
+        \therefore(T_iT_j)_{lm}
+        &=-\epsilon_{ilk}\epsilon_{kmj} \\
+        &=-\bigl(\delta_{im}\delta_{lj}-\delta_{ij}\delta_{lm}\bigl)
+    \end{align*}
+    Taking the trace of a matrix is summing up its diagonals:
+    \begin{align*}
+        \Tr(T_iT_j)
+        &=(T_iT_j)_{ll} \\
+        &=-\bigl(\delta_{il}\delta_{lj}-\delta_{ij}\delta_{ll}\bigl) \\
+        &=-\bigl(\delta_{ij}-3\delta_{ij}\bigl) \\
+        &=2\delta_{ij}.
+    \end{align*}
+
+    \newpage
+
+    Finally for part ($iii$) consider:
+    $$R(\alpha,\boldsymbol{n})=\exp\bigl(-i\alpha\boldsymbol{n}
+    \cdot\boldsymbol{T}\bigl)$$
+    where $\alpha$ is our rotation angle about \underline{unit} axis vector $\boldsymbol{n}$.
+
+    $\boldsymbol{T}$ is a vector of generator matrices.
+
+    Our aims are:
+    \begin{itemize}
+        \item Show $\bigl(\boldsymbol{n}\cdot\boldsymbol{T}\bigl)^2_{ij}
+        =\delta_{ij}-n_i n_j$.
+
+        \item Show $\bigl(\boldsymbol{n}\cdot\boldsymbol{T}\bigl)^3_{ij}
+        =\bigl(\boldsymbol{n}\cdot\boldsymbol{T}\bigl)_{ij}$.
+
+        \item General formula for
+        $\bigl(\boldsymbol{n}\cdot\boldsymbol{T}\bigl)^m_{ij}$
+        where $m>3$.
+
+        \item Expand $\exp\bigl(-i\alpha\boldsymbol{n}
+        \cdot\boldsymbol{T}\bigl)$ as a power series.
+
+        \item Recover standard rotation tensor of form:
+        $$R_{ij}(\alpha,\boldsymbol{n})
+        =\delta_{ij}\cos\alpha+n_i n_j\bigl(1-\cos\alpha\bigl)
+        -\epsilon_{ijk}n_k\sin\alpha.$$ \\
+    \end{itemize}
+
+    Firstly define:
+    $$(\boldsymbol{n}\cdot\boldsymbol{T})_{ik}
+    =n_{\alpha}(T_{\alpha})_{ik}=n_{\alpha}\cdot -i\epsilon_{ik\alpha}$$
+    $$(\boldsymbol{n}\cdot\boldsymbol{T})_{kj}
+    =n_{\beta}(T_{\beta})_{kj}=n_{\beta}\cdot -i\epsilon_{kj\beta}$$
+    then we have that
+    \begin{align*}
+        (\boldsymbol{n}\cdot\boldsymbol{T})^2_{ij}
+        &=n_{\alpha}(T_{\alpha})_{ik}\cdot n_{\beta}(T_{\beta})_{kj} \\
+        &=n_{\alpha}n_{\beta}\cdot -1\cdot\epsilon_{ik\alpha}\epsilon_{kj\beta}.
+    \end{align*}
+    Using the standard identity we get:
+    \begin{align*}
+        \epsilon_{ijk}\epsilon_{klm}
+        &=\epsilon_{jki}\epsilon_{klm} \\
+        &=\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl} \\
+        &=\delta_{\alpha j}\delta_{i\beta}-\delta_{\alpha\beta}\delta_{ij} \\
+        &=\epsilon_{ik\alpha}\epsilon_{kj\beta}
+    \end{align*}
+    where $j\rightarrow i$, $i\rightarrow\alpha$, $l\rightarrow j$
+    and $m\rightarrow\beta$.
+
+    Then substituting back into our equation:
+    \begin{align*}
+        (\boldsymbol{n}\cdot\boldsymbol{T})^2_{ij}
+        &=n_{\alpha}n_{\beta}\cdot -1\cdot\epsilon_{ik\alpha}\epsilon_{kj\beta} \\
+        &=n_{\alpha}n_{\beta}\bigl(\delta_{\alpha\beta}\delta_{ij}
+        -\delta_{\alpha j}\delta_{i\beta}\bigl) \\
+        &=\delta_{ij}-n_i n_j
+    \end{align*}
+
+    \newpage
+
+    Now we show that$\bigl(\boldsymbol{n}\cdot\boldsymbol{T}\bigl)^3_{ij}
+    =\bigl(\boldsymbol{n}\cdot\boldsymbol{T}\bigl)_{ij}$. Define:
+    $$(\boldsymbol{n}\cdot\boldsymbol{T})^2_{ik}
+    =\delta_{ik}-n_i n_k$$
+    $$(\boldsymbol{n}\cdot\boldsymbol{T})_{kj}
+    =n_l(T_l)_{kj}=n_l\cdot -i\epsilon_{kjl}$$
+    and so multiplying them together gives:
+    \begin{align*}
+        (\boldsymbol{n}\cdot\boldsymbol{T})^3_{ij}
+        &=(\boldsymbol{n}\cdot\boldsymbol{T})^2_{ik}
+        (\boldsymbol{n}\cdot\boldsymbol{T})_{kj} \\
+        &=(\delta_{ik}-n_i n_k) n_l\cdot -i\epsilon_{kjl} \\
+        &=-i n_l\bigl(\epsilon_{ijl}-n_i n_k\epsilon_{kjl}\bigl) \\
+        &=-i n_l\epsilon_{ijl}+i n_l n_i n_k\epsilon_{kjl} \\
+        &=-i n_l\epsilon_{ijl}+i n_i\delta_{lk}\epsilon_{kjl} \\
+        &=-i n_l\epsilon_{ijl} \\
+        &=(\boldsymbol{n}\cdot\boldsymbol{T})_{ij}.
+    \end{align*}
+    
+    The general formula for $\bigl(\boldsymbol{n}\cdot\boldsymbol{T}\bigl)^m_{ij}$
+    takes the form:
+    $$\bigl(\boldsymbol{n}\cdot\boldsymbol{T}\bigl)^m_{ij} =
+    \left\{
+	\begin{array}{ll}
+		\delta_{ij}-n_i n_j  & m\hspace{0.05in}\text{even} \\
+		\bigl(\boldsymbol{n}\cdot\boldsymbol{T}\bigl)_{ij} & m\hspace{0.05in}\text{odd}.
+	\end{array}
+    \right.$$
+    The power series for an exponential is:
+    $$e^x=\sum_{k=0}^{\infty}\frac{x^k}{k!}$$
+    and so:
+    \begin{align*}
+        \Bigl(\exp\bigl(-i\alpha\boldsymbol{n}\cdot\boldsymbol{T}\bigl)\Bigl)_{ij}
+        &=\sum_{k=0}^{\infty}\Bigl(\frac{1}{k!}[-i\alpha]^k
+        (\boldsymbol{n}\cdot\boldsymbol{T})^k_{ij}\Bigl) \\
+        &=1+[-i\alpha](\boldsymbol{n}\cdot\boldsymbol{T})^k_{ij} \\
+        &\quad+\sum_{k=2,4,\dots}\frac{1}{k!}[-i\alpha]^k
+        (\delta_{ij}-n_i n_j) \\
+        &\quad+\sum_{k=3,5,\dots}\frac{1}{k!}[-i\alpha]^k
+        (\boldsymbol{n}\cdot\boldsymbol{T})_{ij}.
+    \end{align*}
+    Set $k=2n$ for the first sum and $k=2m+1$ for the second. Here $n,m\in\mathbb{N}$.
+
+    \newpage
+
+    \begin{align*}
+        \therefore\Bigl(\exp\bigl(-i\alpha\boldsymbol{n}\cdot\boldsymbol{T}\bigl)\Bigl)_{ij}
+        &=1+[-i\alpha](\boldsymbol{n}\cdot\boldsymbol{T})^k_{ij} \\
+        &\quad+(\delta_{ij}-n_i n_j)\Bigl(\bigl(\sum_{n=0}^{\infty}(-1)^n
+        \frac{\alpha^{2n}}{(2n)!}\bigl)-1\Bigl) \\
+        &\quad+(\boldsymbol{n}\cdot\boldsymbol{T})_{ij}\cdot
+        -i\Bigl(\bigl(\sum_{m=0}^{\infty}(-1)^m\frac{\alpha^{2m+1}}{(2m+1)!}
+        \bigl)-\alpha\Bigl)
+    \end{align*}
+    Recognising this as the series expansion for cosine and sine:
+    \begin{align*}
+        \therefore\Bigl(\exp\bigl(-i\alpha\boldsymbol{n}\cdot\boldsymbol{T}\bigl)\Bigl)_{ij}
+        &=1+[-i\alpha](\boldsymbol{n}\cdot\boldsymbol{T})^k_{ij} \\
+        &\quad+(\delta_{ij}-n_i n_j)\Bigl(\cos\alpha-1\Bigl) \\
+        &\quad+(\boldsymbol{n}\cdot\boldsymbol{T})_{ij}\cdot
+        -i\Bigl(\sin\alpha-\alpha\Bigl)
+    \end{align*}
+    Since $(\boldsymbol{n}\cdot\boldsymbol{T})_{ij}=n_k(T_k)_{ij}=-i n_k\epsilon_{ijk}$:
+    \begin{align*}
+        \Bigl(\exp\bigl(-i\alpha\boldsymbol{n}\cdot\boldsymbol{T}\bigl)\Bigl)_{ij}
+        &=1-\alpha n_k\epsilon_{ijk}
+        +(\delta_{ij}-n_i n_j)\Bigl(\cos\alpha-1\Bigl)
+        -n_k\epsilon_{ijk}\Bigl(\sin\alpha-\alpha\Bigl) \\
+        &=\delta_{ij}\cos\alpha+n_i n_j\Bigl(1-\cos\alpha\Bigl)
+        -\epsilon_{ijk}n_k\sin\alpha
+    \end{align*}
+    where we use the bogus argument:
+    \begin{align*}
+        1-\delta_{ij}
+        &=\frac{1}{3}\delta_{ii}-\frac{1}{3}\delta_{jj}\delta_{ij} \\
+        &=\frac{1}{3}\delta_{ii}-\frac{1}{3}\delta_{ii} \\
+        &=0.
+    \end{align*}
+\end{enumerate}

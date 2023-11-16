@@ -1,0 +1,41 @@
+\contentsline {section}{\numberline {1}Suffix notation}{3}{section.1}%
+\contentsline {section}{\numberline {2}Cartesian tensors}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}True tensors}{3}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Rank 2 quotient theorem}{3}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}General quotient theorem}{3}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Matrices as tensors}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Pseudotensors}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Invariant tensors}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Rotation tensors}{4}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Reflections, inversions and projections}{4}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Inertia tensors}{4}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Taylor expansions}{4}{section.3}%
+\contentsline {section}{\numberline {4}Vector calculus}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Vector operators}{5}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Gradient}{5}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Divergence}{5}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Curl}{5}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}Integrals theorems}{5}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Line, volume and surface integrals}{5}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Divergence theorem}{5}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Stokes's theorem}{5}{subsubsection.4.2.3}%
+\contentsline {section}{\numberline {5}Curvilinear coordinates}{6}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Orthogonal curvilinear coordinates}{6}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Scale factors and basis vectors}{6}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Cylindrical coordinates}{6}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Spherical coordinates}{7}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Length, area and volume}{8}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Vector and arc length}{8}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Vector area}{9}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Volume}{9}{subsubsection.5.2.3}%
+\contentsline {section}{\numberline {6}Electrostatics}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Dirac delta function}{10}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Coulomb's law}{11}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Electrostatic Maxwell's equations}{12}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Electric dipoles}{13}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Multidipole expansion}{13}{subsubsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.5}Gauss's law}{14}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Boundaries}{14}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.2}Conductors}{14}{subsubsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.6}Poisson's equation}{15}{subsection.6.6}%
+\contentsline {subsubsection}{\numberline {6.6.1}Existence and uniqueness of solutions}{15}{subsubsection.6.6.1}%

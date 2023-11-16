@@ -1,0 +1,40 @@
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{EM S1 Tutorials}
+\fancyhead[R]{Winter 2023}
+
+\section{Tutorial 3}
+\begin{enumerate}
+    \item Let $T_{ij}$ be a rank $2$ tensor, and $S_{ij}$ a rank 2 pseudotensor.
+
+    Show that:
+    \begin{itemize}
+        \item $T_{ij}S_{ik}$ is a pseudotensor.
+        \item $T_{ij}S_{ij}$ is a pseudoscalar. \\
+    \end{itemize}
+    
+    So by definition we have the following:
+    $$T_{ij}'=\ell_{ip}\ell_{jq}T_{pq}$$
+    $$S_{ij}'=(\det L)\ell_{ip}\ell_{jq}S_{pq}.$$
+    Changing indices for the pseudotensor:
+    $$S_{ik}'=(\det L)\ell_{ir}\ell_{ks}S_{rs}$$
+    We \underline{must} swap for $r$ and $s$ here! Then:
+    \begin{align*}
+        T'_{ij}S'_{ik}
+        &=(\det L)\ell_{ip}\ell_{jq}\ell_{ir}\ell_{ks}T_{pq}S_{rs} \\
+        &=(\det L)\delta_{pr}\ell_{jq}\ell_{ks}T_{pq}S_{rs} \\
+        &=(\det L)\ell_{jq}\ell_{ks}T_{rq}S_{rs}
+    \end{align*}
+    Then set $\alpha_{qs}=T_{rq}S_{rs}$, and therefore $T_{ij}S_{ik}$ is a pseudotensor. i.e:
+    $$\alpha'_{jk}=(\det L)\ell_{jq}\ell_{ks}\alpha_{qs}.$$
+    For the second part set $j=k$. Therefore:
+    \begin{align*}
+        T'_{ij}S'_{ij}
+        &=(\det L)\ell_{jq}\ell_{js}T_{rq}S_{rs} \\
+        &=(\det L)\delta_{qs}T_{rq}S_{rs} \\
+        &=(\det L)T_{rq}S_{rq},
+    \end{align*}
+    which is the transformation law for pseudoscalars.
+    
+    Notice how the equation is similar to a dot product, yielding a scalar quantity.
+\end{enumerate}

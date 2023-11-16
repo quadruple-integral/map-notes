@@ -110,6 +110,82 @@
 
     \newpage
 
-    
+    For part ($ii$) consider the following partial sums:
+    $$f_N(x)=\frac{4}{\pi}\sum_{m=0}^{N-1}\frac{\sin(2m+1)x}
+    {2m+1}.$$
+    Show that its derivative is the following:
+    $$f'_N(x)=\frac{2}{\pi}\frac{\sin2Nx}{\sin x}.$$ \\
+
+    Starting from our partial sums we take derivatives:
+    $$\therefore f'_N(x)=\frac{4}{\pi}\sum_{m=0}^{N-1}
+    \Bigl[\cos(2m+1)x\Bigr].$$
+    I had the idea of taking the real component of its complex
+    exponential, but the algebra proved too tedious. Following the solutions:
+    $$\cos x=\frac{1}{2}\bigl(e^{ix}+e^{-ix}\bigr)$$
+    and therefore
+    $$\cos(2m+1)x=\frac{1}{2}\bigl(e^{i(2m+1)x}+e^{-i(2m+1)x}\bigr).$$
+    Substituting this into our partial sums:
+    \begin{align*}
+        f'_N(x)
+        &=\frac{4}{\pi}\sum_{m=0}^{N-1}
+        \Bigl[\cos(2m+1)x\Bigr] \\
+        &=\frac{2}{\pi}\sum_{m=0}^{N-1}
+        \Bigl[e^{i(2m+1)x}+e^{-i(2m+1)x}\Bigr] \\
+        &=\frac{2}{\pi}\sum_{m=0}^{N-1}
+        \Bigl[e^{i(2m+1)x}+e^{-i(2m+1)x}\Bigr] \\
+        &=\frac{2}{\pi}\Bigl(
+            e^{ix}\sum_{m=0}^{N-1}\left(e^{i\cdot 2x}\right)^m
+            +e^{-ix}\sum_{m=0}^{N-1}\left(e^{-i\cdot 2x}\right)^m
+        \Bigr).
+    \end{align*}
+    Recall the geometric series formula:
+    $$\sum_{m=0}^{N-1} r^m=\frac{1-r^N}{1-r}.$$
+
+    \newpage
+    $$\therefore\sum_{m=0}^{N-1}\left(e^{i\cdot 2x}\right)^m
+    =\frac{1-e^{iN2x}}{1-e^{i2x}}$$
+    $$\therefore\sum_{m=0}^{N-1}\left(e^{-i\cdot 2x}\right)^m
+    =\frac{1-e^{-iN2x}}{1-e^{-i2x}}$$
+    Then:
+    \begin{align*}
+        f'_N(x)
+        &=\frac{2}{\pi}\Bigl(
+            e^{ix}\sum_{m=0}^{N-1}\left(e^{i\cdot 2x}\right)^m
+            +e^{-ix}\sum_{m=0}^{N-1}\left(e^{-i\cdot 2x}\right)^m
+        \Bigr) \\
+        &=\frac{2}{\pi}\Bigl(
+            e^{ix}\frac{1-e^{iN2x}}{1-e^{i2x}}
+            +e^{-ix}\frac{1-e^{-iN2x}}{1-e^{-i2x}}
+        \Bigr) \\
+        &=\frac{2}{\pi}\Bigl(
+            \frac{1-e^{iN2x}}{e^{-ix}-e^{ix}}
+            +\frac{1-e^{-iN2x}}{e^{ix}-e^{-ix}}
+        \Bigr) \\
+        &=\frac{2}{\pi}\Bigl(
+            \frac{e^{iN2x}-e^{-iN2x}}{e^{ix}-e^{-ix}}
+        \Bigr)
+    \end{align*}
+    and because:
+    $$\sin x=\frac{1}{2i}\bigl(e^{ix}-e^{-ix}\bigr)$$
+    we finally have that:
+    $$f'_N(x)=\frac{2}{\pi}\frac{\sin2Nx}{\sin x}.$$ \\
+
+    For part ($iii$) set $f'_N(x)=0$ and it is evident that:
+    $$2Nx=m\pi$$
+    solves the equation.
+    $$\therefore x=\frac{m\pi}{2N}$$
+    where $m\in\mathbb{Z}$. \\
+
+    For part ($iv$) to show that $x=\displaystyle\frac{\pi}{2N}$
+    is a maximum we take second derivatives:
+    $$f''(x)=\frac{4N}{\pi}\cos2Nx(\sin x)^{-1}
+    -\frac{2}{\pi}\sin 2Nx\cos x (\sin x)^{-2}$$
+    and since $f''(\frac{\pi}{2N})<0$ this is a maximum.
+
+    \newpage
+
+    For part ($v$) show that for \underline{large} $N$:
+    $$f_N(\frac{\pi}{2N})\approx\frac{2}{\pi}\int_{0}^{\pi}
+    \frac{\sin\beta}{\beta}\dd\beta.$$
 
 \end{enumerate}

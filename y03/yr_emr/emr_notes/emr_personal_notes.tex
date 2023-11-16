@@ -1,0 +1,346 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{physics}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\newcommand{\matr}[1]{\mathbf{#1}}
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{Electromagnetism and Relativity}
+\fancyhead[R]{Winter 2023 - Summer 2024}
+
+\tableofcontents
+
+\newpage
+
+\section{Suffix notation}
+
+\section{Cartesian tensors}
+
+\subsection{True tensors}
+tensor algebra
+
+\subsubsection{Rank 2 quotient theorem}
+The \textbf{quotient theorem} is as an alternative definition for tensors. In the context of \underline{rank 2} tensors it states that if $b_i$ always transforms as a \underline{vector} in
+$$b_i=T_{ij}a_j$$
+and that $a_j$ is also a vector then $T_{ij}$ is a rank 2 tensor.
+\begin{proof}
+    We egregiously define entity $T_{ij}$ in frame $S$ and $T'_{ij}$ in frame $S'$.
+
+    The usual transformation laws apply, namely $\boldsymbol{e}'_i=\ell_{ij}\boldsymbol{e}_j$. By definition:
+    \begin{align*}
+        b'_i
+        &=T'_{ij}a'_j \\
+        &=T'_{ij}\ell_{jk}a_k
+    \end{align*}
+    Also directly from transformation laws:
+    \begin{align*}
+        b'_i
+        &=\ell_{ij}b_j \\
+        &=\ell_{ij}T_{jk}a_k
+    \end{align*}
+    $$\therefore\bigl(T'_{ij}\ell_{jk}-\ell_{ij}T_{jk}\bigl)a_k=0$$
+    Since $a_k$ are constants of our vector it must then be that:
+    $$T'_{ij}\ell_{jk}=\ell_{ij}T_{jk}$$
+    $$\therefore T'_{ij}\ell_{jk}\ell_{mk}=\ell_{ij}\ell_{mk}T_{jk}$$
+    Where here we aim to eliminate the first two $\ell$s. Finally:
+    $$T'_{im}=\ell_{ij}\ell_{mk}T_{jk}$$
+\end{proof}
+
+\subsubsection{General quotient theorem}
+Let $R_{ij\dots r}$ be a rank $m$ tensor, and $T_{ij\dots s}$ be a set of $3^n$ numbers where $n>m$.
+
+If $R_{ij\dots r}T_{ij\dots s}$ is a rank $n-m$ tensor then $T_{ij\dots s}$ is a rank $n$ tensor.
+
+symmetric and anti symmetric tensors
+
+\subsection{Matrices as tensors}
+
+\subsection{Pseudotensors}
+Firstly note that $\det L=+1$ for \underline{rotations}, and $\det L=-1$ for \underline{reflections} and \underline{inversions}. Recall the transformation law $\boldsymbol{e}'_i=\ell_{ij}\boldsymbol{e}_j$.
+
+A \underline{second} rank \textbf{pseudotensor} is defined:
+$$T'_{ij}=(\det L)\ell_{ip}\ell_{jq}T_{pq}.$$
+Furthermore a \underline{rank 1} pseudotensor is a \textbf{pseudovector} and is defined as:
+$$T'_{i}=(\det L)\ell_{ip}T_{p}.$$
+Finally a \textbf{pseudoscalar} is a \underline{rank 0} pseudotensor:
+$$a'=(\det L)\cdot a,$$
+and changes sign under transformation.
+
+\subsection{Invariant tensors}
+
+\subsection{Rotation tensors}
+
+\subsection{Reflections, inversions and projections}
+active and passive transformations
+
+maybe merge with rotations?
+
+\subsection{Inertia tensors}
+
+\section{Taylor expansions}
+
+\newpage
+
+\section{Vector calculus}
+
+\subsection{Vector operators}
+
+\subsubsection{Gradient}
+
+\subsubsection{Divergence}
+
+\subsubsection{Curl}
+
+chain rules, important identities
+
+\subsection{Integrals theorems}
+
+\subsubsection{Line, volume and surface integrals}
+
+\subsubsection{Divergence theorem}
+
+\subsubsection{Stokes's theorem}
+
+\newpage
+
+\section{Curvilinear coordinates}
+
+\subsection{Orthogonal curvilinear coordinates}
+
+\subsubsection{Scale factors and basis vectors}
+Consider change of variables:
+$$(x_1,x_2,x_3)\leftrightarrow(u_1,u_2,u_3)$$
+where $u_i$ are our curvilinear coordinates, and
+$$u_i=u_i(x_1,x_2,x_3)$$
+$$x_i=x_i(u_1,u_2,u_3).$$
+Then we define:
+\begin{align*}
+    \dd\boldsymbol{r}_i
+    &=\frac{\partial\boldsymbol{r}}{\partial u_i}\dd u_i \\
+    &=h_i\boldsymbol{e}_i \dd u_i
+\end{align*}
+where $h_i=|\displaystyle\frac{\partial\boldsymbol{r}}{\partial u_i}|$ is our \textbf{scale factor} and 
+$$\boldsymbol{e}_i=\frac{1}{h_i}\frac{\partial\boldsymbol{r}}{\partial u_i}$$
+is our \textbf{basis vector} of \underline{unit length} for a specific set of curvilinear coordinates.
+
+Now if the basis vectors satisfy
+$$\boldsymbol{e}_i\cdot\boldsymbol{e}_j=\delta_{ij}$$
+we have an \underline{orthogonal} set of curvilinear coordinates.
+
+\subsubsection{Cylindrical coordinates}
+We define cylindrical coordinates as
+$$(u_1,u_2,u_3)=(\rho,\phi,z)$$
+and with the following relation to Cartesian coordinates:
+$$\boldsymbol{r}=\rho\cos\phi\boldsymbol{e}_x
++\rho\sin\phi\boldsymbol{e}_y+z\boldsymbol{e}_z.$$
+Furthermore:
+$$h_{\rho}=1\hspace{0.1in}\text{and}\hspace{0.1in}\boldsymbol{e}_{\rho}=\cos\phi\boldsymbol{e}_{x}
++\sin\phi\boldsymbol{e}_{y}$$
+$$h_{\phi}=\rho\hspace{0.1in}\text{and}\hspace{0.1in}
+\boldsymbol{e}_{\phi}=-\sin\phi\boldsymbol{e}_x+\cos\phi\boldsymbol{e}_y$$
+$$h_{z}=1\hspace{0.1in}\text{and}\hspace{0.1in}\boldsymbol{e}_z=\boldsymbol{e}_z.$$
+Here $\phi$ is the \underline{anticlockwise} rotation of the $xy$-plane.
+
+\newpage
+
+\subsubsection{Spherical coordinates}
+
+\newpage
+
+\subsection{Length, area and volume}
+
+\subsubsection{Vector and arc length}
+Firstly the \textbf{vector length} due to infinitesimal change in all directions is
+$$\dd\boldsymbol{r}=\sum_{i=1}^{3}h_i\dd u_i\boldsymbol{e}_i.$$
+It is important to note that summation notation does not work here.
+
+Now the \textbf{arc length} of $\dd\boldsymbol{r}$ is:
+\begin{align*}
+    \dd s
+    &=|\dd\boldsymbol{r}| \\
+    &=\sqrt{\dd\boldsymbol{r}\cdot\dd\boldsymbol{r}}
+\end{align*}
+and we define the \textbf{metric tensor} as
+\begin{align*}
+    g_{ij}
+    &=\frac{\partial x_k}{\partial u_i}\frac{\partial x_k}{\partial u_j} \\
+    &=\frac{\partial\boldsymbol{r}}{\partial u_i}
+    \cdot\frac{\partial\boldsymbol{r}}{\partial u_j}.
+\end{align*}
+Since $\dd\boldsymbol{r}=\dd x_k$ we then the following relation:
+$$(\dd s)^2=g_{ij}\dd u_i\dd u_j.$$
+
+\newpage
+
+\subsubsection{Vector area}
+
+\subsubsection{Volume}
+The volume of the infinitesimal parallelepiped defined by
+$\dd\boldsymbol{r}_1$, $\dd\boldsymbol{r}_2$ and $\dd\boldsymbol{r}_3$ is:
+\begin{align*}
+    \dd V
+    &=|(\dd\boldsymbol{r}_1\times\dd\boldsymbol{r}_2)
+    \cdot\dd\boldsymbol{r}_3| \\
+    &=h_1\hspace{0.03in}h_2\hspace{0.03in}h_3\hspace{0.03in}
+    \dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3\hspace{0.03in}
+    |(\boldsymbol{e}_1\times\boldsymbol{e}_2)
+    \cdot\boldsymbol{e}_3| \\
+    &=\sqrt{g}\hspace{0.03in}
+    \dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3\hspace{0.03in}
+\end{align*}
+where $g$ is the \underline{determinant} of the metric tensor.
+\newpage
+
+\section{Electrostatics}
+
+\subsection{Dirac delta function}
+The one dimensional \textbf{Dirac delta} is defined:
+$$\delta(x) =
+    \left\{
+	\begin{array}{ll}
+		\infty  & \mbox{} x=0 \\
+		0 & \mbox{} x\neq0,
+	\end{array}
+    \right.$$
+and can be thought of as infinitely sharp at $x=0$ and zero elsewhere. 
+
+It satisfies some useful properties:
+\begin{itemize}
+    \item $\delta(x-a) =
+    \displaystyle\lim_{\sigma\rightarrow0}\left[\frac{1}{|\sigma|\sqrt{\pi}}
+    \exp\left(-\frac{(x-a)^2}{\sigma^2}\right)\right]$
+
+    i.e. an infinitely sharp Gaussian. (\underline{generalised functions})
+
+    \item \textbf{Sift property}
+    $$\int_{\mathbb{R}}f(x)\delta(x-a)dx=f(a)$$
+
+    \item Let $x_i$ be the solutions to $g(x_i)=0$. Then:
+    $$\int_{\mathbb{R}}f(x)\delta[g(x)]dx
+    =\sum_i\frac{f(x_i)}{|g'(x_i)|}$$
+\end{itemize}
+
+Now we consider the \textbf{3D Dirac delta}, which is defined as follows:
+$$\delta(\boldsymbol{r}-\boldsymbol{r}_0)=\delta(x-x_0)\delta(y-y_0)\delta(z-z_0)$$
+given Cartesian coordinates $(x_1, x_2, x_3)$. It also satisfies the \textbf{sift} property:
+$$\int_{\mathbb{R}^3}f(\boldsymbol{r})\delta(\boldsymbol{r}-\boldsymbol{r}_0)
+=f(\boldsymbol{r}_0).$$
+The three dimensional Dirac delta defined in a orthogonal \underline{curvilinear} coordinate system $(u_1, u_2, u_3)$ is as follows:
+$$\delta(\boldsymbol{r}-\boldsymbol{a})=\frac{1}{h_1 h_2 h_3}
+\delta(u_1-a_1)\delta(u_2-a_2)\delta(u_3-a_3)$$
+for $h_1, h_2$ and $h_3$ are the \underline{scale factors}.
+
+\newpage
+
+\subsection{Coulomb's law}
+Consider the force on charge $q$ at $\boldsymbol{r}$ due to charge $q_1$
+at $\boldsymbol{r}_1$:
+$$\boldsymbol{F}_1(\boldsymbol{r})=\frac{1}{4\pi\epsilon_0}
+\frac{qq_1(\boldsymbol{r}-\boldsymbol{r}_1)}{|\boldsymbol{r}-\boldsymbol{r}_1|^3},$$
+for here $\epsilon_0=8.85\times10^{-12}C^2N^{-1}m^{-2}$ in vacuum. 
+
+Physically, like charges ($qq_1>0$) repel while opposite charges ($qq_1<0$) attract.
+
+We then define an \textbf{electric field} as the force on a small positive test charge:
+$$\boldsymbol{E}(\boldsymbol{r})=
+\lim_{q\rightarrow 0}\left(\frac{1}{q}\boldsymbol{F}(\boldsymbol{r})\right).$$
+The force on a charge $q$ at $\boldsymbol{r}$ from the origin in this electric field is:
+$$\boldsymbol{F}(\boldsymbol{r})=q\boldsymbol{E}(\boldsymbol{r}).$$
+A negative point charge is a sink whereas a positive point charge is a source.
+
+Consider a collection of charges $q_i$ at position $\boldsymbol{r}_i$. The \textbf{principle of superposition} tells us that:
+$$\boldsymbol{E}(\boldsymbol{r})=\frac{1}{4\pi\epsilon_0}
+\sum_i \left(\frac{q_i (\boldsymbol{r}-\boldsymbol{r}_i)}
+{|\boldsymbol{r}-\boldsymbol{r}_i|^3}\right).$$
+Now consider a continuous charged object with volume $V$
+and \textbf{charge density} $\rho(\boldsymbol{r}')$.
+It generates the following electric field:
+$$\boldsymbol{E}(\boldsymbol{r})=\frac{1}{4\pi\epsilon_0}
+\int_V \rho(\boldsymbol{r}')\frac{\boldsymbol{r}-\boldsymbol{r}'}
+{|\boldsymbol{r}-\boldsymbol{r}'|^3}dV'.$$
+Returning to the electric field generated by a point charge $q_1$
+at position $\boldsymbol{r}_1$:
+$$\boldsymbol{E}(\boldsymbol{r})=\frac{q_1}{4\pi\epsilon_0}
+\frac{\boldsymbol{r}-\boldsymbol{r}_1}{|\boldsymbol{r}-\boldsymbol{r}_1|^3},$$
+this is a \textbf{conservative field}, and we may write it as:
+$$\boldsymbol{E}(\boldsymbol{r})=-\boldsymbol{\nabla}\phi(\boldsymbol{r}),$$
+where:
+$$\phi(\boldsymbol{r})=\frac{q_1}{4\pi\epsilon_0}\frac{1}{|\boldsymbol{r}-\boldsymbol{r}_1|}.$$
+Conservative fields have zero curl, and their line integrals are path independent. This namely applies to finding work done.
+
+\newpage
+
+\subsection{Electrostatic Maxwell's equations}
+
+\newpage
+
+\subsection{Electric dipoles}
+\textbf{Dipoles} consist of \underline{two} \underline{equal} and \textbf{opposite point charges} that are $\boldsymbol{d}$ apart. 
+
+An \textbf{ideal dipole} is defined as when the following \textbf{dipole limit} is \underline{finite} and \underline{constant}:
+$$\boldsymbol{p}=\lim_{\begin{smallmatrix} q\to\infty & \\ \boldsymbol{d}\to 0 \end{smallmatrix}} q\boldsymbol{d}.$$
+A \textbf{dipole moment} is simply $\boldsymbol{p}=q\boldsymbol{d}$. The \textbf{dipole potential} at $\boldsymbol{r}_0$ is:
+\begin{align*}
+    \phi(\boldsymbol{r})
+    &= \frac{q}{4\pi\epsilon_0}\left(\frac{1}{|\boldsymbol{r}-\boldsymbol{r}_0-\boldsymbol{d}|}-\frac{1}{|\boldsymbol{r}-\boldsymbol{r}_0|}\right)\\
+    &=\frac{1}{4\pi\epsilon_0}\frac{\boldsymbol{p}\cdot(\boldsymbol{r}-\boldsymbol{r}_0)}{|\boldsymbol{r}-\boldsymbol{r}_0|^3},
+\end{align*}
+where we have Taylor expanded the \underline{first term} about $|\boldsymbol{r}-\boldsymbol{r}_0|$. For simplicity we set $\boldsymbol{r}_0=\boldsymbol{0}$. Then the \textbf{electric field} generated by our dipole at the origin is:
+$$\boldsymbol{E}(\boldsymbol{r})=\frac{1}{4\pi\epsilon_0}\left(\frac{3\boldsymbol{p}\cdot\boldsymbol{r}}{r^5} \boldsymbol{r}-\frac{1}{r^3} \boldsymbol{p}\right),$$
+since $\boldsymbol{E}=-\boldsymbol{\nabla}\phi(\boldsymbol{r})$. Note that these formulae are in \underline{Cartesian} coordinates.
+
+Now we repeat this in spherical.
+
+Force, torque and energy.
+
+\subsubsection{Multidipole expansion}
+
+potential
+
+work done
+
+\newpage
+
+\subsection{Gauss's law}
+Gauss's law is the integral form of Maxwell's first equation:
+$$\int_S\boldsymbol{E}\cdot d\boldsymbol{S}
+=\frac{Q_{enc}}{\epsilon_0}$$
+where $Q_{enc}$ is the total charge enclosed by volume $V$. This result follows from the application of the \underline{divergence theorem} and is useful in problems with symmetry. 
+
+\subsubsection{Boundaries}
+
+\subsubsection{Conductors}
+special case for electrostatics
+
+\newpage
+
+\subsection{Poisson's equation}
+In electrostatics we have:
+$$\boldsymbol{\nabla}^2\phi=\frac{\rho}{\epsilon_0}$$
+where $\rho$ is our charge density. This is the \textbf{Poisson's equation}
+and is a consequence of the fact that
+$\boldsymbol{\nabla}\times\boldsymbol{E}=\boldsymbol{0}$ and
+$\boldsymbol{\nabla}\cdot\boldsymbol{E}=\displaystyle\frac{\rho}{\epsilon_0}$.
+
+\subsubsection{Existence and uniqueness of solutions}
+The existence of solutions is given by the fact that:
+$$\boldsymbol{E}=-\boldsymbol{\nabla}\phi.$$
+Poisson's equation has \textbf{unique} solution $\phi$
+if we have volume $V$ bounded by surface $S$
+and one of the following boundary conditions:
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+\end{document}

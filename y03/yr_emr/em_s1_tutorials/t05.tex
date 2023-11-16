@@ -1,0 +1,24 @@
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{EM S1 Tutorials}
+\fancyhead[R]{Winter 2023}
+
+\section{Tutorial 5}
+\begin{enumerate}
+    \item Current in crystal from applied electric field is explored. Consider:
+    $$j_i=\sigma_{ij}E_j,$$
+    where $j_i$ is the current density, $\sigma_{ij}$ is the conductivity of our crystal and $E_j$ the electric field we subject our crystal to. \\
+
+    Now by the \textbf{quotient theorem} clearly if $j_i$ and $E_j$ are vectors then $\sigma_{ij}$ is a rank 2 tensor.
+
+    The conductivity tensor of our crystal is defined as:
+    $$\sigma_{ij}=
+    \begin{pmatrix}
+        1 & \sqrt{2} & 0 \\
+        \sqrt{2} & 3 & 1 \\
+        0 & 1 & 1
+    \end{pmatrix}_{ij}$$
+    and to find electric field directions where no current flows we need to solve $\sigma_{ij}E_j=0$. This can be done by writing our equation as an augmented matrix and then row reducing, which yields:
+    $$\boldsymbol{E}=\begin{bmatrix} \sqrt{2} \\ -1 \\ 1 \end{bmatrix}.$$
+    
+\end{enumerate}
