@@ -36,5 +36,79 @@
 
     \newpage
 
-    \item
+    \item Consider the following function:
+    $$g(x)=
+    \left\{
+    \begin{array}{ll}
+        1+x  & \mbox{} x\in[-1,0) \\
+        1-x & \mbox{} x\in[0,1).
+    \end{array}
+    \right.$$
+    Find its Fourier series with period $2L$, where $L=1$. \\
+
+    Firstly our function $g$ is an \underline{even} function
+    and so its Fourier series is purely in cosine form:
+    $$g_{FS}(x)=\frac{c_0}{2}+\sum_{n=1}^{\infty}c_n\cos n\pi x$$
+    since $L=1$. Its coefficients are:
+    \begin{align*}
+        c_0
+        &=\frac{1}{L}\int_{-L}^{L}g(x)\dd x \\
+        &=\int_{-1}^{1}g(x)\dd x \\
+        &=\int_{-1}^{0}(1+x)\dd x
+        +\int_{0}^{1}(1-x)\dd x \\
+        &=1
+    \end{align*}
+    and
+    \begin{align*}
+        c_n
+        &=\frac{1}{L}\int_{-L}^{L}\cos\frac{n\pi x}{L}g(x)\dd x \\
+        &=\int_{-1}^{1}\cos(n\pi x)g(x)\dd x \\
+        &=\frac{2}{(n\pi)^2}\Bigl(1-(-1)^n\Bigr)
+    \end{align*}
+    for $n\in\{1,2,\dots\}$ and we note that $c_n$ is nonzero in only \underline{odd} terms.
+    $$\therefore g_{FS}(x)=\frac{1}{2}+
+    \frac{4}{\pi^2}\sum_{m=0}^{\infty}
+    \frac{\cos(2m+1)\pi x}{(2m+1)^2}$$
+
+    \newpage
+
+    \item For part ($i$) find the Fourier series of the following:
+    $$f(x)=
+    \left\{
+    \begin{array}{ll}
+        -1  & \mbox{} x\in[-L,0) \\
+        1 & \mbox{} x\in(0,L]
+    \end{array}
+    \right.$$
+    with period $2L$ and $L=\pi$. \\
+
+    Firstly our function is \underline{odd} as hence:
+    $$f_{FS}(x)=\frac{a_0}{2}+\sum_{n=}^{\infty}
+    a_n\sin\frac{n\pi x}{L}$$
+    where its coefficients are:
+    \begin{align*}
+        a_0
+        &=\frac{1}{L}\int_{-L}^{L}f(x)\dd x \\
+        &=\frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\dd x \\
+        &=\frac{1}{\pi}\int_{-\pi}^{0}(-1)\dd x
+        +\frac{1}{\pi}\int_{0}^{\pi}\dd x \\
+        &=0
+    \end{align*}
+    and
+    \begin{align*}
+        a_n
+        &=\frac{1}{L}\int_{-L}^{L}\sin\frac{n\pi x}{L}f(x)\dd x \\
+        &=\frac{1}{\pi}\int_{-\pi}^{\pi}\sin(nx)f(x)\dd x \\
+        &=\frac{1}{\pi}\int_{-\pi}^{0}-\sin(nx)\dd x
+        +\frac{1}{\pi}\int_{0}^{\pi}\sin(nx)\dd x \\
+        &=\frac{2}{n\pi}\bigl[1-(-1)^n\bigr].
+    \end{align*}
+    Then our Fourier series takes the following form:
+    $$f_{FS}(x)=\frac{4}{\pi}\sum_{m=0}^{\infty}
+    \frac{\sin(2m+1)x}{2m+1}.$$
+
+    \newpage
+
+    
+
 \end{enumerate}

@@ -195,14 +195,26 @@ $$f(\alpha^+)=\displaystyle\lim_{x\rightarrow\alpha^+}f(x),$$
 i.e. limits from left and right respectively. It is important to also note that the \underline{derivative} of a Fourier series is \textbf{not necessarily convergent}.
     
 Now consider $S_n = \sin\frac{n\pi x}{L}$ and $C_n = \cos\frac{n\pi x}{L}$. We then have the following \textbf{orthogonality relations}:
-$$\langle S_n, S_m \rangle=\langle C_n, C_m \rangle=L\delta_{mn}$$ and
+$$\langle S_n, S_m \rangle=\langle C_n, C_m \rangle=L\delta_{mn}$$
 $$\langle S_n, C_m \rangle=0$$
-which are used to find $a_n$ and $b_n$ in $f_{FS}(x)$. So:
-$$a_0=\frac{1}{L}\int_{-L}^{L}f(x)dx,$$
+where we define the inner product as:
+$$\langle u(x), v(x) \rangle=\int_{-L}^{L} u(x)v(x)dx$$
+and use the following trigonometric identities:
+$$\cos A\cos B = \frac{1}{2}[\cos(A-B)+\cos(A+B)]$$
+$$\sin A\sin B = \frac{1}{2}[\cos(A-B)-\cos(A+B)]$$
+$$\sin A\cos B = \frac{1}{2}[\sin(A+B)+\sin(A-B)].$$
+
+\newpage
+
+Now integrating the following expression:
+$$\int_{-L}^{L}\left(\frac{a_0}{2}+\sum_{n=1}^{\infty}
+(a_n \cos\frac{n\pi x}{L}+b_n \sin\frac{n\pi x}{L})\right)\dd x
+=\int_{-L}^{L}f(x)\dd x$$
+gives:
+$$a_0=\frac{1}{L}\int_{-L}^{L}f(x)dx.$$
+Similarly:
 $$a_n=\frac{1}{L}\int_{-L}^{L}\cos\frac{n\pi x}{L}f(x)dx$$
-and
 $$b_n=\frac{1}{L}\int_{-L}^{L}\sin\frac{n\pi x}{L}f(x)dx.$$
-    
 Note that $\delta_{mn}$ is the \textbf{Kronecker delta} and is defined as:
 $$\delta_{mn} =
 \left\{
@@ -211,13 +223,7 @@ $$\delta_{mn} =
 	0 & \mbox{} m\neq n
 \end{array}
 \right.$$
-These trigonometric identities are useful for finding Fourier coefficients:
-$$\cos A\cos B = \frac{1}{2}[\cos(A-B)+\cos(A+B)],$$
-$$\sin A\sin B = \frac{1}{2}[\cos(A-B)-\cos(A+B)],$$
-$$\sin A\cos B = \frac{1}{2}[\sin(A+B)+\sin(A-B)].$$
-The \textbf{inner product} of two functions is also defined as:
-$$\langle u(x), v(x) \rangle=\int_{-L}^{L} u(x)v(x)dx.$$
-A shortcut is to note that:
+Furthermore notice that:
 \begin{itemize}
     \item The Fourier series of \textbf{even} functions contains \underline{only} \textbf{cosines}.
 
@@ -227,21 +233,44 @@ A shortcut is to note that:
 $$\int_{-L}^{L}f_{even}dx=2\int_{0}^{L}f_{even}dx.$$
 Similarly \textbf{odd} functions are defined $f(-x)=-f(x)$, and:
 $$\int_{-L}^{L}f_{odd}dx=0.$$
+We can also extend a function defined in $[0,L]$ in several ways:
+\begin{enumerate}
+    \item Define \underline{even} function:
+    $$g(x)=
+    \left\{
+    \begin{array}{ll}
+        f(x)  & \mbox{} x\in[0,L] \\
+        f(-x) & \mbox{} x\in(-L,0)
+    \end{array}
+    \right.$$
+    where its Fourier expansion is a cosine series.
+    
+    \item Define \underline{odd} function:
+    $$h(x)=
+    \left\{
+    \begin{array}{ll}
+        f(x)  & \mbox{} x\in(0,L) \\
+        0 & x=0,L \\
+        -f(-x) & \mbox{} x\in(-L,0)
+    \end{array}
+    \right.$$
+    where its Fourier expansion is a sine series.
+\end{enumerate}
 
 \newpage
 
 \subsection{Complex Fourier series}
-Our Fourier series may be rewritten as a $\textbf{complex Fourier series}$
+Expanding $f(x)$ defined in $[-L,L]$ with \underline{period} $2L$:
 $$f_{FS}(x)=\sum_{n=-\infty}^{\infty} c_n \exp\left(\frac{in\pi}{L} x\right)$$
-using Euler's formula $e^{i\theta}=\sin{\theta}+i\cos{\theta}$. Then:
+using Euler's formula $e^{i\theta}=\sin{\theta}+i\cos{\theta}$. Its coefficients are:
+$$c_n=\frac{1}{2L}\int_{-L}^{L} \exp\left(-\frac{in\pi}{L} x\right) f(x)dx$$
+for $\forall n \in \mathbb{Z}$ and:
 \[ c_n = \begin{cases} 
     (a_n - ib_n)/2 & n > 0 \\
     (a_0)/2 & n = 0 \\
-    (a_n + ib_n)/2 & n < 0
+    (a_n + ib_n)/2 & n < 0.
 \end{cases}\]
-and therefore negative $n$ values are included. By orthogonality:
-$$c_n=\frac{1}{2L}\int_{-L}^{L} \exp\left(-\frac{in\pi}{L} x\right) f(x)dx$$
-for $\forall n \in \mathbb{Z}$. Here we define the \textbf{inner product} for complex functions as
+ Here we define the \textbf{inner product} for complex functions as
 $$\langle f, g\rangle=\int_{\alpha}^{\beta} f^*(x)g(x) dx$$
 where $f^*(x)$ is the complex conjugate of $f(x)$. Then:
 \begin{align*}
@@ -260,7 +289,7 @@ we have that
     &=2L\sum_{n=-\infty}^{\infty} |c_n|^2 \\
     &=L\left[ \frac{|a_0|^2}{2} + \sum_{n=1}^{\infty} (|a_n|^2 + |b_n|^2)\right]
 \end{align*}
-and is derived by orthogonality and direct calculation.
+and is derived by orthogonality.
 
 \newpage
 
