@@ -1,32 +1,32 @@
-\contentsline {section}{\numberline {1}ODE systems}{3}{}%
-\contentsline {subsection}{\numberline {1.1}Integrating factors}{3}{}%
-\contentsline {subsection}{\numberline {1.2}Change of variables}{3}{}%
-\contentsline {subsection}{\numberline {1.3}Existence and uniqueness for IVPs}{3}{}%
-\contentsline {subsection}{\numberline {1.4}Homogeneous systems}{4}{}%
-\contentsline {subsection}{\numberline {1.5}Non-homogeneous systems}{5}{}%
-\contentsline {subsection}{\numberline {1.6}Critical points \& linearisation}{6}{}%
-\contentsline {subsection}{\numberline {1.7}Stability of critical points}{7}{}%
-\contentsline {subsection}{\numberline {1.8}Lyapunov's theory and limit cycles}{7}{}%
-\contentsline {section}{\numberline {2}Fourier series}{8}{}%
-\contentsline {subsection}{\numberline {2.1}Real Fourier series}{8}{}%
-\contentsline {subsection}{\numberline {2.2}Complex Fourier series}{10}{}%
-\contentsline {subsection}{\numberline {2.3}Parseval's theorem}{10}{}%
-\contentsline {section}{\numberline {3}PDEs}{11}{}%
-\contentsline {subsection}{\numberline {3.1}Separation of variables}{11}{}%
-\contentsline {subsection}{\numberline {3.2}Heat equation}{11}{}%
-\contentsline {subsubsection}{\numberline {3.2.1}Standard boundary conditions}{11}{}%
-\contentsline {subsubsection}{\numberline {3.2.2}Fixed boundary temperatures}{13}{}%
-\contentsline {subsubsection}{\numberline {3.2.3}Insulated rod ends}{14}{}%
-\contentsline {subsection}{\numberline {3.3}Wave equation}{15}{}%
-\contentsline {subsection}{\numberline {3.4}Laplace's equation}{16}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Rectangular boundary conditions}{16}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Circular boundary conditions}{17}{}%
-\contentsline {section}{\numberline {4}Sturm-Liouville theory}{19}{}%
-\contentsline {subsection}{\numberline {4.1}Regular S-L problems}{19}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}General 2nd order ODEs}{20}{}%
-\contentsline {subsubsection}{\numberline {4.1.2}Lagrange's identity}{20}{}%
-\contentsline {subsubsection}{\numberline {4.1.3}Series expansion}{21}{}%
-\contentsline {subsection}{\numberline {4.2}Non-homogeneous S-L problems}{22}{}%
-\contentsline {subsection}{\numberline {4.3}Singular S-L problems}{23}{}%
-\contentsline {subsection}{\numberline {4.4}S-L Series solutions}{24}{}%
-\contentsline {section}{\numberline {5}Laplace transforms}{25}{}%
+\contentsline {section}{\numberline {1}ODE systems}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Integrating factors}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Change of variables}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Existence and uniqueness for IVPs}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Homogeneous systems}{4}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Non-homogeneous systems}{5}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Critical points \& linearisation}{6}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Stability of critical points}{7}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Lyapunov's theory and limit cycles}{7}{subsection.1.8}%
+\contentsline {section}{\numberline {2}Fourier series}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Real Fourier series}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Complex Fourier series}{10}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Parseval's theorem}{10}{subsection.2.3}%
+\contentsline {section}{\numberline {3}PDEs}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Separation of variables}{11}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Heat equation}{11}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Standard boundary conditions}{11}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Fixed boundary temperatures}{13}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Insulated rod ends}{14}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Wave equation}{15}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Laplace's equation}{16}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Rectangular boundary conditions}{16}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Circular boundary conditions}{17}{subsubsection.3.4.2}%
+\contentsline {section}{\numberline {4}Sturm-Liouville theory}{19}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Regular S-L problems}{19}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}General 2nd order ODEs}{20}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Lagrange's identity}{20}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Series expansion}{21}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}Non-homogeneous S-L problems}{22}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Singular S-L problems}{23}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}S-L Series solutions}{24}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Laplace transforms}{25}{section.5}%

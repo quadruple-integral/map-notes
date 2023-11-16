@@ -1,0 +1,88 @@
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{Thermodynamics Tutorials}
+\fancyhead[R]{Winter 2023}
+
+\section{Set 7}
+\begin{enumerate}
+    \item Indexed as number $51$ in tutorial sheet. \\
+    
+    Consider the entropy change for an \underline{ideal} gas:
+    \begin{align*}
+        \Delta S(V,T)
+        &=S(V,T)-S(V_0,T_0) \\
+        &=C_V\ln\frac{T}{T_0}+nR\ln\frac{V}{V_0}.
+    \end{align*}
+    For part ($a$)($1$) write this expression as:
+    \begin{align*}
+        \Delta S(P,T)
+        &=C_P\ln\frac{T}{T_0}-nR\ln\frac{P}{P_0}.
+    \end{align*}
+    It is important for us to recall the difference in heat capacity:
+    $$C_P-C_V=nR.$$
+    Using this and the ideal state equation $PV=nRT$:
+    \begin{align*}
+        \Delta S
+        &=(C_P-nR)\ln\frac{T}{T_0}+nR\ln\frac{V}{V_0} \\
+        &=C_P\ln\frac{T}{T_0}+nR\ln\left(
+            \frac{V}{V_0}\cdot\frac{T_0}{T}
+        \right) \\
+        &=C_P\ln\frac{T}{T_0}-nR\ln\frac{P}{P_0}
+    \end{align*}
+    since the ideal gas equation holds for fixed physical quantities:
+    $$P_0 V_0=nRT_0.$$
+
+    For part ($a$)($2$) write this expression as:
+    \begin{align*}
+        \Delta S(P,V)
+        &=C_P\ln\frac{V}{V_0}+C_V\ln\frac{P}{P_0}.
+    \end{align*}
+    Now we start again with our original equation and
+    use $C_P-C_V=nR$.
+    \begin{align*}
+        \therefore\Delta S
+        &=C_V\ln\frac{T}{T_0}+nR\ln\frac{V}{V_0} \\
+        &=C_V\ln\frac{T}{T_0}+(C_P-C_V)\ln\frac{V}{V_0} \\
+        &=C_P\ln\frac{V}{V_0}+C_V\ln\frac{P}{P_0}
+    \end{align*}
+    The last step we used the ideal gas equation.
+
+    \newpage
+
+    For part ($b$) we want to verify:
+    $$-\left(\frac{\partial S}{\partial P}\right)_T
+    =\left(\frac{\partial V}{\partial T}\right)_P$$
+    given the following assumptions:
+    \begin{itemize}
+        \item $\Delta S(P,T)=C_P\ln\frac{T}{T_0}-nR\ln\frac{P}{P_0}$
+        \item $PV=nRT$.
+    \end{itemize}
+    The right hand side of our equation is:
+    $$\left(\frac{\partial V}{\partial T}\right)_P=\frac{nR}{P}.$$
+    Now for the left hand side. Firstly we need to come up with
+    an expression for entropy, and then take its partial derivatives to show equality.
+    $$\because\Delta S(P,T)=S(P,T)-S_0$$
+    $$\therefore S(P,T)
+    =C_P\ln\frac{T}{T_0}-nR\ln\frac{P}{P_0}+S_0$$
+    $$\therefore\frac{\partial}{\partial P}S(P,T)=-\frac{nR}{P}$$
+    And clearly we have equality of both sides. \\
+
+    For part ($c$) show that a reversible adiabatic process implies
+    an isentropic process:
+    $$PV^{\gamma}=\text{constant}\implies\Delta S=0$$
+    where $\gamma=\displaystyle\frac{C_P}{C_V}$.
+
+    Beginning with our derived expression $\Delta S(P,V)$:
+    \begin{align*}
+        \Delta S(P,V)
+        &=C_P\ln\frac{V}{V_0}+C_V\ln\frac{P}{P_0} \\
+        &=C_P\left(\ln\frac{V}{V_0}+\frac{1}{\gamma}\ln\frac{P}{P_0}\right).
+    \end{align*}
+    Now since we have that:
+    $$\frac{P}{P_0}=\left(\frac{V_0}{V}\right)^{\gamma}$$
+    and it is clear that $\Delta S=0$.
+
+    \newpage
+
+    \item test
+\end{enumerate}

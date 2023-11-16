@@ -9,9 +9,17 @@
 \usepackage{fancyhdr}
 \usepackage{physics}
 \usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
 \newcommand{\matr}[1]{\mathbf{#1}}
 
+\title{Thermodynamics}
+\author{Notes by Christopher Shen}
+\date{Winter 2023}
+
 \begin{document}
+
+\maketitle
+\newpage
 
 \tableofcontents
 \newpage
@@ -70,7 +78,7 @@ Let's now assume an \underline{ideal}, \textbf{monoatomic} gas. Then its heat ca
 $$C_V=\frac{\dd U}{\dd T}.$$
 So $C_V \dd T=T\dd S-P\dd V$ and $C_V=\frac{3}{2}nR$. Combining these:
 $$\dd S=nR\left(\frac{3}{2}\frac{\dd T}{T}+\frac{\dd V}{V}\right)$$
-which can be discretised to find $\Delta S$. Rearranging we get $T\dd S=C_V \dd T+P \dd V$. Integrating and using identity $C_P-C_V=R$ we get:
+which can be discretised to find $\Delta S$. Rearranging we get $T\dd S=C_V \dd T+P \dd V$. Integrating and using identity $C_P-C_V=nR$ we get:
 $$\Delta S=nc_V\ln\left(\frac{P_2}{P_1}\right)+nc_P\ln\left(\frac{V_2}{V_1}\right)$$
 for here $n$ is moles and the heat capacities are in molar quantities.
 
@@ -225,10 +233,29 @@ Furthermore it is clear that $C_P-C_V>0$ for all cases.
 
 \newpage
 
-
 \section{Phase transitions}
 
+\subsection{PT diagrams}
+phase transition diagrams (PT)
 
-\section{Van der Waals state equation}
+supercritical points
+
+phase boundaries
+
+triple point
+
+clausius clapeyron equation
+
+\subsection{Van der Waals state equation}
+
+\subsection{PV diagrams}
+
+\newpage
+
+\section{Chemical potentials}
+
+\newpage
+
+\section{Third law}
 
 \end{document}
