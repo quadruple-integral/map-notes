@@ -186,6 +186,43 @@
 
     For part ($v$) show that for \underline{large} $N$:
     $$f_N(\frac{\pi}{2N})\approx\frac{2}{\pi}\int_{0}^{\pi}
-    \frac{\sin\beta}{\beta}\dd\beta.$$
+    \frac{\sin\beta}{\beta}\dd\beta.$$ \\
+
+    So begin by integrating the following expression:
+    $$\int_{0}^{\frac{\pi}{2N}}
+    \frac{2}{\pi}\frac{\sin2Nx}{\sin x}\dd x.$$
+    By substituting $\beta=2Nx$ we get:
+    \begin{align*}
+        \int_{x=0}^{x=\frac{\pi}{2N}}
+        \frac{2}{\pi}\frac{\sin2Nx}{\sin x}\dd x
+        &=\int_{\beta=0}^{\beta=\pi}\frac{2}{\pi}
+        \frac{\sin\beta}{\sin\frac{\beta}{2N}}
+        \frac{\dd\beta}{2N} \\
+        &=\frac{2}{\pi}\int_{0}^{\pi}
+        \frac{1}{2N}\frac{\sin\beta}{\sin\frac{\beta}{2N}}
+        \dd\beta \\
+        &\approx\frac{2}{\pi}\int_{0}^{\pi}
+        \frac{\sin\beta}{\beta}
+        \dd\beta
+    \end{align*}
+    since when $N\gg\beta$ by small angle approximations
+    we have that:
+    $$\sin\frac{\beta}{2N}\approx\frac{\beta}{2N}.$$ \\
+
+    Finally for part ($vi$) consider the power series expansion for:
+    $$\frac{\sin\beta}{\beta}=\sum_{m=0}^{\infty}
+    (-1)^m\frac{\beta^{2m}}{(2m+1)!}.$$
+    Using this series in our integral:
+    \begin{align*}
+        \frac{2}{\pi}\int_{0}^{\pi}
+        \frac{\sin\beta}{\beta}
+        \dd\beta
+        &=\frac{2}{\pi}\sum_{m=0}^{\infty}
+        (-1)^m\int_{0}^{\pi}
+        \frac{\beta^{2m}}{(2m+1)!}\dd\beta \\
+        &=2\sum_{m=0}^{\infty}
+        (-1)^m\frac{\pi^{2m}}{(2m)!(2m+1)^2} \\
+        &\approx1.18.
+    \end{align*}
 
 \end{enumerate}
