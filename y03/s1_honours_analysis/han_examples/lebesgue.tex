@@ -1,0 +1,27 @@
+\section{Lebesgue integrals}
+
+\subsection{Characteristic and step functions}
+\begin{enumerate}
+    \item Let $\phi$ and $\psi$ be step functions. Show that the following are also step functions:
+    \begin{itemize}
+        \item $\alpha\phi+\beta\psi$
+        \item $\max\{\phi,\psi\}$ and $\min\{\phi,\psi\}$
+        \item $\phi\psi$. \\
+    \end{itemize}
+
+    Firstly define step function $\phi$ wrt finite set $\{x_0,x_1\dots,x_n\}$
+    and step function $\psi$ wrt finite set $\{y_0,y_1\dots,y_n\}$.
+    Their linear combination is a step function wrt the union of these two finite sets.
+
+    The rest are proven similarly via construction.
+
+    \item Show that $\phi$ is a step function \textbf{if and only if}:
+    $$\phi(x)=\sum_{j=1}^{n}c_j\chi_{J_j}(x)$$
+    where $c_j$ is some constant and $J_j$ some interval. \\
+
+    From the definition of $\phi$ we can write:
+    $$\phi(x)=\sum_{j=1}^{n}c_j\chi_{(x_{j-1},x_j)}(x)
+    +\sum_{j=0}^{n}\phi(x_j)\chi_{\{x_j\}}$$
+    and the opposite direction is shown by the first example
+    and the fact that a characteristic function is a step function.
+\end{enumerate}

@@ -52,6 +52,14 @@ INPUT c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT c:/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/physics/physics.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/physics/physics.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
@@ -112,8 +120,6 @@ INPUT c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT ./em_s1_tutorials.aux
 INPUT ./em_s1_tutorials.aux
 INPUT em_s1_tutorials.aux
@@ -126,6 +132,9 @@ INPUT t05.aux
 INPUT ./t07.aux
 INPUT ./t07.aux
 INPUT t07.aux
+INPUT ./t08.aux
+INPUT ./t08.aux
+INPUT t08.aux
 OUTPUT em_s1_tutorials.aux
 INPUT c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -213,6 +222,12 @@ OUTPUT t07.aux
 INPUT ./t07.tex
 INPUT ./t07.tex
 INPUT t07.tex
+INPUT ./t08.tex
+INPUT ./t08.tex
+OUTPUT t08.aux
+INPUT ./t08.tex
+INPUT ./t08.tex
+INPUT t08.tex
 INPUT em_s1_tutorials.aux
 INPUT ./t03.aux
 INPUT ./t03.aux
@@ -223,6 +238,9 @@ INPUT t05.aux
 INPUT ./t07.aux
 INPUT ./t07.aux
 INPUT t07.aux
+INPUT ./t08.aux
+INPUT ./t08.aux
+INPUT t08.aux
 INPUT ./em_s1_tutorials.out
 INPUT ./em_s1_tutorials.out
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb

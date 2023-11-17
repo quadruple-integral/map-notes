@@ -1,6 +1,6 @@
 \pagestyle{fancy}
 \fancyhead{}
-\fancyhead[L]{Thermodynamics Tutorials}
+\fancyhead[L]{Thermodynamics Tutorial 7}
 \fancyhead[R]{Winter 2023}
 
 \section{Set 7}
@@ -136,6 +136,107 @@
 
     \item Indexed as number $53$ in tutorial sheet 7. \\
 
+    For part ($a$) show that:
+    $$\mu_{JK}=\left(\frac{\partial T}{\partial P}\right)_H
+    =\frac{V}{C_P}(\beta T-1).$$ \\
 
+    We begin by using the cyclic relations of partial derivatives:
+    $$\left(\frac{\partial T}{\partial P}\right)_H
+    \left(\frac{\partial H}{\partial T}\right)_P
+    \left(\frac{\partial P}{\partial H}\right)_T=-1$$
+    and hence:
+    \begin{align*}
+        \left(\frac{\partial T}{\partial P}\right)_H
+        &=-\left(\frac{\partial H}{\partial T}\right)_P^{-1}
+        \left(\frac{\partial P}{\partial H}\right)_T^{-1} \\
+        &=-\left(\frac{\partial H}{\partial T}\right)_P^{-1}
+        \left(\frac{\partial H}{\partial P}\right)_T.
+    \end{align*}
+    The first one is by definition $C_P$:
+    $$\left(\frac{\partial H}{\partial T}\right)_P
+    =C_P.$$
+    Since we have that:
+    $$\dd H=T\dd S+V\dd P$$
+    dividing through by $\dd P$ at fixed $T$ gives:
+    $$\left(\frac{\partial H}{\partial P}\right)_T
+    =T\left(\frac{\partial S}{\partial P}\right)_T+V$$
+    and hence for the second partial derivative:
+    \begin{align*}
+        \left(\frac{\partial H}{\partial P}\right)_T
+        &=-T\left(\frac{\partial V}{\partial T}\right)_P+V
+    \end{align*}
+    via a Maxwell relation. \\
+
+    For part ($b$) since $V=\displaystyle\frac{nRT}{P}$ and using the definition of isobaric expansivity we get that $\mu_{JK}=0$.
+
+    \newpage
+
+    \item Indexed as number $54$ in tutorial sheet 7. \\
+    
+    For part ($a$) show that:
+    $$\frac{\kappa_T}{\kappa_S}=\frac{C_P}{C_V}$$
+    where we define:
+    $$\kappa_T=-\frac{1}{V}
+    \left(\frac{\partial V}{\partial P}\right)_T$$
+    and
+    $$\kappa_S=-\frac{1}{V}
+    \left(\frac{\partial V}{\partial P}\right)_S.$$ \\
+
+    Firstly using the definition we have that:
+    $$\frac{\kappa_T}{\kappa_S}
+    =\left(\frac{\partial V}{\partial P}\right)_T
+    \left(\frac{\partial V}{\partial P}\right)_S^{-1}.$$
+    Note the following cyclic relations:
+    $$\left(\frac{\partial V}{\partial P}\right)_T
+    \left(\frac{\partial T}{\partial V}\right)_P
+    \left(\frac{\partial P}{\partial T}\right)_V=-1$$
+    and
+    $$\left(\frac{\partial V}{\partial P}\right)_S
+    \left(\frac{\partial S}{\partial V}\right)_P
+    \left(\frac{\partial P}{\partial S}\right)_V=-1.$$
+    Then our first expression becomes:
+    \begin{align*}
+        \frac{\kappa_T}{\kappa_S}
+        &=\left(\frac{\partial T}{\partial V}\right)_P^{-1}
+        \left(\frac{\partial P}{\partial T}\right)_V^{-1}
+        \left(\frac{\partial S}{\partial V}\right)_P
+        \left(\frac{\partial P}{\partial S}\right)_V \\
+        &=\left(\frac{\partial S}{\partial V}\right)_P
+        \left(\frac{\partial V}{\partial T}\right)_P
+        \left[\left(\frac{\partial S}{\partial P}\right)_V
+        \left(\frac{\partial P}{\partial T}\right)_V
+        \right]^{-1} \\
+        &=T\left(\frac{\partial S}{\partial T}\right)_P
+        \left[T\left(\frac{\partial S}{\partial T}\right)_V
+        \right]^{-1} \\
+        &=\frac{C_P}{C_V}.
+    \end{align*}
+
+    \newpage
+
+    For part ($b$) show that:
+    $$\kappa_T-\kappa_S=\frac{VT\beta^2}{C_P}.$$ \\
+
+    Using previous results:
+    $$C_P-C_V=\frac{VT\beta^2}{\kappa_T}$$
+    and
+    $$C_V=C_P\frac{\kappa_S}{\kappa_T}$$
+    the result follows after substituting in $C_V$. \\
+
+    For part ($c$) find $\kappa_S$ for an ideal gas
+    and verify part ($b$). \\
+
+    Let $\gamma=\displaystyle\frac{C_P}{C_V}$.
+    We then have the following relation:
+    $$\kappa_S=\frac{\kappa_T}{\gamma}.$$
+    Now since $PV=nRT$:
+    \begin{align*}
+        \kappa_T
+        &=-\frac{1}{V}
+        \left(\frac{\partial V}{\partial P}\right)_T \\
+        &=\frac{1}{p}
+    \end{align*}
+    and so:
+    $$\kappa_S=\frac{1}{\gamma p}.$$
 
 \end{enumerate}

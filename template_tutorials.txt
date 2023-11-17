@@ -2,20 +2,31 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage{parskip}
 \usepackage{multicol}
 \usepackage{xcolor}
 \usepackage{fancyhdr}
 \usepackage{physics}
 \usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
 \newcommand{\matr}[1]{\mathbf{#1}}
+\def\dbar{{\mathchar'26\mkern-12mu d}}
+
+\setcounter{secnumdepth}{0} % sections are level 1
+
+\title{notes title}
+\author{Christopher Shen}
+\date{date}
 
 \begin{document}
 
-%\include{w6}
+\maketitle
+\newpage
 
-%\include{w7}
+\tableofcontents
+\newpage
 
-\include{w8}
+%\include{file.tex}
 
 \end{document}

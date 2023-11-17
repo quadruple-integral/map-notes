@@ -12,3 +12,22 @@
 \usepackage{hyperref}
 \newcommand{\matr}[1]{\mathbf{#1}}
 \def\dbar{{\mathchar'26\mkern-12mu d}}
+
+\title{notes title}
+\author{Notes by Christopher Shen}
+\date{date}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{notes title}
+\fancyhead[R]{date}
+
+\end{document}
