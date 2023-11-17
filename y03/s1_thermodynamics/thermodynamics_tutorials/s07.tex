@@ -5,7 +5,7 @@
 
 \section{Set 7}
 \begin{enumerate}
-    \item Indexed as number $51$ in tutorial sheet. \\
+    \item Indexed as number $51$ in tutorial sheet 7. \\
     
     Consider the entropy change for an \underline{ideal} gas:
     \begin{align*}
@@ -80,9 +80,62 @@
     \end{align*}
     Now since we have that:
     $$\frac{P}{P_0}=\left(\frac{V_0}{V}\right)^{\gamma}$$
-    and it is clear that $\Delta S=0$.
+    it is clear that $\Delta S=0$.
 
     \newpage
 
-    \item test
+    \item Indexed as number $52$ in tutorial sheet 7. \\
+    
+    For part ($a$) show that:
+    $$\dd S=\frac{C_P}{T}\dd T -V\beta\dd P.$$ \\
+
+    We take total differentials of the previously derived $S(P,T)$:
+    $$\dd S=\left(\frac{\partial S}{\partial T}\right)_P\dd T
+    +\left(\frac{\partial S}{\partial P}\right)_T\dd P.$$
+    Since we have that:
+    $$S(P,T)
+    =C_P\ln\frac{T}{T_0}-nR\ln\frac{P}{P_0}+S_0$$
+    therefore:
+    $$\left(\frac{\partial S}{\partial T}\right)_P
+    =\frac{C_P}{T}.$$
+    The second partial derivative we recognise as a Maxwell relation:
+    \begin{align*}
+        \left(\frac{\partial S}{\partial P}\right)_T
+        &=-\left(\frac{\partial V}{\partial T}\right)_P \\
+        &=-V\beta
+    \end{align*}
+    where $\beta$ is the \underline{isobaric expansivity}.
+    Therefore we have that:
+    $$\dd S=\frac{C_P}{T}\dd T -V\beta\dd P.$$ \\
+
+    For part ($b$), consider metal box subject to \underline{adiabatic} and \underline{reversible} increase in pressure. ($P_1\rightarrow P_2$)
+
+    Show that its temperature change ($T_1\rightarrow T_2$)
+    satisfies the following:
+    $$\ln\frac{T_2}{T_1}=\frac{V\beta(P_2-P_1)}{C_P}.$$ \\
+
+    Since $\Delta Q=0$ and our process is reversible the overall entropy change is \underline{zero}. Integrate result in previous part to obtain answer.
+
+    \newpage
+
+    Integrating from initial state to final state:
+    \begin{align*}
+        \Delta S
+        &=\int_{(1)}^{(2)}\dd S \\
+        &=\int_{(1)}^{(2)}
+        \left(\frac{C_P}{T}\dd T -V\beta\dd P\right) \\
+        &=0.
+    \end{align*}
+    We then have that:
+    $$\int_{T_1}^{T_2}\frac{C_P}{T}\dd T
+    -\int_{P_1}^{P_2}V\beta\dd P=0$$
+    which gives:
+    $$\ln\frac{T_2}{T_1}=\frac{V\beta(P_2-P_1)}{C_P}.$$
+
+    \newpage
+
+    \item Indexed as number $53$ in tutorial sheet 7. \\
+
+
+
 \end{enumerate}
