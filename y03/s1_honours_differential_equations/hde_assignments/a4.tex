@@ -3,6 +3,44 @@
 \fancyhead[L]{Honours DE Assignment 4}
 \fancyhead[R]{Winter 2023}
 
+\section{Assignment 4}
 \begin{enumerate}
-    \item 
+    \item For part ($a$), $\phi_n(x)$ are the orthonormal
+    eigenfunctions and $\lambda_n$ the real eigenvalues of the
+    corresponding homogeneous regular S-L problem:
+    $$-\dv{x}\left(p(x)\dv{y}{x}\right)+q(x)y=\lambda r(x)y$$
+    with initial conditions:
+    \begin{itemize}
+        \item $\alpha_1 y(0)+\alpha_2 y'(0)=0$
+    
+        \item $\beta_1 y(1)+\beta_2 y'(1)=0.$
+    \end{itemize}
+    for $x\in[0,1]$. The solution to the following:
+    $$-\dv{x}\left(p(x)\dv{y}{x}\right)+q(x)y=\mu r(x)y+f(x)$$
+    is then:
+    $$y(x)=\sum_{n=1}^{\infty}b_n\phi_n(x)$$
+    where:
+    $$b_n=\frac{c_n}{\lambda_n-\mu}$$
+    and
+    $$c_n=\int_{0}^{1}\phi_n(x)f(x)\dd x.$$ \\
+
+    For part ($b$) solve the following:
+    $$\dv[2]{x}y(x)+7y(x)=2\sin 5x+3\sin 7x$$
+    with boundary conditions $y(0)=y(\pi)=0$
+    for $\forall x\in[0,\pi]$. \\
+
+    First define change of variables $x=\pi t$.
+    $$\therefore y(x)\iff y(t)$$
+    $$\therefore \dv{x}y(t=\frac{x}{\pi})=\frac{1}{\pi}\dv{y}{t}$$
+    $$\therefore \dv{x}\left(\dv{x}y(t=\frac{x}{\pi})\right)
+    =\frac{1}{\pi^2}\dv[2]{y}{t}$$
+
+    \newpage
+
+    Then our ODE becomes:
+    $$\frac{1}{\pi^2}\dv[2]{y}{t}+7y(t)=2\sin 5\pi t+3\sin 7\pi t$$
+    with boundary conditions $y(0)=y(1)=0$
+    for $\forall t\in[0,1]$. This is now of S-L form, and its
+    corresponding homogeneous S-L system is:
+    
 \end{enumerate}
