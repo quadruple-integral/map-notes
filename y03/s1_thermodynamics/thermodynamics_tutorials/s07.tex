@@ -234,9 +234,87 @@
         \kappa_T
         &=-\frac{1}{V}
         \left(\frac{\partial V}{\partial P}\right)_T \\
-        &=\frac{1}{p}
+        &=\frac{1}{P}
     \end{align*}
     and so:
-    $$\kappa_S=\frac{1}{\gamma p}.$$
+    $$\kappa_S=\frac{1}{\gamma P}$$
+    where $\gamma$ is our \underline{adiabatic exponent}. To verify part ($b$):
+    \begin{align*}
+        \kappa_T-\kappa_S
+        &=\frac{1}{P}-\frac{1}{\gamma P} \\
+        &=\frac{1}{P}\left(\frac{C_P-C_V}{C_P}\right) \\
+        &=\frac{VT\beta^2}{C_P}
+    \end{align*}
+    via the difference in heat capacities.
 
+    \newpage
+
+    \item Consider the following:
+    $$C_P-C_V=\frac{VT\beta^2}{\kappa_T}>0$$
+    since $\beta>0$ and $\kappa_T>0$. Explain \underline{physically}
+    why $\kappa_T>0$ must be true. \\
+
+    Firstly recall the definition of $\kappa_T$:
+    $$\kappa_T=-\frac{1}{V}
+    \left(\frac{\partial V}{\partial P}\right)_T.$$
+    Physically a \underline{compression} results in a reduction of volume:
+    $$+\Delta P\implies-\Delta V$$
+    and that vice versa:
+    $$-\Delta P\implies+\Delta V.$$
+    If we think of partial derivatives as infinitesimal fractions
+    of change then it is clear that $\kappa_T$ is always positive.
+
+    We can also contradict ourself by assuming:
+    $$-\Delta P\implies-\Delta V$$
+    or that a reduction in pressure results in compression
+    of solid. This eventually forms a black hole which is impossible.
+    (for 'normal' matter)
+
+    \newpage
+
+    \item For part ($a$) express $\mu_{JK}$
+    using the Van der Waals state equation. \\
+
+    So we have that:
+    $$\mu_{JK}=\frac{V}{C_P}(\beta T-1)$$
+    and the \underline{molar} Van der Waals state equation:
+    $$\left(P+\frac{a}{v^2}\right)(v-b)=RT$$
+    which states that at pressure $P$
+    one mole of gas with volume $v$
+    has temperature $T$.
+    Now everything is all well and good except when finding
+    $\beta$ which is defined as follows:
+    $$\beta=\frac{1}{V}
+    \left(\frac{\partial V}{\partial T}\right)_P
+    =\frac{1}{v}
+    \left(\frac{\partial v}{\partial T}\right)_P$$
+    and is known as the isobaric expansivity constant.
+
+    But we can use the inverse relations for
+    partial derivatives:
+    $$\left(\frac{\partial T}{\partial v}\right)_P
+    =\frac{1}{Rv^3}\left(Pv^3-av+2ab\right)$$
+    and so
+    $$\beta=Rv^2\left(Pv^3-av+2ab\right)^{-1}.$$
+    After some rearranging we get:
+    $$\beta T=RTv^{-1}
+    \Bigl[\frac{RT}{v-b}-\frac{2a(v-b)}{v^3}\Bigr]^{-1}$$
+    and therefore our \underline{Joule-Kelvin} coefficient is:
+    $$\mu_{JK}=\frac{v}{c_P}
+    \left(RTv^{-1}\Bigl[\frac{RT}{v-b}
+    -\frac{2a(v-b)}{v^3}\Bigr]^{-1}-1\right).$$
+
+    \newpage
+
+    For part ($b$) find temperature $T$
+    such that $\mu_{JK}=0$. \\
+
+    Setting the previous result to zero implies:
+    $$RTv^{-1}\Bigl[\frac{RT}{v-b}
+    -\frac{2a(v-b)}{v^3}\Bigr]^{-1}-1=0$$
+    and solving for $T$ gives:
+    $$T=\frac{2a}{bR}\left(\frac{v-b}{v}\right)^2.$$
+    Now when $b=0$ our $T$ is maximised:
+    $$T_{max}=\frac{2a}{bR}$$
+    which is part ($c$).
 \end{enumerate}

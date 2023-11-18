@@ -1,33 +1,35 @@
-\contentsline {section}{\numberline {1}Zeroth law}{3}{section.1}%
-\contentsline {section}{\numberline {2}Thermodynamics definitions}{3}{section.2}%
-\contentsline {section}{\numberline {3}Isothermal expansion}{3}{section.3}%
-\contentsline {section}{\numberline {4}First law}{3}{section.4}%
-\contentsline {section}{\numberline {5}Heat capacities}{4}{section.5}%
-\contentsline {section}{\numberline {6}Enthalpy}{5}{section.6}%
-\contentsline {subsection}{\numberline {6.1}State function enthalpy}{5}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Latent heats}{5}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Constant pressure expansion}{5}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Filling empty tank}{5}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Chemical reactions}{5}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Heat engines}{6}{section.7}%
-\contentsline {section}{\numberline {8}Entropy}{7}{section.8}%
-\contentsline {subsection}{\numberline {8.1}State function entropy}{7}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Entropy of ideal gases}{7}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Entropy of mixing}{8}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Measuring entropy}{8}{subsection.8.4}%
-\contentsline {section}{\numberline {9}Second law}{9}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Reversibility}{9}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Second law}{9}{subsection.9.2}%
-\contentsline {section}{\numberline {10}Helmholtz and Gibbs free energy}{10}{section.10}%
-\contentsline {section}{\numberline {11}Maxwell relations}{11}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Derivation}{11}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Applications}{12}{subsection.11.2}%
-\contentsline {subsubsection}{\numberline {11.2.1}Ideal gas internal energy}{12}{subsubsection.11.2.1}%
-\contentsline {subsubsection}{\numberline {11.2.2}Difference in heat capacities}{13}{subsubsection.11.2.2}%
-\contentsline {subsubsection}{\numberline {11.2.3}Liquefying gases}{13}{subsubsection.11.2.3}%
-\contentsline {section}{\numberline {12}Phase transitions}{14}{section.12}%
-\contentsline {subsection}{\numberline {12.1}PT diagrams}{14}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Van der Waals state equation}{14}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}PV diagrams}{14}{subsection.12.3}%
-\contentsline {section}{\numberline {13}Chemical potentials}{15}{section.13}%
-\contentsline {section}{\numberline {14}Third law}{16}{section.14}%
+\contentsline {section}{\numberline {1}Zeroth law}{4}{section.1}%
+\contentsline {section}{\numberline {2}Definitions}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Ideal gas state equation}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Systems and processes}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Isothermal expansion}{6}{section.3}%
+\contentsline {section}{\numberline {4}First law}{6}{section.4}%
+\contentsline {section}{\numberline {5}Heat capacities}{7}{section.5}%
+\contentsline {section}{\numberline {6}Enthalpy}{8}{section.6}%
+\contentsline {subsection}{\numberline {6.1}State function enthalpy}{8}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Latent heats}{8}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Constant pressure expansion}{8}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Filling empty tank}{8}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Chemical reactions}{8}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Heat engines}{9}{section.7}%
+\contentsline {section}{\numberline {8}Entropy}{10}{section.8}%
+\contentsline {subsection}{\numberline {8.1}State function entropy}{10}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Entropy of ideal gases}{10}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Entropy of mixing}{11}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Measuring entropy}{11}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Second law}{12}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Reversibility}{12}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Second law}{12}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Helmholtz and Gibbs free energy}{13}{section.10}%
+\contentsline {section}{\numberline {11}Maxwell relations}{14}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Derivation}{14}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Applications}{15}{subsection.11.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}Ideal gas internal energy}{15}{subsubsection.11.2.1}%
+\contentsline {subsubsection}{\numberline {11.2.2}Difference in heat capacities}{16}{subsubsection.11.2.2}%
+\contentsline {subsubsection}{\numberline {11.2.3}Liquefying gases}{16}{subsubsection.11.2.3}%
+\contentsline {section}{\numberline {12}Phase transitions}{17}{section.12}%
+\contentsline {subsection}{\numberline {12.1}PT diagrams}{17}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Van der Waals state equation}{17}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}PV diagrams}{17}{subsection.12.3}%
+\contentsline {section}{\numberline {13}Chemical potentials}{18}{section.13}%
+\contentsline {section}{\numberline {14}Third law}{19}{section.14}%
