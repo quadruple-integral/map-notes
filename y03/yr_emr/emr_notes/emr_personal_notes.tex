@@ -111,6 +111,11 @@ chain rules, important identities
 \subsubsection{Divergence theorem}
 
 \subsubsection{Stokes's theorem}
+Consider surface $S$ \underline{enclosed}
+by line $C$. We then have that:
+$$\int_S\boldsymbol{\nabla}\times\boldsymbol{E}\cdot
+\dd\boldsymbol{S}=
+\oint_C\boldsymbol{E}\cdot\dd\boldsymbol{r}.$$
 
 \newpage
 
@@ -155,6 +160,25 @@ Here $\phi$ is the \underline{anticlockwise} rotation of the $xy$-plane.
 \newpage
 
 \subsubsection{Spherical coordinates}
+We define the spherical coordinates as
+$$(u_1,u_2,u_3)=(r,\theta,\phi)$$
+$$\boldsymbol{r}=r\sin\theta\cos\phi\boldsymbol{e}_x
++r\sin\theta\sin\phi\boldsymbol{e}_y
++r\cos\theta\boldsymbol{e}_z$$
+where $\boldsymbol{e}_x$, $\boldsymbol{e}_y$ and $\boldsymbol{e}_z$
+represent the Cartesian unit vectors.
+
+Now $\phi\in[0,2\pi]$ is the \underline{rotation} angle in $xy$-plane,
+and $\theta\in[0,\pi]$ in $z$-plane. We also have that:
+$$h_{r}=1\hspace{0.1in}\text{and}\hspace{0.1in}\boldsymbol{e}_{r}
+=\sin\theta\cos\phi\boldsymbol{e}_x
++\sin\theta\sin\phi\boldsymbol{e}_y+\cos\theta\boldsymbol{e}_z$$
+$$h_{\theta}=r\hspace{0.1in}\text{and}\hspace{0.1in}
+\boldsymbol{e}_{\theta}
+=\cos\theta\cos\phi\boldsymbol{e}_x+\cos\theta\sin\phi\boldsymbol{e}_y
+-\sin\theta\boldsymbol{e}_z$$
+$$h_{\phi}=r\sin\theta\hspace{0.1in}\text{and}\hspace{0.1in}\boldsymbol{e}_{\phi}
+=-\sin\phi\boldsymbol{e}_x+\cos\phi\boldsymbol{e}_y.$$
 
 \newpage
 
@@ -282,6 +306,37 @@ Conservative fields have zero curl, and their line integrals are path independen
 \newpage
 
 \subsection{Electrostatic Maxwell's equations}
+
+Firstly for a continuous charge distribution:
+\begin{align*}
+    \boldsymbol{E}(\boldsymbol{r})
+    &=-\frac{1}{4\pi\epsilon_0}
+    \int_V\rho(\boldsymbol{r}')
+    \frac{\boldsymbol{r}-\boldsymbol{r}'}{|\boldsymbol{r}-\boldsymbol{r}'|^3}
+    \dd V' \\
+    &=-\boldsymbol{\nabla}
+    \left(\frac{1}{4\pi\epsilon_0}
+    \int_V\rho(\boldsymbol{r}')
+    \frac{1}{|\boldsymbol{r}-\boldsymbol{r}'|}
+    \dd V'\right)
+\end{align*}
+and therefore $\boldsymbol{\nabla}\times
+\boldsymbol{E}=\boldsymbol{0}$ for \underline{static electric fields}.
+
+Hence electrostatic fields are \underline{conversative fields}:
+$$\int_{C_1}\boldsymbol{E}\cdot\dd\boldsymbol{r}=
+\int_{C_2}\boldsymbol{E}\cdot\dd\boldsymbol{r}$$
+and that
+$$-\int_{a}^{b}\boldsymbol{E}\cdot\dd\boldsymbol{r}
+=\phi(b)-\phi(a)$$
+where $\boldsymbol{E}(\boldsymbol{r})
+=-\boldsymbol{\nabla}\phi(\boldsymbol{r})$. Therefore:
+$$\phi(\boldsymbol{r})
+=\frac{1}{4\pi\epsilon_0}
+\int_V\rho(\boldsymbol{r}')
+\frac{1}{|\boldsymbol{r}-\boldsymbol{r}'|}
+\dd V'.$$
+
 
 \newpage
 

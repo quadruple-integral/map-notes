@@ -1,0 +1,2 @@
+\contentsline {section}{\numberline {1}Electrostatics}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Gauss' law}{3}{subsection.1.1}%
