@@ -11,17 +11,24 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{hyperref}
 \newcommand{\matr}[1]{\mathbf{#1}}
+\def\dbar{{\mathchar'26\mkern-12mu d}}
+
+\title{Electromagnetism and Relativity}
+\author{Notes by Christopher Shen}
+\date{Winter 2023 - Summer 2024}
 
 \begin{document}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
 
 \pagestyle{fancy}
 \fancyhead{}
 \fancyhead[L]{Electromagnetism and Relativity}
 \fancyhead[R]{Winter 2023 - Summer 2024}
-
-\tableofcontents
-
-\newpage
 
 \section{Suffix notation}
 
@@ -88,7 +95,15 @@ maybe merge with rotations?
 
 \subsection{Inertia tensors}
 
+\newpage
+
 \section{Taylor expansions}
+
+\subsection{1D expansions}
+
+\newpage
+
+\subsection{3D expansions}
 
 \newpage
 
@@ -224,6 +239,46 @@ $\dd\boldsymbol{r}_1$, $\dd\boldsymbol{r}_2$ and $\dd\boldsymbol{r}_3$ is:
     \dd u_1\hspace{0.03in}\dd u_2\hspace{0.03in}\dd u_3\hspace{0.03in}
 \end{align*}
 where $g$ is the \underline{determinant} of the metric tensor.
+
+\newpage
+
+\subsection{Vector operators in OCCs}
+
+\subsubsection{Gradient}
+Let $\boldsymbol{r}=\boldsymbol{r}(u_1,u_2,u_3)$.
+The \underline{gradient} of a scalar field
+in terms of this OCC is:
+$$\boldsymbol{\nabla}f(\boldsymbol{r})
+=\frac{1}{h_1}\frac{\partial f}{\partial u_1}\boldsymbol{e}_1
++\frac{1}{h_2}\frac{\partial f}{\partial u_2}\boldsymbol{e}_2
++\frac{1}{h_3}\frac{\partial f}{\partial u_3}\boldsymbol{e}_3.$$
+So let there be the following infinitesimal change:
+$$u_1\rightarrow u_1+\dd u_1,\hspace{0.1in}
+u_2\rightarrow u_2+\dd u_2,\hspace{0.1in}
+u_3\rightarrow u_3+\dd u_3$$
+and consider the following:
+\begin{align*}
+    \dd f(\boldsymbol{r})
+    &=\boldsymbol{\nabla}f(\boldsymbol{r})
+    \cdot\dd \boldsymbol{r} \\
+    &=\frac{\partial f}{\partial u_1}\dd u_1
+    +\frac{\partial f}{\partial u_2}\dd u_2
+    +\frac{\partial f}{\partial u_3}\dd u_3 \\
+    &=\left[\frac{1}{h_1}\frac{\partial f}{\partial u_1}\boldsymbol{e}_1
+    +\frac{1}{h_2}\frac{\partial f}{\partial u_2}\boldsymbol{e}_2
+    +\frac{1}{h_3}\frac{\partial f}{\partial u_3}\boldsymbol{e}_3\right]
+    \cdot\bigl[h_1\boldsymbol{e}_1\dd u_1
+    +h_2\boldsymbol{e}_2\dd u_2+h_3\boldsymbol{e}_3\dd u_3\bigr] \\
+    &=\left[\frac{1}{h_1}\frac{\partial f}{\partial u_1}\boldsymbol{e}_1
+    +\frac{1}{h_2}\frac{\partial f}{\partial u_2}\boldsymbol{e}_2
+    +\frac{1}{h_3}\frac{\partial f}{\partial u_3}\boldsymbol{e}_3\right]
+    \cdot\dd\boldsymbol{r}
+\end{align*}
+and our claim follows from equating terms.
+
+Here $h_i$ are our \underline{scale factors}
+and $\boldsymbol{e}_i$ our \underline{\textbf{orthogonal}} basis vectors.
+
 \newpage
 
 \section{Electrostatics}
@@ -307,7 +362,8 @@ Conservative fields have zero curl, and their line integrals are path independen
 
 \subsection{Electrostatic Maxwell's equations}
 
-Firstly for a continuous charge distribution:
+\subsubsection{Curl equation}
+For a continuous charge distribution:
 \begin{align*}
     \boldsymbol{E}(\boldsymbol{r})
     &=-\frac{1}{4\pi\epsilon_0}
@@ -326,21 +382,84 @@ and therefore $\boldsymbol{\nabla}\times
 Hence electrostatic fields are \underline{conversative fields}:
 $$\int_{C_1}\boldsymbol{E}\cdot\dd\boldsymbol{r}=
 \int_{C_2}\boldsymbol{E}\cdot\dd\boldsymbol{r}$$
-and that
+and we have a generalisation of the fundamental theorem of calculus:
 $$-\int_{a}^{b}\boldsymbol{E}\cdot\dd\boldsymbol{r}
 =\phi(b)-\phi(a)$$
 where $\boldsymbol{E}(\boldsymbol{r})
-=-\boldsymbol{\nabla}\phi(\boldsymbol{r})$. Therefore:
+=-\boldsymbol{\nabla}\phi(\boldsymbol{r})$. Therefore
+our \underline{potential} takes the expression:
 $$\phi(\boldsymbol{r})
 =\frac{1}{4\pi\epsilon_0}
 \int_V\rho(\boldsymbol{r}')
 \frac{1}{|\boldsymbol{r}-\boldsymbol{r}'|}
-\dd V'.$$
+\dd V'$$
+and has units \underline{Volts} $V$ or $JC^{-1}$.
+We define the \textbf{potential difference}:
+\begin{align*}
+    V_{A\rightarrow B}
+    &=\phi_B-\phi_A \\
+    &=-\int_C\boldsymbol{E}\cdot\dd\boldsymbol{r}
+\end{align*}
+and is the energy per unit charge to move
+\underline{small} test charge from $A$ to $B$:
+$$V_{A\rightarrow B}=
+\lim_{q\rightarrow 0}\frac{1}{q}W_{A\rightarrow B}
+=-\frac{1}{q}\int_C\boldsymbol{F}\cdot\dd\boldsymbol{r}$$
+for here work is done \underline{against} force.
+
+Now consider charge $q$ at $\boldsymbol{r}$ subject to \underline{external}
+\underline{electrostatic} field.
+$$\therefore\boldsymbol{E}_{ext}(\boldsymbol{r})
+=-\boldsymbol{\nabla}\phi_{ext}(\boldsymbol{r})$$
+$$\therefore W_{ext}=
+\int_V\rho(\boldsymbol{r})\phi_{ext}
+(\boldsymbol{r})\dd V$$
+Note that $W_{ext}$ is the \underbar{interaction energy}.
+
+\newpage
+
+\subsubsection{Divergence equation}
+Now consider:
+\begin{align*}
+    \boldsymbol{\nabla}\cdot
+    \boldsymbol{E}
+    &=\boldsymbol{\nabla}\cdot
+    \bigl[-\boldsymbol{\nabla}
+    \phi(\boldsymbol{r})\bigr] \\
+    &=-\boldsymbol{\nabla}^2\phi
+    (\boldsymbol{r}) \\
+    &=-\boldsymbol{\nabla}^2
+    \left(\frac{1}{4\pi\epsilon_0}
+    \int_V\rho(\boldsymbol{r}')
+    \frac{1}{|\boldsymbol{r}-\boldsymbol{r}'|}
+    \dd V'\right) \\
+    &=-\frac{1}{4\pi\epsilon_0}
+    \int_V\rho(\boldsymbol{r}')\dd V'
+    \left[\boldsymbol{\nabla}^2
+    \left(\frac{1}{|\boldsymbol{r}-\boldsymbol{r}'|}\right)\right] \\
+    &=-\frac{1}{4\pi\epsilon_0}
+    \int_V\rho(\boldsymbol{r}')\dd V'
+    \left[-4\pi\delta(\boldsymbol{r}
+    -\boldsymbol{r}')\right] \\
+    &=\frac{\rho(\boldsymbol{r})}{\epsilon_0}
+\end{align*}
+due to the \underline{sift} and \underline{symmetric}
+properties of the delta delta function.
+
+Now previously we also used the following result:
+$$\boldsymbol{\nabla}^2
+\left(\frac{1}{\boldsymbol{r}}\right)
+=-4\pi\delta(\boldsymbol{r}).$$ \\
+
+When $\boldsymbol{r}\neq\boldsymbol{0}$ we have that
+
 
 
 \newpage
 
 \subsection{Electric dipoles}
+
+\subsubsection{Potential and electric field}
 \textbf{Dipoles} consist of \underline{two} \underline{equal} and \textbf{opposite point charges} that are $\boldsymbol{d}$ apart. 
 
 An \textbf{ideal dipole} is defined as when the following \textbf{dipole limit} is \underline{finite} and \underline{constant}:
@@ -355,9 +474,51 @@ where we have Taylor expanded the \underline{first term} about $|\boldsymbol{r}-
 $$\boldsymbol{E}(\boldsymbol{r})=\frac{1}{4\pi\epsilon_0}\left(\frac{3\boldsymbol{p}\cdot\boldsymbol{r}}{r^5} \boldsymbol{r}-\frac{1}{r^3} \boldsymbol{p}\right),$$
 since $\boldsymbol{E}=-\boldsymbol{\nabla}\phi(\boldsymbol{r})$. Note that these formulae are in \underline{Cartesian} coordinates.
 
-Now we repeat this in spherical.
+Now let our dipole with moment $\boldsymbol{p}
+=p\boldsymbol{e}_z$ be at:
+$$\boldsymbol{r}=r\sin\theta\cos\phi\boldsymbol{e}_x
++r\sin\theta\sin\phi\boldsymbol{e}_y
++r\cos\theta\boldsymbol{e}_z.$$
+Then in spherical coordinates $(r,\theta,\chi)$ we have that:
+\begin{align*}
+    \phi(\boldsymbol{r})
+    &=\frac{1}{4\pi\epsilon_0}\frac{\boldsymbol{p}\cdot\boldsymbol{r}}{r^3} \\
+    &=\frac{1}{4\pi\epsilon_0}\frac{p\cos\theta}{r^2}
+\end{align*}
+and
+\begin{align*}
+    \boldsymbol{E}(\boldsymbol{r})
+    &=-\boldsymbol{\nabla}\phi
+    (\boldsymbol{r}) \\
+    &=-\left(\frac{\partial\phi}{\partial r}\boldsymbol{e}_r
+    +\frac{1}{r}\frac{\partial\phi}{\partial\theta}\boldsymbol{e}_{\theta}
+    +\frac{1}{r\sin\theta}\frac{\partial\phi}{\partial\chi}\boldsymbol{e}_{\chi}\right) \\
+    &=\frac{1}{4\pi\epsilon_0}\frac{p}{r^3}
+    \Bigl[2\cos\theta\boldsymbol{e}_r
+    +\sin\theta\boldsymbol{e}_{\theta}\Bigr]
+\end{align*}
+where $\chi$ represents the anticlockwise rotation
+in the $xy$-plane.
 
-Force, torque and energy.
+\newpage
+
+\subsubsection{Force, torque and energy}
+Consider a dipole at $\boldsymbol{r}$ with moment $\boldsymbol{p}=q\boldsymbol{d}$.
+
+The force on this dipole due to an
+\underline{external} electric field $\boldsymbol{E}_{ext}$ is:
+\begin{align*}
+    \boldsymbol{F}(\boldsymbol{r})
+    &=\boldsymbol{F}_{-q}+\boldsymbol{F}_{+q} \\
+    &=-q\boldsymbol{E}_{ext}(\boldsymbol{r})
+    +q\boldsymbol{E}_{ext}(\boldsymbol{r}+\boldsymbol{d})
+\end{align*}
+where we have $-q$ at $\boldsymbol{r}$ and $-q$ at $\boldsymbol{r}+\boldsymbol{d}$.
+Now in the dipole limit:
+$$\boldsymbol{F}(\boldsymbol{r})
+=(\boldsymbol{p}\cdot\boldsymbol{\nabla})
+\boldsymbol{E}_{ext}(\boldsymbol{r})$$
+since $\boldsymbol{d}\rightarrow0$ and we use the three dimensional Taylor expansion.
 
 \subsubsection{Multidipole expansion}
 

@@ -13,6 +13,9 @@
 \newcommand{\matr}[1]{\mathbf{#1}}
 \def\dbar{{\mathchar'26\mkern-12mu d}}
 
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+
 \title{notes title}
 \author{Notes by Christopher Shen}
 \date{date}
