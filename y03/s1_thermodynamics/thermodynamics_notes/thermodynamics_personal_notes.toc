@@ -29,7 +29,7 @@
 \contentsline {subsubsection}{\numberline {11.2.3}Liquefying gases}{16}{subsubsection.11.2.3}%
 \contentsline {section}{\numberline {12}Phase transitions}{17}{section.12}%
 \contentsline {subsection}{\numberline {12.1}PT diagrams}{17}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Van der Waals state equation}{17}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}PV diagrams}{17}{subsection.12.3}%
-\contentsline {section}{\numberline {13}Chemical potentials}{18}{section.13}%
-\contentsline {section}{\numberline {14}Third law}{19}{section.14}%
+\contentsline {subsection}{\numberline {12.2}Van der Waals state equation}{18}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}PV diagrams}{19}{subsection.12.3}%
+\contentsline {section}{\numberline {13}Chemical potentials}{20}{section.13}%
+\contentsline {section}{\numberline {14}Third law}{21}{section.14}%

@@ -595,11 +595,15 @@ Consider:
 $$\mathcal{L}[y]=\mu r(x)y+f(x)$$
 where $f(x)$ is our non-homogeneous term, and that we define
 $$\mathcal{L}[y]=-\dv{x}\Bigl[P(x)\dv{y}{x}\Bigl]+q(x)y.$$
-Given that this ODE satisfies the S-L boundary conditions:
+Assume that this ODE satisfies regular S-L boundary conditions.
+
+Firstly we solve the corresponding homogeneous S-L problem:
 $$\mathcal{L}[y]=\lambda r(x)y$$
-is solved by a sum of eigenfunctions
-$$y(x)=\sum_{n=1}^{\infty} b_n\phi_n(x).$$
-Substituting this into our original ODE gives:
+for non-trivial $\lambda_n$ and $\phi_n(x)$.
+
+Now let the general solution to our non-homogeneous S-L problem be:
+$$y(x)=\sum_{n=1}^{\infty} b_n\phi_n(x)$$
+and substituting this yields:
 \begin{align*}
     \sum_{n=1}^{\infty}b_n\mathcal{L}[\phi_n(x)]
     &=r(x)\sum_{n=1}^{\infty}b_n\lambda_n\phi_n(x) \\
@@ -623,6 +627,74 @@ $$b_n=\frac{c_n}{\lambda_n-\mu}.$$
 
 \newpage
 
+\subsection{Non-homogeneous PDEs}
+Consider the following non-homogeneous PDE:
+$$r(x)\frac{\partial u}{\partial t}
+=\frac{\partial}{\partial x}\Bigl[
+p(x)\frac{\partial u}{\partial x}
+\Bigr]-q(x)u(x,t)+F(x,t)$$
+with boundary and initial conditions:
+\begin{itemize}
+    \item $\displaystyle\frac{\partial}{\partial x}
+    u(0,t)-h_1 u(0,t)=0$
+    \item $\displaystyle\frac{\partial}{\partial x}
+    u(1,t)-h_2 u(1,t)=0$
+    \item $u(x,0)=f(x)$.
+\end{itemize}
+Firstly we solve the \underline{homogenous} 
+case via separation of variables. Let:
+$$u(x,t)=X(x)T(t)$$
+and after some algebra:
+$$\frac{1}{rX}\Bigl[p'X'+pX''
+-qX\Bigr]=\frac{\dot{T}}{T}=-\lambda.$$
+This yields two ODEs:
+$$\dot{T}+\lambda T=0$$
+$$-\bigl[pX'\bigr]'+qX=\lambda rX$$
+with boundary conditions:
+$$X'(0)-h_1 X(0)=0$$
+$$X'(1)-h_2 X(1)=0$$
+Clearly our second ODE is of S-L form.
+We are now going to \underline{assume} that this
+regular S-L problem has \underline{non-trivial} $\lambda_n$
+and orthonormal eigenfunctions $\phi_n(x)$.
+
+Let the general solution to our PDE be:
+$$u(x,t)=\sum_{n=1}^{\infty}b_n(t)\phi_n(x).$$
+Substituting this into our PDE yields:
+$$r(x)\sum_{n=1}^{\infty}\dot{b_n}(t)\phi_n(x)
+=\sum_{n=1}^{\infty}b_n(t)\Bigl[\Bigl(p(x)
+\phi'_n(x)\Bigr)'-q(x)\phi_n(x)\Bigr]+F(x,t).$$
+
+\newpage
+
+Now since we have a S-L problem:
+$$\Bigl(p(x)\phi'_n(x)\Bigr)'-q(x)\phi_n(x)
+=-\lambda_n\phi_n(x)r(x)$$
+and after dividing through our PDE by $r(x)$ we get:
+$$\sum_{n=1}^{\infty}\dot{b_n}(t)\phi_n(x)
+=\sum_{n=1}^{\infty}b_n(t)\Bigl[-\lambda_n\phi_n(x)\Bigr]
++\frac{F(x,t)}{r(x)}.$$
+But we can also expand our non-homogeneous term as a sum:
+$$\frac{F(x,t)}{r(x)}=\sum_{n=1}^{\infty}\gamma_n(t)\phi_n(x)$$
+and its coefficients are:
+$$\gamma_n(t)=\int_{0}^{1}F(x,t)\phi_n(x)\dd x$$
+in $L^2([0,1],r(x))$. Therefore after some algebra:
+$$\sum_{n=1}^{\infty}\Bigl[\dot{b_n}(t)
++\lambda_n b_n(t)-\gamma_n(t)\Bigr]\phi_n(x)=0$$
+and yields the following ODE:
+$$\dot{b_n}(t)
++\lambda_n b_n(t)-\gamma_n(t)=0.$$
+Solution is via integrating factors:
+$$b_n(t)=e^{-\lambda_n t}
+\int_{0}^{t}\gamma_n(s)e^{\lambda_n s}\dd s
++e^{-\lambda_n t}b_n(0).$$
+Finally using $u(x,0)=f(x)$:
+$$u(x,0)=\sum_{n=1}^{\infty}b_n(0)\phi_n(x)
+=f(x)$$
+and we get
+$$b_n(0)=\int_{0}^{1}r(x)f(x)\phi_n(x)\dd x.$$
+\newpage
+
 \subsection{Singular S-L problems}
 quite alot of theory not covered in this course
 
@@ -634,10 +706,33 @@ conditions for singular problems
 
 \newpage
 
-\subsection{S-L Series solutions}
-
-\newpage
-
 \section{Laplace transforms}
+So let $f(t)$ be defined for $t\in[0,\infty)$. Its Laplace transform is:
+$$\mathcal{L}[f(t)]=\int_{0}^{\infty}e^{-st}f(t)\dd t.$$
+Let functions of exponential order be defined as:
+$$\forall t\in[0,\infty);\exists A>0\hspace{0.05in}\text{and}\hspace{0.05in}
+B\in\mathbb{R}:|f(t)|\leq Ae^{Bt}$$
+and we denote such functions as $f\in E$.
+
+For \underline{sufficiently} large $s$, the Laplace transform
+of $f\in E$ converges.
+
+\subsection{Properties}
+\subsubsection{Reduction of order}
+Applying the Laplace transform to derivatives:
+$$\mathcal{L}[f'(t)]=s\mathcal{L}[f(t)]-f(0)$$
+for $\forall f,f'\in E$ and generalising this via induction:
+\begin{align*}
+    \mathcal{L}[f^{(n)}(t)]
+    &=s^n\mathcal{L}[f(t)]
+    -s^{(n-1)}f^{(0)}(0)-s^{(n-2)}f^{(1)}(0) \\
+    &\quad-\dots-sf^{(n-2)}(0)-f^{(n-1)}(0).
+\end{align*}
+
+\subsubsection{Shifts, scaling and derivatives}
+
+\subsection{Standard transforms}
+
+\subsection{Applications}
 
 \end{document}
