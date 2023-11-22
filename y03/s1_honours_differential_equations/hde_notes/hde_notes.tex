@@ -712,16 +712,28 @@ $$\mathcal{L}[f(t)]=\int_{0}^{\infty}e^{-st}f(t)\dd t.$$
 Let functions of exponential order be defined as:
 $$\forall t\in[0,\infty);\exists A>0\hspace{0.05in}\text{and}\hspace{0.05in}
 B\in\mathbb{R}:|f(t)|\leq Ae^{Bt}$$
-and we denote such functions as $f\in E$.
+where $f$ is piecewise continous and
+we denote such functions as $f\in E$.
 
 For \underline{sufficiently} large $s$, the Laplace transform
-of $f\in E$ converges.
+$f\in E$ converges.
 
 \subsection{Properties}
+\subsubsection{Inversion formula}
+Now let $F(s)=\mathcal{L}[f(t)]$. We have
+the following inversion formula:
+\begin{align*}
+    f(t)
+    &=\mathcal{L}^{-1}[F(s)] \\
+    &=\frac{1}{2\pi i}\int_{\gamma-i\infty}^
+    {\gamma+i\infty}e^{st}F(s)\dd s.
+\end{align*}
+
 \subsubsection{Reduction of order}
 Applying the Laplace transform to derivatives:
 $$\mathcal{L}[f'(t)]=s\mathcal{L}[f(t)]-f(0)$$
-for $\forall f,f'\in E$ and generalising this via induction:
+for $\forall f,f'\in E$ and 
+generalising this via induction gives:
 \begin{align*}
     \mathcal{L}[f^{(n)}(t)]
     &=s^n\mathcal{L}[f(t)]
@@ -732,6 +744,8 @@ for $\forall f,f'\in E$ and generalising this via induction:
 \subsubsection{Shifts, scaling and derivatives}
 
 \subsection{Standard transforms}
+
+include partial fraction theory
 
 \subsection{Applications}
 

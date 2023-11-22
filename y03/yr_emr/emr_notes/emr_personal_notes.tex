@@ -124,10 +124,14 @@ chain rules, important identities
 \subsubsection{Line, volume and surface integrals}
 
 \subsubsection{Divergence theorem}
+Consider \underline{closed} surface $S$
+with volume $V$. We have that:
+$$\int_V\boldsymbol{\nabla}\cdot\boldsymbol{E}\dd V
+=\oint_S\boldsymbol{E}\cdot\dd\boldsymbol{S}.$$
 
 \subsubsection{Stokes's theorem}
-Consider surface $S$ \underline{enclosed}
-by line $C$. We then have that:
+Consider \underline{open} surface $S$ with
+line $C$ as its boundary. We then have that:
 $$\int_S\boldsymbol{\nabla}\times\boldsymbol{E}\cdot
 \dd\boldsymbol{S}=
 \oint_C\boldsymbol{E}\cdot\dd\boldsymbol{r}.$$
@@ -194,6 +198,15 @@ $$h_{\theta}=r\hspace{0.1in}\text{and}\hspace{0.1in}
 -\sin\theta\boldsymbol{e}_z$$
 $$h_{\phi}=r\sin\theta\hspace{0.1in}\text{and}\hspace{0.1in}\boldsymbol{e}_{\phi}
 =-\sin\phi\boldsymbol{e}_x+\cos\phi\boldsymbol{e}_y.$$
+We note that spherical coordinates are orthongonal:
+$$\boldsymbol{e}_r\times\boldsymbol{e}_\theta
+=\boldsymbol{e}_\phi,
+\hspace{0.1in}
+\boldsymbol{e}_\theta\times\boldsymbol{e}_\phi
+=\boldsymbol{e}_r
+\hspace{0.1in}\text{and}\hspace{0.1in}
+\boldsymbol{e}_\phi\times\boldsymbol{e}_r
+=\boldsymbol{e}_\theta.$$
 
 \newpage
 
@@ -449,11 +462,42 @@ properties of the delta delta function.
 Now previously we also used the following result:
 $$\boldsymbol{\nabla}^2
 \left(\frac{1}{\boldsymbol{r}}\right)
-=-4\pi\delta(\boldsymbol{r}).$$ \\
+=-4\pi\delta(\boldsymbol{r}).$$
 
-When $\boldsymbol{r}\neq\boldsymbol{0}$ we have that
-
-
+When $\boldsymbol{r}\neq\boldsymbol{0}$ we have that:
+\begin{align*}
+    \boldsymbol{\nabla}^2\left[\frac{1}{r}\right]
+    &=\frac{\partial}{\partial x_i}\left[
+    -\frac{x_i}{r^3}
+    \right] \\
+    &=\left[-\frac{1}{r^3}\delta_{ii}
+    -x_i\frac{3}{2}r^{-5}2x_i\right] \\
+    &=0.
+\end{align*}
+Now if $\boldsymbol{r}=\boldsymbol{0}$ consider the following
+volume integral of an $\epsilon$ sized sphere:
+\begin{align*}
+    \int_{V_\epsilon}\boldsymbol{\nabla}^2\left[
+    \frac{1}{r}\right]\dd V
+    &=-\int_{V_\epsilon}\boldsymbol{\nabla}\cdot\left[
+    \frac{\boldsymbol{r}}{r^3}\right]\dd V \\
+    &=-\int_{S_\epsilon}
+    \frac{\boldsymbol{r}}{r^3}\cdot
+    \dd\boldsymbol{S}
+\end{align*}
+where in the final step we used the divergence theorem.
+On the surface of our sphere, $\boldsymbol{r}
+=\epsilon\boldsymbol{e}_r$ and since:
+\begin{align*}
+    \dd\boldsymbol{S}
+    &=\left(\frac{\partial\boldsymbol{r}}
+    {\partial u}\times
+    \frac{\partial\boldsymbol{r}}{\partial v}\right)
+    \dd u\dd v \\
+    &=r^2\sin\theta\boldsymbol{e}_r\dd\theta\dd\phi
+\end{align*}
+evaluating our surface integral yields $-4\pi$. We then deduce
+the Dirac delta because at $\boldsymbol{r}=\boldsymbol{0}$ the charge is unbounded.
 
 \newpage
 
@@ -503,6 +547,7 @@ in the $xy$-plane.
 \newpage
 
 \subsubsection{Force, torque and energy}
+
 Consider a dipole at $\boldsymbol{r}$ with moment $\boldsymbol{p}=q\boldsymbol{d}$.
 
 The force on this dipole due to an
@@ -520,6 +565,21 @@ $$\boldsymbol{F}(\boldsymbol{r})
 \boldsymbol{E}_{ext}(\boldsymbol{r})$$
 since $\boldsymbol{d}\rightarrow0$ and we use the three dimensional Taylor expansion.
 
+The \underline{torque} on our dipole from external electric field is:
+$$\boldsymbol{G}(\boldsymbol{r})
+=\boldsymbol{p}\times\boldsymbol{E}_{ext}(\boldsymbol{r}).$$
+The \underline{interaction energy} is the following:
+\begin{align*}
+    W
+    &=-q\phi_{ext}(\boldsymbol{r})
+    +q\phi_{ext}(\boldsymbol{r}+\boldsymbol{d}) \\
+    &=-\boldsymbol{p}\cdot
+    \boldsymbol{E}_{ext}(\boldsymbol{r})
+\end{align*}
+where we Taylor expand the second expression.
+
+\newpage
+
 \subsubsection{Multidipole expansion}
 
 potential
@@ -535,6 +595,10 @@ $$\int_S\boldsymbol{E}\cdot d\boldsymbol{S}
 where $Q_{enc}$ is the total charge enclosed by volume $V$. This result follows from the application of the \underline{divergence theorem} and is useful in problems with symmetry. 
 
 \subsubsection{Boundaries}
+Consider surface $S$ with charge density $\sigma$
+separating electric fields $\boldsymbol{E}_1$ and
+$\boldsymbol{E}_2$.
+Firstly consider the \underline{normal} component: 
 
 \subsubsection{Conductors}
 special case for electrostatics
@@ -559,9 +623,17 @@ and one of the following boundary conditions:
     \item 
 \end{enumerate}
 
-method of images
+\subsubsection{Method of images}
+
+\subsection{Electrostatic energy}
+
+\newpage
 
 \subsection{Capacitors}
+
+\subsubsection{Parallel plates}
+
+\subsubsection{Concentric spheres}
 
 \newpage
 

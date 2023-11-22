@@ -120,6 +120,8 @@ INPUT c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT ./han_workshops.aux
 INPUT ./han_workshops.aux
 INPUT han_workshops.aux
@@ -132,6 +134,9 @@ INPUT w07.aux
 INPUT ./w08.aux
 INPUT ./w08.aux
 INPUT w08.aux
+INPUT ./w09.aux
+INPUT ./w09.aux
+INPUT w09.aux
 OUTPUT han_workshops.aux
 INPUT c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -220,6 +225,13 @@ OUTPUT w08.aux
 INPUT ./w08.tex
 INPUT ./w08.tex
 INPUT w08.tex
+INPUT ./w09.tex
+INPUT ./w09.tex
+OUTPUT w09.aux
+INPUT ./w09.tex
+INPUT ./w09.tex
+INPUT w09.tex
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT han_workshops.aux
 INPUT ./w06.aux
 INPUT ./w06.aux
@@ -230,10 +242,14 @@ INPUT w07.aux
 INPUT ./w08.aux
 INPUT ./w08.aux
 INPUT w08.aux
+INPUT ./w09.aux
+INPUT ./w09.aux
+INPUT w09.aux
 INPUT ./han_workshops.out
 INPUT ./han_workshops.out
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb

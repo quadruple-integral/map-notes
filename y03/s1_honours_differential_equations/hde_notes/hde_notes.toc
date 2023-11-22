@@ -31,7 +31,8 @@
 \contentsline {subsection}{\numberline {4.4}Singular S-L problems}{25}{subsection.4.4}%
 \contentsline {section}{\numberline {5}Laplace transforms}{26}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Properties}{26}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Reduction of order}{26}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Shifts, scaling and derivatives}{26}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.1}Inversion formula}{26}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Reduction of order}{26}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Shifts, scaling and derivatives}{26}{subsubsection.5.1.3}%
 \contentsline {subsection}{\numberline {5.2}Standard transforms}{26}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Applications}{26}{subsection.5.3}%

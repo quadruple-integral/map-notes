@@ -10,8 +10,15 @@
 \usepackage{physics}
 \usepackage{graphicx} % Required for inserting images
 \usepackage{hyperref}
+\usepackage{enumitem}
 \newcommand{\matr}[1]{\mathbf{#1}}
 \def\dbar{{\mathchar'26\mkern-12mu d}}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
 
 \title{Honours Analysis}
 \author{Notes by Christopher Shen}
@@ -66,31 +73,48 @@ uniform continuity - if $\delta$ is purely in $\epsilon$ form
 \section{Lebesgue integration}
 
 \subsection{Characteristic and step functions}
-The \textbf{characteristic function} is a real function such that
-$$\chi_E =
-\left\{
-\begin{array}{ll}
-	1  & \mbox{} x \in E \\
-	0 & \mbox{otherwise}
-\end{array}
-\right.$$
-where $E \subset \mathbb{R}$. We then define that:
-$$\int \chi_{I} = \lambda(I)$$
-for $\lambda(I)$ is the length of an internal $I$.
+\begin{definition}[Characteristic functions]
+    \hfill \\
+    The characteristic function is defined as
+    a real function such that:
+    $$\chi_E(x) =
+    \left\{
+    \begin{array}{ll}
+        1  & \mbox{} x \in E \\
+        0 & \mbox{otherwise}
+    \end{array}
+    \right.$$
+    where $E\subset\mathbb{R}$.
+\end{definition}
 
-The \textbf{step function} \underline{with respect to} $\{x_0, \dots, x_n\}$
-for some $n \in \mathbb{N}$ is:
-$$\phi =
-\left\{
-\begin{array}{ll}
+\begin{remark}
+    Therefore the integral of a characteristic function is:
+    $$\int\chi_{E} = \lambda(E)$$
+    for $\lambda(E)$ is the length of an internal $E$.
+\end{remark}
+
+\begin{definition}[Step functions]
+    \hfill \\
+    The step function with respect to
+    finite set $\{x_0, \dots, x_n\}$
+    for some $n \in \mathbb{N}$ is:
+    $$\phi(x) =
+    \left\{
+    \begin{array}{ll}
 	0  &  x < x_0 \hspace{0.06in} \text{or} \hspace{0.06in} x > x_n \\
-	c_j & \mbox{if} \hspace{0.06in} x \in (x_{j-1}, x_j); \hspace{0.06in} 1 \leq j \leq n
-\end{array}
-\right.$$
-for some $n \in \mathbb{N}$. In other words we have the following relation
-$$\phi(x) = \sum_{j=1}^{n} c_j \chi_{(x_{j-1}, x_j)}$$
-and the integral of this is
-$$\int \phi = \sum_{j=1}^{n} c_j (x_{j-1}-x_j).$$
+	c_j & \mbox{if} \hspace{0.06in} x \in (x_{j-1}, x_j); \hspace{0.06in} 1 \leq j \leq n.
+    \end{array}
+    \right.$$
+\end{definition}
+
+\begin{remark}
+    Step functions are a sum of characteristic functions:
+    $$\phi(x)
+    =\sum_{j=1}^{n} c_j \chi_{(x_{j-1}, x_j)}(x)$$
+    and its integral is
+    $$\int\phi=\sum_{j=1}^{n} c_j (x_{j-1}-x_j).$$
+\end{remark}
+
 Importantly the \underline{sum} of two step functions is another step function.
     
 \newpage

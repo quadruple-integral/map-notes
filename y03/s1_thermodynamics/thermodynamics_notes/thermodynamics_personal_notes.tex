@@ -283,6 +283,33 @@ The Van der Waals equation is a modification of the
 ideal gas equation:
 $$\left(P+\frac{an^2}{V^2}\right)
 \bigl(V-nb\bigr)=nRT$$
+and defines the volume $V$ occupied by $n$ moles of gas
+at pressure $P$ and temperature $T$.
+The \underline{molar} version of this is the following:
+$$\left(P+\frac{a}{v^2}\right)(v-b)=RT$$
+where we define the \underline{molar volume}
+as $v=\frac{V}{n}$.
+
+\subsubsection{Helmholtz and Gibbs free energies}
+Since we have that
+$\dd F=-S\dd T-P\dd V$ at fixed temperatures:
+$$\left(\frac{\partial F}{\partial V}\right)_T=-P$$
+and integrating the molar version of this:
+\begin{align*}
+    f
+    &=-\int P\hspace{0.03in}\dd v \\
+    &=\tau(T)-RT\ln(v-b)-\frac{a}{v}
+\end{align*}
+where we have substituted the Van der Waals equation.
+
+For the Gibbs free energy because
+$f=u-TS$ we then have that:
+\begin{align*}
+    g
+    &=u+Pv-TS \\
+    &=f+Pv \\
+    &=\tau(T)-RT\ln(v-b)-\frac{a}{v}+Pv
+\end{align*}
 
 
 \newpage
