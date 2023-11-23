@@ -137,6 +137,9 @@ INPUT w08.aux
 INPUT ./w09.aux
 INPUT ./w09.aux
 INPUT w09.aux
+INPUT ./w10.aux
+INPUT ./w10.aux
+INPUT w10.aux
 OUTPUT han_workshops.aux
 INPUT c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -232,6 +235,12 @@ INPUT ./w09.tex
 INPUT ./w09.tex
 INPUT w09.tex
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
+INPUT ./w10.tex
+INPUT ./w10.tex
+OUTPUT w10.aux
+INPUT ./w10.tex
+INPUT ./w10.tex
+INPUT w10.tex
 INPUT han_workshops.aux
 INPUT ./w06.aux
 INPUT ./w06.aux
@@ -245,6 +254,9 @@ INPUT w08.aux
 INPUT ./w09.aux
 INPUT ./w09.aux
 INPUT w09.aux
+INPUT ./w10.aux
+INPUT ./w10.aux
+INPUT w10.aux
 INPUT ./han_workshops.out
 INPUT ./han_workshops.out
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb

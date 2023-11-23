@@ -141,7 +141,7 @@ Similarly we have that:
     Let $-\infty\leq a<b<\infty$ and let
     $f$ be integrable on $(u,b)$ for $\forall u\in(a,b)$. \\
     Then $f$ is integrable on interval $(a,b)$ \textbf{if and only if}:
-    $$\exists m<\infty:\forall u\in(a,b);\int_{u}^{b}|f|<m.$$
+    $$\exists M<\infty:\forall u\in(a,b);\int_{u}^{b}|f|<M.$$
 \end{theorem}
 
 \newpage
@@ -193,10 +193,62 @@ Similarly we have that:
 
     \begin{proof}
         $\rightarrow$ direction. \\
-        time is up.
+        Let $f$ be Riemann-integrable on $(a,b)$. Then $f$
+        is also Lebesgue-integrable on $(a,b)$ and so is $|f|$.
+        By definition our integral value must be bounded:
+        $$\int_{a}^{b}|f|\leq M$$
+        and by T4.8(c) every subinterval of $I=(a,b)$ must also
+        be integrable. \\
+        This includes subintervals of form $(u,b)$ where
+        $u\in(a,b)$ and therefore:
+        $$\int_{(u,b)}|f|\leq M.$$
     \end{proof}
 
     \newpage
 
-    \item
+    \item 7
+    \item 8
+    \item 9
+    
+    \newpage
+
+    \item Show that:
+    $$f(x)=(-1)^{[x]}\frac{1}{[x]}$$
+    is not integrable on $[1,\infty)$. \\
+
+    Firstly consider the \underline{negation}
+    of T4.2(c): \\
+    If $|f|$ is not integrable on $I$,
+    then $f$ is not integrable on $I$.
+
+    We can check for the integrability of $|f|$
+    via T4.3(b).
+
+    Our function can be written as a sum
+    of characteristic functions:
+    \begin{align*}
+        |f(x)|
+        &=\frac{1}{[x]} \\
+        &=\sum_{n=1}^{\infty}f_n(x)
+    \end{align*}
+    where
+    $$f_n(x)=\frac{1}{n}\chi_{[n,n+1)}(x)\geq0$$
+    and $n\in\mathbb{N}$. Then let $I=[1,\infty)$ and consider the following:
+    \begin{align*}
+        \sum_{n=1}^{\infty}\int_I f_n
+        &=\sum_{n=1}^{\infty}\frac{1}{n}
+        \int_I\chi_{[n,n+1)}(x) \\
+        &=\sum_{n=1}^{\infty}\frac{1}{n} \\
+        &\geq M
+    \end{align*}
+    for $\forall M\in\mathbb{R}$. 
+    By T4.3(b), $|f|$
+    is not integrable on $[1,\infty)$.
+
+    Then by T4.2(c), $f$ is not integrable
+    on $[1,\infty)$.
+
+    \newpage
+
+    \item 11
 \end{enumerate}
