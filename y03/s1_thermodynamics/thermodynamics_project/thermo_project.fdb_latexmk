@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1700162156 "c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_thermodynamics/thermodynamics_project/main.tex" "main.pdf" "main" 1700162157 0
-  "c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_thermodynamics/thermodynamics_project/main.tex" 1700162155 2429 bd1ba56f340616e46e4d74672517befc ""
+["pdflatex"] 1700840739 "c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_thermodynamics/thermodynamics_project/thermo_project.tex" "thermo_project.pdf" "thermo_project" 1700840740 0
+  "c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_thermodynamics/thermodynamics_project/thermo_project.tex" 1700840736 2429 bd1ba56f340616e46e4d74672517befc ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1693924610 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1693924610 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -104,14 +104,14 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693929215 4703462 5df3913b339a4fb9b4dc6c57dc378863 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693929334 8183624 edc78c4bf2213c105a673cf72ac18bae ""
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1700162157 2099 9405e0a973d1fd86a452680829bbe04c "pdflatex"
-  "main.out" 1700162157 2043 cb949217afd13507ca3017218cc2d4f8 "pdflatex"
-  "main.tex" 1700162155 2429 bd1ba56f340616e46e4d74672517befc ""
-  "main.toc" 1700162157 1051 ad7057502c26fd77d1dc838de1c35627 "pdflatex"
+  "thermo_project.aux" 1700840740 2099 9405e0a973d1fd86a452680829bbe04c "pdflatex"
+  "thermo_project.out" 1700840740 2043 cb949217afd13507ca3017218cc2d4f8 "pdflatex"
+  "thermo_project.tex" 1700840736 2429 bd1ba56f340616e46e4d74672517befc ""
+  "thermo_project.toc" 1700840740 1051 ad7057502c26fd77d1dc838de1c35627 "pdflatex"
   (generated)
-  "main.aux"
-  "main.log"
-  "main.out"
-  "main.pdf"
-  "main.toc"
+  "thermo_project.aux"
+  "thermo_project.log"
+  "thermo_project.out"
+  "thermo_project.pdf"
+  "thermo_project.toc"
   (rewritten before read)

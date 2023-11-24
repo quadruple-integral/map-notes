@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  16 NOV 2023 19:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  24 NOV 2023 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_thermodynamics/thermodynamics_project/main.tex"
-(c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_thermodynamics/thermodynamics_project/main.tex
+**"c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_thermodynamics/thermodynamics_project/thermo_project.tex"
+(c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_thermodynamics/thermodynamics_project/thermo_project.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -360,8 +360,8 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip67
-) (./main.aux)
-\openout1 = `main.aux'.
+) (./thermo_project.aux)
+\openout1 = `thermo_project.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
@@ -436,9 +436,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 20.
- (./main.out) (./main.out)
+ (./thermo_project.out) (./thermo_project.out)
 \@outlinefile=\write3
-\openout3 = `main.out'.
+\openout3 = `thermo_project.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -447,9 +447,9 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./main.toc)
+) (./thermo_project.toc)
 \tf@toc=\write4
-\openout4 = `main.toc'.
+\openout4 = `thermo_project.toc'.
 
  [1
 
@@ -478,24 +478,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 36.
 
-[2] [3] [4] [5] (./main.aux)
+[2] [3] [4] [5] (./thermo_project.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
+Package rerunfilecheck Info: File `thermo_project.out' has not changed.
 (rerunfilecheck)             Checksum: CB949217AFD13507CA3017218CC2D4F8;2043.
  ) 
 Here is how much of TeX's memory you used:
  11644 strings out of 474934
- 171896 string characters out of 5763815
+ 172136 string characters out of 5763815
  1927801 words of memory out of 5000000
  33017 multiletter control sequences out of 15000+600000
  566553 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,9n,93p,688b,435s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,9n,93p,698b,435s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (5 pages, 150005 bytes).
+Output written on thermo_project.pdf (5 pages, 150005 bytes).
 PDF statistics:
  161 PDF objects out of 1000 (max. 8388607)
  126 compressed objects within 2 object streams
