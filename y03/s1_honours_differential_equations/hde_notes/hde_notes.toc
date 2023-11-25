@@ -3,6 +3,8 @@
 \contentsline {subsection}{\numberline {1.2}Change of variables}{3}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Existence and uniqueness for IVPs}{3}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Homogeneous systems}{4}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Unique eigenvalues}{4}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Generalised eigenvectors}{4}{subsubsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.5}Non-homogeneous systems}{5}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}Critical points \& linearisation}{6}{subsection.1.6}%
 \contentsline {subsection}{\numberline {1.7}Stability of critical points}{7}{subsection.1.7}%

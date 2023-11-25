@@ -57,9 +57,29 @@ must be continuous in a region. Here $i, j \in \{1, \dots, n\}$.
 \newpage
 
 \subsection{Homogeneous systems}
+
+\subsubsection{Unique eigenvalues}
 Now consider $\boldsymbol{x}'=\matr{A}\boldsymbol{x}$, where $\matr{A}$ is a $n \times n$ matrix. \\
-Substituting $\boldsymbol{x}=e^{rt} \boldsymbol{\xi}$ results in an eigenvector problem:
-$$(\matr{A}-r_i \matr{I_n})\boldsymbol{\xi^{(i)}}=\boldsymbol{0}.$$
+Substituting $\boldsymbol{x}=e^{rt} \boldsymbol{\xi}$ results in an eigenvalue problem:
+$$(\matr{A}-r_i \matr{I_n})\boldsymbol{\xi^{(i)}}=\boldsymbol{0}$$
+where $i\in\{1,2,\dots\}$. Our general solution is then:
+\begin{align*}
+    \boldsymbol{x}(t)
+    &=\sum_{i=1}^{n}c_i e^{r_i t}\boldsymbol{\xi}^{(i)} \\
+    &=\sum_{i=1}^{n}c_i\boldsymbol{x}^{(i)} \\
+    &=\boldsymbol{\Psi}(t)\boldsymbol{c}
+\end{align*}
+where $\boldsymbol{\Psi}(t)$ is our fundamental matrix
+satisfying $\boldsymbol{\Psi}'=\matr{A}\boldsymbol{\Psi}$ and that:
+$$\boldsymbol{\Psi}(t)=[\boldsymbol{x^{(1)}}, \dots, \boldsymbol{x^{(n)}}].$$
+Furthermore if initial conditions $\boldsymbol{x}(t_0)=\boldsymbol{x}_0$
+are given we then have that:
+$$\boldsymbol{c}=\Psi^{-1}(t_0)\boldsymbol{x}(t_0)$$
+and
+$$\boldsymbol{x}(t)
+=\Psi(t)\Psi^{-1}(t_0)\boldsymbol{x}_0.$$
+
+\subsubsection{Generalised eigenvectors}
 If eigenvalues repeat we try $\boldsymbol{x}=te^{rt} \boldsymbol{\xi}+e^{rt} \boldsymbol{\eta}$ which gives
 $$(\matr{A}-r_i \matr{I_n})\boldsymbol{\eta^{(i)}}=\boldsymbol{\xi^{(i)}}.$$
 The $\textbf{fundamental matrix}$ satisfies $\boldsymbol{\Psi}'=\matr{A}\boldsymbol{\Psi}$ and contains the basis of solutions. \\
@@ -70,6 +90,7 @@ and hence our general solution is $\boldsymbol{x}=\boldsymbol{\Psi} \boldsymbol{
 \newpage
     
 \subsection{Non-homogeneous systems}
+
 Consider non-homogeneous ODE system:
 $$\boldsymbol{x}'=\boldsymbol{A}\boldsymbol{x}+\boldsymbol{g}.$$
 There a couple of different approaches we can take to solve such a system.
