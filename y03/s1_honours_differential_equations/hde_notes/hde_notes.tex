@@ -33,16 +33,17 @@
 \subsection{Integrating factors}
 Consider linear DE of form
 $$y'+P(x)y=Q(x)$$
-Our integrating factor for this DE is:
+The integrating factor for this DE is:
 $$I(x)=\exp\left(\int P(x)dx\right)$$
-Then our solution is
+and the solution to the linear DE is:
 $$y(x)=\frac{1}{I(x)} \int Q(x)I(x)dx + \frac{\alpha}{I(x)}$$
 where here $\alpha$ is a constant.
 
 \subsection{Change of variables}
 For higher order differential equations of form $$y^{(n)} = F(y, y', \dots, y^{(n-1)}, t),$$
 consider \textbf{change of variables} $x_{i+1} = y^{(i)}$ for $i \in \{0, 1, \dots, n-1\}$.
-Then take derivative with respect to time to obtain a first order ODE system, which takes the form:
+
+Taking derivatives with respect to time yields a first order matrix ODE system:
 $$x_{j}'=F_j(t, x_1, \dots, x_n)$$ for $j=1, \dots, n$.
 We either immediately write this as a matrix system or linearise near a critical point.
 
@@ -53,6 +54,7 @@ A solution $x:I \rightarrow$ $\mathbb{R}$ is a differentiable function that sati
 Similarly for a first order system $$x_{i}'=F_i(t, x_1, \dots, x_n)$$ to have a $\textbf{unique}$ solution,
 $F_i$ and $\frac{\partial F_i}{\partial x_j}$
 must be continuous in a region. Here $i, j \in \{1, \dots, n\}$.
+This is known as the Picard-Lindel{\"o}f theorem. 
 
 \newpage
 
@@ -107,14 +109,52 @@ general solution $\boldsymbol{x}
 \newpage
 
 \subsubsection{Diagonalisation}
+Consider again $\boldsymbol{x}'
+=\boldsymbol{A}\boldsymbol{x}$ where
+$\boldsymbol{A}$ is a $n \times n$ matrix
+that is diagonalisable:
+$$\boldsymbol{A}\boldsymbol{\xi}^{(i)}
+=r_i\boldsymbol{\xi}^{(i)}$$
+$$\boldsymbol{A}=\boldsymbol{T}
+\boldsymbol{D}\boldsymbol{T}^{-1}$$
+for here $\boldsymbol{D}$ is our diagonal matrix
+containing our eigenvalues $r_i$ and
+$$\boldsymbol{T}
+=[\boldsymbol{\xi}^{(1)},\dots
+,\boldsymbol{\xi}^{(n)}].$$
+Then let $\boldsymbol{x}=\boldsymbol{T}
+\boldsymbol{y}$. After some algebra we have that:
+$$\boldsymbol{y}'=\boldsymbol{D}\boldsymbol{y}$$
+which have particular solutions
+$\boldsymbol{y}=e^{r_i t}\boldsymbol{e}^{(i)}$
+for $i\in\{1,\dots,n\}$.
+
+Since our fundamental matrix with respect to
+$\boldsymbol{y}$ is
+$\boldsymbol{Q}=e^{\boldsymbol{D}t}$,
+the fundamental matrix with respect to
+$\boldsymbol{x}$ is:
+$$\boldsymbol{\Psi}(t)
+=\boldsymbol{T}e^{\boldsymbol{D}t}$$
+and we get an expression for the matrix exponential
+of $\boldsymbol{A}$:
+$$e^{\boldsymbol{A}t}=\boldsymbol{T}
+e^{\boldsymbol{D}t}\boldsymbol{T}^{-1}$$
+where $e^{\boldsymbol{D}t}$ is a diagonal matrix
+with entries $e^{r_i t}$.
 
 \subsubsection{Generalised eigenvectors}
-If eigenvalues repeat we try $\boldsymbol{x}=te^{rt} \boldsymbol{\xi}+e^{rt} \boldsymbol{\eta}$ which gives
+If eigenvalues do not generate enough eigenvectors to
+form $n$ linearly independent solutions for a
+$n\times n$ matrix $\boldsymbol{A}$ we try the following ansatz:
+$$\boldsymbol{x}=te^{rt} \boldsymbol{\xi}+e^{rt} \boldsymbol{\eta}$$
+which gives
 $$(\matr{A}-r_i \matr{I_n})\boldsymbol{\eta^{(i)}}=\boldsymbol{\xi^{(i)}}.$$
-The $\textbf{fundamental matrix}$ satisfies $\boldsymbol{\Psi}'=\matr{A}\boldsymbol{\Psi}$ and contains the basis of solutions. \\
-$$\boldsymbol{\Psi}(t)=[\boldsymbol{x^{(1)}}, \dots, \boldsymbol{x^{(n)}}]$$
-for $\boldsymbol{x^{(i)}} = \exp{(r_{\boldsymbol{i}} t)} \boldsymbol{\xi^{(i)}}$
-and hence our general solution is $\boldsymbol{x}=\boldsymbol{\Psi} \boldsymbol{c}$. \\
+Therefore we end up with:
+$$\boldsymbol{x}^{(1)}=e^{rt}\boldsymbol{\xi}$$
+and
+$$\boldsymbol{x}^{(2)}
+=te^{rt} \boldsymbol{\xi}+e^{rt} \boldsymbol{\eta}.$$
 
 \newpage
     
