@@ -62,7 +62,7 @@ must be continuous in a region. Here $i, j \in \{1, \dots, n\}$.
 Now consider $\boldsymbol{x}'=\matr{A}\boldsymbol{x}$, where $\matr{A}$ is a $n \times n$ matrix. \\
 Substituting $\boldsymbol{x}=e^{rt} \boldsymbol{\xi}$ results in an eigenvalue problem:
 $$(\matr{A}-r_i \matr{I_n})\boldsymbol{\xi^{(i)}}=\boldsymbol{0}$$
-where $i\in\{1,2,\dots\}$. Our general solution is then:
+where $i\in\{1,2,\dots, n\}$. Our general solution is then:
 \begin{align*}
     \boldsymbol{x}(t)
     &=\sum_{i=1}^{n}c_i e^{r_i t}\boldsymbol{\xi}^{(i)} \\
@@ -74,10 +74,39 @@ satisfying $\boldsymbol{\Psi}'=\matr{A}\boldsymbol{\Psi}$ and that:
 $$\boldsymbol{\Psi}(t)=[\boldsymbol{x^{(1)}}, \dots, \boldsymbol{x^{(n)}}].$$
 Furthermore if initial conditions $\boldsymbol{x}(t_0)=\boldsymbol{x}_0$
 are given we then have that:
-$$\boldsymbol{c}=\Psi^{-1}(t_0)\boldsymbol{x}(t_0)$$
+$$\boldsymbol{c}=\boldsymbol{\Psi}^{-1}(t_0)\boldsymbol{x}(t_0)$$
 and
 $$\boldsymbol{x}(t)
-=\Psi(t)\Psi^{-1}(t_0)\boldsymbol{x}_0.$$
+=\boldsymbol{\Psi}(t)
+\boldsymbol{\Psi}^{-1}(t_0)\boldsymbol{x}_0.$$
+
+\subsubsection{Matrix exponentials}
+We can also write our solutions as a matrix exponential,
+defined as such:
+\begin{align*}
+    e^{\boldsymbol{A}t}
+    &=\sum_{n=0}^{\infty}
+    \frac{(\boldsymbol{A}t)^n}{n!} \\
+    &=\boldsymbol{I}_n
+    +\boldsymbol{A}t
+    +\frac{1}{2!}\boldsymbol{A}^2t^2+\dots
+\end{align*}
+and since an exponential power series is infinitely differentiable:
+$$\dv{t}e^{\boldsymbol{A}t}
+=\boldsymbol{A}e^{\boldsymbol{A}t}.$$
+Therefore it is then deduced that the solution to
+$\boldsymbol{x}'=\boldsymbol{A}\boldsymbol{x}$ is
+$$\boldsymbol{x}(t)
+=e^{\boldsymbol{A}t}\boldsymbol{x}(0).$$
+and that $e^{\boldsymbol{A}t}
+=\boldsymbol{\Psi}(t)\boldsymbol{\Psi}^{-1}(0)$
+where we are finding the coefficients to the
+general solution $\boldsymbol{x}
+=e^{\boldsymbol{A}t}\boldsymbol{c}$.
+
+\newpage
+
+\subsubsection{Diagonalisation}
 
 \subsubsection{Generalised eigenvectors}
 If eigenvalues repeat we try $\boldsymbol{x}=te^{rt} \boldsymbol{\xi}+e^{rt} \boldsymbol{\eta}$ which gives

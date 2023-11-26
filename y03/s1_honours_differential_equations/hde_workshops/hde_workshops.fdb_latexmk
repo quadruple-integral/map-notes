@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1700332010 "c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_honours_differential_equations/hde_workshops/hde_workshops.tex" "hde_workshops.pdf" "hde_workshops" 1700332011 0
+["pdflatex"] 1700332005 "c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_honours_differential_equations/hde_workshops/hde_workshops.tex" "hde_workshops.pdf" "hde_workshops" 1700332006 0
   "c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_honours_differential_equations/hde_workshops/hde_workshops.tex" 1700331952 633 370ae7a8999bd6da6c0447d39bcc2701 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1693925241 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -105,18 +105,18 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693929215 4703462 5df3913b339a4fb9b4dc6c57dc378863 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693929334 8183624 edc78c4bf2213c105a673cf72ac18bae ""
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
-  "hde_workshops.aux" 1700332011 623 93aa363195d69b1eb9b2ec7ea19a1f2d "pdflatex"
-  "hde_workshops.out" 1700332011 388 dd72a3906c53b73134b3adba57a3e73a "pdflatex"
+  "hde_workshops.aux" 1700332006 623 93aa363195d69b1eb9b2ec7ea19a1f2d "pdflatex"
+  "hde_workshops.out" 1700332006 388 dd72a3906c53b73134b3adba57a3e73a "pdflatex"
   "hde_workshops.tex" 1700331952 633 370ae7a8999bd6da6c0447d39bcc2701 ""
-  "hde_workshops.toc" 1700332011 210 91d6c5160b31551f97d8537ea8bc4021 "pdflatex"
-  "w06.aux" 1700332010 695 3feb7c025fcdf48a1a7921b0c1a09738 "pdflatex"
+  "hde_workshops.toc" 1700332006 210 91d6c5160b31551f97d8537ea8bc4021 "pdflatex"
+  "w06.aux" 1700332006 695 3feb7c025fcdf48a1a7921b0c1a09738 "pdflatex"
   "w06.tex" 1700331993 161 69a4f3938ec55f712f7d77839642f5a7 ""
-  "w07.aux" 1700332010 696 ecb279f849e7ff62099f9e0c0482f7e1 "pdflatex"
+  "w07.aux" 1700332006 696 ecb279f849e7ff62099f9e0c0482f7e1 "pdflatex"
   "w07.tex" 1700332000 7968 1266f5ab21e366654d9ce4680dd81b88 ""
-  "w08.aux" 1700332010 697 4e1f6ac9475109c30964dc7d9355c42c "pdflatex"
+  "w08.aux" 1700332006 697 4e1f6ac9475109c30964dc7d9355c42c "pdflatex"
   "w08.tex" 1700332005 9196 fd6622aad7d3a1c6930564b31a7ec3e2 ""
-  "w09.aux" 1700332011 698 061607c9cbf6abef5642a56ecbd2575b "pdflatex"
-  "w09.tex" 1700332009 9403 f3eca65b89ab25433fafd682c56625de ""
+  "w09.aux" 1700332006 698 061607c9cbf6abef5642a56ecbd2575b "pdflatex"
+  "w09.tex" 1700156253 9402 a3f0336343026d7e4f77f73980c6b6c4 ""
   "w09_1c.png" 1700053154 29012 2ee037f1caf1958f0532a157801f56c3 ""
   "w09_1c_1.png" 1700053680 15280 a33f84d906b748cca4746de5c8d19895 ""
   (generated)
