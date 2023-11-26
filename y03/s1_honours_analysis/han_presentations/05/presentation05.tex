@@ -1,0 +1,125 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{chemformula}
+
+\title{Rearrangement of series}
+\author{Christopher Shen}
+\date{October 2023}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Example 1: An incorrect argument}
+    \begin{center}
+        Let $S=1+2+3+4+\dots$ and let:
+
+        $$S_1=1-1+1-1+1-1+\dots\stackrel{?}{=}\frac{1}{2}.$$
+    \end{center}
+\end{frame}
+
+\begin{frame}{Example 1: An incorrect argument}
+    \begin{center}
+        Consider $S_2=1-2+3-4+5-6+\dots$.
+    \end{center}
+    \begin{align*}
+        2S_2
+        &=1-2+3-4+5-6+\dots \\
+        &\quad\quad+1-2+3-4+5-6+\dots \\
+        &=1-1+1-1+1-1+\dots \\
+        &\stackrel{?}{=}\frac{1}{2}
+    \end{align*}
+    $$\therefore S_2=1-2+3-4+5-6+\dots=\frac{1}{4}$$
+\end{frame}
+
+\begin{frame}{Example 1: An incorrect argument}
+    And finally:
+    \begin{align*}
+        S-S_2
+        &=1+2+3+4+5+\dots \\
+        &-(1-2+3-4+5-6+\dots) \\
+        &=4(1+2+3+4+\dots) \\
+        &=4S
+    \end{align*}
+    $$\therefore S=1+2+3+4+5+\dots=-\frac{1}{12}$$
+\end{frame}
+
+\begin{frame}{Example 1: An incorrect argument}
+    This is completely wrong!
+    \begin{center}
+        $S=\displaystyle\sum_{k=1}^{\infty}a_k$ exists
+        \textbf{if and only if}
+        $\displaystyle\lim_{n\rightarrow\infty}
+        \sum_{k=1}^{n}a_k<\infty$.
+    \end{center}  
+    In our case:
+    $$\displaystyle\lim_{n\rightarrow\infty}
+    \Bigl[1-1+1-1+1-1+\dots\Bigr]\hspace{0.1in}\text{DNE}$$
+    and
+    \begin{align*}
+        S
+        &=1+2+3+4+\dots \\
+        &=\infty \\
+        &\neq -\frac{1}{12}.
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Example 2: A conditionally convergent series}
+    \begin{align*}
+        \sum_{n=1}^{\infty}\left((-1)^{n+1}\frac{1}{n}\right)
+        &=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\dots \\
+        &=\ln 2
+    \end{align*}
+    \begin{center}
+        This is the alternating harmonic series.
+    \end{center}
+\end{frame}
+
+\begin{frame}{Example 2: A conditionally convergent series}
+    \begin{center}
+        Know:
+        $1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\dots=\ln 2$
+    \end{center}
+    $$\therefore \frac{1}{2}-\frac{1}{4}+\frac{1}{6}
+    -\frac{1}{8}+\frac{1}{10}-\frac{1}{12}+\dots=\frac{1}{2}\ln 2$$
+    \begin{align*}
+        &1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}-\frac{1}{6}+\dots \\
+        &\ \ +\frac{1}{2}\quad\quad-\frac{1}{4}\quad\quad+\frac{1}{6}+\dots \\
+        &=\frac{3}{2}\ln 2
+    \end{align*}
+    $$\therefore 1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\dots=\frac{3}{2}\ln 2$$
+\end{frame}
+
+\begin{frame}{Example 2: A conditionally convergent series}
+    \begin{center}
+        Our previous argument was only valid because:
+    \end{center}
+    \begin{align*}
+        \sum_{n=1}^{\infty}\left(|(-1)^{n+1}\frac{1}{n}|\right)
+        &=\sum_{n=1}^{\infty}\frac{1}{n} \\
+        &=\infty
+    \end{align*}
+\end{frame}
+
+\begin{frame}
+    \begin{definition}[Conditional convergence]
+        Let $S=\sum_{k=1}^{\infty}a_k$. Series S is
+        conditionally convergent if $\sum_{k=1}^{\infty}a_k<\infty$
+        yet $\sum_{k=1}^{\infty}|a_k|=\infty$.
+    \end{definition}
+
+    \begin{theorem}[Riemann rearrangement]
+        Let $S=\sum_{k=1}^{\infty}a_k$ be a conditionally
+        convergent series. Then there exists rearrangements
+        $z:\mathbb{N}\rightarrow\mathbb{N}$ such that:
+        $$\sum_{k=1}^{\infty}a_{z(k)}$$
+        may take on any value.
+    \end{theorem}
+\end{frame}
+
+\end{document}
