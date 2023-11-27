@@ -678,6 +678,15 @@ $$\forall x\in(0,1);\sum_{n=1}^{\infty} c_n\phi_n(x)
 =\frac{f(x^-)+f(x^+)}{2}$$
 where these are the left and right handed limits.
 
+\subsubsection{General Parseval's identity for S-L problems}
+We have that:
+$$\int_{0}^{1}r(x)\bigl[f(x)\bigr]^2\dd x
+=\sum_{n=1}^{\infty}c_n^2$$
+where
+$$f(x)=\sum_{n=1}^{\infty} c_n\phi_n(x)$$
+and
+$$c_n=\int_{0}^{1}r(x)\phi_n(x)f(x)\dd x.$$
+
 \newpage
 
 \subsection{Non-homogeneous S-L problems}
@@ -786,13 +795,46 @@ $$b_n(0)=\int_{0}^{1}r(x)f(x)\phi_n(x)\dd x.$$
 \newpage
 
 \subsection{Singular S-L problems}
-quite alot of theory not covered in this course
+Consider the following ODE:
+$$-\dv{x}\left(p(x)\dv{y}{x}\right)+q(x)y=\lambda r(x)y$$
+but now $p(x)$, $q(x)$ and $r(x)$ are \underline{discontinuous}
+at $x=0$ and/or $x=1$. \\
+This is a \textbf{singular} S-L problem with boundary condition:
+$$b_1 y(1)+b_2 y'(1)=0$$
+\underline{or}
+$$a_1 y(0)+a_2 y'(0)=0.$$
 
-general definition of singular s-l problems
+Now singular S-L problems at $x=0$ may be \underline{self-adjoint} or that they yield:
+\begin{itemize}
+    \item $\lambda_n\in\mathbb{R}$ (Real eigenvalues)
+    \item $\langle \phi_m,\phi_n \rangle=\delta_{mn}$
+    (Orthogonal eigenfunctions)
+\end{itemize}
+if they satisfy Lagrange's identity. Consider singular S-L problem at $x=0$:
+\begin{align*}
+    \int_{\epsilon}^{1}\Bigl(\mathcal{L}[u]v
+    -u\mathcal{L}[v]\Bigr)\dd x
+    &=\Bigl[-p(x)
+    \Bigl(u'(x)v(x)-u(x)v'(x)\Bigr)\Bigr]_{\epsilon}^{1} \\
+    &=p(\epsilon)
+    \Bigl(u'(\epsilon)v(\epsilon)-u(\epsilon)v'(\epsilon)\Bigr)
+\end{align*}
+and tends to zero if and only if:
+$$\lim_{\epsilon\rightarrow\infty}
+\Bigl[p(\epsilon)
+\Bigl(u'(\epsilon)v(\epsilon)-u(\epsilon)v'(\epsilon)\Bigr)\Bigr]=0,$$
+where we define:
+$$\mathcal{L}[u]=-\dv{x}\Bigl[p(x)\dv{u}{x}\Bigl]+q(x)u.$$
+Therefore this is the condition for our singular S-L
+problem to have \underline{real} eigenvalues and 
+\underline{orthogonal eigenfunctions}.
 
-bessel's equation (order 0 example)
-
-conditions for singular problems
+Similarly for singular S-L problem at $x=1$ it is self-adjoint if:
+$$\lim_{\epsilon\rightarrow\infty}
+\Bigl[p(1-\epsilon)
+\Bigl(u'(1-\epsilon)v(1-\epsilon)-u(1-\epsilon)v'(1-\epsilon)\Bigr)\Bigr]=0.$$
+Finally whilst eigenvalues may be real they are \underline{not}
+necessarily discrete!
 
 \newpage
 
@@ -838,5 +880,11 @@ generalising this via induction gives:
 include partial fraction theory
 
 \subsection{Applications}
+
+\subsubsection{Higher order ODEs}
+
+\subsubsection{Impulse functions}
+
+\subsubsection{Convolutions}
 
 \end{document}
