@@ -888,6 +888,10 @@ We then have that:
 
     \newpage
 
+    We can also extend this to the $n$th derivative:
+    $$\mathcal{L}[t^n f(t)]
+    =(-1)^n F^{(n)}(s).$$
+
     \item \textbf{scaling}:
     $$\mathcal{L}[f(ct)]=\frac{1}{c}F(\frac{s}{c})$$
     and
@@ -898,8 +902,26 @@ We then have that:
 \subsection{Applications}
 
 \subsubsection{Higher order ODEs}
+So consider the following $n$th order ODE:
+$$y^{(n)}(t)+a_1y^{(n-1)}(t)+\dots
++a_n y(t)=f(t)$$
+for $f\in E$. After taking the Laplace transform of both sides
+we get:
+$$Z(s)\mathcal{L}[y(t)]
+=\mathcal{L}[f(t)]+Z_0(s)$$
+where $Z(s)$ is a degree $n$ polynomial
+and $Z_0(s)$ a degree $n-1$ polynomial dependent on our 
+initial conditions.
 
-\subsubsection{Piecewise continuous source term}
+Now if our source term is of the following form:
+$$f(t)=t^n e^{at}\bigl(A\cos bt+B\sin bt\bigr)$$
+then $\mathcal{L}[f(t)]$ is rational and therefore:
+$$Y(s)=\frac{F(s)}{Z(s)}+\frac{Z_0(s)}{Z(s)}$$
+where we can solve this via standard transforms.
+
+\newpage
+
+\subsubsection{Discontinuous source terms}
 
 \subsubsection{Impulse functions}
 
@@ -913,12 +935,17 @@ We then have that:
     =\frac{n!}{s^{n+1}}$
     where $n\in\mathbb{N}$ and $s>0$.
     \item $\displaystyle\mathcal{L}
-    [e^{at}\sin bt]=\frac{b}{(s-a)^2+b^2}$
+    [e^{at}\sin bt]=\frac{b}{(s-a)^2+b^2}$,
 
     $\displaystyle\mathcal{L}
     [e^{at}\cos bt]=\frac{s-a}{(s-a)^2+b^2}$
     where $s>a$.
-    \item 
+    \item $\displaystyle\mathcal{L}
+    [\sinh at]=\frac{a}{s^2-a^2}$,
+
+    $\displaystyle\mathcal{L}
+    [\cosh at]=\frac{s}{s^2-a^2}$
+    where $s>|a|$.
 \end{itemize}
 
 \end{document}
