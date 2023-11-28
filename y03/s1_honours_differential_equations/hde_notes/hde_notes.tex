@@ -874,10 +874,26 @@ generalising this via induction gives:
 \end{align*}
 
 \subsubsection{Shifts, scaling and derivatives}
+Let $F(s)=\mathcal{L}[f(t)](s)$.
+We then have that:
+\begin{enumerate}
+    \item \textbf{s-shift}:
+    $$\mathcal{L}[e^{-ct}f(t)](s)=F(s+c)$$
+    where $s+c>\gamma$.
+    \item \textbf{t-shift}: \\
+    Let $c\geq0$ and $f(t)=0$ if $t<0$. Then:
+    $$\mathcal{L}[f(t-c)](s)=e^{-sc}F(s).$$
+    \item \textbf{s-derivative}:
+    $$\mathcal{L}[tf(t)](s)=-\dv{s}F(s).$$
 
-\subsection{Standard transforms}
+    \newpage
 
-include partial fraction theory
+    \item \textbf{scaling}:
+    $$\mathcal{L}[f(ct)]=\frac{1}{c}F(\frac{s}{c})$$
+    and
+    $$\frac{1}{c}\mathcal{L}[f(\frac{t}{c})]=F(cs)$$
+    where $c>0$.
+\end{enumerate}
 
 \subsection{Applications}
 
@@ -888,5 +904,21 @@ include partial fraction theory
 \subsubsection{Impulse functions}
 
 \subsubsection{Convolutions}
+
+\newpage
+
+\subsection{Standard transforms}
+\begin{itemize}
+    \item $\displaystyle\mathcal{L}[t^n]
+    =\frac{n!}{s^{n+1}}$
+    where $n\in\mathbb{N}$ and $s>0$.
+    \item $\displaystyle\mathcal{L}
+    [e^{at}\sin bt]=\frac{b}{(s-a)^2+b^2}$
+
+    $\displaystyle\mathcal{L}
+    [e^{at}\cos bt]=\frac{s-a}{(s-a)^2+b^2}$
+    where $s>a$.
+    \item 
+\end{itemize}
 
 \end{document}
