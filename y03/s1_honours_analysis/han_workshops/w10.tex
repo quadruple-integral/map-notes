@@ -5,5 +5,100 @@
 
 \section{Workshop 10}
 \begin{enumerate}
-    \item 
+    \item 1
+    \item 2
+    \item 3
+    
+    \newpage
+
+    \item Let $f:[a,b]\rightarrow\mathbb{C}$ be an integrable function. Show that:
+    $$\int_{a}^{b}|f(x)|\dd x\leq C\Bigl[\int_{a}^{b}|f(x)|^2\dd x\Bigr]^{1/2}$$
+    where $C\in(0,\infty)$ and $f(x)\in L^2$. \\
+
+    From the previous problem we have that:
+    \begin{align*}
+        \int_{a}^{b}|f(x)g(x)|\dd x
+        &\leq\frac{\lambda}{2}||f(x)||_2^2
+        +\frac{1}{2\lambda}||g(x)||_2^2 \\
+        &=||f(x)||_2\hspace{0.03in}||g(x)||_2
+    \end{align*}
+    where $\lambda=\Bigl[||g(x)||_2^2\hspace{0.03in}||f(x)||_2^{-2}\Bigr]^{1/2}$
+    and if we set $g(x)=1$:
+    $$\int_{a}^{b}|f(x)|\dd x
+    \leq[b-a]^{1/2}
+    \Bigl[\int_{a}^{b}|f(x)|^2\dd x\Bigr]^{1/2}.$$
+    Finally since interval length is nonnegative $\exists C=[b-a]^{1/2}>0$:
+    $$\int_{a}^{b}|f(x)|\dd x\leq C
+    \Bigl[\int_{a}^{b}|f(x)|^2\dd x\Bigr]^{1/2}.$$
+    This is also a consequence of H{\"o}lder's inequality:
+    $$||fg||_1\leq||f||_p\hspace{0.03in}||g||_p$$
+    where $p\geq1$. \\
+
+    The converse of this statement is false as the opposite of it would be:
+    $$\exists C\in(0,\infty):||f||_2>C||f||_1$$
+    where $C\in(0,\infty)$ and this is true by our previous proof. 
+    
+    Hence this is a contradiction and we have that:
+    $$\nexists C\in(0,\infty):||f||_2\leq C||f||_1.$$
+
+    \newpage
+
+    \item 5
+    
+    \newpage
+
+    \item For part ($a$) consider:
+    $$f_n(x)=n\chi_{[0,\frac{1}{n}]}.$$
+    Then in the limit we have $f(x)=\delta(x)\chi_{\{0\}}$ and:
+    \begin{align*}
+        |f_n(x)-f(x)|^2
+        &=|n\chi_{[0,\frac{1}{n}]}-\delta(x)\chi_{\{0\}}|^2 \\
+        &=(n\chi_{[0,\frac{1}{n}]}-\delta(x)\chi_{\{0\}})^2 \\
+        &=n^2\chi_{[0,\frac{1}{n}]}^2
+        -2\delta(x)\chi_{[0,\frac{1}{n}]}\chi_{\{0\}}
+        +\delta(x)^2\chi_{\{0\}}^2 \\
+        &=n^2\chi_{[0,\frac{1}{n}]}
+        -2\delta(x)\chi_{\{0\}}+\delta(x)^2\chi_{\{0\}} \\
+        &=n^2\chi_{[0,\frac{1}{n}]}
+        -\delta(x)\chi_{\{0\}}.
+    \end{align*}
+    where $\delta(x)$ is the Dirac delta and we used the sift property.
+
+    Now let's consider the $L^2$-norm defined in $[0,1]$:
+    \begin{align*}
+        ||f_n(x)-f(x)||_2
+        &=\Bigl[\int_{0}^{1}
+        |f_n(x)-f(x)|^2 \dd x
+        \Bigr]^{1/2} \\
+        &=\Bigl[\int_{0}^{1}n^2
+        \chi_{[0,\frac{1}{n}]}
+        -\delta(x)\chi_{\{0\}}
+        \dd x\Bigr]^{1/2} \\
+        &=\Bigl[n^2\cdot\frac{1}{n}\Bigr]^{1/2} \\
+        &=n^{1/2}
+    \end{align*}
+    and therefore:
+    $$\lim_{n\rightarrow\infty}||f_n(x)-f(x)||_2
+    \neq0.$$
+    Then our function $f_n(x)=n\chi_{[0,\frac{1}{n}]}$
+    is not $L^2$ convergent. \\
+
+    For part ($b$) show that if $|f_n(x)|\leq1$
+    for $\forall x\in[0,1]$ then $f_n\rightarrow f$
+    in $L^2$. \\
+
+    If $|f_n(x)|\leq1$ then $|f(x)|\leq1$.
+    $\therefore |f_n(x)-f(x)|\leq2$
+    $$\therefore 0<|f_n(x)-f(x)|^2\leq2|f_n(x)-f(x)|$$
+    Since $\displaystyle\lim_{n\rightarrow\infty}
+    |f_n(x)-f(x)|=0$ by pointwise convergence
+    $$|f_n(x)-f(x)|^2\rightarrow0$$
+    where we used the squeeze theorem here.
+    $$\therefore\Bigl[\int_{0}^{1}
+    |f_n(x)-f(x)|^2 \dd x
+    \Bigr]^{1/2}\rightarrow0$$
+    if $n\rightarrow\infty$
+    and so $f_n(x)$ is $L^2$ convergent.
+
+
 \end{enumerate}
