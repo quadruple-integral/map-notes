@@ -486,9 +486,12 @@ and define the following conditions:
 \begin{itemize}
     \item $\displaystyle\frac{\partial}{\partial x}u(0,t)
     =\displaystyle\frac{\partial}{\partial x}u(L,t)=0$
-    \item $u(x,0)=f(x)$
+    \item $u(x,0)=f(x)$.
 \end{itemize}
-We begin again with a separation of variables:
+Let $u(x,t)=X(x)T(t)$ and we get:
+$$X''+\lambda X=0$$
+where $X'(0)=X'(L)=0$ and
+$$\dot{T}+\alpha^2\lambda T=0.$$
 
 \newpage
 
@@ -824,7 +827,7 @@ $$\lim_{\epsilon\rightarrow\infty}
 \Bigl[p(\epsilon)
 \Bigl(u'(\epsilon)v(\epsilon)-u(\epsilon)v'(\epsilon)\Bigr)\Bigr]=0,$$
 where we define:
-$$\mathcal{L}[u]=-\dv{x}\Bigl[p(x)\dv{u}{x}\Bigl]+q(x)u.$$
+$$\mathcal{L}[u]=-\dv{x}\Bigl[p(x)\dv{u}{x}\Bigr]+q(x)u.$$
 Therefore this is the condition for our singular S-L
 problem to have \underline{real} eigenvalues and 
 \underline{orthogonal eigenfunctions}.
@@ -841,7 +844,7 @@ necessarily discrete!
 \section{Laplace transforms}
 So let $f(t)$ be defined for $t\in[0,\infty)$. Its Laplace transform is:
 $$\mathcal{L}[f(t)]=\int_{0}^{\infty}e^{-st}f(t)\dd t.$$
-Let functions of exponential order be defined as:
+Let \textbf{functions of exponential order} be defined as:
 $$\forall t\in[0,\infty);\exists A>0\hspace{0.05in}\text{and}\hspace{0.05in}
 B\in\mathbb{R}:|f(t)|\leq Ae^{Bt}$$
 where $f$ is piecewise continous and
@@ -959,7 +962,7 @@ $$\delta(t)=\left\{
         0 & t\neq0
     \end{array}
 \right.$$
-and physically a "strike" on system
+and physically a ``strike'' on a system
 in infinitely short time.
 We have that:
 $$\int_{-\infty}^{\infty}\delta(t-t_0)
@@ -976,16 +979,103 @@ $\displaystyle\mathcal{L}[\delta(t)]
 \bigl(e^{-st_0}\bigr)=1$.
 
 \newpage
+
 Taking the Laplace transform of the following ODE
 $$y''(t)+y(t)=\delta(t)$$
-with initial conditions $y(0)=y'(0)=0$:
+with initial conditions $y(0)=y'(0)=0$ gives:
 $$\mathcal{L}[y(t)]
-=\frac{1}{s^2+1}$$
+=\frac{1}{s^2+1}
+\lim_{t_0\rightarrow0}\bigl(
+e^{-s t_0}
+\bigr).$$
+It is important that we do not evaluate the limit here!
 
+Finally by inspection we have that:
+\begin{align*}
+    y(t)
+    &=\lim_{t_0\rightarrow0}
+    \Bigl(\sin(t-t_0)u_{t_0}(t)\Bigr) \\
+    &=\sin(t)u_0(t).
+\end{align*}
+
+\subsubsection{Convolutions}
+Convolutions can also be helpful in solving ODEs.
+They are defined:
+\begin{align*}
+    f(t)*g(t)
+    &=\int_{0}^{t}f(s)g(t-s)\dd s \\
+    &=\int_{0}^{t}g(s)f(t-s)\dd s
+\end{align*}
+for functions $f,g:[0,\infty)\rightarrow\mathbb{R}$
+and has the following properties:
+\begin{itemize}
+    \item $f*(g+h)=f*g+f*h$
+    \item $f*g=g*f$
+    \item $f*(g*h)=(f*g)*h$
+    \item $f*1\neq f$
+    \item $f*f\neq f^2$.
+\end{itemize}
+Importantly we have the \textbf{convolution theorem}:
+$$\mathcal{L}[f(t)*g(t)]=\mathcal{L}[f(t)]\mathcal{L}[g(t)]$$
+where if $f,g\in E$ then $f*g\in E$, or that they
+are functions of exponential order so that our Laplace
+transforms converge. Note that:
+$$\int_{0}^{t}f(s)\dd s
+=\int_{0}^{t}f(s)u_0(t-s)\dd s$$
+and therefore
+$$\mathcal{L}\Bigl[
+\int_{0}^{t}f(s)\dd s
+\Bigr]=\frac{\mathcal{L}[f(t)]}{s}.$$
 
 \newpage
 
-\subsubsection{Convolutions}
+Now consider the following ODE:
+$$ay''(t)+by'(t)+cy(t)=g(t)$$
+with initial conditions $y(0)=\alpha$
+and $y'(0)=\beta$.
+Here $a,b,c,\alpha,\beta\in\mathbb{R}$.
+\begin{align*}
+    \therefore\mathcal{L}[y(t)]
+    &=\Phi(s)+\Psi(s) \\
+    &=\frac{(as+b)\alpha+a\beta}
+    {as^2+bs+c}
+    +\frac{1}{as^2+bs+c}\mathcal{L}[g(t)]
+\end{align*}
+\begin{align*}
+    \therefore y(t)
+    &=\mathcal{L}^{-1}[\Phi(s)]
+    +\mathcal{L}^{-1}[\Psi(s)] \\
+    &=\phi(t)+\psi(t)
+\end{align*}
+The first expression $\phi(t)$ can be found via
+standard transforms.
+For the second expression we define the
+\textbf{transfer function}\footnote{Also known as a Green's function.}:
+$$H(s)=\frac{1}{as^2+bs+c}$$
+where it is the Laplace transform of the following
+corresponding ODE:
+$$ah''(t)+bh'(t)+ch(t)=\delta(t)$$
+with initial conditions $h(0)=h'(0)=0$.
+$\therefore H(s)=\mathcal{L}[h(t)]$
+
+This is helpful since:
+\begin{align*}
+    \Psi(s)
+    &=\frac{1}{as^2+bs+c}\mathcal{L}[g(t)] \\
+    &=H(s)\mathcal{L}[g(t)]
+\end{align*}
+and
+\begin{align*}
+    \mathcal{L}[\psi(t)]
+    &=\mathcal{L}[h(t)]\mathcal{L}[g(t)] \\
+    &=\mathcal{L}[h(t)*g(t)].
+\end{align*}
+Applying the convolution theorem we get:
+\begin{align*}
+    \psi(t)
+    &=h(t)*g(t) \\
+    &=\int_{0}^{t}h(s)g(t-s)\dd s.
+\end{align*}
 
 \newpage
 
@@ -994,21 +1084,42 @@ $$\mathcal{L}[y(t)]
     \item $\displaystyle\mathcal{L}[t^n]
     =\frac{n!}{s^{n+1}}$
     where $n\in\mathbb{N}$ and $s>0$.
+
     \item $\displaystyle\mathcal{L}[e^{at}]
     =\frac{1}{s-a}$
     where $s>a$.
-    \item $\displaystyle\mathcal{L}
-    [e^{at}\sin bt]=\frac{b}{(s-a)^2+b^2}$,
 
+    \item $\displaystyle\mathcal{L}
+    [t^n e^{at}]=\frac{n!}{(s-a)^{n+1}}$
+    where $n\in\mathbb{N}$ and $s>a$.
+
+    \item $\displaystyle\mathcal{L}
+    [\sin at]=\frac{a}{s^2+a^2}$,
+    
     $\displaystyle\mathcal{L}
-    [e^{at}\cos bt]=\frac{s-a}{(s-a)^2+b^2}$
-    where $s>a$.
+    [\cos at]=\frac{s}{s^2+a^2}$
+    where $s>0$.
+
     \item $\displaystyle\mathcal{L}
     [\sinh at]=\frac{a}{s^2-a^2}$,
 
     $\displaystyle\mathcal{L}
     [\cosh at]=\frac{s}{s^2-a^2}$
     where $s>|a|$.
+
+    \item $\displaystyle\mathcal{L}
+    [e^{at}\sin bt]=\frac{b}{(s-a)^2+b^2}$,
+
+    $\displaystyle\mathcal{L}
+    [e^{at}\cos bt]=\frac{s-a}{(s-a)^2+b^2}$
+    where $s>a$.
+
+    \item $\displaystyle\mathcal{L}
+    [u_c(t)]=\frac{e^{-cs}}{s}$
+    where $s>0$.
+
+    \item $\displaystyle\mathcal{L}
+    [\delta(t-c)]=e^{-cs}$.
 \end{itemize}
 
 \end{document}

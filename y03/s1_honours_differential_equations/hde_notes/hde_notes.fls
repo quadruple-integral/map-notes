@@ -196,6 +196,8 @@ INPUT ./f1.png
 INPUT ./f1.png
 INPUT ./f1.png
 INPUT ./f1.png
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT hde_notes.aux
 INPUT ./hde_notes.out
 INPUT ./hde_notes.out
@@ -215,7 +217,9 @@ INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
