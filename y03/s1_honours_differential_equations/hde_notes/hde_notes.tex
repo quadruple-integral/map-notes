@@ -445,7 +445,7 @@ $$\therefore\int_{-L}^{L}\sin(\lambda_n^{1/2} x) f(x)dx=\sum_{n=1}^{\infty}c_n\i
 \sin(\lambda_n^{1/2} x)\right)^2\dd x$$
 $$\therefore2\int_{0}^{L}\sin(\lambda_n^{1/2} x) f(x)\dd x
 =c_n L$$
-The final step we split the integration range and use $x=-x^*$.
+We can do this as the product of two \underline{odd} functions is even.
 $$\therefore c_n=\frac{2}{L}\int_{0}^{L}\sin(\lambda_n^{1/2} x) f(x)\dd x$$
 This is fine because we can extend $u(x,t)$ via \underline{reflection} for negative $x$.
 
@@ -696,7 +696,7 @@ but with a circular boundary. In polar coordinates $(r,\theta)$:
     \item $u(a,\theta)=f(\theta)$
     \item $u(r,\theta)$ is bounded
 \end{itemize}
-where $a$ is the radius of our circle and $\theta\in[0,2\pi]$. Since $u=u(x,y)$:
+where $r\in[0,a]$ and $\theta\in[0,2\pi]$. Since $u=u(x,y)$:
 $$u'_{\theta}=u'_x x'_{\theta}+u'_y y'_{\theta}$$
 $$u''_{\theta\theta}=(u''_{xx}x'_{\theta}+u''_{xy}y'_{\theta})x'_{\theta}
 +u'_x x''_{\theta\theta}+(u''_{yy}y'_{\theta}+u''_{xy}x'_{\theta})x'_{\theta}+u'_y y''_{\theta\theta}$$
@@ -716,6 +716,31 @@ $$\therefore r^2\frac{R''}{R}+r\frac{R'}{R}=-\frac{\ddot{\Theta}}{\Theta}=\lambd
 where $\lambda$ is our separation constant.
 $$\therefore\ddot{\Theta}+\lambda\Theta=0$$
 $$\therefore r^2 R''+rR'=\lambda R$$
+For the first ODE if $\lambda\leq0$ then we get
+at best constant solutions. If $\lambda>0$:
+$$\Theta(\theta)=a_1\cos\lambda^{1/2}\theta
++a_2\sin\lambda^{1/2}\theta$$
+and since \underline{periodicity} must be preserved:
+$$\Theta(\theta)=\Theta(\theta+2\pi)$$
+$$\therefore\lambda_n^{1/2}=n
+\hspace{0.05in}\text{or}\hspace{0.05in}
+\lambda_n^{1/2}=0$$
+where $n\in\mathbb{N}$. So when $\lambda_n=0$:
+$$r^2 R''+rR'=0$$
+and since $u(r,\theta)$ is bounded we get only constant solutions.
+If $\lambda_n=n^2$ then:
+$$r^2 R''+rR'-n^2 R=0$$
+with solutions of form $R(r)=r^{\alpha}$ which yields
+$R_n(r)=c_n r^n$. Then:
+$$u(r,\theta)=\frac{p_0}{2}+\sum_{n=1}^{\infty}
+r^n\Bigl(q_n\cos\lambda_n^{1/2}\theta
++r_n\sin\lambda_n^{1/2}\theta\Bigr)$$
+$$p_0=\frac{1}{\pi}\int_{-\pi}^{\pi}f(\theta)\dd\theta$$
+$$q_n=\frac{1}{a^n\pi}\int_{-\pi}^{\pi}
+\cos(\lambda_n^{1/2}\theta)f(\theta)\dd\theta$$
+$$r_n=\frac{1}{a^n\pi}\int_{-\pi}^{\pi}
+\sin(\lambda_n^{1/2}\theta)f(\theta)\dd\theta$$
+since this is a Fourier series with period $2\pi$.
 
 \newpage
 
