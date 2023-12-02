@@ -155,6 +155,8 @@ $$\boldsymbol{x}^{(1)}=e^{rt}\boldsymbol{\xi}$$
 and
 $$\boldsymbol{x}^{(2)}
 =te^{rt} \boldsymbol{\xi}+e^{rt} \boldsymbol{\eta}.$$
+The process is algorithmic --- we try again
+until it works.
 
 \newpage
     
@@ -416,7 +418,8 @@ $$X''+\lambda X=0.$$
 The first one we can directly integrate, yielding:
 $$T(t)=a_1\exp\left(-\alpha^2\lambda t\right).$$
 The second ODE is a spring system, hence it has solution of form:
-$$X(x)=b_1\cos\lambda^{1/2} x+b_2\sin\lambda^{1/2} x.$$
+$$X(x)=b_1\cos\lambda^{1/2} x+b_2\sin\lambda^{1/2} x$$
+where $\lambda>0$ and all other cases yields at best constant solutions.
 
 \newpage
 
@@ -439,11 +442,11 @@ where $\lambda_n=\left(\frac{n\pi}{L}\right)^2$. Using initial condition $u(x,0)
 $$f(x)=\sum_{n=1}^{\infty}c_n\sin\lambda_n^{1/2} x$$
 and we recognise this as an \underline{odd} Fourier series with period $2L$.
 $$\therefore\int_{-L}^{L}\sin(\lambda_n^{1/2} x) f(x)dx=\sum_{n=1}^{\infty}c_n\int_{-L}^{L}\left(
-\sin(\lambda_n^{1/2} x)\right)^2dx$$
-$$\therefore2\int_{0}^{L}\sin(\lambda_n^{1/2} x) f(x)dx
+\sin(\lambda_n^{1/2} x)\right)^2\dd x$$
+$$\therefore2\int_{0}^{L}\sin(\lambda_n^{1/2} x) f(x)\dd x
 =c_n L$$
 The final step we split the integration range and use $x=-x^*$.
-$$\therefore c_n=\frac{2}{L}\int_{0}^{L}\sin(\lambda_n^{1/2} x) f(x)dx$$
+$$\therefore c_n=\frac{2}{L}\int_{0}^{L}\sin(\lambda_n^{1/2} x) f(x)\dd x$$
 This is fine because we can extend $u(x,t)$ via \underline{reflection} for negative $x$.
 
 \newpage
@@ -475,7 +478,7 @@ $$\omega(x,t)
 =\sum_{n=1}^{\infty}c_n\exp\left(-\alpha^2\lambda_n t\right)
 \sin\lambda_n^{1/2} x$$
 where again $\lambda_n=\left(\frac{n\pi}{L}\right)^2$ and because $\omega(x,t)$ is a Fourier series with period $2L$:
-$$c_n=\frac{2}{L}\int_{0}^{L}\sin(\lambda_n^{1/2} x)\{f(x)-v(x)\} dx.$$
+$$c_n=\frac{2}{L}\int_{0}^{L}\sin(\lambda_n^{1/2} x)\Bigl(f(x)-v(x)\Bigr)\dd x.$$
 
 \newpage
 
@@ -492,10 +495,142 @@ Let $u(x,t)=X(x)T(t)$ and we get:
 $$X''+\lambda X=0$$
 where $X'(0)=X'(L)=0$ and
 $$\dot{T}+\alpha^2\lambda T=0.$$
+If $\lambda\leq0$ we get at best constant solutions.
+So let $\lambda>0$ and we get solutions:
+$$X(x)=c_1\cos\lambda^{1/2}x+c_2\sin\lambda^{1/2}x.$$
+After substituting for boundary conditions we have that $c_2=0$ and:
+$$\lambda_n^2=\frac{n\pi}{L}$$
+for $n\in\mathbb{N}$. Solving the time component ODE yields:
+$$T_n(t)=k\exp(-\alpha^2\lambda_n t)$$
+and hence we have general solutions of form:
+$$u(x,t)=\sum_{n=1}^{\infty}c_n\exp(-\alpha^2\lambda_n t)
+\cos\lambda_n^{1/2}x.$$
+Finally using our initial conditions:
+$$c_n=\frac{2}{L}\int_{0}^{L}\
+\cos(\lambda_n^{1/2}x) f(x)\dd x$$
+where we define an even extension of $u(x,t)$ in negative $x$
+to obtain this formula.
 
 \newpage
 
 \subsection{Wave equation}
+
+\subsubsection{Derivation}
+Consider string with length $x$ and
+time dependent \underline{vertical} displacement $u(x,t)$.
+Let $\theta(x,t)$ denote the angle formed by the string.
+By Newton's second law:
+\begin{align*}
+    \rho\Delta x\frac{\partial^2u}{\partial t^2}
+    &=T\Bigl[\sin\theta(x+\Delta x,t)
+    -\sin\theta(x,t)\Bigr] \\
+    &\approx T\Bigl[\theta(x+\Delta x,t)-\theta(x,t)\Bigr] \\
+    &=T\frac{\partial\theta}{\partial x}\Delta x
+    +\mathcal{O}(\Delta x^2) \\
+    &\approx T\frac{\partial^2u}{\partial x^2}\Delta x
+\end{align*}
+where $\rho$ is mass per unit length and $T$ our string tension.
+If $\Delta x\rightarrow0$ then:
+$$\frac{\partial^2u}{\partial t^2}=c^2\frac{\partial^2u}{\partial x^2}$$
+for $c^2=T/\rho$ and is our wave speed.
+
+\subsubsection{Plucked string}
+So consider the wave equation
+$$\frac{\partial^2u}{\partial t^2}=c^2\frac{\partial^2u}{\partial x^2}$$
+for $t\geq0$ and $x\in[0,L]$ subject to the following conditions:
+\begin{itemize}
+    \item $u(0,t)=u(L,t)=0$
+    \item $\displaystyle\frac{\partial}{\partial t}
+    u(x,0)=0$
+    \item $u(x,0)=f(x)$.
+\end{itemize}
+Let $u(x,t)=X(x)T(t)$ and substituting gives:
+$$\frac{X''}{X}=\frac{\ddot{T}}{c^2 T}=-\lambda$$
+where this is two ODEs:
+$$X''+\lambda X=0
+\hspace{0.05in}\text{with}\hspace{0.05in}
+X(0)=X(L)=0$$
+and
+$$\ddot{T}+c^2\lambda T=0
+\hspace{0.05in}\text{with}\hspace{0.05in}
+\dot{T}(0)=0.$$
+The first spatial ODE we have solved before:
+$$X_n(x)=b_2\sin\lambda_n^{1/2}x
+\hspace{0.05in}\text{with}\hspace{0.05in}
+\lambda_n=\frac{n^2\pi^2}{L^2}.$$
+
+\newpage
+
+The time component ODE is yet another SHM system:
+$$T_n(t)=a_n\cos c\lambda_n^{1/2}t
++b_n\sin c\lambda_n^{1/2}t$$
+and hence by initial conditions we obtain:
+$$T_n(t)=a_n\cos c\lambda_n^{1/2}t.$$
+Combining our results the general solution takes the following form:
+$$u(x,t)=\sum_{n=1}^{\infty}c_n\sin\lambda_n^{1/2}x
+\cos c\lambda_n^{1/2}t$$
+where $\lambda_n^{1/2}=\displaystyle\frac{n\pi}{L}$.
+Since the initial string shape is
+$u(x,0)=f(x)$:
+$$c_n=\frac{2}{L}\int_{0}^{L}
+\sin(\lambda_n^{1/2}x) f(x)\dd x.$$
+Our displacement $u(x,t)$ may also be written as
+a sum of travelling waves:
+\begin{align*}
+    u(x,t)
+    &=\frac{1}{2}\sum_{n=1}^{\infty}c_n
+    \Bigl[\sin\lambda_n^{1/2}(x-at)
+    +\sin\lambda_n^{1/2}(x+at)\Bigr] \\
+    &=\frac{1}{2}\bigl[\underbrace{h(x-at)}_\text{$+x$ direction}
+    +\underbrace{h(x-at)}_\text{$-x$ direction}\bigr].
+\end{align*}
+
+\subsubsection{d'Alembert's solution}
+Consider the 1D wave equation:
+$$\frac{\partial^2u}{\partial t^2}=c^2\frac{\partial^2u}{\partial x^2}$$
+with change of variables $\xi=x-ct$ and $\eta=x+ct$.
+Using the chain rule:
+$$\frac{\partial^2u}{\partial\xi\partial\eta}=0$$
+$$u(\xi,\eta)=p(\eta)+q(\xi)$$
+or that we have solutions:
+$$u(x,t)=p(x+ct)+q(x-ct)$$
+where functions $p$ and $q$ represent travelling waves in
+$\pm x$ directions.
+
+\newpage
+
+\subsubsection{General initial conditions}
+Again consider:
+$$\frac{\partial^2u}{\partial t^2}=c^2\frac{\partial^2u}{\partial x^2}$$
+but now with the following conditions:
+\begin{itemize}
+    \item $u(0,t)=u(L,t)=0$
+    \item $\displaystyle\frac{\partial}{\partial t}
+    u(x,0)=g(x)$
+    \item $u(x,0)=f(x)$.
+\end{itemize}
+Using $u(x,t)=X(x)T(t)$ we get two ODEs:
+$$X''+\lambda X=0
+\hspace{0.05in}\text{with}\hspace{0.05in}
+X(0)=X(L)=0$$
+$$\ddot{T}+c^2\lambda T=0.$$
+We have solved the spatial component ODE:
+$$X_n(x)=b_2\sin\lambda_n^{1/2}x
+\hspace{0.05in}\text{with}\hspace{0.05in}
+\lambda_n=\frac{n^2\pi^2}{L^2}.$$
+However now the time component ODE yields:
+$$T_n(t)=a_n\cos c\lambda_n^{1/2}t
++b_n\sin c\lambda_n^{1/2}t$$
+which gives us the following general solution:
+$$u(x,t)=\sum_{n=1}^{\infty}\sin\lambda_n^{1/2}x
+\Bigl(a_n\cos c\lambda_n^{1/2}t
++b_n\sin c\lambda_n^{1/2}t\Bigr).$$
+To find our coefficients we use our initial conditions:
+$$a_n=\frac{2}{L}\int_{0}^{L}
+\sin(\lambda_n^{1/2}x)f(x)\dd x$$
+and
+$$b_n=\frac{1}{c\lambda_n^{1/2}}\frac{2}{L}
+\int_{0}^{L}\sin(\lambda_n^{1/2}x)g(x)\dd x.$$
 
 \newpage
 
