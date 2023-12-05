@@ -2,6 +2,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage{parskip}
 \usepackage{multicol}
 \usepackage{xcolor}
@@ -9,7 +10,14 @@
 \usepackage{physics}
 \usepackage{graphicx} % Required for inserting images
 \usepackage{hyperref}
+\usepackage{enumitem}
 \newcommand{\matr}[1]{\mathbf{#1}}
+\def\dbar{{\mathchar'26\mkern-12mu d}}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
 
 \title{Honours Differential Equations}
 \author{Notes by Christopher Shen}
@@ -268,6 +276,8 @@ $$\frac{dE}{dt}=\frac{\partial E}{\partial x} F + \frac{\partial E}{\partial y} 
 Now \textbf{limit cycles} are defined as periodic solutions such that at least one other \textcolor{red}{non-closed trajectory}
 approaches the limit cycle as $t\rightarrow\infty$.
 
+Comment on stability of limit cycles.
+
 \newpage
 
 \section{Fourier series}
@@ -499,7 +509,7 @@ If $\lambda\leq0$ we get at best constant solutions.
 So let $\lambda>0$ and we get solutions:
 $$X(x)=c_1\cos\lambda^{1/2}x+c_2\sin\lambda^{1/2}x.$$
 After substituting for boundary conditions we have that $c_2=0$ and:
-$$\lambda_n^2=\frac{n\pi}{L}$$
+$$\lambda_n=\left(\frac{n\pi}{L}\right)^2$$
 for $n\in\mathbb{N}$. Solving the time component ODE yields:
 $$T_n(t)=k\exp(-\alpha^2\lambda_n t)$$
 and hence we have general solutions of form:
