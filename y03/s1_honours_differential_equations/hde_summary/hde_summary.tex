@@ -435,6 +435,7 @@ $$a_n=\frac{2}{L}\int_{0}^{L}
 \sin(\lambda_n^{1/2}x)f(x)\dd x$$
 $$b_n=\frac{1}{c\lambda_n^{1/2}}\frac{2}{L}
 \int_{0}^{L}\sin(\lambda_n^{1/2}x)g(x)\dd x$$
+$$\lambda_n=\left(\frac{n\pi}{L}\right)^2$$
 
 \subsubsection*{Laplace's equation}
 $$\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}=0$$
@@ -497,145 +498,82 @@ $$r_n=\frac{1}{a^n\pi}\int_{-\pi}^{\pi}
 \sin(\lambda_n^{1/2}\theta)f(\theta)\dd\theta.$$
 
 \subsubsection*{Regular S-L problems}
-Consider the following eigenvalue ODE:
+A regular S-L problem defined on $[0,1]$ is:
 $$-\dv{x}\left(p(x)\dv{y}{x}\right)+q(x)y=\lambda r(x)y$$
-where $r(x)$ is our \underline{weight function}.
-We define the following boundary conditions:
-\begin{enumerate}
-    \item $a_1 y(0)+a_2 y'(0)=0$
-
-    \item $b_1 y(1)+b_2 y'(1)=0.$
-\end{enumerate}
-This is a \textbf{regular Sturm-Liouville} problem, where $p(x)$, $p'(x)$, $q(x)$, $r(x)$ are \underline{continuous} functions and $p(x)$, $r(x)$ are \underline{strictly positive} functions for $\forall x\in[0,1]$.
-
-\textbf{Eigenvalues} $\lambda_n$ yield \textbf{eigenfunctions} $\phi_n(x)$
-which are \underline{nontrivial solutions} to our S-L problem. Important consequences include:
 \begin{itemize}
-    \item Eigenvalues $\lambda_n$ of a S-L problem are \textbf{real}. 
-    
-    Furthermore each eigenvalue corresponds to one eigenfunction.
-
-    \item Eigenfunctions $\phi_n(x)$ are \underline{orthogonal}:
-    $$\langle \phi_m,\phi_n \rangle
-    =\int_{0}^{1}r(x)\phi_m(x)\phi_n(x) \dd x=\delta_{mn}$$
-    in Hilbert space $L^2([0,1],r(x)\dd x)$.
+    \item $a_1 y(0)+a_2 y'(0)=0$
+    \item $b_1 y(1)+b_2 y'(1)=0$
+    \item $p(x)$, $p'(x)$, $q(x)$, $r(x)$ are \underline{continuous}
+    \item $p(x)$, $r(x)$ are \underline{strictly positive}
 \end{itemize}
+which yields \textbf{real} eigenvalues $\lambda_n$
+and \\ \textbf{orthonormal} eigenfunctions $\phi_n(x)$:
+$$\langle \phi_m,\phi_n \rangle
+=\int_{0}^{1}r(x)\phi_m(x)\phi_n(x) \dd x=\delta_{mn}$$
+in Hilbert space $L^2([0,1],r(x)\dd x)$.
 
-Note that our eigenfunctions are orthonormal and so we define:
-$$\phi_n(x)=k_n y_n(x)$$
-where $k_n$ is our scale factor.
-Since $\langle \phi_n,\phi_n \rangle=1$:
-$$\therefore\int_{0}^{1}r(x)k_n^2y_n^2(x)\dd x=1$$
-and so we have that:
+Let $\phi_n(x)=k_n y_n(x)$.
 \begin{align*}
-    k_n
+    \therefore k_n
     &=\frac{1}{\sqrt{\langle y_n,y_n \rangle}} \\
-    &=\Bigl(\int_{0}^{1}r(x)y_n^2(x)\dd x\Bigl)^{-1/2}.
+    &=\Bigl(\int_{0}^{1}r(x)y_n^2(x)\dd x\Bigr)^{-1/2}
 \end{align*}
 
-\subsubsection{General 2nd order ODEs}
-Consider the following general 2nd order eigenvalue ODE:
-$$-P(x)\dv[2]{y}{x}-\omega(x)\dv{y}{x}+q(x)y=\lambda r(x)y.$$
-Multiply this by the following integrating factor:
+\subsubsection*{General 2nd order ODEs}
+$$-P(x)\dv[2]{y}{x}-\omega(x)\dv{y}{x}+q(x)y=\lambda r(x)y$$
 $$F(x)=\exp\Bigl[\int_{0}^{x}
-\frac{\omega(s)-p'(s)}{p(s)}\dd s\Bigl]$$
-yields an ODE of S-L form:
-$$-\dv{x}\Bigl[F(x)P(x)\dv{y}{x}\Bigl]
-+F(x)q(x)y=\lambda F(x)r(x)y.$$
+\frac{\omega(s)-p'(s)}{p(s)}\dd s\Bigr]$$
+$$-\dv{x}\Bigl[F(x)P(x)\dv{y}{x}\Bigr]
++F(x)q(x)y=\lambda F(x)r(x)y$$
 
-\subsubsection{Lagrange's identity}
-Our previous definition is motivated by the \textbf{Lagrange's identity}:
+\subsubsection*{Lagrange's identity}
+Let functions $u$ and $v$ satisfy regular S-L boundary conditions.
+Then:
+$$\langle \mathcal{L}[u], v \rangle=\langle u, \mathcal{L}[v] \rangle$$
+where:
+$$\langle u,v \rangle=\int_{0}^{1}uv^* \dd x$$
+$$\mathcal{L}[u]=-\dv{x}\Bigl[p(x)\dv{u}{x}\Bigr]+q(x)u.$$
 \begin{align*}
-    \langle \mathcal{L}[u], v \rangle - \langle u, \mathcal{L}[v] \rangle
+    \therefore&\langle \mathcal{L}[u], v \rangle - \langle u, \mathcal{L}[v] \rangle \\
     &=-\Bigl[p\Bigl(u'v^*-u(v^*)'\Bigl)\Bigl]_{0}^{1} \\
     &=-\Bigl[p(x)(\dv{u}{x}\cdot v^*-u\cdot\dv{v^*}{x})\Bigl]_{0}^{1}
 \end{align*}
-where $u=u(x)$, $v=v(x)$ are \underline{complex} functions and
-$$\mathcal{L}[u]=-\dv{x}\Bigl[p(x)\dv{u}{x}\Bigl]+q(x)u.$$
-Here the inner product is defined as
-$$\langle u,v \rangle=\int_{0}^{1}uv^* \dd x$$
-and we have integrated by parts using the following identities:
 $$\bigl[pu'v^*\bigl]'=\bigl(pu'\bigl)'v^*+pu'(v^*)'$$
-$$\bigl[pu(v^*)'\bigl]'=\Bigl(p(v^*)'\Bigl)'u+pu'(v^*)'.$$
-For a S-L problem its properties follow from:
-$$\langle \mathcal{L}[u], v \rangle=\langle u, \mathcal{L}[v] \rangle$$
-where functions $u$ and $v$
-satisfy its \underline{boundary conditions}.
+$$\bigl[pu(v^*)'\bigl]'=\Bigl(p(v^*)'\Bigl)'u+pu'(v^*)'$$
 
-\subsubsection{Series expansion}
-Now the set of orthonormal eigenfunctions $\{\phi_n(x)\}$
-from a S-L problem with boundary conditions
+\subsubsection*{S-L series expansion}
+The set of orthonormal eigenfunctions $\{\phi_n(x)\}$
+from a S-L problem defined on $[0,1]$
 may be used to expand function $f(x)$:
 $$f_\phi(x)=\sum_{n=1}^{\infty} c_n\phi_n(x)$$
-for $\forall x\in[0,1]$. Integrating this on both sides:
-\begin{align*}
-    \int_{0}^{1}r(x)\phi_m(x)f(x)\dd x
-    &=\int_{0}^{1}r(x)\phi_m(x)
-    \sum_{n=1}^{\infty} c_n\phi_n(x)\dd x \\
-    &=\sum_{n=1}^{\infty} c_n
-    \int_{0}^{1}r(x)\phi_m(x)\phi_n(x)\dd x \\
-    &=\sum_{n=1}^{\infty} c_n\delta_{mn} \\
-    &=c_m
-\end{align*}
-and so we get a general formula for our coefficients:
 $$c_n=\int_{0}^{1}r(x)\phi_n(x)f(x)\dd x.$$
-If $f(x)$ and $f'(x)$ are \underline{piecewise continuous}
-on $x\in[0,1]$ then:
-$$\forall x\in(0,1);\sum_{n=1}^{\infty} c_n\phi_n(x)
-=\frac{f(x^-)+f(x^+)}{2}$$
-where these are the left and right handed limits.
-
-\subsubsection{General Parseval's identity for S-L problems}
-We have that:
+in $L^2([0,1], r(x)\dd x)$.
+We also have the general Pareseval's identity:
 $$\int_{0}^{1}r(x)\bigl[f(x)\bigr]^2\dd x
-=\sum_{n=1}^{\infty}c_n^2$$
-where
-$$f(x)=\sum_{n=1}^{\infty} c_n\phi_n(x)$$
-and
-$$c_n=\int_{0}^{1}r(x)\phi_n(x)f(x)\dd x.$$
+=\sum_{n=1}^{\infty}c_n^2.$$
 
-\subsection{Non-homogeneous S-L problems}
-Consider:
+\subsubsection*{Non-homogeneous S-L problems}
 $$\mathcal{L}[y]=\mu r(x)y+f(x)$$
-where $f(x)$ is our non-homogeneous term, and that we define
-$$\mathcal{L}[y]=-\dv{x}\Bigl[P(x)\dv{y}{x}\Bigl]+q(x)y.$$
-Assume that this ODE satisfies regular S-L boundary conditions.
-
-Firstly we solve the corresponding homogeneous S-L problem:
+$$\mathcal{L}[y]=-\dv{x}\Bigl[P(x)\dv{y}{x}\Bigl]+q(x)y$$
+Firstly solve corresponding homogeneous problem:
 $$\mathcal{L}[y]=\lambda r(x)y$$
 for non-trivial $\lambda_n$ and $\phi_n(x)$.
 
-Now let the general solution to our non-homogeneous S-L problem be:
+Then the general solution is:
 $$y(x)=\sum_{n=1}^{\infty} b_n\phi_n(x)$$
-and substituting this yields:
-\begin{align*}
-    \sum_{n=1}^{\infty}b_n\mathcal{L}[\phi_n(x)]
-    &=r(x)\sum_{n=1}^{\infty}b_n\lambda_n\phi_n(x) \\
-    &=\mu r(x)\sum_{n=1}^{\infty}b_n\phi_n(x)+f(x).
-\end{align*}
-Rearranging then gives:
-$$\frac{f(x)}{r(x)}=\sum_{n=1}^{\infty}
-b_n(\lambda_n-\mu)\phi_n(x).$$
-Now we can also expand $\displaystyle\frac{f(x)}{r(x)}$
-in terms of our eigenfunctions:
-$$\frac{f(x)}{r(x)}=\sum_{n=1}^{\infty}c_n\phi_n(x)$$
-with
-\begin{align*}
-    c_n
-    &=\int_{0}^{1}r(x)\phi_n(x)
-    \frac{f(x)}{r(x)} \dd x \\
-    &=\int_{0}^{1}\phi_n(x)f(x)\dd x
-\end{align*}
-and so equating yields the following relation
-$$b_n=\frac{c_n}{\lambda_n-\mu}.$$
+$$b_n=\frac{c_n}{\lambda_n-\mu}$$
+$$c_n=\int_{0}^{1}\phi_n(x)f(x)\dd x.$$
 
-\subsection{Non-homogeneous PDEs}
-Consider the following non-homogeneous PDE:
-$$r(x)\frac{\partial u}{\partial t}
-=\frac{\partial}{\partial x}\Bigl[
-p(x)\frac{\partial u}{\partial x}
-\Bigr]-q(x)u(x,t)+F(x,t)$$
-with boundary and initial conditions:
+\subsubsection*{Non-homogeneous PDEs}
+Consider the following PDE:
+\begin{align*}
+    r(x)\frac{\partial u}{\partial t}
+    &=\frac{\partial}{\partial x}\Bigl[
+    p(x)\frac{\partial u}{\partial x}
+    \Bigr] \\
+    &\quad-q(x)u(x,t)+F(x,t)
+\end{align*}
+with conditions:
 \begin{itemize}
     \item $\displaystyle\frac{\partial}{\partial x}
     u(0,t)-h_1 u(0,t)=0$
@@ -643,12 +581,11 @@ with boundary and initial conditions:
     u(1,t)-h_2 u(1,t)=0$
     \item $u(x,0)=f(x)$.
 \end{itemize}
-Firstly we solve the \underline{homogenous} 
-case via separation of variables. Let:
-$$u(x,t)=X(x)T(t)$$
-and after some algebra:
-$$\frac{1}{rX}\Bigl[p'X'+pX''
--qX\Bigr]=\frac{\dot{T}}{T}=-\lambda.$$
+Firstly solve the homogeneous
+case. \\ 
+Let $u(x,t)=X(x)T(t)$.
+$$\therefore\frac{1}{rX}\Bigl[p'X'+pX''
+-qX\Bigr]=\frac{\dot{T}}{T}=-\lambda$$
 This yields two ODEs:
 $$\dot{T}+\lambda T=0$$
 $$-\bigl[pX'\bigr]'+qX=\lambda rX$$
@@ -658,62 +595,46 @@ $$X'(1)-h_2 X(1)=0$$
 Clearly our second ODE is of S-L form.
 We are now going to \underline{assume} that this
 regular S-L problem has \underline{non-trivial} $\lambda_n$
-and orthonormal eigenfunctions $\phi_n(x)$.
-
-Let the general solution to our PDE be:
+and orthonormal eigenfunctions $\phi_n(x)$. Then:
 $$u(x,t)=\sum_{n=1}^{\infty}b_n(t)\phi_n(x).$$
-Substituting this into our PDE yields:
-$$r(x)\sum_{n=1}^{\infty}\dot{b_n}(t)\phi_n(x)
-=\sum_{n=1}^{\infty}b_n(t)\Bigl[\Bigl(p(x)
-\phi'_n(x)\Bigr)'-q(x)\phi_n(x)\Bigr]+F(x,t).$$
-
-Now since we have a S-L problem:
-$$\Bigl(p(x)\phi'_n(x)\Bigr)'-q(x)\phi_n(x)
-=-\lambda_n\phi_n(x)r(x)$$
-and after dividing through our PDE by $r(x)$ we get:
-$$\sum_{n=1}^{\infty}\dot{b_n}(t)\phi_n(x)
-=\sum_{n=1}^{\infty}b_n(t)\Bigl[-\lambda_n\phi_n(x)\Bigr]
-+\frac{F(x,t)}{r(x)}.$$
-But we can also expand our non-homogeneous term as a sum:
+Since we have a S-L problem:
+\begin{align*} 
+    \sum_{n=1}^{\infty}\dot{b_n}(t)\phi_n(x)
+    &=\sum_{n=1}^{\infty}b_n(t)\Bigl[-\lambda_n\phi_n(x)\Bigr] \\
+    &+\frac{F(x,t)}{r(x)}
+\end{align*}
 $$\frac{F(x,t)}{r(x)}=\sum_{n=1}^{\infty}\gamma_n(t)\phi_n(x)$$
-and its coefficients are:
 $$\gamma_n(t)=\int_{0}^{1}F(x,t)\phi_n(x)\dd x$$
-in $L^2([0,1],r(x))$. Therefore after some algebra:
 $$\sum_{n=1}^{\infty}\Bigl[\dot{b_n}(t)
 +\lambda_n b_n(t)-\gamma_n(t)\Bigr]\phi_n(x)=0$$
-and yields the following ODE:
-$$\dot{b_n}(t)
-+\lambda_n b_n(t)-\gamma_n(t)=0.$$
-Solution is via integrating factors:
 $$b_n(t)=e^{-\lambda_n t}
 \int_{0}^{t}\gamma_n(s)e^{\lambda_n s}\dd s
-+e^{-\lambda_n t}b_n(0).$$
-Finally using $u(x,0)=f(x)$:
-$$u(x,0)=\sum_{n=1}^{\infty}b_n(0)\phi_n(x)
-=f(x)$$
-and we get
-$$b_n(0)=\int_{0}^{1}r(x)f(x)\phi_n(x)\dd x.$$
++e^{-\lambda_n t}b_n(0)$$
+finally using initial conditions:
+$$b_n(0)=\int_{0}^{1}r(x)f(x)\phi_n(x)\dd x$$
+and all this is in $L^2([0,1],r(x)\dd x)$.
 
-\subsection{Singular S-L problems}
+\subsubsection*{Singular S-L problems}
 Consider the following ODE:
 $$-\dv{x}\left(p(x)\dv{y}{x}\right)+q(x)y=\lambda r(x)y$$
-but now $p(x)$, $q(x)$ and $r(x)$ are \underline{discontinuous}
-at $x=0$ and/or $x=1$. \\
+but now some of $p(x)$, $q(x)$ and $r(x)$ are \underline{discontinuous}
+at $x=0$ and/or $x=1$.
 This is a \textbf{singular} S-L problem with boundary condition:
 $$b_1 y(1)+b_2 y'(1)=0$$
 \underline{or}
 $$a_1 y(0)+a_2 y'(0)=0.$$
-
-Now singular S-L problems at $x=0$ may be \underline{self-adjoint} or that they yield:
+Now singular S-L problems at $x=0$ may be
+\underline{self-adjoint} or that they yield:
 \begin{itemize}
     \item $\lambda_n\in\mathbb{R}$ (Real eigenvalues)
     \item $\langle \phi_m,\phi_n \rangle=\delta_{mn}$
     (Orthogonal eigenfunctions)
 \end{itemize}
-if they satisfy Lagrange's identity. Consider singular S-L problem at $x=0$:
+if they satisfy Lagrange's identity. \\
+Consider singular S-L problem at $x=0$:
 \begin{align*}
-    \int_{\epsilon}^{1}\Bigl(\mathcal{L}[u]v
-    -u\mathcal{L}[v]\Bigr)\dd x
+    &\int_{\epsilon}^{1}\Bigl(\mathcal{L}[u]v
+    -u\mathcal{L}[v]\Bigr)\dd x \\
     &=\Bigl[-p(x)
     \Bigl(u'(x)v(x)-u(x)v'(x)\Bigr)\Bigr]_{\epsilon}^{1} \\
     &=p(\epsilon)
@@ -736,7 +657,7 @@ $$\lim_{\epsilon\rightarrow\infty}
 Finally whilst eigenvalues may be real they are \underline{not}
 necessarily discrete!
 
-\section{Laplace transforms}
+\subsubsection*{Laplace transforms}
 So let $f(t)$ be defined for $t\in[0,\infty)$. Its Laplace transform is:
 $$\mathcal{L}[f(t)]=\int_{0}^{\infty}e^{-st}f(t)\dd t.$$
 Let \textbf{functions of exponential order} be defined as:
@@ -748,30 +669,18 @@ we denote such functions as $f\in E$.
 For \underline{sufficiently} large $s$, the Laplace transform
 $f\in E$ converges.
 
-\subsection{Properties}
-\subsubsection{Inversion formula}
-Now let $F(s)=\mathcal{L}[f(t)]$. We have
-the following inversion formula:
-\begin{align*}
-    f(t)
-    &=\mathcal{L}^{-1}[F(s)] \\
-    &=\frac{1}{2\pi i}\int_{\gamma-i\infty}^
-    {\gamma+i\infty}e^{st}F(s)\dd s.
-\end{align*}
-
-\subsubsection{Reduction of order}
-Applying the Laplace transform to derivatives:
+\subsubsection*{Reduction of order}
 $$\mathcal{L}[f'(t)]=s\mathcal{L}[f(t)]-f(0)$$
-for $\forall f,f'\in E$ and 
-generalising this via induction gives:
+For $\forall f,f'\in E$ and generalising:
 \begin{align*}
     \mathcal{L}[f^{(n)}(t)]
     &=s^n\mathcal{L}[f(t)]
-    -s^{(n-1)}f^{(0)}(0)-s^{(n-2)}f^{(1)}(0) \\
+    -s^{(n-1)}f^{(0)}(0) \\
+    &\quad-s^{(n-2)}f^{(1)}(0) \\
     &\quad-\dots-sf^{(n-2)}(0)-f^{(n-1)}(0).
 \end{align*}
 
-\subsubsection{Shifts, scaling and derivatives}
+\subsubsection*{Shifts, scaling and derivatives}
 Let $F(s)=\mathcal{L}[f(t)](s)$.
 We then have that:
 \begin{enumerate}
@@ -779,52 +688,43 @@ We then have that:
     $$\mathcal{L}[e^{-ct}f(t)](s)=F(s+c)$$
     where $s+c>\gamma$.
     \item \textbf{t-shift}: \\
-    Let $c\geq0$ and $f(t)=0$ if $t<0$. Then:
-    $$\mathcal{L}[f(t-c)](s)=e^{-sc}F(s).$$
-    Furthermore utilising the unit step function:
+    Let $c\geq0$ and $f(t)=0$ if $t<0$.
+    $$\therefore\mathcal{L}[f(t-c)](s)=e^{-sc}F(s)$$
+    In terms of the unit step function:
     $$\mathcal{L}[g(t-c)u_c(t)](s)=e^{-sc}G(s)$$
     where $G(s)=\mathcal{L}[g(t)](s)$
     and $g(t)$ any normal function.
 
     \item \textbf{s-derivative}:
-    $$\mathcal{L}[tf(t)](s)=-\dv{s}F(s).$$
-    We can also extend this to the $n$th derivative:
+    $$\mathcal{L}[tf(t)](s)=-\dv{s}F(s)$$
     $$\mathcal{L}[t^n f(t)]
-    =(-1)^n F^{(n)}(s).$$
+    =(-1)^n F^{(n)}(s)$$
 
     \item \textbf{scaling}:
     $$\mathcal{L}[f(ct)]=\frac{1}{c}F(\frac{s}{c})$$
-    and
     $$\frac{1}{c}\mathcal{L}[f(\frac{t}{c})]=F(cs)$$
     where $c>0$.
 \end{enumerate}
 
-\subsection{Applications}
-
-\subsubsection{Higher order ODEs}
-So consider the following $n$th order ODE:
+\subsubsection*{Higher order ODEs}
 $$y^{(n)}(t)+a_1y^{(n-1)}(t)+\dots
 +a_n y(t)=f(t)$$
-for $f\in E$. After taking the Laplace transform of both sides
-we get:
 $$Z(s)\mathcal{L}[y(t)]
 =\mathcal{L}[f(t)]+Z_0(s)$$
-where $Z(s)$ is a degree $n$ polynomial
+Where $Z(s)$ is a degree $n$ polynomial
 and $Z_0(s)$ a degree $n-1$ polynomial dependent on our 
 initial conditions.
 
-Now if our source term is of the following form:
+If the source term is of the following form:
 $$f(t)=t^n e^{at}\bigl(A\cos bt+B\sin bt\bigr)$$
 then $\mathcal{L}[f(t)]$ is rational and therefore:
 $$\mathcal{L}[y(t)]=\frac{\mathcal{L}[f(t)]}{Z(s)}+\frac{Z_0(s)}{Z(s)}$$
 where we can solve this via standard transforms.
 
-\subsubsection{Discontinuous source terms}
-Since the Laplace transform is convergent for all \underline{piecewise}
-continuous functions, we can use it to solve ODEs with 
-discontinous source terms:
+\subsubsection*{Discontinuous source terms}
+Consider the following ODE:
 $$Ay''(t)+By'(t)+Cy(t)=g(t)$$
-where $g(t)$ is piecewise continuous and of the following form:
+where $g(t)$ is piecewise continuous:
 $$g(t)=f(t)[u_a(t)-u_b(t)]
 =\left\{
     \begin{array}{lr}
@@ -836,52 +736,45 @@ for $b>a$. This is the \textbf{unit step function}:
 $$u_c(t)=\left\{
     \begin{array}{lr}
         0 & t<0 \\
-        1 & t\geq c
+        1 & t\geq c.
     \end{array}
 \right.$$
-and is also known as the Heaviside function. Its Laplace transform is:
-$$\mathcal{L}[u_c(t)](s)=\frac{e^{-sc}}{s}.$$
+$$\therefore\mathcal{L}[u_c(t)](s)=\frac{e^{-sc}}{s}$$
 Furthermore we can define a \underline{shift} of $f(t)$ by $c>0$ to the 
 \underline{right} by:
 $$f(t-c)u_c(t)$$
 $$\mathcal{L}[f(t-c)u_c(t)]=e^{-sc}F(s)$$
 where $F(s)=\mathcal{L}[f(t)]$.
 
-\subsubsection{Impulse functions}
-The \textbf{Dirac delta} is defined as:
+\subsubsection*{Impulse functions}
+The Dirac delta is defined as:
 $$\delta(t)=\left\{
     \begin{array}{lr}
         \infty & t=0 \\
         0 & t\neq0
     \end{array}
 \right.$$
-and physically a ``strike'' on a system
-in infinitely short time.
-We have that:
+and has the following properties:
 $$\int_{-\infty}^{\infty}\delta(t-t_0)
 f(t)\dd t=f(t_0)$$
 $$\dv{t}\Bigl[u_{t_0}(t)\Bigr]
 =\delta(t-t_0)$$
-and
 $$\mathcal{L}[\delta(t-t_0)]
 =e^{-st_0}.$$
-
 If $t_0=0$ then
 $\displaystyle\mathcal{L}[\delta(t)]
 =\lim_{t_0\rightarrow0}
 \bigl(e^{-st_0}\bigr)=1$.
-
-Taking the Laplace transform of the following ODE
+Consider the following impulse ODE:
 $$y''(t)+y(t)=\delta(t)$$
-with initial conditions $y(0)=y'(0)=0$ gives:
+with initial conditions $y(0)=y'(0)=0$:
 $$\mathcal{L}[y(t)]
 =\frac{1}{s^2+1}
 \lim_{t_0\rightarrow0}\bigl(
 e^{-s t_0}
 \bigr).$$
 It is important that we do not evaluate the limit here!
-
-Finally by inspection we have that:
+Then by inspection:
 \begin{align*}
     y(t)
     &=\lim_{t_0\rightarrow0}
@@ -889,16 +782,13 @@ Finally by inspection we have that:
     &=\sin(t)u_0(t).
 \end{align*}
 
-\subsubsection{Convolutions}
-Convolutions can also be helpful in solving ODEs.
-They are defined:
+\subsubsection*{Convolutions}
+Let functions $f,g:[0,\infty)\rightarrow\mathbb{R}$.
 \begin{align*}
     f(t)*g(t)
     &=\int_{0}^{t}f(s)g(t-s)\dd s \\
     &=\int_{0}^{t}g(s)f(t-s)\dd s
 \end{align*}
-for functions $f,g:[0,\infty)\rightarrow\mathbb{R}$
-and has the following properties:
 \begin{itemize}
     \item $f*(g+h)=f*g+f*h$
     \item $f*g=g*f$
@@ -906,76 +796,50 @@ and has the following properties:
     \item $f*1\neq f$
     \item $f*f\neq f^2$.
 \end{itemize}
-Importantly we have the \textbf{convolution theorem}:
+
+\subsubsection*{Convolution theorem}
 $$\mathcal{L}[f(t)*g(t)]=\mathcal{L}[f(t)]\mathcal{L}[g(t)]$$
-where if $f,g\in E$ then $f*g\in E$, or that they
-are functions of exponential order so that our Laplace
-transforms converge. Note that:
+For if $f,g\in E$ then $f*g\in E$.
+Note:
 $$\int_{0}^{t}f(s)\dd s
 =\int_{0}^{t}f(s)u_0(t-s)\dd s$$
-and therefore
 $$\mathcal{L}\Bigl[
 \int_{0}^{t}f(s)\dd s
 \Bigr]=\frac{\mathcal{L}[f(t)]}{s}.$$
 
 Now consider the following ODE:
 $$ay''(t)+by'(t)+cy(t)=g(t)$$
-with initial conditions $y(0)=\alpha$
-and $y'(0)=\beta$.
+with $y(0)=\alpha$ and $y'(0)=\beta$. \\
 Here $a,b,c,\alpha,\beta\in\mathbb{R}$.
 \begin{align*}
     \therefore\mathcal{L}[y(t)]
     &=\Phi(s)+\Psi(s) \\
     &=\frac{(as+b)\alpha+a\beta}
-    {as^2+bs+c}
-    +\frac{1}{as^2+bs+c}\mathcal{L}[g(t)]
+    {as^2+bs+c} \\
+    &\quad+\frac{1}{as^2+bs+c}\mathcal{L}[g(t)]
 \end{align*}
-\begin{align*}
-    \therefore y(t)
-    &=\mathcal{L}^{-1}[\Phi(s)]
-    +\mathcal{L}^{-1}[\Psi(s)] \\
-    &=\phi(t)+\psi(t)
-\end{align*}
-The first expression $\phi(t)$ can be found via
-standard transforms.
-For the second expression we define the
-\textbf{transfer function}\footnote{Also known as a Green's function.}:
-$$H(s)=\frac{1}{as^2+bs+c}$$
-where it is the Laplace transform of the following
-corresponding ODE:
+$$\therefore y(t)=\phi(t)+\psi(t)$$
 $$ah''(t)+bh'(t)+ch(t)=\delta(t)$$
-with initial conditions $h(0)=h'(0)=0$.
-$\therefore H(s)=\mathcal{L}[h(t)]$
-
-This is helpful since:
+$$h(0)=h'(0)=0$$
+$$H(s)=\mathcal{L}[h(t)]=\frac{1}{as^2+bs+c}$$
 \begin{align*}
-    \Psi(s)
+    \therefore\Psi(s)
     &=\frac{1}{as^2+bs+c}\mathcal{L}[g(t)] \\
     &=H(s)\mathcal{L}[g(t)]
 \end{align*}
-and
 \begin{align*}
     \mathcal{L}[\psi(t)]
     &=\mathcal{L}[h(t)]\mathcal{L}[g(t)] \\
     &=\mathcal{L}[h(t)*g(t)].
 \end{align*}
-Applying the convolution theorem we get:
 \begin{align*}
     \psi(t)
     &=h(t)*g(t) \\
     &=\int_{0}^{t}h(s)g(t-s)\dd s.
 \end{align*}
 
-\subsection{Standard transforms}
+\subsubsection*{Standard transforms}
 \begin{itemize}
-    \item $\displaystyle\mathcal{L}[t^n]
-    =\frac{n!}{s^{n+1}}$
-    where $n\in\mathbb{N}$ and $s>0$.
-
-    \item $\displaystyle\mathcal{L}[e^{at}]
-    =\frac{1}{s-a}$
-    where $s>a$.
-
     \item $\displaystyle\mathcal{L}
     [t^n e^{at}]=\frac{n!}{(s-a)^{n+1}}$
     where $n\in\mathbb{N}$ and $s>a$.
@@ -998,7 +862,7 @@ Applying the convolution theorem we get:
     [e^{at}\sin bt]=\frac{b}{(s-a)^2+b^2}$,
 
     $\displaystyle\mathcal{L}
-    [e^{at}\cos bt]=\frac{s-a}{(s-a)^2+b^2}$
+    [e^{at}\cos bt]=\frac{s-a}{(s-a)^2+b^2}$ \\
     where $s>a$.
 
     \item $\displaystyle\mathcal{L}
@@ -1008,7 +872,9 @@ Applying the convolution theorem we get:
     \item $\displaystyle\mathcal{L}
     [\delta(t-c)]=e^{-cs}$.
 \end{itemize}
-
 \end{multicols}
+\begin{center}
+    \includegraphics*[scale=0.6]{f2.png}
+\end{center}
 
 \end{document}
