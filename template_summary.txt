@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[margin=0.3in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{physics}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{enumitem}
+\newcommand{\matr}[1]{\mathbf{#1}}
+\def\dbar{{\mathchar'26\mkern-12mu d}}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\fancyhead[R]{\thepage}
+
+\begin{document}
+
+\begin{multicols}{3}
+\noindent
+
+\end{multicols}
+
+\end{document}

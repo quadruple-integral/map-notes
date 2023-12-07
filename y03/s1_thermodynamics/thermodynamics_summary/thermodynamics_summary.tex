@@ -1,0 +1,149 @@
+\documentclass{article}
+\usepackage[margin=0.3in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{physics}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{enumitem}
+\newcommand{\matr}[1]{\mathbf{#1}}
+\def\dbar{{\mathchar'26\mkern-12mu d}}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\fancyhead[R]{\thepage}
+
+\begin{document}
+
+\begin{multicols*}{3}
+\noindent
+
+\subsubsection*{Definitions}
+
+\textbf{Isolated system}: No exchanges
+
+\textbf{Closed system}: Only energy exchange
+
+\textbf{Open system}: Energy \& mass exchange
+
+\textbf{Intensive state variables}: \\
+Independent of mass
+
+\textbf{Extensive state variables}: \\
+Proportional to mass
+
+\textbf{Reservoirs}: Infinite/very large system
+that remains unchanged when in contact
+with finite system.
+
+\textbf{Mechanical equilibrium}: \\
+No unbalanced forces
+
+\textbf{Thermal equilibrium}: \\
+No temperature differences
+
+\textbf{Thermodynamic equilibrium}: \\
+Intensive state variables of system are \underline{constant}.
+Alternatively our system is in \underline{mechanical} and
+\underline{thermal} equilibrium.
+
+\textbf{Reversible processes}: \\
+Every intermediate is an equilibrium state.
+
+\textbf{Quasi-static processes}: \\
+Process sufficiently slow such that only \\
+infinitesimal temperature or pressure gradients exist.
+
+Frictionless quasi-static processes are \underline{reversible}.
+
+\textbf{Cyclic processes}:
+$$\oint\dd X=0$$
+where $X$ is a state variable.
+
+\subsubsection*{Zeroth law}
+If $A$ is in thermal equilibrium with $B$ and $C$
+\underline{seperately} then $B$ and $C$
+are also in thermal equilibrium.
+
+\subsubsection*{Ideal gas state equation}
+Given $n$ moles of gas at temperature $T$:
+$$PV=nRT$$
+where $R=8.314$JK$^{-1}$mol$^{-1}$.
+
+\subsubsection*{First law}
+$$\dd U=\dd Q-\dd W$$
+Note $Q>0$ represents energy transferred
+\underline{into} system.
+When system does work on surroundings $W>0$.
+
+Work done \underline{by} fluid
+in reversible process:
+$$\dd W=P\dd V.$$
+
+\subsubsection*{Isochoric heat capacity}
+$$C_V(T)=\left(\frac{\dd Q}{\dd T}\right)_V
+=\left(\frac{\partial U}{\partial T}\right)_V$$
+
+\subsubsection*{Isobaric heat capacity}
+\begin{align*}
+    C_P
+    &=\left(\frac{\dd Q}{\dd T}\right)_P \\
+    &=C_V+\left[P+
+    \left(\frac{\partial U}{\partial V}\right)_T\right]
+    \left(\frac{\partial V}{\partial T}\right)_P
+\end{align*}
+Heat capacity has units JK$^{-1}$.
+
+For ideal gases:
+$$C_P-C_V=nR$$
+$$TV^{\gamma-1}=\text{constant}$$
+$$\gamma=\frac{C_P}{C_V}.$$
+
+\subsubsection*{State function enthalpy}
+$$H=U+PV$$
+\begin{align*}
+    \dd H
+    &=\dd U+V\dd P+P\dd V \\
+    &=\dd Q+V\dd P
+\end{align*}
+$$\therefore C_P
+=\left(\frac{\partial H}{\partial T}\right)_P$$
+
+\subsubsection*{Chemical reactions}
+$$Q=\Delta U+P_0\Delta V=\Delta H$$
+Here $P_0$ is constant.
+\begin{itemize}
+    \item $Q<0$: exothermic \\
+    (heat is released)
+    \item $Q>0$: endothermic \\
+    (heat is absorbed)
+\end{itemize}
+
+\subsubsection*{Carnot's theorem}
+Peak efficiency of a \underline{cyclic}
+heat engine:
+$$\eta=1-\frac{Q_C}{Q_H}.$$
+
+\subsubsection*{State function entropy}
+$$S=\frac{Q}{T}$$
+For reversible cyclic heat engine:
+$$\dd S=\frac{\dd Q}{T}.$$
+$$\therefore\dd U=T\dd S-P\dd V$$
+
+
+
+\end{multicols*}
+
+\end{document}
