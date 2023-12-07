@@ -641,7 +641,7 @@ Consider singular S-L problem at $x=0$:
     \Bigl(u'(\epsilon)v(\epsilon)-u(\epsilon)v'(\epsilon)\Bigr)
 \end{align*}
 and tends to zero if and only if:
-$$\lim_{\epsilon\rightarrow\infty}
+$$\lim_{\epsilon\rightarrow0}
 \Bigl[p(\epsilon)
 \Bigl(u'(\epsilon)v(\epsilon)-u(\epsilon)v'(\epsilon)\Bigr)\Bigr]=0,$$
 where we define:
@@ -651,9 +651,12 @@ problem to have \underline{real} eigenvalues and
 \underline{orthogonal eigenfunctions}.
 
 Similarly for singular S-L problem at $x=1$ it is self-adjoint if:
-$$\lim_{\epsilon\rightarrow\infty}
-\Bigl[p(1-\epsilon)
-\Bigl(u'(1-\epsilon)v(1-\epsilon)-u(1-\epsilon)v'(1-\epsilon)\Bigr)\Bigr]=0.$$
+\begin{align*}
+    \lim_{\epsilon\rightarrow0}
+    &\Bigl[p(1-\epsilon)
+    \Bigl(u'(1-\epsilon)v(1-\epsilon) \\ &-u(1-\epsilon)v'(1-\epsilon)\Bigr)\Bigr]
+    =0.
+\end{align*}
 Finally whilst eigenvalues may be real they are \underline{not}
 necessarily discrete!
 
@@ -841,8 +844,12 @@ $$H(s)=\mathcal{L}[h(t)]=\frac{1}{as^2+bs+c}$$
 \subsubsection*{Standard transforms}
 \begin{itemize}
     \item $\displaystyle\mathcal{L}
-    [t^n e^{at}]=\frac{n!}{(s-a)^{n+1}}$
-    where $n\in\mathbb{N}$ and $s>a$.
+    [t^n]=\frac{n!}{s^{n+1}}$
+    where $n\in\mathbb{N}$.
+
+    \item $\displaystyle\mathcal{L}
+    [e^{at}]=\frac{1}{s-a}$
+    where $s>a$.
 
     \item $\displaystyle\mathcal{L}
     [\sin at]=\frac{a}{s^2+a^2}$,
@@ -874,7 +881,71 @@ $$H(s)=\mathcal{L}[h(t)]=\frac{1}{as^2+bs+c}$$
 \end{itemize}
 \end{multicols}
 \begin{center}
-    \includegraphics*[scale=0.6]{f2.png}
+    \includegraphics*[scale=0.5]{f2.png}
 \end{center}
+
+\begin{multicols*}{3}
+    \subsubsection*{Miscellaneous}
+    \begin{itemize}
+        \item \textbf{Polar coordinates}
+        $$x=r\cos\theta$$
+        $$y=r\sin\theta$$
+
+        \item \textbf{Taylor's formula}
+        $$f(x)=\sum_{n=0}^{\infty}
+        \frac{f^{(n)}(x_0)}{n!}
+        (x-x_0)^n$$
+
+        \item \textbf{Partial fractions}
+        \begin{align*}
+            &\frac{N(x)}{(ax+b)(cx+d)^2} \\
+            &=\frac{A}{ax+b}
+            +\frac{B}{cx+d}
+            +\frac{C}{(cx+d)^2} \\[0.3em]
+            &\frac{N(x)}{(ax+b)(x^2+c)} \\
+            &=\frac{A}{ax+b}
+            +\frac{Bx+C}{x^2+c^2}
+        \end{align*}
+
+        \item \textbf{Hyperbolic functions}
+        $$\sinh x=\frac{1}{2}\Bigl(e^x-e^{-x}\Bigr)$$
+        $$\cosh x=\frac{1}{2}\Bigl(e^x+e^{-x}\Bigr)$$
+        Periodicity: $2\pi i$
+
+        \item \textbf{Integrals}
+        $$\int\frac{\dd x}{\sin x}
+        =\ln|\cosecant x-\cotangent x|+k$$
+        $$\int\frac{\dd x}{\cos x}
+        =\ln|\tan x-\secant x|+k$$
+
+        \columnbreak
+
+        \item \textbf{Bessel's equation} \\
+        Let $t=\sqrt{\lambda}x$.
+        Then:
+        $$-(xy')'=\lambda xy$$
+        $$t\dv[2]{y}{t}+\dv{y}{t}+ty=0.$$
+        This is Bessel's equation of order zero.
+        Its general solution is:
+        $$y=c_1 J_0(t)+c_2 Y_0(t)$$
+        where $J_0$ and $Y_0$ are Bessel functions.
+        Since $Y_0$ is unbounded we choose $c_2=0$
+        and set our \underline{orthonormal}
+        eigenfunctions to be:
+        $$\phi_n(x)=k_n J_0(\sqrt{\lambda_n}x)$$
+        $$
+            J_0(\sqrt{\lambda}x)=1
+            +\sum_{m=1}^{\infty}
+            \frac{(-1)^m\lambda^m x^{2m}}
+            {2^{2m}(m!)^2}.
+        $$
+
+        \item \textbf{Further transforms} \\
+        $$\mathcal{L}[t^n e^{at}]=\frac{n!}{(s-a)^{n+1}}$$
+        where $n\in\mathbb{N}$ and $s>a$.
+        $$\mathcal{L}
+        [\delta(t-c)f(t)]=e^{-cs}f(c).$$
+    \end{itemize}
+\end{multicols*}
 
 \end{document}
