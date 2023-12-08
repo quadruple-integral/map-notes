@@ -22,7 +22,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrulewidth}{0pt}
 \fancyhead[R]{\thepage}
 
 \begin{document}
@@ -694,7 +694,7 @@ We then have that:
     Let $c\geq0$ and $f(t)=0$ if $t<0$.
     $$\therefore\mathcal{L}[f(t-c)](s)=e^{-sc}F(s)$$
     In terms of the unit step function:
-    $$\mathcal{L}[g(t-c)u_c(t)](s)=e^{-sc}G(s)$$
+    \textcolor{red}{$$\mathcal{L}[g(t-c)u_c(t)](s)=e^{-sc}G(s)$$}
     where $G(s)=\mathcal{L}[g(t)](s)$
     and $g(t)$ any normal function.
 
@@ -946,6 +946,26 @@ $$H(s)=\mathcal{L}[h(t)]=\frac{1}{as^2+bs+c}$$
         $$\mathcal{L}
         [\delta(t-c)f(t)]=e^{-cs}f(c).$$
     \end{itemize}
+
+    \hspace{\fill}
+
+    \columnbreak
+    
+    \subsubsection*{Phase diagrams}
+    \begin{itemize}
+        \item \underline{Real} and \underline{unique} eigenvalues: \\
+        \includegraphics*[scale=0.5]{f3.png}
+
+        \item \underline{Repeat} eigenvalues
+        ($\boldsymbol{\xi}$ and $\boldsymbol{\eta}$): \\
+        \includegraphics*[scale=0.5]{f4.png}
+
+        \item \underline{Repeat} eigenvalues \\
+        (\textbf{two} eigenvectors,
+        $\boldsymbol{\xi}^{(1)}$ and $\boldsymbol{\xi}^{(2)}$): \\
+        \includegraphics*[scale=0.25]{f5.png}
+    \end{itemize}
+    
 \end{multicols*}
 
 \end{document}
