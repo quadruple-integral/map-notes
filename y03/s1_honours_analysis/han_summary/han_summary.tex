@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[margin=0.3in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{physics}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{enumitem}
+\newcommand{\matr}[1]{\mathbf{#1}}
+\def\dbar{{\mathchar'26\mkern-12mu d}}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\fancyhead[R]{\thepage}
+
+\begin{document}
+
+\begin{multicols*}{3}
+\noindent
+
+\subsubsection*{D2.1: Pointwise convergence}
+$f_n\rightarrow f$ pointwise on $E$ if:
+$$f(x)=\lim_{n\rightarrow\infty}f_n(x).$$
+Here $f_n:E\rightarrow\mathbb{R}$.
+\begin{align*}
+    &\forall x\in E;\forall\epsilon>0;
+    \exists N\in\mathbb{N}:\forall n\geq N \\
+    &\implies |f_n(x)-f(x)|<\epsilon
+\end{align*}
+
+\subsubsection*{D2.2: Uniform convergence}
+$f_n\rightarrow f$ uniformly on $E$ if:
+\begin{align*}
+    &\forall\epsilon>0;
+    \exists N\in\mathbb{N}:\forall n\geq N
+    \hspace{0.05in}\text{and}\hspace{0.05in}
+    \forall x\in E \\
+    &\implies |f_n(x)-f(x)|<\epsilon
+\end{align*}
+
+\subsubsection*{P2.1}
+The following statements are equivalent.
+\begin{enumerate}
+    \item $f_n\rightarrow f$ uniformly on $E$
+    \item $\displaystyle\lim_{n\rightarrow\infty}
+    \sup_{x\in E}|f_n(x)-f(x)|=0$
+    \item $\exists a_n\rightarrow0$ s.t.
+    $|f_n(x)-f(x)|\leq a_n$ for $\forall x\in E$.
+\end{enumerate}
+
+\subsubsection*{T2.1}
+If $f_n$ is continuous on $E$ \textbf{and}
+$f_n\rightarrow f$ uniformly on $E$
+then $f$ is continuous on $E$.
+
+\subsubsection*{Remark}
+If $f$ is \underline{not continuous} on $E$
+then $f_n$ \underline{cannot} be uniform on $E$.
+
+\subsubsection*{T2.5: Weierstrass M-test}
+Let $E\subset\mathbb{R}$ and
+$f_k:E\rightarrow\mathbb{R}$. \\
+$\exists M_k>0 : \displaystyle
+\sum_{k=1}^{\infty}M_k<\infty$. \\
+If $\forall k\in\mathbb{N}$
+and $\forall x\in E$;
+$|f_k(x)|\leq M_k$
+then: \\
+$\displaystyle\sum_{k=1}^{\infty}f_k(x)$
+converges uniformly on $E$.
+
+\end{multicols*}
+
+\end{document}
