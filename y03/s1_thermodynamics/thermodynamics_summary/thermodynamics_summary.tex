@@ -69,8 +69,16 @@ infinitesimal temperature or pressure gradients exist.
 Frictionless quasi-static processes are \underline{reversible}.
 
 \textbf{Cyclic processes}:
+$$\Delta U=0
+\hspace{0.05in}\text{and}\hspace{0.05in}
+W=Q$$
+For conservative forces:
 $$\oint\dd X=0$$
 where $X$ is a state variable.
+
+\textbf{Adiabatic processes}: $\Delta Q=0$
+
+\textbf{Isothermal processes}: $\Delta T=0$
 
 \subsubsection*{Zeroth law}
 If $A$ is in thermal equilibrium with $B$ and $C$
@@ -83,14 +91,17 @@ $$PV=nRT$$
 where $R=8.314$JK$^{-1}$mol$^{-1}$.
 
 \subsubsection*{First law}
-$$\dd U=\dd Q-\dd W$$
+Total energy $E$ is conserved and:
+$$\dd U=\dd Q-\dd W.$$
 Note $Q>0$ represents energy transferred
 \underline{into} system.
 When system does work on surroundings $W>0$.
 
 Work done \underline{by} fluid
-in reversible process:
-$$\dd W=P\dd V.$$
+in reversible \\
+adiabatic processes:
+$$\dd W=P\dd V$$
+and is in Joules (J).
 
 \subsubsection*{Isochoric heat capacity}
 $$C_V(T)=\left(\frac{\dd Q}{\dd T}\right)_V
@@ -106,10 +117,17 @@ $$C_V(T)=\left(\frac{\dd Q}{\dd T}\right)_V
 \end{align*}
 Heat capacity has units JK$^{-1}$.
 
-For ideal gases:
-$$C_P-C_V=nR$$
+For ideal gases we have that:
+$$C_P-C_V=nR.$$
+Under \underline{reversible adiabatic} processes:
 $$TV^{\gamma-1}=\text{constant}$$
-$$\gamma=\frac{C_P}{C_V}.$$
+$$PV^{\gamma}=\text{constant}$$
+$$T^{\frac{1}{\gamma-1}}V=\text{constant}$$
+where $\gamma$ is the \underline{adiabatic exponent}:
+$$U=\frac{f}{2}nRT$$
+$$\gamma=\frac{C_P}{C_V}
+=\frac{f+2}{f}$$
+regardless of degrees of freedom $f$.
 
 \subsubsection*{State function enthalpy}
 $$H=U+PV$$
@@ -134,15 +152,65 @@ Here $P_0$ is constant.
 \subsubsection*{Carnot's theorem}
 Peak efficiency of a \underline{cyclic}
 heat engine:
-$$\eta=1-\frac{Q_C}{Q_H}.$$
+$$\eta=\frac{\dot{W}}{\dot{Q_H}}=1-\frac{Q_C}{Q_H}
+=1-\frac{T_C}{T_H}$$
+and is either in terms of rate or value, 
+with units J or Js$^{-1}$.
 
 \subsubsection*{State function entropy}
 $$S=\frac{Q}{T}$$
-For reversible cyclic heat engine:
-$$\dd S=\frac{\dd Q}{T}.$$
 $$\therefore\dd U=T\dd S-P\dd V$$
 
+\subsubsection*{Entropy of mixing}
+$$\Delta S=n_A R\ln\frac{V_A+V_B}{V_A}
++n_B R\ln\frac{V_A+V_B}{V_B}$$
+$$\Delta s_{mix}=-R(x_A\ln x_A+x_B\ln x_B)$$
+$$x_A=\frac{n_A}{n_A+n_B}
+\hspace{0.05in}\text{and}\hspace{0.05in}
+x_B=\frac{n_B}{n_A+n_B}$$
 
+\subsubsection*{Second law}
+$$\Delta S_{total}=\Delta_{system}
++\Delta_{reservoir}\geq0$$
+$$\dd S\geq\frac{\dd Q}{T}$$
+
+\subsubsection*{Helmholtz free energy}
+$$F=U-TS$$
+$$\dd F=-S\dd T-P\dd V$$
+
+\subsubsection*{Gibbs free energy}
+$$G=H-TS$$
+$$\dd G=-S\dd T+V\dd P$$
+Chemical reactions are spontaneous if:
+$$\Delta G=\Delta H-T\Delta S<0.$$
+
+\subsubsection*{Maxwell relations}
+$$\left(\frac{\partial T}{\partial V}\right)_S=-\left(\frac{\partial P}{\partial S}\right)_V$$
+$$\left(\frac{\partial T}{\partial P}\right)_S=\left(\frac{\partial V}{\partial S}\right)_P$$
+$$\left(\frac{\partial S}{\partial V}\right)_T=\left(\frac{\partial P}{\partial T}\right)_V$$
+$$-\left(\frac{\partial S}{\partial P}\right)_T=\left(\frac{\partial V}{\partial T}\right)_P$$
+The isobaric expansivity is defined as:
+$$\beta=\frac{1}{V}
+\left(\frac{\partial V}{\partial T}\right)_P$$
+and the isothermal compressibility:
+$$\kappa_T=-\frac{1}{V}
+\left(\frac{\partial V}{\partial P}\right)_T.$$
+
+\newpage
+
+\subsubsection*{Clausius-Clapeyron equation}
+The slope of any phase boundaries is:
+$$\dv{P}{T}=\frac{\Delta S}{\Delta V}.$$
+
+\subsubsection*{Van der Waals state equation}
+$$\left(P+\frac{an^2}{V^2}\right)
+\bigl(V-nb\bigr)=nRT$$
+
+\subsubsection*{Chemical potentials}
+$$\mu=\frac{G}{N}$$
+
+\subsubsection*{Third law}
+$S=0$ at $T=0$K.
 
 \end{multicols*}
 
