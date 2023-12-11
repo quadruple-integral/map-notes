@@ -31,6 +31,22 @@
 \begin{multicols*}{3}
 \noindent
 
+\subsubsection*{D: Supremum}
+
+\subsubsection*{T: Approximation lemma}
+
+\subsubsection*{D: Completeness of $\mathbb{R}$}
+Every nonempty \underline{bounded} subset
+of $\mathbb{R}$ has an infimum and supremum.
+
+\subsubsection*{T: Archimedean property}
+$\forall a,b\in\mathbb{R}; a>0;\exists n\in\mathbb{N}
+: na>b$
+
+\subsubsection*{D1.1: Nested intervals}
+
+\subsubsection*{T1.1: Nested interval property}
+
 \subsubsection*{D2.1: Pointwise convergence}
 $f_n\rightarrow f$ pointwise on $E$ if:
 $$f(x)=\lim_{n\rightarrow\infty}f_n(x).$$
@@ -82,6 +98,48 @@ then: \\
 $\displaystyle\sum_{k=1}^{\infty}f_k(x)$
 converges uniformly on $E$.
 
+\subsubsection*{D: Power series}
+Let $(a_n)$ be a real sequence and $c\in\mathbb{R}$. Then:
+$$f_{PS}(x)=\sum_{n=0}^{\infty}a_n(x-c)^n$$
+is a power series centered at $c$, with
+\textbf{radius of convergence}:
+$$R=\sup\{r\geq0:(a_n r^n)\hspace{0.05in}
+\text{is bounded}\}$$
+where $R=\infty$ implying that series converges
+everywhere.
+
+\subsubsection*{T3.1: Convergence of power series}
+Let $0<R<\infty$.
+If $|x-c|<R$ then
+$f_{PS}(x)$ converges absolutely.
+
+If $|x-c|>R$ then $f_{PS}(x)$ diverges.
+
+\subsubsection*{T3.2: Continuity of power series}
+Let $0<r<R$ where $R$ is the radius of
+convergence of $f_{PS}(x)$.
+
+Then for $|x-c|\leq r$, $f_{PS}(x)$
+converges absolutely and uniformly
+to a \underline{continuous} function $f(x)$.
+
+\subsubsection*{L3.1}
+$\displaystyle\sum_{n=1}^{\infty}a_n(x-c)^n$
+and $\displaystyle\sum_{n=1}^{\infty}n a_n(x-c)^{n-1}$
+have the same radius of convergence.
+
+\subsubsection*{T3.3}
+Let $R$ be the radius of convegence of
+$f_{PS}(x)$. Then for $\forall x:|x-c|<R$,
+$f_{PS}(x)$ is \textbf{infinitely differentiable}.
+$$f_{PS}(x)=\sum_{n=0}^{\infty}a_n(x-c)^n$$
+$$\therefore a_n=\frac{f^{(n)}(c)}{n!}$$
+
+\subsubsection*{Elementary expansions}
+\begin{itemize}
+    \item $\displaystyle E(x)
+    =\sum_{n=0}^{\infty}\frac{x^n}{n!}$
+\end{itemize}
 \end{multicols*}
 
 \end{document}
