@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{physics}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{enumitem}
+\newcommand{\matr}[1]{\mathbf{#1}}
+\def\dbar{{\mathchar'26\mkern-12mu d}}
+
+% margin settings
+\geometry{
+    a4paper,
+    left=7mm,
+    right=7mm,
+    top=2cm,
+    bottom=7mm
+}
+
+% testing
+\usepackage{blindtext}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\pagestyle{fancy}
+\fancyfoot{} % removes footer
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyhead[L]{test}
+\fancyhead[R]{\thepage}
+
+\begin{document}
+
+\begin{multicols}{3}
+\noindent
+
+\blindtext[50]
+
+\end{multicols}
+
+\end{document}

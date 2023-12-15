@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{physics}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+% margin settings
+\geometry{
+    a4paper,
+    left=7mm,
+    right=7mm,
+    top=2cm,
+    bottom=7mm
+}
+
+% testing
+\usepackage{blindtext}
+
+% proof environments
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark} % unnumbered remarks
+
+% header and footer
+\pagestyle{fancy}
+\fancyfoot{} % removes footer
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyhead[L]{Summary template}
+\fancyhead[R]{\thepage}
+
+\begin{document}
+
+\begin{multicols*}{3}
+% starred environment ensures text remains in same column
+\noindent
+
+\blindtext[50]
+
+\end{multicols*}
+
+\end{document}
