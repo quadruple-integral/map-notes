@@ -12,8 +12,6 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{hyperref}
 \usepackage{enumitem}
-\newcommand{\matr}[1]{\mathbf{#1}}
-\def\dbar{{\mathchar'26\mkern-12mu d}}
 
 % margin settings
 \geometry{
@@ -24,28 +22,219 @@
     bottom=7mm
 }
 
-% testing
-\usepackage{blindtext}
-
+% proof environments
 \newtheorem{definition}{Definition}[section]
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark} % unnumbered remarks
 
+% header and footer
 \pagestyle{fancy}
 \fancyfoot{} % removes footer
 \fancyhf{}
 \renewcommand{\headrulewidth}{0.5pt}
-\fancyhead[L]{test}
+\fancyhead[L]{Electromagnetism and relativity}
 \fancyhead[R]{\thepage}
 
 \begin{document}
 
-\begin{multicols}{3}
+\begin{multicols*}{3}
+% starred environment ensures text remains in same column
 \noindent
 
-\blindtext[50]
+\subsubsection*{Vector products}
+$$\boldsymbol{a}\cdot\boldsymbol{b}=ab\cos\theta$$
+$$\boldsymbol{a}\times
+\boldsymbol{b}=ab\sin\theta\hat{\boldsymbol{n}}$$
+$$\boldsymbol{a}\times\boldsymbol{b}
+=-\boldsymbol{b}\times\boldsymbol{a}$$
+$$\boldsymbol{a}\times(\boldsymbol{b}\times\boldsymbol{c})
+=\boldsymbol{b}(\boldsymbol{a}\cdot\boldsymbol{c})
+-\boldsymbol{c}(\boldsymbol{a}\cdot\boldsymbol{b})$$
 
-\end{multicols}
+\subsubsection*{Suffix notation}
+\begin{enumerate}
+    \item A suffix that appears \underline{twice}
+    implies a summation.
+    \item Any suffix \underline{cannot appear} \\ 
+    \textbf{more than twice} in any term.
+\end{enumerate}
+We define the \textbf{Kronecker delta} as:
+$$\delta_{ij}=\left\{\begin{array}{ll}
+    1 & i=j \\
+    0 & i\neq j
+\end{array}\right.$$
+and the \textbf{Levi-Civita} as:
+$$\epsilon_{ijk}=\left\{
+\begin{array}{lll}
+    +1 & 123,312,231 \\
+    -1 & 132,213,321 \\
+    0 & \text{repeat indices.}
+\end{array}\right.$$
+Consequently:
+\begin{align*}
+    &\epsilon_{ijk}=\epsilon_{kij}=\epsilon_{jki} \\
+    &=-\epsilon_{ijk}=-\epsilon_{ijk}=-\epsilon_{ijk}
+\end{align*}
+and we have the following identities:
+$$\boldsymbol{a}
+=\sum_{i=1}^{3}a_i\boldsymbol{e}_i
+=a_i\boldsymbol{e}_i$$
+$$\delta_{ii}=3$$
+$$[\dots]_j\delta_{jk}
+=[\dots]_k$$
+$$\boldsymbol{e}_i\cdot
+\boldsymbol{e}_j=\delta_{ij}$$
+$$\boldsymbol{e}_i\times
+\boldsymbol{e}_j=
+\epsilon_{ijk}\boldsymbol{e}_k$$
+$$\boldsymbol{a}\times\boldsymbol{b}
+=\epsilon_{ijk}a_j b_k\boldsymbol{e}_i$$
+$$\boldsymbol{a}\cdot
+(\boldsymbol{b}\times\boldsymbol{c})
+=\epsilon_{ijk}a_i b_j c_k$$
+$$\epsilon_{ijk}\epsilon_{klm}
+=\delta_{il}\delta_{jm}
+-\delta_{im}\delta_{jl}$$
+$$\epsilon_{ijk}\epsilon_{ijl}
+=2\delta_{kl}
+\hspace{0.05in}\text{and}\hspace{0.05in}
+\epsilon_{ijk}\epsilon_{ijk}=6.$$
+
+\subsubsection*{Transformations}
+$$\boldsymbol{e}'_i
+=\ell_{ij}\boldsymbol{e}_j$$
+$$\ell_{ik}\ell_{jk}
+=\ell_{ki}\ell_{kj}=\delta_{ij}$$
+$$L^T L=LL^T=I
+\hspace{0.05in}\text{where}\hspace{0.05in}
+(L)_{ij}=\ell_{ij}$$
+
+\subsubsection*{Tensors}
+A rank $3$ tensor is defined as:
+$$T'_{ijk}=\ell_{ip}\ell_{jq}\ell_{kr}T_{pqr}$$
+which relates frame $S$ in $\{\boldsymbol{e}_i\}$ to
+frame $S'$ in $\{\boldsymbol{e}'_i\}$ with
+rule $\boldsymbol{e}'_i=\ell_{ij}\boldsymbol{e}_j$, etc.
+
+Properties of tensors:
+\begin{enumerate}
+    \item The \underline{addition} of two rank
+    $n$ tensors is also a rank $n$ tensor.
+    
+    \item The \underline{multiplication} of a
+    rank $m$ tensor with a rank $n$ tensor yields
+    a rank $m+n$ tensor.
+
+    \item If $T_{ijk\dots s}$ is a rank $m$ tensor
+    then $T_{\textcolor{red}{ii}k\dots s}$ is a rank $m-2$ tensor.
+
+    \item If $T_{ij}$ is a tensor then
+    $T_{ji}$ is also a tensor.
+\end{enumerate}
+
+\subsubsection*{Symmetric tensors}
+$T_{ij}$ is a \underline{symmetric} tensor
+when $T_{ij}=T_{ji}$ in frame $S$.
+Then $T'_{ij}=T'_{ji}$ in frame $S'$.
+
+Similarly $T_{ij}$ is an \underline{anti-symmetric}
+tensor if $T_{ij}=-T_{ji}$ and
+$T'_{ij}=-T'_{ji}$.
+
+Finally \textcolor{red}{any tensor} can be written as
+a sum of symmetric and anti-symmetric parts:
+$$T_{ij}=\frac{1}{2}(T_{ij}+T_{ji})
++\frac{1}{2}(T_{ij}-T_{ji}).$$
+
+\subsubsection*{Quotient theorem}
+Consider $9$ entities $T_{ij}$ in frame $S$
+and $T'_{ij}$ in frame $S'$. Let $b_i=T_{ij}a_j$
+where $a_j$ is a vector.
+If $b_i$ \underline{always} transforms as a vector
+then $T_{ij}$ is a rank $2$ tensor.
+
+Generalising, let $R_{ijk\dots r}$ be a rank $m$
+tensor and $T_{ijk\dots s}$ a set of $3^n$ numbers
+where $n>m$. If $T_{ijk\dots s}R_{ijk\dots r}$
+is a rank $n-m$ tensor then $T_{ijk\dots s}$
+is a rank $n$ tensor.
+
+\subsubsection*{Matrices}
+We define a $m\times n$ matrix $A$ as $(A)_{ij}=a_{ij}$
+where $i=1,\dots,m$ and $j=1,\dots,n$.
+\begin{itemize}
+    \item $\Trace A=a_{ii}$
+    \item $(A^T)_{ij}=a_{ji}$
+    \item $(AB)^T=B^T A^T$
+    \item $(I)_{ij}=\delta_{ij}$
+\end{itemize}
+The determinant of a $3\times3$ matrix $A$ is:
+\begin{align*}
+    \det A
+    &=\left|
+        \begin{array}{lll}
+            a_{11} & a_{12} & a_{13} \\
+            a_{21} & a_{22} & a_{23} \\
+            a_{31} & a_{32} & a_{33}
+        \end{array}
+    \right| \\
+    &=\epsilon_{lmn}a_{1l}a_{2m}a_{3n} \\
+    &=\epsilon_{lmn}a_{l1}a_{m2}a_{n3}
+\end{align*}
+$$\epsilon_{ijk}\det A=
+\epsilon_{lmn}a_{il}a_{jm}a_{kn}.$$
+
+Furthermore:
+$$\epsilon_{lmn}\det A=
+\epsilon_{ijk}a_{il}a_{jm}a_{kn}$$
+$$\det A=\frac{1}{3!}\epsilon_{ijk}
+\epsilon_{lmn}a_{il}a_{jm}a_{kn}.$$
+
+Properties of determinants:
+\begin{enumerate}
+    \item Adding rows to each other \\
+    \underline{does not} change the determinant.
+    
+    \item Interchanging two rows \\
+    \underline{changes determinant signs}.
+
+    \item $\det A=\det A^T$
+    
+    \item $\det(AB)=\det A\cdot\det B$
+\end{enumerate}
+These also apply to columns. Finally:
+$$\epsilon_{ijk}\epsilon_{lmn}\det A
+=\left|
+    \begin{array}{lll}
+        a_{il} & a_{im} & a_{in} \\
+        a_{jl} & a_{jm} & a_{jn} \\
+        a_{kl} & a_{km} & a_{kn}
+    \end{array}
+\right|$$
+and setting $A=I$ yields:
+$$\epsilon_{ijk}\epsilon_{lmn}
+=\left|
+    \begin{array}{lll}
+        \delta_{il} & \delta_{im} & \delta_{in} \\
+        \delta_{jl} & \delta_{jm} & \delta_{jn} \\
+        \delta_{kl} & \delta_{km} & \delta_{kn}
+    \end{array}
+\right|.$$
+
+\subsubsection*{Linear equations}
+Consider $\boldsymbol{y}=A\boldsymbol{x}$.
+$\therefore x_i=A^{-1}_{ij}y_i$
+$$A^{-1}_{ij}=\frac{1}{2}\frac{1}{\det A}
+\epsilon_{imn}\epsilon_{jpq}a_{pm}a_{qn}$$
+
+\subsubsection*{Orthogonal matrices}
+
+\subsubsection*{Pseudotensors}
+
+\subsubsection*{Invariant tensors}
+
+\end{multicols*}
 
 \end{document}
