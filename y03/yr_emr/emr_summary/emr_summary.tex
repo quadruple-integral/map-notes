@@ -243,11 +243,72 @@ Then $x_i=A^{-1}_{ij}y_i$ with:
 \end{align*}
 where $C$ is the cofactor matrix of $A$.
 
-\subsubsection*{Orthogonal matrices}
-
 \subsubsection*{Pseudotensors}
+A rank $2$ pseudotensor is defined as:
+$$T'_{ij}=(\det L)\ell_{ip}\ell_{jq}T_{pq}$$
+where $(L)_{ij}=\ell_{ij}$.
+
+Pseudovectors are rank $1$ pseudotensors.
 
 \subsubsection*{Invariant tensors}
+Tensor $T$ is \underline{invariant} or isotropic if:
+$$T_{ijk\dots}=\ell_{i\alpha}\ell_{j\beta}\ell_{k\gamma}
+\cdots T_{\alpha\beta\gamma\dots}$$
+for every orthogonal matrix $L$.
+\begin{itemize}
+    \item If $a_{ij}$ is a rank $2$
+    invariant tensor then
+    $a_{ij}=\lambda\delta_{ij}$.
+
+    \item The most general rank $3$ invariant
+    \underline{pseudotensor} is
+    $a_{ijk}=\lambda\epsilon_{ijk}$.
+    There are \underline{no} rank $3$
+    invariant true tensors.
+
+    \item Invariant true tensors can only be
+    even ranked.
+
+    \item Invariant pseudotensors can only be
+    odd ranked.
+\end{itemize}
+
+\newpage
+
+\subsubsection*{Rotation tensors}
+The clockwise rotation of position vector
+$\boldsymbol{x}$ to $\boldsymbol{y}$
+about unit vector $\hat{\boldsymbol{n}}$
+is given by:
+$$y_i=R_{ij}(\theta,\hat{\boldsymbol{n}})x_j$$
+$$R_{ij}(\theta,\hat{\boldsymbol{n}})$$
+
+\subsubsection*{Reflections and inversions}
+
+\subsubsection*{Projections}
+
+\subsubsection*{Inertia tensors}
+Let $\boldsymbol{L}$ denote the angular momentum of a
+rigid body about the origin of mass $m$,
+volume $V$ and density $\rho$
+at position $\boldsymbol{r}$
+with velocity $\boldsymbol{v}$. Then:
+$$L_i=I_{ij}\omega_j$$
+$$I_{ij}=I_{ij}(O)=\int_V\rho(r^2\delta_{ij}-x_i x_j)\dd V$$
+where $I_{ij}(O)$ is the inertia tensor about
+the origin.
+The \underline{kinetic energy} of such a body is:
+$$T=\frac{1}{2}I_{ij}\omega_i\omega_j
+=\frac{1}{2}\boldsymbol{L}\cdot\boldsymbol{\omega}.$$
+
+\subsubsection*{Parallel axis theorem}
+Consider the same rigid body now
+with centre of mass $G$ and let
+$\overrightarrow{OG}=\boldsymbol{R}$. Then:
+$$I_{ij}(O)=I_{ij}(G)+M(R^2\delta_{ij}-X_i X_j)$$
+$$M=\int_V\rho'(\boldsymbol{r}')\dd V'.$$
+
+\subsubsection*{Diagonalisation}
 
 \end{multicols*}
 
