@@ -276,16 +276,46 @@ for every orthogonal matrix $L$.
 \newpage
 
 \subsubsection*{Rotation tensors}
-The clockwise rotation of position vector
+The clockwise \underline{rotation} of position vector
 $\boldsymbol{x}$ to $\boldsymbol{y}$
 about unit vector $\hat{\boldsymbol{n}}$
 is given by:
 $$y_i=R_{ij}(\theta,\hat{\boldsymbol{n}})x_j$$
-$$R_{ij}(\theta,\hat{\boldsymbol{n}})$$
+\begin{align*}
+    R_{ij}(\theta,\hat{\boldsymbol{n}})
+    &=\delta_{ij}\cos\theta+(1-\cos\theta)n_i n_j \\
+    &\quad-\epsilon_{ijk}n_k\sin\theta
+\end{align*}
+and is the rotation tensor.
 
 \subsubsection*{Reflections and inversions}
+The \underline{reflection} of vector $\boldsymbol{x}$
+to $\boldsymbol{y}$ in \\
+plane with unit vector $\hat{\boldsymbol{n}}$ is:
+$$y_i=\sigma_{ij}x_j$$
+$$\sigma_{ij}=\delta_{ij}-2n_i n_j.$$
+The \underline{inversion} of vector $\boldsymbol{x}$
+to $\boldsymbol{y}$ is given by
+$\boldsymbol{y}=-\boldsymbol{x}$
+and is defined as:
+$$y_i=P_{ij}x_j$$
+$$P_{ij}=\delta_{ij}.$$
 
 \subsubsection*{Projections}
+We define $P$ to be a \underline{parallel}
+projection operator to vector $\boldsymbol{u}$ if:
+$$P\boldsymbol{u}=\boldsymbol{u}
+\hspace{0.05in}\text{and}\hspace{0.05in}
+P\boldsymbol{v}=\boldsymbol{0}$$
+where $\boldsymbol{u}\cdot\boldsymbol{v}=\boldsymbol{0}$.
+Then:
+$$P_{ij}=\frac{u_i u_j}{u^2}.$$
+Similarly we define $Q$ to be an \underline{orthogonal} projection
+to vector $\boldsymbol{u}$ if:
+$$Q\boldsymbol{u}=\boldsymbol{0}
+\hspace{0.05in}\text{and}\hspace{0.05in}
+Q\boldsymbol{v}=\boldsymbol{v}.$$
+Here $Q=I-P$.
 
 \subsubsection*{Inertia tensors}
 Let $\boldsymbol{L}$ denote the angular momentum of a
