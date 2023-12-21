@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[margin=0.3in]{geometry}
+\usepackage{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -12,17 +12,33 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{hyperref}
 \usepackage{enumitem}
+
+% old commands
 \newcommand{\matr}[1]{\mathbf{#1}}
 \def\dbar{{\mathchar'26\mkern-12mu d}}
 
+% margin settings
+\geometry{
+    a4paper,
+    left=7mm,
+    right=7mm,
+    top=2cm,
+    bottom=7mm
+}
+
+% proof environments
 \newtheorem{definition}{Definition}[section]
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark} % unnumbered remarks
 
+% header and footer
 \pagestyle{fancy}
+\fancyfoot{} % removes footer
 \fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyhead[L]{Honours Differential Equations}
 \fancyhead[R]{\thepage}
 
 \begin{document}
@@ -174,7 +190,7 @@ Let $\boldsymbol{u}=\begin{bmatrix} u_1 \\ u_2 \end{bmatrix}
     \textcolor{red}{\begin{bmatrix} x-x^0 \\ y-y^0 \end{bmatrix}}
 \end{align*}
 Critical points $\boldsymbol{x^0}$ may also be classified: \\
-\includegraphics[scale=0.33]{f1.png}
+\includegraphics[scale=0.3]{f1.png}
 Linearisation preserves critical point behaviour \textbf{except} when eigenvalues are of $r=\pm i\mu$ form,
 for which then classification is unknown.
 
@@ -483,6 +499,9 @@ $$\therefore\lambda_n^{1/2}=n
 \lambda_n^{1/2}=0$$
 where $n\in\mathbb{N}$. So when $\lambda_n=0$:
 $$r^2 R''+rR'=0$$
+
+\columnbreak
+
 and since $u(r,\theta)$ is bounded we get only constant solutions.
 If $\lambda_n=n^2$ then:
 $$r^2 R''+rR'-n^2 R=0$$
@@ -525,6 +544,8 @@ $$F(x)=\exp\Bigl[\int_{0}^{x}
 \frac{\omega(s)-p'(s)}{p(s)}\dd s\Bigr]$$
 $$-\dv{x}\Bigl[F(x)p(x)\dv{y}{x}\Bigr]
 +F(x)q(x)y=\lambda F(x)r(x)y$$
+
+\columnbreak
 
 \subsubsection*{Lagrange's identity}
 Let functions $u$ and $v$ satisfy regular S-L boundary conditions.
@@ -671,6 +692,8 @@ we denote such functions as $f\in E$.
 
 For \underline{sufficiently} large $s$, the Laplace transform
 $f\in E$ converges.
+
+\newpage
 
 \subsubsection*{Reduction of order}
 $$\mathcal{L}[f'(t)]=s\mathcal{L}[f(t)]-f(0)$$

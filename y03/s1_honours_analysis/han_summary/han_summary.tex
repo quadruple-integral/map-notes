@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[margin=0.3in]{geometry}
+\usepackage{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -12,28 +12,54 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{hyperref}
 \usepackage{enumitem}
-\newcommand{\matr}[1]{\mathbf{#1}}
-\def\dbar{{\mathchar'26\mkern-12mu d}}
 
+% margin settings
+\geometry{
+    a4paper,
+    left=7mm,
+    right=7mm,
+    top=2cm,
+    bottom=7mm
+}
+
+% testing
+\usepackage{blindtext}
+    
+% proof environments
 \newtheorem{definition}{Definition}[section]
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
-\newtheorem*{remark}{Remark}
+\newtheorem*{remark}{Remark} % unnumbered remarks
 
+% header and footer
 \pagestyle{fancy}
+\fancyfoot{} % removes footer
 \fancyhf{}
-\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyhead[L]{Honours Analysis}
 \fancyhead[R]{\thepage}
 
 \begin{document}
 
 \begin{multicols*}{3}
+% starred environment ensures text remains in same column
 \noindent
 
 \subsubsection*{D: Supremum and infimum}
+Let $\alpha=\sup S$. Then:
+\begin{enumerate}
+    \item $\forall s\in S; \alpha\geq s$
+    \item $\forall a\in\mathbb{R}:
+    \forall s\in S; a\geq s;$ \\
+    $\textcolor{red}{a\geq\alpha}$
+\end{enumerate}
+and similarly for infimum.
 
-\subsubsection*{T: Approximation lemma}
+\subsubsection*{T: Approximation property}
+Consider bounded $E\subset\mathbb{R}$. Then:
+$$\forall\epsilon>0;\exists a\in E:
+\sup E-\epsilon<a\leq\sup E.$$
 
 \subsubsection*{D: Completeness of $\mathbb{R}$}
 Every nonempty \underline{bounded} subset
@@ -80,16 +106,6 @@ The sequence $(x_n)$ is Cauchy if:
     \forall n,m\geq N \\ &\implies |x_n-x_m|<\epsilon.
 \end{align*}
 
-\subsubsection*{D2.1: Pointwise convergence}
-$f_n\rightarrow f$ pointwise on $E$ if:
-$$f(x)=\lim_{n\rightarrow\infty}f_n(x).$$
-Here $f_n:E\rightarrow\mathbb{R}$.
-\begin{align*}
-    &\forall x\in E;\forall\epsilon>0;
-    \exists N\in\mathbb{N}:\forall n\geq N \\
-    &\implies |f_n(x)-f(x)|<\epsilon
-\end{align*}
-
 \subsubsection*{T1.3 and T1.4}
 Cauchy $\iff$ $\epsilon$-$N$ convergent.
 
@@ -119,8 +135,9 @@ $$\limsup_{n\rightarrow\infty}x_n
 Let $\displaystyle S=\sum_{k=1}^{\infty}a_k$ is
 convergent if:
 $$\lim_{n\rightarrow\infty}\sum_{k=1}^{n}a_k<\infty$$
-The infinite series $S$ is \textbf{absolutely convergent} if
-$\displaystyle S=\sum_{k=1}^{\infty}|a_k|$ is also convergent.
+Series $S$ is \textbf{absolutely convergent} if
+$\displaystyle\sum_{k=1}^{\infty}|a_k|$ is also convergent.
+
 Otherwise $S$ is conditionally convergent.
 
 \subsubsection*{T1.7: Cauchy criterion for series}
@@ -144,24 +161,72 @@ be conditionally convergent. Then there exists rearrangements
 such that $S$ can take on any value.
 
 \subsubsection*{D1.7: Sequential continuity}
+Let $f:\text{dom}(f)\rightarrow\mathbb{R}$
+where $\text{dom}(f)\subset\mathbb{R}$.
+$f$ is \underline{continuous} at $\alpha\in\text{dom}(f)$ if:
+\begin{align*}
+    &\forall(x_n)_{n\in\mathbb{N}}\subset\text{dom}(f):
+    \lim_{n\rightarrow\infty}x_n=\alpha \\
+    &\implies\lim_{n\rightarrow\infty}f(x_n)=f(\alpha).
+\end{align*}
 
 \subsubsection*{T1.10}
-
-\subsubsection*{D1.8: Composition of functions}
+Let $\alpha\in\mathbb{R}$ and $f,g$ continuous on $D$. \\
+Then $\alpha f$, $f+g$, $fg$ are continuous on $D$.
 
 \subsubsection*{T1.11}
+Let $f$ be continuous at $\alpha\in\mathbb{R}$
+and $g$ at $f(\alpha)$.
+Then $g\circ f$ is continuous at $\alpha$.
 
-\subsubsection*{T1.12: $\epsilon$-$\delta$ continuity}
+\subsubsection*{D1.12: $\epsilon$-$\delta$ continuity}
+Let $f:\text{dom}(f)\rightarrow\mathbb{R}$
+where $\text{dom}(f)\subset\mathbb{R}$.
+Then $f$ is continuous at $\alpha\in\text{dom}(f)$ if:
+\begin{align*}
+    &\forall\epsilon>0;\exists\delta>0:
+    |x-\alpha|<\delta \\
+    &\implies
+    |f(x)-f(\alpha)|<\epsilon.
+\end{align*}
 
 \subsubsection*{T1.13: Intermediate value theorem}
+Let $f$ be continuous on $[a,b]$. \\
+If $f(a)f(b)<0$ then:
+$$\exists c\in(a,b):f(c)=0.$$
 
 \subsubsection*{T1.14: Extreme value theorem}
+Let $f$ be continuous on $[a,b]$. \\
+Then $\exists c,d\in[a,b]$ such that:
+$$f(c)=\inf\{f(x):x\in[a,b]\}$$
+$$f(d)=\sup\{f(x):x\in[a,b]\}.$$
 
 \subsubsection*{T: Mean value theorem}
+Let $f$ be continuous on $[a,b]$
+and differentiable on $(a,b)$.
+Then:
+$$\exists c\in(a,b):f'(c)=\frac{f(b)-f(a)}{b-a}.$$
 
 \subsubsection*{D: Differentiability}
+$f$ is differentiable at $\alpha$ if:
+$$f'(\alpha)=\lim_{h\rightarrow0}
+\frac{f(\alpha+h)-f(\alpha)}{h}.$$
 
 \subsubsection*{T: Continuity test}
+$f$ is continuous at $\alpha$ if:
+$$\lim_{x\rightarrow\alpha}f(x)=f(\alpha)$$
+where the limit from left/right must both exist
+and be equal to each other.
+
+\subsubsection*{D2.1: Pointwise convergence}
+$f_n\rightarrow f$ pointwise on $E$ if:
+$$f(x)=\lim_{n\rightarrow\infty}f_n(x).$$
+Here $f_n:E\rightarrow\mathbb{R}$ and:
+\begin{align*}
+    &\forall x\in E;\forall\epsilon>0;
+    \exists N\in\mathbb{N}:\forall n\geq N \\
+    &\implies |f_n(x)-f(x)|<\epsilon.
+\end{align*}
 
 \subsubsection*{D2.2: Uniform convergence}
 $f_n\rightarrow f$ uniformly on $E$ if:
@@ -245,7 +310,11 @@ $$\therefore a_n=\frac{f^{(n)}(c)}{n!}$$
 \begin{itemize}
     \item $\displaystyle E(x)
     =\sum_{n=0}^{\infty}\frac{x^n}{n!}$
+
+    \item $\displaystyle S(x)
+    =\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{(2n+1)!}$
 \end{itemize}
+
 \end{multicols*}
 
 \end{document}
