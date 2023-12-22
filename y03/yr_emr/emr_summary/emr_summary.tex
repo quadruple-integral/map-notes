@@ -81,6 +81,8 @@ and we have the following identities:
 $$\boldsymbol{a}
 =\sum_{i=1}^{3}a_i\boldsymbol{e}_i
 =a_i\boldsymbol{e}_i$$
+$$A\boldsymbol{x}=a_{ij}x_j\boldsymbol{e}_i
+\hspace{0.05in}\text{for $m\times n$ matrix $A$}$$
 $$\delta_{ii}=3$$
 $$[\dots]_j\delta_{jk}
 =[\dots]_k$$
@@ -139,7 +141,8 @@ Properties of tensors:
 
     \item If $T_{ij}$ is a tensor then
     $T_{ji}$ is also a tensor. Explicitly:
-    $$T'_{ij}=\ell_{ip}\ell_{jq}T_{pq}$$
+    $$T'_{ij}=\ell_{ip}\ell_{jq}T_{pq}
+    \implies T'=LTL^T$$
     $$T'_{\textcolor{red}{ji}}=\ell_{\textcolor{red}{j}p}
     \ell_{\textcolor{red}{i}q}T_{pq}.$$
 \end{enumerate}
@@ -246,7 +249,8 @@ where $C$ is the cofactor matrix of $A$.
 \subsubsection*{Pseudotensors}
 A rank $2$ pseudotensor is defined as:
 $$T'_{ij}=(\det L)\ell_{ip}\ell_{jq}T_{pq}$$
-where $(L)_{ij}=\ell_{ij}$.
+where $(L)_{ij}=\ell_{ij}$
+and $\det L=\pm1$.
 
 Pseudovectors are rank $1$ pseudotensors.
 
