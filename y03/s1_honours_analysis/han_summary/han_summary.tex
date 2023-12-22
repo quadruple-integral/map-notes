@@ -46,6 +46,17 @@
 % starred environment ensures text remains in same column
 \noindent
 
+\subsubsection*{T: Triangle inequalities}
+Let $\alpha,\beta\in\mathbb{R}$.
+We then have that:
+\begin{enumerate}
+    \item $|\alpha|+|\beta|
+    \geq|\alpha+\beta|$
+
+    \item $\bigl||\alpha|-|\beta|\bigr|
+    \leq|\alpha-\beta|$.
+\end{enumerate}
+
 \subsubsection*{D: Supremum and infimum}
 Let $\alpha=\sup S$. Then:
 \begin{enumerate}
@@ -132,9 +143,9 @@ $$\limsup_{n\rightarrow\infty}x_n
 =\liminf_{n\rightarrow\infty}x_n.$$
 
 \subsubsection*{D1.6: Convergence of infinite series}
-Let $\displaystyle S=\sum_{k=1}^{\infty}a_k$ is
+Series $\displaystyle S=\sum_{k=1}^{\infty}a_k$ is
 convergent if:
-$$\lim_{n\rightarrow\infty}\sum_{k=1}^{n}a_k<\infty$$
+$$\lim_{n\rightarrow\infty}\sum_{k=1}^{n}a_k<\infty.$$
 Series $S$ is \textbf{absolutely convergent} if
 $\displaystyle\sum_{k=1}^{\infty}|a_k|$ is also convergent.
 
@@ -299,12 +310,29 @@ $\displaystyle\sum_{n=1}^{\infty}a_n(x-c)^n$
 and $\displaystyle\sum_{n=1}^{\infty}n a_n(x-c)^{n-1}$
 have the same radius of convergence.
 
+\subsubsection*{T: Root and ratio tests}
+Let $\displaystyle S=\sum_{n=1}^{\infty}a_n$
+and consider:
+\begin{enumerate}
+    \item Ratio test: $\displaystyle\rho=\lim_{n\rightarrow\infty}
+    \left|\frac{a_{n+1}}{a_n}\right|$
+
+    \item Root test: $\displaystyle\rho=
+    \lim_{n\rightarrow\infty}|a_n|^{1/n}$.
+\end{enumerate}
+Then:
+\begin{itemize}
+    \item 
+\end{itemize}
+
 \subsubsection*{T3.3}
 Let $R$ be the radius of convegence of
 $f_{PS}(x)$. Then for $\forall x:|x-c|<R$,
-$f_{PS}(x)$ is \textbf{infinitely differentiable}.
+$f_{PS}(x)$ is \textbf{infinitely differentiable} and:
 $$f_{PS}(x)=\sum_{n=0}^{\infty}a_n(x-c)^n$$
-$$\therefore a_n=\frac{f^{(n)}(c)}{n!}$$
+$$a_n=\frac{f^{(n)}(c)}{n!}.$$
+
+\subsubsection*{T: Taylor's theorem}
 
 \subsubsection*{Elementary expansions}
 \begin{itemize}
@@ -319,14 +347,66 @@ $$\therefore a_n=\frac{f^{(n)}(c)}{n!}$$
 \end{itemize}
 
 \subsubsection*{D: Characteristic functions}
+Let $E\subset\mathbb{R}$.
+The characteristic function is defined as
+a real function such that:
+$$\chi_E(x) =
+    \left\{
+    \begin{array}{ll}
+        1  & \mbox{} x \in E \\
+        0 & \mbox{otherwise.}
+    \end{array}
+\right.$$
 
 \subsubsection*{D4.1 and D4.2: Step functions}
+The step function with respect to
+finite set $\{x_0, \dots, x_n\}$
+for some $n \in \mathbb{N}$ is:
+$$\phi(x) =
+    \left\{
+    \begin{array}{ll}
+	0  &  x < x_0 \hspace{0.06in} \text{or} \hspace{0.06in} x > x_n \\
+	c_j & x \in (x_{j-1}, x_j); \hspace{0.06in} 1 \leq j \leq n
+    \end{array}
+\right.$$
+and its integral is defined as:
+$$\int\phi=\sum_{j=1}^{n}c_j(x_j-x_{j-1}).$$
 
 \subsubsection*{D4.3: Lebesgue integrable}
+$f:I\rightarrow\mathbb{R}$ is Lebesgue integrable on $I$ if:
+\begin{enumerate}
+    \item $\displaystyle\sum_{j=1}^{\infty} |c_j| \lambda(J_j) < \infty$
+
+    \item $\forall x\in I; f(x)=\displaystyle\sum_{j=1}^{\infty} |c_j| \chi_{J_j}(x)<\infty$
+\end{enumerate}
+Here $c_j \in \mathbb{R}$, $J_i \subset I$ and is bounded for 
+$j \in \{1, 2, 3, \dots\}$. Then:
+$$\int_I f = \sum_{j=1}^{\infty} |c_j| \lambda(J_j).$$
 
 \subsubsection*{T4.1}
 
 \subsubsection*{T4.2: Basic properties}
+Let $f,g$ be integrable on $I$ and $\alpha,\beta\in\mathbb{R}$.
+\begin{enumerate}
+    \item $\alpha f+\beta g$ is integrable on $I$ and:
+    $$\int_I(\alpha f+\beta g)
+    =\alpha\int_I f+\beta\int_I g.$$
+
+    \item If $f\geq g$ on $I$
+    then $\displaystyle\int_I f\geq\int_I g$.
+
+    \item $|f|$ is integrable on I and:
+    $$\int_I |f|\geq\left|\int_I f\right|.$$
+
+    \item If $f$ or $g$ is bounded on $I$
+    then $fg$ is integrable on $I$.
+
+    \item If $f\geq0$ and $\displaystyle\int_I f=0$, \\
+    then $\forall h$ such that 
+    $0\leq h\leq f$ is also integrable on $I$.
+\end{enumerate}
+
+\subsubsection*{T4.3}
 
 \end{multicols*}
 

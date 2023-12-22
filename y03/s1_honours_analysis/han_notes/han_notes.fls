@@ -1,8 +1,8 @@
-PWD c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_honours_analysis/han_notes
+PWD c:/Users/1071t/Documents/Projects/maths-physics-university-notes/y03/s1_honours_analysis/han_notes
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/1071t/OneDrive - University of Edinburgh/Documents/Projects/maths-physics-university-notes/y03/s1_honours_analysis/han_notes/han_notes.tex
+INPUT c:/Users/1071t/Documents/Projects/maths-physics-university-notes/y03/s1_honours_analysis/han_notes/han_notes.tex
 OUTPUT han_notes.log
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
