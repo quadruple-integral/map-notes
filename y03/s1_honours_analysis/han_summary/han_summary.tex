@@ -140,7 +140,8 @@ $$\liminf_{n\rightarrow\infty}x_n
 =\lim_{n\rightarrow\infty}\left(\inf_{k\geq n}x_k\right).$$
 
 \subsubsection*{T1.6}
-The real sequence $(x_n)$ is convergent \textbf{iff}:
+The real sequence $(x_n)$ is convergent
+\underline{if and only if}:
 $$\limsup_{n\rightarrow\infty}x_n
 =\liminf_{n\rightarrow\infty}x_n.$$
 
@@ -418,6 +419,12 @@ Let $f,g$ be integrable on $I$ and $\alpha,\beta\in\mathbb{R}$.
 \subsubsection*{T4.3}
 
 \subsubsection*{T4.4: MCT for integrals}
+Let $f_n$ be \underline{monotone increasing}
+sequence of functions on $I$ and that:
+$$\forall x\in I;f(x)=\lim_{n\rightarrow\infty}f_n(x).$$
+Then $f$ is integrable on $I$ \textbf{iff}:
+$$\sup_{n\in\mathbb{N}}\int_I f_n
+=\lim_{n\rightarrow\infty}\int_I f_n<\infty$$
 
 \subsubsection*{D4.4: Riemann integrable}
 $f$ is Riemann-integrable if:
@@ -431,12 +438,38 @@ where $\phi$ and $\psi$ are step functions, \\
 i.e. the bounded support of $f$.
 
 \subsubsection*{T4.5}
+$f$ is Riemann-integrable \underline{if and only if}:
+$$\sup\left\{\int\phi:\phi\leq f\right\}
+=\inf\left\{\int\psi:f\leq\psi\right\}$$
+where $\phi$ and $\psi$ are step functions.
 
 \subsubsection*{T4.6}
+If $f$ is Riemann-integrable on $I$ then
+$f$ is also Lebesgue-integrable on $I$.
+
+\subsubsection*{Remark}
+The converse of T4.6 is \underline{not true}.
 
 \subsubsection*{L4.1}
 Let $f$ be a bounded function with
 bounded support on $[a,b]$.
+The following statements are equivalent:
+\begin{enumerate}
+    \item $f$ is Riemann-integrable.
+
+    \item $\forall\epsilon>0;
+    \exists\{a=x_0<\dots<x_n=b\}:$
+    $$\sum_{j=1}^{n}(M_j-m_j)(x_j-x_{j-1})<\epsilon$$
+    where we define:
+    $$M_j=\sup_{x\in(x_{j-1},x_j)}\Bigl\{f(x)\Bigr\}$$
+    $$m_j=\inf_{x\in(x_{j-1},x_j)}\Bigl\{f(x)\Bigr\}.$$
+
+    \item $\forall\epsilon>0;
+    \exists\{a=x_0<\dots<x_n=b\}:$
+    $$\sum_{j=1}^{n}\sup_{x,y\in I_j}
+    |f(x)-f(y)|\lambda(I_j)<\epsilon$$
+    where $I_j=(x_{j-1},x_j)$.
+\end{enumerate}
 
 \subsubsection*{T4.7}
 Let $g:[a,b]\rightarrow\mathbb{R}$
@@ -451,6 +484,17 @@ and $f(x)=0$ otherwise.
 \end{enumerate}
 
 \subsubsection*{T4.8}
+Let $J\subset I$.
+\begin{enumerate}
+    \item If $f$ is integrable on $I$ \\
+    then $f$ is integrable on $J$.
+
+    \item If $f$ is integrable on $J$
+    and \\ for $\forall x\in I\backslash J; f(x)=0$ \\
+    then $f$ is integrable on $I$.
+
+    Furthermore: $\displaystyle\int_J f=\int_I f$.
+\end{enumerate}
 
 \subsubsection*{T4.9}
 
@@ -477,8 +521,6 @@ and $f(x)=0$ otherwise.
 \subsubsection*{D5.4: Orthonormal systems}
 
 \subsubsection*{T5.2}
-
-\columnbreak
 
 \subsubsection*{T5.3: Bessel's inequality}
 
