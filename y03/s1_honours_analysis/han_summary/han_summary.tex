@@ -121,6 +121,12 @@ The sequence $(x_n)$ is Cauchy if:
 Cauchy $\iff$ $\epsilon$-$N$ convergent.
 
 \subsubsection*{T: Monotone convergence}
+Let $(x_n)_{n\in\mathbb{N}}$ be increasing and
+bounded above. Then:
+$$\lim_{n\rightarrow\infty}x_n=\sup_{n\in\mathbb{N}}
+\{x_n\}$$
+and similarly for sequences that are
+decreasing and bounded below.
 
 \subsubsection*{D1.4: Subsequences}
 The subsequence of $(x_n)_{n\in\mathbb{N}}$ is
@@ -155,7 +161,7 @@ $\displaystyle\sum_{k=1}^{\infty}|a_k|$ is also convergent.
 Otherwise $S$ is conditionally convergent.
 
 \subsubsection*{T1.7: Cauchy criterion for series}
-$\displaystyle S=\sum_{k=1}^{\infty}a_k$ is convergent \textbf{iff}:
+$\displaystyle S=\sum_{k=1}^{\infty}a_k$ is convergent \textbf{if{}f}:
 \begin{align*}
     &\forall\epsilon>0; \exists N\in\mathbb{N}:
     \forall m\geq n\geq N \\
@@ -394,6 +400,20 @@ $j \in \{1, 2, 3, \dots\}$. Then:
 $$\int_I f = \sum_{j=1}^{\infty} |c_j| \lambda(J_j).$$
 
 \subsubsection*{T4.1}
+Let $c_j,d_j\in\mathbb{R}$ and $J_j,K_j$ be bounded intervals
+where $j\in\{1,2,\dots\}$. Let:
+$$\sum_{j=1}^{\infty}|c_j|\lambda(J_j)<\infty$$
+$$\sum_{j=1}^{\infty}|d_j|\lambda(K_j)<\infty.$$
+If:
+\begin{align*}
+    &\forall x;\sum_{j=1}^{\infty}c_j\chi_{J_j}(x)
+    =\sum_{j=1}^{\infty}d_j\chi_{K_j}(x): \\
+    &\sum_{j=1}^{\infty}|c_j|\chi_{J_j}(x)<\infty
+    \hspace*{0.05in}\text{and} \\
+    &\sum_{j=1}^{\infty}|d_j|\chi_{K_j}(x)<\infty
+\end{align*}
+then $\displaystyle\sum_{j=1}^{\infty}c_j\lambda(J_j)
+=\sum_{j=1}^{\infty}d_j\lambda(K_j)$.
 
 \subsubsection*{T4.2: Basic properties}
 Let $f,g$ be integrable on $I$ and $\alpha,\beta\in\mathbb{R}$.
@@ -417,12 +437,29 @@ Let $f,g$ be integrable on $I$ and $\alpha,\beta\in\mathbb{R}$.
 \end{enumerate}
 
 \subsubsection*{T4.3}
+Let $f_n$ be integrable on $I$ where:
+$$\sum_{n=1}^{\infty}\int_I |f_n|<\infty.$$
+\begin{enumerate}
+    \item Let $f$ be defined as:
+    \begin{align*}
+        &\forall x\in I;f(x)=\sum_{n=1}^{\infty}f_n(x)
+        : \\ &\sum_{n=1}^{\infty}|f_n(x)|<\infty.
+    \end{align*}
+    Then $f$ is integrable on $I$ and:
+    $$\int_I f=\sum_{n=1}^{\infty}\int_I f_n.$$
+
+    \item Let each $f_n\geq0$ and:
+    $$\forall x\in I; f(x)=\sum_{n=1}^{\infty}f_n(x).$$
+    Then $f$ is integrable on $I$ \textbf{if{}f}:
+    $$\sum_{n=1}^{\infty}\int_I f_n<\infty.$$
+    
+\end{enumerate}
 
 \subsubsection*{T4.4: MCT for integrals}
 Let $f_n$ be \underline{monotone increasing}
 sequence of functions on $I$ and that:
 $$\forall x\in I;f(x)=\lim_{n\rightarrow\infty}f_n(x).$$
-Then $f$ is integrable on $I$ \textbf{iff}:
+Then $f$ is integrable on $I$ \textbf{if{}f}:
 $$\sup_{n\in\mathbb{N}}\int_I f_n
 =\lim_{n\rightarrow\infty}\int_I f_n<\infty.$$
 Furthermore:
@@ -496,19 +533,64 @@ Let $J\subset I$.
     then $f$ is integrable on $I$.
 
     Furthermore: $\displaystyle\int_J f=\int_I f$.
+
+    \item If $f$ is integrable on $I$ and
+    $f(x)\geq0$ for $\forall x\in I$ then:
+    $$\int_I f\geq\int_J f.$$
+
+    \item Assume that $I$ can be written as the union
+    of disjoint intervals $I_n$ and that
+    $f$ is integrable on each $I_n$.
+
+    Then $f$ is integrable on $I$ \textbf{if{}f}:
+    $$\sum_{n=1}^{\infty}\int_{I_n}|f|<\infty.$$
+    If this is true then:
+    $$\int_I f=\sum_{n=1}^{\infty}\int_{I_n}|f|.$$
 \end{enumerate}
 
 \subsubsection*{T4.9}
+If any \underline{two} of the following integrals exists:
+$$\int_{a}^{b}f,\hspace*{0.3in}
+\int_{b}^{c}f,\hspace*{0.3in}
+\int_{a}^{c}f$$
+then so does the third and:
+$$\int_{a}^{b}f+\int_{b}^{c}f=\int_{a}^{c}f.$$
 
 \subsubsection*{T4.10: FTC I}
+Let $g$ be integrable on $I$ and let:
+$$G(x)=\int_{x_0}^{x}g(s)\dd s$$
+where $x,x_0\in I$.
+
+If $g$ is continuous at $x$ then:
+$$\dv{x}G(x)=g(x).$$
 
 \subsubsection*{T4.11: FTC II}
+Let $f'(x)$ be continuous on $I$. Then:
+$$\int_{a}^{b}f'(x)\dd x=f(b)-f(a)$$
+where $a,b\in I$.
 
 \subsubsection*{L4.2: Fatoux's lemma}
+Let $f_n\geq0$ be integrable on $I$ and:
+$$\forall x\in I;f(x)=\liminf_{n\rightarrow\infty}f_n(x).$$
+If $\displaystyle\liminf_{n\rightarrow\infty}
+\int_I f_n<\infty$ then:
+$$\int_I f\leq\liminf_{n\rightarrow\infty}\int_I f_n.$$
 
 \subsubsection*{T4.12: Dominated convergence}
+Let $f_n,g$ be integrable on $I$ and:
+$$\forall x\in I; f(x)=\lim_{n\rightarrow\infty}f_n(x).$$
+If $|f_n(x)|\leq g(x)$ for $\forall x\in I$ \\
+then $f$ is integrable on $I$ and:
+$$\int_I f=\lim_{n\rightarrow\infty}\int_I f_n.$$
 
 \subsubsection*{T4.13}
+Let $f_n$ be integrable on $(a,b)$ and that
+$f_n\rightarrow f$ uniformly on $(a,b)$.
+
+Then $f$ is integrable on $(a,b)$ and:
+$$\int_{a}^{b}f=\lim_{n\rightarrow\infty}\int_{a}^{b}f_n.$$
+
+\vfill
 
 \subsubsection*{D5.1: $L^2$ space}
 
