@@ -452,7 +452,6 @@ $$\sum_{n=1}^{\infty}\int_I |f_n|<\infty.$$
     $$\forall x\in I; f(x)=\sum_{n=1}^{\infty}f_n(x).$$
     Then $f$ is integrable on $I$ \textbf{if{}f}:
     $$\sum_{n=1}^{\infty}\int_I f_n<\infty.$$
-    
 \end{enumerate}
 
 \subsubsection*{T4.4: MCT for integrals}
@@ -671,30 +670,130 @@ c_n e^{2\pi inx}$$
 where $x\in\mathbb{R}$ and $c_n\in\mathbb{C}$.
 
 \subsubsection*{L5.1}
+$(e^{2\pi inx})_{n\in\mathbb{Z}}$ forms
+an orthonormal system on $[0,1]$. Furthermore:
+\begin{enumerate}
+    \item $\displaystyle
+    \int_{0}^{1}e^{2\pi inx}\dd x
+    =\left\{\begin{array}{ll}
+        0 & n\neq0 \\
+        1 & n=0
+    \end{array}\right.$
+
+    \item If
+    $\displaystyle f_{FS}
+    =\sum_{n\in\mathbb{Z}}c_n e^{2\pi inx}$ then:
+    $$c_n=\langle f,e^{2\pi inx}\rangle.$$
+\end{enumerate}
 
 \subsubsection*{D5.7 and D5.8: Fourier series}
+The $n$th Fourier coefficient of integrable $1$-periodic $f$
+where $n\in\mathbb{Z}$ is defined as:
+$$\widehat{f}(n)=\langle f,\phi_n\rangle$$
+and the Fourier series of $f$ is:
+$$f_{FS}=\sum_{n\in\mathbb{Z}}\widehat{f}(n)
+e^{2\pi inx}.$$
+The Fourier partial sums is defined as:
+$$S_N f(x)=\sum_{n=-N}^{N}
+\widehat{f}(n)e^{2\pi inx}$$
+where $N\in\mathbb{Z}$.
 
 \subsubsection*{D5.9: Convolutions}
+The convolution of $1$-periodic
+functions $f,g\in L^2$ is:
+$$f*g(x)=\int_{0}^{1}f(t)g(x-t)\dd t.$$
 
 \subsubsection*{L5.2}
+For $1$-periodic $f,g\in L^2$:
+$f*g=g*f$.
 
 \subsubsection*{L5.3: Dirichlet kernel}
+The Dirichlet kernel is defined as:
+\begin{align*}
+    D_N(x)
+    &=\sum_{n=-N}^{N}e^{2\pi inx} \\
+    &=\frac{\sin(2N+1)\pi x}{\sin\pi x}
+\end{align*}
+where $N\in\mathbb{N}$.
 
 \subsubsection*{L5.4: Fej\'er kernel}
+The Fej\'er kernel is defined as:
+\begin{align*}
+    K_N(x)
+    &=\frac{1}{N+1}
+    \sum_{n=0}^{N}D_n(x) \\
+    &=\frac{1}{N+1}
+    \left[\frac{\sin(N+1)\pi x}
+    {\sin\pi x}\right]^2
+\end{align*}
+where $N\in\mathbb{N}$.
 
 \subsubsection*{T5.5: Fej\'er's theorem}
-
-\subsubsection*{D5.10: Approximation of unity}
-
-\subsubsection*{T5.6}
+In the limit $N\rightarrow\infty$:
+$$K_N*f\rightarrow f\hspace{0.05in}
+\text{uniformly on $\mathbb{R}$}$$
+where $f$ is $1$-periodic and continuous.
 
 \subsubsection*{C}
+For every $1$-periodic continuous $f$:
+$$\exists(f_n)_{n\in\mathbb{N}}
+:f_n\rightarrow f\hspace{0.05in}\text{uniformly on $D$}$$
+for $f_n$ is a trigonometric polynomial
+and domain $D$ subject to $f$.
+
+\subsubsection*{D5.10: Approximation of unity}
+A sequence of $1$-periodic integrable \\
+$(k_n)_{n\in\mathbb{N}}$ is an approximation
+of unity if for all $1$-periodic continuous $f$:
+$$f*k_n\rightarrow f\hspace{0.05in}
+\text{uniformly on $\mathbb{R}$}$$
+or that:
+$$\lim_{n\rightarrow\infty}
+\sup_{x\in\mathbb{R}}
+|f*k_n(x)-f(x)|=0.$$
+
+\subsubsection*{T5.6}
+Let $(k_n)_{n\in\mathbb{N}}$ be
+a sequence of $1$-periodic integrable functions
+that satisfies:
+\begin{enumerate}
+    \item $k_n(x)\geq0$ for $\forall x\in\mathbb{R}$.
+    
+    \item $\displaystyle
+    \int_{-1/2}^{1/2}k_n(t)\dd t=1$
+
+    \item $\forall\delta\in(0,\frac{1}{2}];
+    \displaystyle\lim_{n\rightarrow\infty}
+    \int_{-\delta}^{\delta}k_n(t)\dd t=1$.
+\end{enumerate}
+Then $(k_n)_{n\in\mathbb{N}}$
+is an approximation of unity.
+
+\subsubsection*{C}
+The Fej\'er kernel $(K_N)_{N\in\mathbb{N}}$
+is an approximation of unity.
 
 \subsubsection*{L5.5}
+If $f$ is $1$-periodic continuous
+then:
+$$\lim_{N\rightarrow\infty}||S_N f-f||_2=0.$$
 
 \subsubsection*{T5.7}
+For every $1$-periodic $f\in L^2$:
+$$S_N f\rightarrow f
+\hspace{0.05in}\text{in $L^2$}$$
+or that the Fourier series of $f$
+converges to $f$ 
+in the $L^2$ sense.
 
 \subsubsection*{C: Parseval's theorem}
+Let $f,g\in L^2$ be $1$-periodic. Then:
+$$\langle f,g\rangle=
+\sum_{n\in\mathbb{Z}}\widehat{f}(n)
+\overline{\widehat{g}(n)}$$
+and in particular:
+$$||f||_2^2=\sum_{n\in\mathbb{Z}}
+|\widehat{f}(n)|^2.$$
 
 \end{multicols*}
 
