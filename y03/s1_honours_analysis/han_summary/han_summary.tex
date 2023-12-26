@@ -590,37 +590,89 @@ $f_n\rightarrow f$ uniformly on $(a,b)$.
 Then $f$ is integrable on $(a,b)$ and:
 $$\int_{a}^{b}f=\lim_{n\rightarrow\infty}\int_{a}^{b}f_n.$$
 
-\vfill
-
 \subsubsection*{D5.1: $L^2$ space}
+The space $L^2([a,b])$ is the set of measurable functions 
+$f:[a,b]\rightarrow\mathbb{C}$ such that:
+$$||f||_2^2=\int_{a}^{b}|f(x)|^2\dd x<\infty.$$
+The quantity $||f||_2$ is the $L^2$-norm of $f$.
 
 \subsubsection*{D5.2: Inner products}
+The inner product of $f,g\in L^2([a,b])$ is:
+$$\langle f,g\rangle=
+\int_{a}^{b}f(x)\overline{g(x)}\dd x.$$
 
 \subsubsection*{T5.1: Cauchy-Schwarz inequality}
+Let $f,g\in L^2([a,b])$. Then:
+$$|\langle f,g\rangle|\leq||f||_2||g||_2.$$
 
 \subsubsection*{C: Minkowski's inequality}
+Let $f,g\in L^2([a,b])$. Then:
+$$||f+g||_2\leq||f||_2+||g||_2.$$
 
 \subsubsection*{D5.3: $L^2$ convergence}
+$f_n\rightarrow f$ in $L^2$ if:
+$$\lim_{n\rightarrow\infty}||f_n-f||_2=0.$$
+Here $f,f_1,f_2,\ldots\in L^2([a,b])$.
 
 \subsubsection*{D5.4: Orthonormal systems}
+The sequence of functions $(\phi_n)_{n\in\mathbb{N}}$ 
+in $L^2$ is an orthonormal system on $[a,b]$ if:
+$$\langle\phi_m,\phi_n \rangle=\delta_{mn}.$$
 
 \subsubsection*{T5.2}
+Let $(\phi_n)_{n\in\mathbb{N}}$ be an
+orthonormal system on $[a,b]$ with
+\textbf{linear span} $X_n$. 
+
+Assume that $f\in L^2$ and:
+$$s_N(x)=\sum_{n=1}^{N}
+\langle f,\phi_N\rangle\phi_n(x).$$
+Then:
+$$||f-s_N||_2\leq||f-g||_2$$
+holds for $\forall g\in X_n$.
 
 \subsubsection*{T5.3: Bessel's inequality}
+Let $(\phi_n)_{n\in\mathbb{N}}$ be an
+orthonormal system on $[a,b]$ and $f\in L^2$.
+Then:
+$$\sum_{n\in\mathbb{N}}|
+\langle f,\phi_n\rangle|^2
+\leq||f||_2^2.$$
 
 \subsubsection*{C: Riemann-Lebesgue lemma}
+Let $(\phi_n)_{n\in\mathbb{N}}$ be an
+orthonormal system on $[a,b]$ and $f\in L^2$.
+Then:
+$$\lim_{n\rightarrow\infty}\langle f,\phi_n\rangle=0.$$
 
 \subsubsection*{D5.5: Completeness}
+The orthonormal system $(\phi_n)_{n\in\mathbb{N}}$ 
+is complete if:
+$$\sum_{n\in\mathbb{N}}|
+\langle f,\phi_n\rangle|^2=||f||_2^2$$
+for $\forall f\in L^2$.
 
 \subsubsection*{T5.4}
+Let $(\phi_n)_{n\in\mathbb{N}}$ be an
+orthonormal system on $[a,b]$ and let
+$(s_N)_{N\in\mathbb{N}}$ be a sequence of functions
+where:
+$$s_N(x)=\sum_{n=1}^{N}
+\langle f,\phi_N\rangle\phi_n(x).$$
+Then $(\phi_n)_{n\in\mathbb{N}}$
+is complete \textbf{if{}f}:
+$$\forall f\in L^2; s_N\rightarrow f
+\hspace{0.05in}\text{in $L^2$}.$$
 
 \subsubsection*{D5.6: Trigonometric polynomial}
+Trigonometric polynomials are functions of form:
+$$f(x)=\sum_{n\in\mathbb{Z}}
+c_n e^{2\pi inx}$$
+where $x\in\mathbb{R}$ and $c_n\in\mathbb{C}$.
 
 \subsubsection*{L5.1}
 
-\subsubsection*{D5.7: Fourier series}
-
-\subsubsection*{D5.8: Fourier partial sums}
+\subsubsection*{D5.7 and D5.8: Fourier series}
 
 \subsubsection*{D5.9: Convolutions}
 
