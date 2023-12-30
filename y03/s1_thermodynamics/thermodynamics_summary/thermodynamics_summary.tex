@@ -238,11 +238,20 @@ $$\left(P+\frac{an^2}{V^2}\right)
 \bigl(V-nb\bigr)=nRT$$
 
 \subsubsection*{Chemical potentials}
-The chemical potential $\mu$ of an
-\textbf{open system}
-in thermal equilibrium is:
+The Euler equation for a $1$-component
+\textbf{open} system with
+$N$ particles is:
+$$U=TS-PV+\mu N$$
+with modified first law statement: 
+$$\dd U
+=T\dd S-P\dd V+\mu\dd N.$$
+This gives the Gibbs-Duhem relation:
+$$S\dd T-V\dd P+N\dd\mu=0$$
+where $\mu$ is the chemical potential:
 $$\mu=\frac{G}{N}$$
-where there are $N$ particles in the system.
+since $G$ is extensive. At constant $T$
+with ideal gas assumptions:
+$$\mu(P,T)=RT\ln\frac{P}{P_0}+\mu_0.$$
 
 \subsubsection*{Third law}
 $S=0$ at $T=0$K.
