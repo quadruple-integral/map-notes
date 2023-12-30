@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[margin=0.3in]{geometry}
+\usepackage{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -12,17 +12,32 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{hyperref}
 \usepackage{enumitem}
-\newcommand{\matr}[1]{\mathbf{#1}}
-\def\dbar{{\mathchar'26\mkern-12mu d}}
 
+% margin settings
+\geometry{
+    a4paper,
+    left=7mm,
+    right=7mm,
+    top=2cm,
+    bottom=7mm
+}
+
+% testing
+\usepackage{blindtext}
+
+% proof environments
 \newtheorem{definition}{Definition}[section]
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark} % unnumbered remarks
 
+% header and footer
 \pagestyle{fancy}
+\fancyfoot{} % removes footer
 \fancyhf{}
-\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyhead[L]{Thermodynamics}
 \fancyhead[R]{\thepage}
 
 \begin{document}
