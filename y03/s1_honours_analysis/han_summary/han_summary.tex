@@ -46,6 +46,23 @@
 % starred environment ensures text remains in same column
 \noindent
 
+\subsubsection*{D: Functions}
+A function $f:X\rightarrow Y$ is an assignment
+of an element of $Y$ to \underline{each} element of $X$.
+\begin{enumerate}
+    \item $f$ is \textbf{injective} if:
+    \begin{align*}
+        &\forall x_1,x_2\in X;
+        f(x_1)=f(x_2) \\ &\implies x_1=x_2.
+    \end{align*}
+
+    \item $f$ is \textbf{surjective} if:
+    $$\forall y\in Y;\exists x\in X: y=f(x).$$
+
+    \item $f$ is \textbf{bijective}
+    if it is injective and surjective.
+\end{enumerate}
+
 \subsubsection*{T: Triangle inequalities}
 Let $\alpha,\beta\in\mathbb{R}$.
 We then have that:
@@ -107,8 +124,11 @@ $$E\subset I_{\alpha_1}\cup I_{\alpha_2}\cup
 
 \subsubsection*{D1.2: $\epsilon$-$N$ convergence}
 Let $\displaystyle\lim_{n\rightarrow\infty}x_n=a$. Then:
-$$\forall\epsilon>0; \exists N\in\mathbb{N}:
-\forall n\geq N\implies |x_n-a|<\epsilon.$$
+\begin{align*}
+    &\forall\epsilon>0; \exists N\in\mathbb{N}:
+    \forall n\geq N \\
+    &\implies |x_n-a|<\epsilon.
+\end{align*}
 
 \subsubsection*{D1.3: Cauchy sequences}
 The sequence $(x_n)$ is Cauchy if:
@@ -180,6 +200,18 @@ Let $\displaystyle S=\sum_{k=1}^{\infty}a_k$
 be conditionally convergent. Then there exists rearrangements
 such that $S$ can take on any value.
 
+\subsubsection*{T: Geometric series}
+Let $a\in\mathbb{R}$
+and $\textcolor{red}{|r|<1}$. Then:
+$$\sum_{k=1}^{\infty}ar^{k-1}
+=\frac{a}{1-r}$$
+$$\sum_{k=m}^{n}ar^{k-1}
+=\left\{\begin{array}{ll}
+    \frac{a(r^{m-1}-r^n)}{1-r} & r\neq1 \\
+    a(n-m+1) & r=1
+\end{array}\right.$$
+where $m,n\in\mathbb{N}$.
+
 \subsubsection*{D1.7: Sequential continuity}
 Let $f:\text{dom}(f)\rightarrow\mathbb{R}$
 where $\text{dom}(f)\subset\mathbb{R}$.
@@ -210,6 +242,44 @@ Then $f$ is continuous at $\alpha\in\text{dom}(f)$ if:
     |f(x)-f(\alpha)|<\epsilon.
 \end{align*}
 
+\subsubsection*{T: Continuity test}
+$f$ is continuous at $\alpha$ if:
+$$\lim_{x\rightarrow\alpha}f(x)=f(\alpha)$$
+where the limit from left/right must both exist
+and be equal to each other.
+
+\subsubsection*{D: Uniform continuity}
+$f$ is uniformly continuous on $I$ if:
+\begin{align*}
+    &\forall\epsilon>0;\exists\delta>0:
+    \forall x,y\in I;
+    |x-y|<\delta \\
+    &\implies |f(x)-f(y)|<\epsilon.
+\end{align*}
+
+\subsubsection*{Remark}
+$f$ is \textbf{not} uniformly continuous on $I$ \textbf{if{}f}:
+\begin{align*}
+    &\exists\epsilon>0;\exists (x_n)_{n\in\mathbb{N}}
+    \wedge
+    (y_n)_{n\in\mathbb{N}}\subset I: \\
+    &\lim_{n\rightarrow\infty}|x_n-y_n|=0
+    \hspace{0.05in}\wedge \\
+    &|f(x_n)-f(y_n)|\geq\epsilon
+    \hspace{0.05in}\text{for}\hspace{0.05in}
+    \forall n\in\mathbb{N}.
+\end{align*}
+Functions on closed bounded intervals
+are always uniformly continuous.
+
+\subsubsection*{D: Differentiability}
+$f$ is differentiable at $\alpha$ if:
+$$f'(\alpha)=\lim_{h\rightarrow0}
+\frac{f(\alpha+h)-f(\alpha)}{h}.$$
+
+\subsubsection*{Remark}
+Differentiability implies continuity.
+
 \subsubsection*{T1.13: Intermediate value theorem}
 Let $f$ be continuous on $[a,b]$. \\
 If $f(a)f(b)<0$ then:
@@ -222,21 +292,10 @@ $$f(c)=\inf\{f(x):x\in[a,b]\}$$
 $$f(d)=\sup\{f(x):x\in[a,b]\}.$$
 
 \subsubsection*{T: Mean value theorem}
-Let $f$ be continuous on $[a,b]$
+Let $f$ be continuous on $[a,b]$ \\
 and differentiable on $(a,b)$.
 Then:
 $$\exists c\in(a,b):f'(c)=\frac{f(b)-f(a)}{b-a}.$$
-
-\subsubsection*{D: Differentiability}
-$f$ is differentiable at $\alpha$ if:
-$$f'(\alpha)=\lim_{h\rightarrow0}
-\frac{f(\alpha+h)-f(\alpha)}{h}.$$
-
-\subsubsection*{T: Continuity test}
-$f$ is continuous at $\alpha$ if:
-$$\lim_{x\rightarrow\alpha}f(x)=f(\alpha)$$
-where the limit from left/right must both exist
-and be equal to each other.
 
 \subsubsection*{D2.1: Pointwise convergence}
 $f_n\rightarrow f$ pointwise on $E$ if:
@@ -320,14 +379,14 @@ and $\displaystyle\sum_{n=1}^{\infty}n a_n(x-c)^{n-1}$
 have the same radius of convergence.
 
 \subsubsection*{T: Root and ratio tests}
-Let $\displaystyle S=\sum_{n=1}^{\infty}a_n$
+Let $\displaystyle S=\sum_{n=1}^{\infty}\alpha_n$
 and consider:
 \begin{enumerate}
     \item Ratio test: $\displaystyle\rho=\lim_{n\rightarrow\infty}
-    \left|\frac{a_{n+1}}{a_n}\right|$
+    \left|\frac{\alpha_{n+1}}{\alpha_n}\right|$
 
     \item Root test: $\displaystyle\rho=
-    \lim_{n\rightarrow\infty}|a_n|^{1/n}$.
+    \lim_{n\rightarrow\infty}|\alpha_n|^{1/n}$.
 \end{enumerate}
 Then:
 \begin{itemize}
@@ -352,13 +411,13 @@ where $\displaystyle\lim_{x\rightarrow\alpha}h_n(x)=0$.
 
 \subsubsection*{Elementary expansions}
 \begin{itemize}
-    \item $\displaystyle E(x)
+    \item $\displaystyle e^x
     =\sum_{n=0}^{\infty}\frac{x^n}{n!}$
 
-    \item $\displaystyle S(x)
+    \item $\displaystyle \sin x
     =\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{(2n+1)!}$
 
-    \item $\displaystyle C(x)
+    \item $\displaystyle \cos x
     =\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{(2n)!}$
 \end{itemize}
 
