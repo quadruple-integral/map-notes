@@ -95,6 +95,8 @@ where $X$ is a state variable.
 
 \textbf{Isothermal processes}: $\Delta T=0$
 
+\textbf{Isobaric processes}: $\Delta P=0$
+
 \subsubsection*{Zeroth law}
 If $A$ is in thermal equilibrium with $B$ and $C$
 \underline{seperately} then $B$ and $C$
@@ -167,16 +169,22 @@ $$\gamma=\frac{C_P}{C_V}
 =\frac{f+2}{f}$$
 regardless of degrees of freedom $f$.
 
-\subsubsection*{State function enthalpy}
+\subsubsection*{Enthalpy}
+The state function enthalpy simplies the
+description of heat transfer. 
+
+Enthalpy has units J
+and is defined as:
 $$H=U+PV$$
 \begin{align*}
     \dd H
     &=\dd U+V\dd P+P\dd V \\
-    &=\dd Q+V\dd P
+    &=\dd Q+V\dd P.
 \end{align*}
+Under isobaric reversible conditions:
+$$\dd H=\dd Q_P.$$
 $$\therefore C_P
 =\left(\frac{\partial H}{\partial T}\right)_P$$
-Enthalpy has units $J$.
 
 \subsubsection*{Latent heats}
 Latent heat is heat needed for sample
@@ -210,8 +218,11 @@ $$S=\frac{Q}{T}$$
 where $Q$ is heat received from a reservoir
 at temperature $T$
 and units JK$^{-1}$.
-$$\therefore\dd U=T\dd S-P\dd V$$
-$$\therefore\dd H=\dd Q+V\dd P$$
+
+Then for a reversible cyclic heat engine:
+$$\dd U=T\dd S-P\dd V.$$
+For all processes the following holds:
+$$\dd H=\dd Q+V\dd P.$$
 
 \subsubsection*{Entropy of mixing}
 $$\Delta S=n_A R\ln\frac{V_A+V_B}{V_A}
