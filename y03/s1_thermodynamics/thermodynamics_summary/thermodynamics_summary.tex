@@ -97,6 +97,14 @@ where $X$ is a state variable.
 
 \textbf{Isobaric processes}: $\Delta P=0$
 
+\subsubsection*{Density}
+We define the density of a material as:
+$$\rho=\frac{m}{V}.$$
+If mass $m$ is constant:
+$$\Delta V=m\left(\frac{1}{\rho_f}
+-\frac{1}{\rho_i}\right)$$
+assuming homogeneous material.
+
 \subsubsection*{Zeroth law}
 If $A$ is in thermal equilibrium with $B$ and $C$
 \underline{seperately} then $B$ and $C$
@@ -164,9 +172,9 @@ $$TV^{\gamma-1}=\text{constant}$$
 $$PV^{\gamma}=\text{constant}$$
 $$T^{\frac{1}{\gamma-1}}V=\text{constant}$$
 where $\gamma$ is the \underline{adiabatic exponent}:
-$$U=\frac{f}{2}nRT$$
 $$\gamma=\frac{C_P}{C_V}
 =\frac{f+2}{f}$$
+$$U=\frac{f}{2}nRT$$
 regardless of degrees of freedom $f$.
 
 \subsubsection*{Enthalpy}
@@ -189,8 +197,8 @@ $$\therefore C_P
 \subsubsection*{Latent heats}
 Latent heat is heat needed for sample
 to undergo a phase transition:
-$$\Delta U_{m,V}=Q_{m,V}-P\Delta V_{m,V}$$
-$$Q_{m,V}=\Delta H_{m,V}.$$
+$$\Delta U_m=Q_m-P\Delta V_m$$
+$$L_m=Q_m=\Delta H_m.$$
 
 \subsubsection*{Chemical reactions}
 Since
@@ -260,8 +268,10 @@ $$\kappa_T=-\frac{1}{V}
 \left(\frac{\partial V}{\partial P}\right)_T.$$
 
 \subsubsection*{Clausius-Clapeyron equation}
-The slope of any phase boundaries is:
-$$\dv{P}{T}=\frac{\Delta S}{\Delta V}.$$
+The slope of any phase boundary is:
+$$\dv{P}{T}=\frac{\Delta S}{\Delta V}
+=\frac{L_m}{T\Delta V}$$
+assuming a reversible process.
 
 \subsubsection*{Van der Waals state equation}
 $$\left(P+\frac{an^2}{V^2}\right)
@@ -281,7 +291,7 @@ where $\mu$ is the chemical potential:
 $$\mu=\frac{G}{N}$$
 since $G$ is extensive. At constant $T$
 with ideal gas assumptions:
-$$\mu(P,T)=RT\ln\frac{P}{P_0}+\mu_0.$$
+$$\mu(P,T)=RT\ln\frac{P}{P_0}+\mu_0(P,T).$$
 
 \subsubsection*{Third law}
 $S=0$ at $T=0$K.
