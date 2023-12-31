@@ -230,7 +230,7 @@ and units JK$^{-1}$.
 Then for a reversible cyclic heat engine:
 $$\dd U=T\dd S-P\dd V.$$
 For all processes the following holds:
-$$\dd H=\dd Q+V\dd P.$$
+$$\dd H=T\dd S+V\dd P.$$
 
 \subsubsection*{Entropy of mixing}
 $$\Delta S=n_A R\ln\frac{V_A+V_B}{V_A}
@@ -256,16 +256,34 @@ Chemical reactions are spontaneous if:
 $$\Delta G=\Delta H-T\Delta S<0.$$
 
 \subsubsection*{Maxwell relations}
-$$\left(\frac{\partial T}{\partial V}\right)_S=-\left(\frac{\partial P}{\partial S}\right)_V$$
-$$\left(\frac{\partial T}{\partial P}\right)_S=\left(\frac{\partial V}{\partial S}\right)_P$$
-$$\left(\frac{\partial S}{\partial V}\right)_T=\left(\frac{\partial P}{\partial T}\right)_V$$
-$$-\left(\frac{\partial S}{\partial P}\right)_T=\left(\frac{\partial V}{\partial T}\right)_P$$
+$$\left(\frac{\partial T}{\partial V}\right)_S
+=-\left(\frac{\partial P}{\partial S}\right)_V$$
+$$\left(\frac{\partial T}{\partial P}\right)_S
+=\left(\frac{\partial V}{\partial S}\right)_P$$
+$$\left(\frac{\partial S}{\partial V}\right)_T
+=\left(\frac{\partial P}{\partial T}\right)_V$$
+$$-\left(\frac{\partial S}{\partial P}\right)_T
+=\left(\frac{\partial V}{\partial T}\right)_P$$
 The isobaric expansivity is defined as:
 $$\beta=\frac{1}{V}
 \left(\frac{\partial V}{\partial T}\right)_P$$
 and the isothermal compressibility:
 $$\kappa_T=-\frac{1}{V}
 \left(\frac{\partial V}{\partial P}\right)_T.$$
+
+\subsubsection*{Throttling}
+Throttling is the \underline{adiabatic} 
+reduction in gas pressure
+and is an isenthalpic process.
+At constant volume we define:
+\begin{align*}
+    \mu_{JK}&=\left(
+    \frac{\partial T}{\partial P}\right)_H \\
+    &=\frac{V}{C_P}(\beta T-1)
+\end{align*}
+as the slope of a P-T plot
+known as the
+Joule-Kelvin coefficient.
 
 \subsubsection*{Clausius-Clapeyron equation}
 The slope of any phase boundary is:
