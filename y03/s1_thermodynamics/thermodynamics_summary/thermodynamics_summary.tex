@@ -279,7 +279,7 @@ At constant volume we define:
 \begin{align*}
     \mu_{JK}&=\left(
     \frac{\partial T}{\partial P}\right)_H \\
-    &=\frac{V}{C_P}(\beta T-1)
+    &=\frac{V(T,P)}{C_P}(\beta T-1)
 \end{align*}
 as the slope of a P-T plot
 known as the
@@ -288,8 +288,8 @@ Joule-Kelvin coefficient.
 \subsubsection*{Clausius-Clapeyron equation}
 The slope of any phase boundary is:
 $$\dv{P}{T}=\frac{\Delta S}{\Delta V}
-=\frac{L_m}{T\Delta V}$$
-assuming a reversible process.
+=\frac{\Delta H}{T\Delta V}$$
+since constant pressure at boundaries.
 
 \subsubsection*{Van der Waals state equation}
 $$\left(P+\frac{an^2}{V^2}\right)
@@ -310,6 +310,7 @@ $$\mu=\frac{G}{N}$$
 since $G$ is extensive. At constant $T$
 with ideal gas assumptions:
 $$\mu(P,T)=RT\ln\frac{P}{P_0}+\mu_0(P,T).$$
+Chemical potential $\mu$ has units J.
 
 \subsubsection*{Third law}
 $S=0$ at $T=0$K.
