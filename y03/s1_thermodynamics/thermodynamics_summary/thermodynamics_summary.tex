@@ -145,13 +145,24 @@ Note $Q>0$ represents energy transferred
 When system does work on surroundings
 we have $W>0$.
 
-Work done \underline{by} a fluid
-in reversible \\
-adiabatic processes:
+The work done \underline{by} a fluid
+in \textbf{reversible} processes is:
 $$\dd W=P\dd V$$
-and is in Joules (J).
+and has units Joules (J).
 
 \subsubsection*{Isothermal expansion}
+Let $P_1>P_2$ where $P_1$ and $P_2$ 
+denote system and external
+pressure respectively.
+Only mechanical work is exchanged via
+a piston.
+By applying a force
+such that there exists pressure difference $\dd P$, 
+our expansion becomes
+reversible and hence:
+$$W=nRT\int_{V_1}^{V_2}\frac{\dd V}{V}.$$
+Note that for isothermal processes
+under ideal gas assumption, $\Delta U=0$.
 
 \subsubsection*{Isochoric heat capacity}
 $$C_V(T)=\left(\frac{\dd Q}{\dd T}\right)_V
@@ -234,6 +245,11 @@ and is either in terms of rate or value,
 with units J or Js$^{-1}$.
 This ideal cycle is known as
 the Carnot cycle:
+\begin{center}
+    \includegraphics*[scale=0.22]{f0.png}
+\end{center}
+where AB,CD are isothermal processes
+and BC, DA are adiabatic processes.
 
 \subsubsection*{Entropy}
 The state function entropy is a measure
