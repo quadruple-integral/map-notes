@@ -133,6 +133,11 @@ and $N$ the number of molecules.
     +\left(\frac{\partial f}{\partial y}\right)_x \dd x
     $ \\
     if $f=f(x,y)$.
+
+    \item Differential $\idd f$ is \textbf{inexact} if:
+    $$\int_C \idd f
+    \hspace{0.05in}\text{is\underline{dependent} of path}.$$
+
     \item $\displaystyle
     \left(\frac{\partial Z}{\partial Y}\right)_X
     =\left[\left(\frac{\partial Y}{\partial Z}\right)_X
@@ -151,11 +156,19 @@ $$\Delta U=Q-W$$
 $$\dd U=\idd Q-\idd W$$
 $$\dot{U}=\dot{Q}-\dot{W}$$
 where $U$ is internal energy and $E\geq U$.
+\begin{itemize}
+    \item Heat exchange $Q$: \\
+    The energy transfer of two systems at
+    different temperatures in thermal contact.
+    $Q>0$ represents energy transfer
+    \underline{into} system.
 
-Note $Q>0$ represents energy transferred
-\underline{into} system.
-When system does work on surroundings
-we have $W>0$.
+    \item Work exchange $W$: \\
+    The work done \underline{on} the surroundings by system
+    is represented by $W>0$.
+
+    Work is generally \underline{path dependent}.
+\end{itemize}
 
 The work done \underline{by} a fluid
 in \textbf{reversible} processes is:
@@ -230,6 +243,17 @@ for adiabats is given by:
 $$W_{1\rightarrow2}
 =-\int_{T_1}^{T_2}C_V\dd T.$$
 
+\subsubsection*{General form for first law}
+Given system with $m$ conjugate pairs
+$(x_i,X_i)$ that represent various modes
+of work exchange:
+$$\dd U=\idd Q+
+\sum_{i=1}^{m}x_i\dd X_i$$
+for each $\{x_i\}$ 
+drives $\{X_i\}$.
+
+\columnbreak
+
 \subsubsection*{Enthalpy}
 The state function enthalpy simplies the
 description of heat transfer. 
@@ -263,16 +287,6 @@ $Q=\Delta U+P_0\Delta V=\Delta H$:
     (heat is absorbed)
 \end{itemize}
 at constant pressure $P_0$.
-
-\subsubsection*{General form for first law}
-Given system with $m$ conjugate pairs
-$(x_i,X_i)$ that represent multiple modes
-of work exchange:
-$$\dd U=\dd Q+
-\sum_{i=1}^{m}x_i\dd X_i$$
-for each generalised force $\{x_i\}$ 
-drives generalised differential
-displacement $\{X_i\}$.
 
 \subsubsection*{Carnot's theorem}
 Peak efficiency of a \underline{cyclic}

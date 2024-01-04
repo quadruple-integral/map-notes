@@ -182,12 +182,12 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecrm0500.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
-INPUT ./f0.png
-INPUT ./f0.png
-INPUT ./f0.png
-INPUT ./f0.png
-INPUT ./f0.png
 INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./f0.png
+INPUT ./f0.png
+INPUT ./f0.png
+INPUT ./f0.png
+INPUT ./f0.png
 INPUT thermodynamics_summary.aux
 INPUT ./thermodynamics_summary.out
 INPUT ./thermodynamics_summary.out
