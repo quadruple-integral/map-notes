@@ -12,6 +12,13 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{hyperref}
 \usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% commands
+\newcommand{\deq}{\vcentcolon=}
+\newcommand{\idd}{\text{đ}}
 
 % margin settings
 \geometry{
@@ -121,6 +128,11 @@ and $N$ the number of molecules.
 
 \subsubsection*{Calculus identities}
 \begin{enumerate}
+    \item $\displaystyle\dd f(x,y)
+    =\left(\frac{\partial f}{\partial x}\right)_y \dd x
+    +\left(\frac{\partial f}{\partial y}\right)_x \dd x
+    $ \\
+    if $f=f(x,y)$.
     \item $\displaystyle
     \left(\frac{\partial Z}{\partial Y}\right)_X
     =\left[\left(\frac{\partial Y}{\partial Z}\right)_X
@@ -136,7 +148,7 @@ and $N$ the number of molecules.
 \subsubsection*{First law}
 Total energy $E$ is conserved and:
 $$\Delta U=Q-W$$
-$$\dd U=\dd Q-\dd W$$
+$$\dd U=\idd Q-\idd W$$
 $$\dot{U}=\dot{Q}-\dot{W}$$
 where $U$ is internal energy and $E\geq U$.
 
@@ -147,7 +159,7 @@ we have $W>0$.
 
 The work done \underline{by} a fluid
 in \textbf{reversible} processes is:
-$$\dd W=P\dd V$$
+$$\idd W=P\dd V$$
 and has units Joules (J).
 
 \subsubsection*{Isothermal expansion}
@@ -160,29 +172,51 @@ By applying a force
 such that there exists pressure difference $\dd P$, 
 our expansion becomes
 reversible and hence:
-$$W=nRT\int_{V_1}^{V_2}\frac{\dd V}{V}.$$
+$$W_{1\rightarrow2}=nRT\int_{V_1}^{V_2}
+\frac{\dd V}{V}.$$
 Note that for isothermal processes
-under ideal gas assumption, $\Delta U=0$.
+under \underline{ideal} gas assumption, $\Delta U=0$.
 
-\subsubsection*{Isochoric heat capacity}
-$$C_V(T)=\left(\frac{\dd Q}{\dd T}\right)_V
+\subsubsection*{Heat capacity}
+Heat capacity (JK$^{-1}$) is defined as:
+$$C(P,T)=\lim_{\Delta T\rightarrow0}
+\frac{\Delta Q}{\Delta T}$$
+and is the heat needed to produce
+unit change in sample temperature.
+
+Specific heat capacity
+(Jkg$^{-1}$K$^{-1}$):
+$$Q=mc\Delta T.$$
+
+We define the \textbf{isochoric} 
+heat capacity as:
+$$C_V(T)\deq\left(\frac{\idd Q}{\dd T}\right)_V
 =\left(\frac{\partial U}{\partial T}\right)_V$$
-
-\subsubsection*{Isobaric heat capacity}
+and the \textbf{isobaric} heat capacity as:
 \begin{align*}
     C_P
-    &=\left(\frac{\dd Q}{\dd T}\right)_P \\
+    &\deq\left(\frac{\idd Q}{\dd T}\right)_P \\
     &=C_V+\left[P+
     \left(\frac{\partial U}{\partial V}\right)_T\right]
-    \left(\frac{\partial V}{\partial T}\right)_P
+    \left(\frac{\partial V}{\partial T}\right)_P.
 \end{align*}
-Heat capacity has units JK$^{-1}$.
 
 For ideal gases we have that:
 $$C_P-C_V=nR.$$
 
 \subsubsection*{Adiabatic expansion}
-Under \underline{reversible adiabatic} processes:
+The \underline{reversible} \underline{adiabatic}
+expansion of an \textbf{ideal} gas is given by:
+\begin{align*}
+    &\dd U=-P\dd V
+    \hspace{0.05in}\text{and}\hspace{0.05in}
+    \dd U=C_V\dd T \\
+    &\implies
+    \frac{\dd T}{T}
+    +\frac{C_P-C_V}{C_V}\frac{\dd V}{V}=0
+\end{align*}
+since $U=U(T)$.
+Integrating this yields:
 $$TV^{\gamma-1}=\text{constant}$$
 $$PV^{\gamma}=\text{constant}$$
 $$T^{\frac{1}{\gamma-1}}V=\text{constant}$$
@@ -190,7 +224,11 @@ where $\gamma$ is the \underline{adiabatic exponent}:
 $$\gamma=\frac{C_P}{C_V}
 =\frac{f+2}{f}$$
 $$U=\frac{f}{2}nRT$$
-regardless of degrees of freedom $f$.
+and $f$ is degrees of freedom.
+The practical computation of work done
+for adiabats is given by:
+$$W_{1\rightarrow2}
+=-\int_{T_1}^{T_2}C_V\dd T.$$
 
 \subsubsection*{Enthalpy}
 The state function enthalpy simplies the
@@ -239,7 +277,7 @@ displacement $\{X_i\}$.
 \subsubsection*{Carnot's theorem}
 Peak efficiency of a \underline{cyclic}
 heat engine:
-$$\eta=\frac{\dot{W}}{\dot{Q_H}}=1-\frac{Q_C}{Q_H}
+$$\eta\deq\frac{\dot{W}}{\dot{Q_H}}=1-\frac{Q_C}{Q_H}
 =1-\frac{T_C}{T_H}$$
 and is either in terms of rate or value, 
 with units J or Js$^{-1}$.
@@ -259,7 +297,8 @@ where $Q$ is heat received from a reservoir
 at temperature $T$
 and units JK$^{-1}$.
 
-Then for a reversible cyclic heat engine:
+Then for a \underline{reversible} cyclic heat engine:
+$$\dd S=\dd Q/T$$
 $$\dd U=T\dd S-P\dd V.$$
 For all processes the following holds:
 $$\dd H=T\dd S+V\dd P.$$
@@ -307,14 +346,14 @@ $$\kappa_T=-\frac{1}{V}
 Throttling is the \underline{adiabatic} 
 reduction in gas pressure
 and is an isenthalpic process.
-At constant volume we define:
+We define
+the slope of a P-T plot:
 \begin{align*}
     \mu_{JK}&=\left(
     \frac{\partial T}{\partial P}\right)_H \\
     &=\frac{V(T,P)}{C_P}(\beta T-1)
 \end{align*}
-as the slope of a P-T plot
-known as the
+as the
 Joule-Kelvin coefficient.
 
 \subsubsection*{Clausius-Clapeyron equation}
@@ -346,6 +385,11 @@ Chemical potential $\mu$ has units J.
 
 \subsubsection*{Third law}
 $S=0$ at $T=0$K.
+
+\subsubsection*{Questions}
+\begin{enumerate}
+    \item What is temperature?
+\end{enumerate}
 
 \end{multicols*}
 
