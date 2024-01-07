@@ -233,7 +233,8 @@ Integrating this yields:
 $$TV^{\gamma-1}=\text{constant}$$
 $$PV^{\gamma}=\text{constant}$$
 $$T^{\frac{1}{\gamma-1}}V=\text{constant}$$
-where $\gamma$ is the \underline{adiabatic exponent}:
+where $\gamma$ is the \underline{adiabatic
+exponent}:
 $$\gamma=\frac{C_P}{C_V}
 =\frac{f+2}{f}$$
 $$U=\frac{f}{2}nRT$$
@@ -260,45 +261,34 @@ description of heat transfer.
 
 Enthalpy has units J
 and is defined as:
-$$H=U+PV$$
+$$H=U+PV.$$
+Under \underline{reversible} conditions:
 \begin{align*}
     \dd H
-    &=\dd U+V\dd P+P\dd V \\
-    &=\dd Q+V\dd P.
+    &=\dd U+P\dd V+V\dd P \\
+    &=\idd Q+V\dd P
 \end{align*}
-Under isobaric reversible conditions:
-$$\dd H=\dd Q_P.$$
-$$\therefore C_P
-=\left(\frac{\partial H}{\partial T}\right)_P$$
+$$\therefore\dd H=\idd Q_P
+\implies C_P
+=\left(\frac{\partial H}{\partial T}\right)_P.$$
 
 \subsubsection*{Latent heats}
-Latent heat is heat needed for sample
+Latent heat (J) is heat needed for sample
 to undergo a phase transition:
-$$\Delta U_m=Q_m-P\Delta V_m$$
-$$L_m=Q_m=\Delta H_m.$$
-
-\subsubsection*{Chemical reactions}
-Since
-$Q=\Delta U+P_0\Delta V=\Delta H$:
-\begin{itemize}
-    \item $Q<0$: exothermic \\
-    (heat is released)
-    \item $Q>0$: endothermic \\
-    (heat is absorbed)
-\end{itemize}
-at constant pressure $P_0$.
+$$\Delta U=Q-P\Delta V$$
+$$L=Q=\Delta H.$$
 
 \subsubsection*{Carnot's theorem}
 Peak efficiency of a \underline{cyclic}
 heat engine:
-$$\eta\deq\frac{\dot{W}}{\dot{Q_H}}=1-\frac{Q_C}{Q_H}
-=1-\frac{T_C}{T_H}$$
-and is either in terms of rate or value, 
-with units J or Js$^{-1}$.
-This ideal cycle is known as
-the Carnot cycle:
+\begin{align*}
+    \eta&\deq\frac{W}{Q_H}
+    =\frac{\dot{W}}{\dot{Q_H}} \\
+    &=1-\frac{Q_C}{Q_H}=1-\frac{T_C}{T_H}
+\end{align*}
+and is known as the Carnot cycle:
 \begin{center}
-    \includegraphics*[scale=0.22]{f0.png}
+    \includegraphics*[scale=0.13]{f0.png}
 \end{center}
 where AB,CD are isothermal processes
 and BC, DA are adiabatic processes.
@@ -311,24 +301,30 @@ where $Q$ is heat received from a reservoir
 at temperature $T$
 and units JK$^{-1}$.
 
-Then for a \underline{reversible} cyclic heat engine:
-$$\dd S=\dd Q/T$$
-$$\dd U=T\dd S-P\dd V.$$
-For all processes the following holds:
+For \underline{reversible} processes:
+$$\Delta S_{1\rightarrow2}
+=\int_{T_1}^{T_2}\frac{\idd Q}{T}$$
+$$\dd U=T\dd S-P\dd V$$
 $$\dd H=T\dd S+V\dd P.$$
 
 \subsubsection*{Entropy of mixing}
+For ideal gases A and B:
 $$\Delta S=n_A R\ln\frac{V_A+V_B}{V_A}
-+n_B R\ln\frac{V_A+V_B}{V_B}$$
++n_B R\ln\frac{V_A+V_B}{V_B}.$$
+The \underline{molar} specific entropy of mixing is:
 $$\Delta s_{mix}=-R(x_A\ln x_A+x_B\ln x_B)$$
 $$x_A=\frac{n_A}{n_A+n_B}
 \hspace{0.05in}\text{and}\hspace{0.05in}
-x_B=\frac{n_B}{n_A+n_B}$$
+x_B=\frac{n_B}{n_A+n_B}.$$
 
 \subsubsection*{Second law}
-$$\Delta S_{total}=\Delta_{system}
-+\Delta_{reservoir}\geq0$$
-$$\dd S\geq\frac{\dd Q}{T}$$
+Total entropy cannot decrease:
+$$\Delta S_{total}=\Delta S_{system}
++\Delta S_{reservoir}\geq0$$
+due to the Clausius inequality:
+$$\dd S\geq\frac{\idd Q}{T}.$$
+$$\therefore W_{rev}-W_{irr}
+=T\Delta S_{irr}>0$$
 
 \subsubsection*{Helmholtz free energy}
 $$F=U-TS$$
@@ -336,7 +332,20 @@ $$\dd F=-S\dd T-P\dd V$$
 
 \subsubsection*{Gibbs free energy}
 $$G=H-TS$$
-$$\dd G=-S\dd T+V\dd P$$
+For \underline{reversible} processes:
+$$\dd G=-S\dd T+V\dd P.$$
+
+\subsubsection*{Chemical reactions}
+Since
+$Q=\Delta U+P_0\Delta V=\Delta H$:
+\begin{itemize}
+    \item $Q<0$: exothermic \\
+    (heat is released)
+    \item $Q>0$: endothermic \\
+    (heat is absorbed)
+\end{itemize}
+at constant pressure $P_0$.
+
 Chemical reactions are spontaneous if:
 $$\Delta G=\Delta H-T\Delta S<0.$$
 
