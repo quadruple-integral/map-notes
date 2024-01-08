@@ -41,7 +41,7 @@ h1 {
 
 main {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 footer {
@@ -51,12 +51,12 @@ footer {
 table {
     border-collapse: collapse;
     border: none;
-    margin: 40px;
+    margin: 20px;
 }
 
 th, td {
     border: none;
-    padding : 16px;
+    padding : 8px;
     text-align: center;
 }
 
