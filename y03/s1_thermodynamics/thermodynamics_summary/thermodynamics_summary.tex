@@ -232,7 +232,7 @@ since $U=U(T)$.
 Integrating this yields:
 $$TV^{\gamma-1}=\text{constant}$$
 $$PV^{\gamma}=\text{constant}$$
-$$T^{\frac{1}{\gamma-1}}V=\text{constant}$$
+$$PT^{\frac{\gamma}{\gamma-1}}=\text{constant}$$
 where $\gamma$ is the \underline{adiabatic
 exponent}:
 $$\gamma=\frac{C_P}{C_V}
@@ -271,12 +271,10 @@ Under \underline{reversible} conditions:
 $$\therefore\dd H=\idd Q_P
 \implies C_P
 =\left(\frac{\partial H}{\partial T}\right)_P.$$
-
-\subsubsection*{Latent heats}
 Latent heat (J) is heat needed for sample
 to undergo a phase transition:
-$$\Delta U=Q-P\Delta V$$
-$$L=Q=\Delta H.$$
+$$\Delta U=Q_{\ell}-P\Delta V
+\implies Q_{\ell}=\Delta H.$$
 
 \subsubsection*{Carnot's theorem}
 Peak efficiency of a \underline{cyclic}
@@ -286,7 +284,9 @@ heat engine:
     =\frac{\dot{W}}{\dot{Q_H}} \\
     &=1-\frac{Q_C}{Q_H}=1-\frac{T_C}{T_H}
 \end{align*}
-and is known as the Carnot cycle:
+since $\Delta U=0
+\implies W=Q=Q_H-Q_C$.
+This is the Carnot cycle:
 \begin{center}
     \includegraphics*[scale=0.13]{f0.png}
 \end{center}
@@ -328,7 +328,8 @@ $$\therefore W_{rev}-W_{irr}
 
 \subsubsection*{Helmholtz free energy}
 $$F=U-TS$$
-$$\dd F=-S\dd T-P\dd V$$
+For \underline{reversible} processes:
+$$\dd F=-S\dd T-P\dd V.$$
 
 \subsubsection*{Gibbs free energy}
 $$G=H-TS$$
