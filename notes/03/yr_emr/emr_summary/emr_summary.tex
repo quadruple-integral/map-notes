@@ -12,6 +12,11 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{hyperref}
 \usepackage{enumitem}
+\usepackage{mathtools}
+
+% commands
+\newcommand{\deq}{\vcentcolon=}
+\newcommand{\idd}{\text{đ}}
 
 % margin settings
 \geometry{
@@ -343,6 +348,64 @@ $$I_{ij}(O)=I_{ij}(G)+M(R^2\delta_{ij}-X_i X_j)$$
 $$M=\int_V\rho'(\boldsymbol{r}')\dd V'.$$
 
 \subsubsection*{Diagonalisation}
+
+\subsubsection*{Taylor series}
+In the one-dimensional case we have:
+$$f(x)=\sum_{n=0}^{\infty}
+\frac{1}{n!}f^{(n)}(a)(x-a)^n$$
+and is $f$ expanded about $x=a$.
+\begin{align*}
+    \therefore f(x+a)
+    &=\sum_{n=0}^{\infty}\frac{1}{n!}
+    f^{(n)}(x)a^n \\
+    &=\exp\left(a\dv{x}\right)f(x)
+\end{align*}
+Then for three dimensions:
+\begin{align*}
+    \phi(\boldsymbol{r}+\boldsymbol{a})
+    &=\sum_{n=0}^{\infty}\frac{1}{n!}
+    (\boldsymbol{a}\cdot\boldsymbol{\nabla}_r)^n
+    \phi(\boldsymbol{r}) \\
+    &=\exp(\boldsymbol{a}\cdot
+    \boldsymbol{\nabla}_r)\phi(\boldsymbol{r}).
+\end{align*}
+
+\subsubsection*{Curvilinear coordinates}
+Let $x_i$ denote Cartesian coordinates
+and $u_i$ denote curvilinear coordinates. Then:
+$$(x_1,x_2,x_3)\rightarrow(u_1,u_2,u_3)$$
+where each $u_i=u_i(x_1,x_2,x_3)$.
+
+\subsubsection*{Scale factors}
+If component $u_1$ of
+$\boldsymbol{r}=\boldsymbol{r}(u_1,u_2,u_3)$
+is changed by $\dd u_1$
+then $\boldsymbol{r}\rightarrow
+\boldsymbol{r}+\dd\boldsymbol{r}$, where:
+$$\dd\boldsymbol{r}
+=\frac{\partial\boldsymbol{r}}{\partial u_1}\dd u_1
+\deq h_1\boldsymbol{e}_1\dd u_1.$$
+$h_1$ is the scale factor of unit vector 
+$\boldsymbol{e}_1$:
+$$h_1=\left|\frac{\partial
+\boldsymbol{r}}{\partial u_1}\right|
+\hspace{0.05in}\text{and}\hspace{0.05in}
+\boldsymbol{e}_1=\frac{1}{h_1}
+\frac{\partial\boldsymbol{r}}{\partial u_1}.$$
+If $\boldsymbol{e}_i\cdot\boldsymbol{e}_j=\delta_{ij}$
+then $u_i$ is an \textbf{orthogonal}
+curvilinear coordinate system.
+
+\subsubsection*{Length, area and volume}
+The vector length of $\boldsymbol{r}$ when
+$u_i\rightarrow u_i+\dd u_i$ is changed
+for $\forall i=1,2,3$ is defined as:
+$$\dd\boldsymbol{r}=
+\sum_{i=1}^{3}h_i\dd u_i\boldsymbol{e}_i.$$
+
+\subsubsection*{Cylindrical coordinates}
+
+\subsubsection*{Spherical coordinates}
 
 \end{multicols*}
 
