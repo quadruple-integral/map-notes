@@ -524,7 +524,7 @@ Furthermore:
 $$\int_I f=\lim_{n\rightarrow\infty}\int_I f_n.$$
 
 \subsubsection*{D4.4: Riemann integrable}
-$f$ is Riemann-integrable if:
+$f$ is Riemann-integrable on $[a,b]$ if:
 \begin{align*}
     &\forall\epsilon>0; \exists\phi,
     \psi:\phi\leq f\leq\psi \\
@@ -559,7 +559,9 @@ The following statements are equivalent:
     $$\sum_{j=1}^{n}(M_j-m_j)(x_j-x_{j-1})<\epsilon$$
     where we define:
     $$M_j=\sup_{x\in(x_{j-1},x_j)}\Bigl\{f(x)\Bigr\}$$
-    $$m_j=\inf_{x\in(x_{j-1},x_j)}\Bigl\{f(x)\Bigr\}.$$
+    $$m_j=\inf_{x\in(x_{j-1},x_j)}\Bigl\{f(x)\Bigr\}$$
+    and $n\in\mathbb{N}$.
+    (i.e. finite partition)
 
     \item $\forall\epsilon>0;
     \exists\{a=x_0<\dots<x_n=b\}:$
