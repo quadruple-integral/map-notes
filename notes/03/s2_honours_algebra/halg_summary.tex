@@ -12,6 +12,16 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{hyperref}
 \usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{centernot}
+
+% commands
+\newcommand{\deq}{\vcentcolon=}
+\newcommand{\idd}{\text{đ}}
+\newcommand{\nimplies}{\centernot\implies}
+\newcommand{\vc}[1]{\boldsymbol{#1}}
 
 % margin settings
 \geometry{
@@ -48,13 +58,61 @@
 \subsubsection*{D: Functions}
 injections, surjections and bijections
 
+\subsubsection*{D: Groups}
+
 \subsubsection*{D: Abelian groups}
 
 \subsubsection*{D1.2.1(i): Fields}
-A field F is a set equipped with addition
-and multiplication.
+A field $F$ is a set defined with:
+\begin{enumerate}
+    \item Addition function $(+)$:
+    \begin{align*}
+        (+):F\times F\rightarrow F;
+        (\lambda,\mu)\mapsto\lambda+\mu
+    \end{align*}
+
+    \item Multiplication function $(\cdot)$:
+    \begin{align*}
+        (\cdot):F\times F\rightarrow F;
+        (\lambda,\mu)\mapsto\lambda\cdot\mu
+    \end{align*}
+
+    \item $\exists 0_F,1_F\in F$
+    where $0_F\neq1_F$ such that 
+    $(F,+)$ and $(F\backslash\{0_F\},\cdot)$
+    form Abelian groups.
+
+    \item $\exists (-\lambda)\in F:
+    \lambda+(-\lambda)=0_F$
+
+    \item $\exists (\lambda^{-1})\in F:
+    \lambda\cdot(\lambda^{-1})=1_F$
+
+    \item $\lambda(\mu+\nu)
+    =\lambda\mu+\lambda\nu\in F$
+\end{enumerate}
 
 \subsubsection*{D1.2.1(ii): Vector spaces}
+A vector space $V$ over a field $F$ is an Abelian group $V\deq(V,+)$
+with mapping:
+$$F\times V\rightarrow V:
+(\lambda,\vc{v}\mapsto
+\lambda\vc{v})$$
+where for $\forall\lambda, \mu\in F$ and
+$\forall\vc{v},\vc{w}\in V$:
+\begin{enumerate}
+    \item
+    $\lambda(\vc{v}+\vc{w})
+    =(\lambda\vc{v})+(\mu\vc{w})$
+
+    \item $(\lambda+\mu)\vc{v}
+    =(\lambda\vc{v})+(\mu\vc{w})$
+
+    \item $\lambda(\mu\vc{v})=(\lambda\mu)\vc{v}$
+    
+    \item $1_F\vc{v}=\vc{v}$
+\end{enumerate}
+and is an $F$-vector space.
 
 \subsubsection*{L1.2.2}
 
