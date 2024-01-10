@@ -17,6 +17,8 @@
 % commands
 \newcommand{\deq}{\vcentcolon=}
 \newcommand{\idd}{\text{đ}}
+\newcommand{\nimplies}{\centernot\implies}
+\newcommand{\vc}[1]{\boldsymbol{#1}}
 
 % margin settings
 \geometry{
@@ -398,16 +400,68 @@ If $\boldsymbol{e}_i\cdot\boldsymbol{e}_j=\delta_{ij}$
 then $u_i$ is an \textbf{orthogonal}
 curvilinear coordinate system.
 
-\subsubsection*{Length, area and volume}
-The vector length of $\boldsymbol{r}$ when
-$u_i\rightarrow u_i+\dd u_i$ is changed
-for $\forall i=1,2,3$ is defined as:
+\subsubsection*{Vector and arc length}
+The \underline{vector length} 
+$\dd\vc{r}$ of $\boldsymbol{r}$ 
+is defined as:
 $$\dd\boldsymbol{r}=
-\sum_{i=1}^{3}h_i\dd u_i\boldsymbol{e}_i.$$
+\sum_{i=1}^{3}h_i\dd u_i\boldsymbol{e}_i$$
+where
+$u_i\rightarrow u_i+\dd u_i$
+for $\forall i=1,2,3$.
+
+Then the \underline{arc length}
+$\dd s$ is defined as:
+\begin{align*}
+    (\dd s)^2
+    &=\dd\vc{r}\cdot\dd\vc{r} \\
+    &=g_{ij}\hspace{0.01in}\dd u_i\dd u_j
+\end{align*}
+where $g_{ij}$ is the metric tensor:
+\begin{align*}
+    g_{ij}&=g_{ji}=\frac{\partial x_k}{\partial u_i}
+    \frac{\partial x_k}{\partial u_j} \\
+    &=h_i h_j(\vc{e}_i\cdot\vc{e}_j).
+\end{align*}
+
+\subsubsection*{Area and volume}
+Let $\dd\vc{r}_i=h_i\vc{e}_i\dd u_i$ denote
+vector length when
+$u_i\rightarrow u_i+\dd u_i$.
+(\textbf{No} sum!)
+
+The infinitesimal \underline{vector area}
+formed by $\dd\vc{r}_1$
+and $\dd\vc{r}_2$ is:
+$$\dd\vc{S}=(h_1\dd\vc{u}_1\vc{e}_1)
+\times(h_2\dd\vc{u}_2\vc{e}_2).$$
+Similarly the infinitesimal \underline{volume} 
+formed by edges $\dd\vc{r}_1$, $\dd\vc{r}_2$
+and $\dd\vc{r}_3$ is:
+\begin{align*}
+    \dd V&=|(\dd\vc{r}_1\times\dd\vc{r}_2)
+    \cdot\dd\vc{r}_3| \\
+    &=\sqrt{g}\hspace{0.01in}\dd u_1\dd u_2\dd u_3
+\end{align*}
+where $g=\det g_{ij}$.
 
 \subsubsection*{Cylindrical coordinates}
 
 \subsubsection*{Spherical coordinates}
+
+\subsubsection*{Gradient}
+
+\subsubsection*{Divergence}
+
+\subsubsection*{Curl}
+
+\subsubsection*{Laplacian}
+
+\subsubsection*{Stokes' theorem}
+
+\subsubsection*{Divergence theorem}
+
+\subsubsection*{Dirac delta function}
 
 \end{multicols*}
 
