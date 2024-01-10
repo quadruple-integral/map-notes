@@ -350,6 +350,32 @@ $$I_{ij}(O)=I_{ij}(G)+M(R^2\delta_{ij}-X_i X_j)$$
 $$M=\int_V\rho'(\boldsymbol{r}')\dd V'.$$
 
 \subsubsection*{Diagonalisation}
+Let $\vc{L}=I_{ij}\omega_j$
+where $I_{ij}$ is a rank $2$ tensor \\
+and let $\vc{L}=\lambda\hspace{0.01in}\vc{\omega}$.
+Then:
+$$(I_{ij}-\lambda\delta_{ij})\omega_j=0
+\implies\det(I_{ij}-\lambda\delta_{ij})=0$$
+where expanding this gives:
+$$P-Q\lambda+R\lambda^2-\lambda^3=0$$
+for $P=\det I$,
+$Q=\frac{1}{2}[(\trace I)^2-\trace(I^2)]$
+and $R=\trace I$
+given \underline{tensor} $I$.
+
+\subsubsection*{Real symmetric tensors}
+Let rank $2$ real symmetric tensor $T$
+be diagonalisable with real eigenvalues
+$\lambda^{(i)}$ and orthonormal eigenvectors
+$\vc{\ell}^{(i)}$ where $i=1,2,3$.
+Let transformation matrix be:
+$$L_{ij}=\ell_j^{(i)}
+=\begin{pmatrix}
+    \ell_1^{(1)} & \ell_2^{(1)} & \ell_3^{(1)} \\
+    \ell_1^{(2)} & \ell_2^{(2)} & \ell_3^{(2)} \\
+    \ell_1^{(3)} & \ell_2^{(3)} & \ell_3^{(3)}
+\end{pmatrix}_{ij}$$
+and always defined such that $\det L=+1$.
 
 \subsubsection*{Taylor expansions}
 In the one-dimensional case we have:
@@ -443,7 +469,7 @@ and $\dd\vc{r}_3$ is:
     \cdot\dd\vc{r}_3| \\
     &=\sqrt{g}\hspace{0.01in}\dd u_1\dd u_2\dd u_3
 \end{align*}
-where $g=\det g_{ij}$.
+where $g=\det(g_{ij})$.
 
 \subsubsection*{Cylindrical coordinates}
 
