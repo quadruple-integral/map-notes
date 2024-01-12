@@ -530,8 +530,31 @@ and also forms an orthogonal set.
 \end{center}
 
 \subsubsection*{Gradient}
+The gradient of a \underline{scalar} field
+$f(\vc{r})$ is:
+$$\dd f(\vc{r})=\vc{\nabla}f(\vc{r})\cdot\dd\vc{r}$$
+when $\vc{r}\rightarrow\vc{r}+\dd\vc{r}
+\implies f\rightarrow f+\dd f$.
+Taking the total differential of $f$ yields:
+$$\vc{\nabla}f=\sum_{i=1}^{3}\frac{1}{h_i}
+\frac{\partial f}{\partial u_i}\vc{e}_i$$
+where $\{\vc{e}_i\}$ is \underline{orthogonal}.
 
 \subsubsection*{Divergence}
+The divergence of a \underline{vector} field $\vc{F}$ is:
+$$\vc{\nabla}\cdot\vc{F}=\lim_{\delta V\rightarrow0}
+\frac{1}{\delta V}\int_{\delta S}
+\vc{F}\cdot\dd\vc{S}$$
+for surface $\delta S$ bounds infinitesimal $\delta V$. \\
+In orthogonal curvilinear coordinates:
+\begin{align*}
+    \vc{\nabla}\cdot\vc{F}
+    &=\frac{1}{h_1 h_2 h_3}\biggl\{
+    \frac{\partial}{\partial u_1}(F_1 h_2 h_3)\;+ \\
+    &\frac{\partial}{\partial u_2}(h_1 F_2 h_3)
+    +\frac{\partial}{\partial u_3}(h_1 h_2 F_3)
+    \biggr\}.
+\end{align*}
 
 \subsubsection*{Curl}
 
