@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1704906748 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/yr_emr/emr_summary/emr_summary.tex" "emr_summary.pdf" "emr_summary" 1704906749 0
-  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/yr_emr/emr_summary/emr_summary.tex" 1704906747 14587 90116e0b9fa29c436da9d4b1fc83fcec ""
+["pdflatex"] 1705068379 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/yr_emr/emr_summary/emr_summary.tex" "emr_summary.pdf" "emr_summary" 1705068380 0
+  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/yr_emr/emr_summary/emr_summary.tex" 1705068378 15628 3336d600fcc8f9f36f07ab5ab4cf0c6c ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1693925241 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1693925632 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -27,6 +27,7 @@
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1693924610 36281 c355509802a035cadc5f15869451dcee ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1693924610 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1693924610 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1693924610 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1693924610 32762 7fee39e011c23b3589931effd97b9702 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1693924610 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1693924610 32716 08e384dc442464e7285e891af9f45947 ""
@@ -102,9 +103,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693929215 4703462 5df3913b339a4fb9b4dc6c57dc378863 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693929334 8183624 edc78c4bf2213c105a673cf72ac18bae ""
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
-  "emr_summary.aux" 1704906749 554 04ae3964aa57b78538b565d0454a3de2 "pdflatex"
-  "emr_summary.out" 1704906748 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "emr_summary.tex" 1704906747 14587 90116e0b9fa29c436da9d4b1fc83fcec ""
+  "emr_summary.aux" 1705068380 554 dd2b48f1aba1e3b725040b4d3abf7fbe "pdflatex"
+  "emr_summary.out" 1705068380 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "emr_summary.tex" 1705068378 15628 3336d600fcc8f9f36f07ab5ab4cf0c6c ""
   (generated)
   "emr_summary.aux"
   "emr_summary.log"

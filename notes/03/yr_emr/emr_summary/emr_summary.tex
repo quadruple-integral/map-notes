@@ -354,7 +354,7 @@ Let $\vc{L}=I_{ij}\omega_j$
 where $I_{ij}$ is a rank $2$ tensor \\
 and let $\vc{L}=\lambda\hspace{0.01in}\vc{\omega}$.
 Then:
-$$(I_{ij}-\lambda\delta_{ij})\omega_j=0
+$$(I_{ij}-\lambda\delta_{ij})\hspace{0.01in}\omega_j=0
 \implies\det(I_{ij}-\lambda\delta_{ij})=0$$
 where expanding this gives:
 $$P-Q\lambda+R\lambda^2-\lambda^3=0$$
@@ -375,7 +375,20 @@ $$L_{ij}=\ell_j^{(i)}
     \ell_1^{(2)} & \ell_2^{(2)} & \ell_3^{(2)} \\
     \ell_1^{(3)} & \ell_2^{(3)} & \ell_3^{(3)}
 \end{pmatrix}_{ij}$$
-and always defined such that $\det L=+1$.
+and always defined such that $\det L=+1$
+which transforms frame $S\rightarrow S'$.
+
+Then since $T_{pq}\ell_q^{(i)}=\lambda^{(i)}\ell_p^{(i)}$:
+\begin{align*}
+    T'_{ij}
+    &=\ell_{ip}\ell_{jq}T_{pq} \\
+    &=\lambda^{(i)}\delta_{ij}
+    =\begin{pmatrix}
+        \lambda^{(1)} & 0 & 0 \\
+        0 & \lambda^{(2)} & 0 \\
+        0 & 0 & \lambda^{(3)}
+    \end{pmatrix}_{ij}.
+\end{align*}
 
 \subsubsection*{Taylor expansions}
 In the one-dimensional case we have:
@@ -404,14 +417,19 @@ Then for three dimensions:
 Let $x_i$ denote Cartesian coordinates
 and $u_i$ denote curvilinear coordinates. Then:
 $$(x_1,x_2,x_3)\rightarrow(u_1,u_2,u_3)$$
-where each $u_i=u_i(x_1,x_2,x_3)$.
+where each $u_i=u_i(x_1,x_2,x_3)$ and:
+\begin{align*}
+    \vc{r}
+    &=x_1\vc{e}_1+x_2\vc{e}_2+x_3\vc{e}_3 \\
+    &=u_1\vc{e}_{u_1}+u_2\vc{e}_{u_2}+u_3\vc{e}_{u_3}.
+\end{align*}
 
 \subsubsection*{Scale factors}
-If component $u_1$ of
-$\boldsymbol{r}=\boldsymbol{r}(u_1,u_2,u_3)$
-is changed by $\dd u_1$
-then $\boldsymbol{r}\rightarrow
-\boldsymbol{r}+\dd\boldsymbol{r}$, where:
+Let $u_1\rightarrow u_1+\dd u_1$ in
+$\boldsymbol{r}=\boldsymbol{r}(u_1,u_2,u_3)$.
+Then $\dd\vc{r}$ in 
+$\boldsymbol{r}\rightarrow\boldsymbol{r}+\dd\boldsymbol{r}$
+is defined as:
 $$\dd\boldsymbol{r}
 =\frac{\partial\boldsymbol{r}}{\partial u_1}\dd u_1
 \deq h_1\boldsymbol{e}_1\dd u_1.$$
@@ -472,6 +490,22 @@ and $\dd\vc{r}_3$ is:
 where $g=\det(g_{ij})$.
 
 \subsubsection*{Cylindrical coordinates}
+$(u_1,u_2,u_3)=(\rho,\phi,z)$ where $\rho$
+represents the radial distance from the origin
+and $\phi$ is the anticlockwise rotation angle
+on the $x$-$y$ plane. In Cartesian unit vectors:
+$$\vc{r}=\rho\cos\phi\vc{e}_1
++\rho\sin\phi\vc{e}_2+z\vc{e}_3$$
+$$h_{\rho}=1,
+\hspace{0.1in}
+\vc{e}_{\rho}=\cos\phi\vc{e}_1+\sin\phi\vc{e}_2$$
+$$h_{\phi}=\rho,
+\hspace{0.1in}
+\vc{e}_{\phi}=-\sin\phi\vc{e}_1+\cos\phi\vc{e}_2$$
+$$h_z=1,
+\hspace{0.1in}
+\vc{e}_{z}=\vc{e}_3$$
+and forms an orthogonal basis.
 
 \subsubsection*{Spherical coordinates}
 
