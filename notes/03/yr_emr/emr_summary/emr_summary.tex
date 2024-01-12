@@ -55,7 +55,9 @@ $$\boldsymbol{a}\cdot\boldsymbol{b}=ab\cos\theta$$
 $$\boldsymbol{a}\times
 \boldsymbol{b}=ab\sin\theta\hat{\boldsymbol{n}}$$
 $$\boldsymbol{a}\times\boldsymbol{b}
-=-\boldsymbol{b}\times\boldsymbol{a}$$
+=-\boldsymbol{b}\times\boldsymbol{a}
+\hspace{0.07in}\text{and}\hspace{0.07in}
+\vc{a}\times\vc{a}=\vc{0}$$
 $$\boldsymbol{a}\times(\boldsymbol{b}\times\boldsymbol{c})
 =\boldsymbol{b}(\boldsymbol{a}\cdot\boldsymbol{c})
 -\boldsymbol{c}(\boldsymbol{a}\cdot\boldsymbol{b})$$
@@ -526,7 +528,7 @@ $$\vc{e}_{\theta}=\cos\theta\cos\phi\vc{e}_1
 $$\vc{e}_{\phi}=-\sin\phi\vc{e}_1+\cos\phi\vc{e}_2$$
 and also forms an orthogonal set.
 \begin{center}
-    \includegraphics[scale=0.35]{f0.png}
+    \includegraphics[scale=0.3]{f0.png}
 \end{center}
 
 \subsubsection*{Gradient}
@@ -594,16 +596,30 @@ The Laplacian of a \underline{vector} field $\vc{F}$ is:
 $$\vc{\nabla}^2\vc{F}=\vc{\nabla}(\vc{\nabla}\cdot\vc{F})
 -\vc{\nabla}\times(\vc{\nabla}\times\vc{F}).$$
 
+\subsubsection*{Vector calculus identities}
+Particularly for Cartesian coordinates
+we can apply the suffix notation:
+$$\vc{\nabla}f=
+\frac{\partial f}{\partial x_i}\vc{e}_i$$
+$$\frac{\partial x_i}{\partial x_j}=\delta_{ij}
+\hspace{0.05in}\text{and}\hspace{0.05in}
+\frac{\partial x_i}{\partial x_i}=\delta_{ii}=3$$
+$$\vc{\nabla}\cdot\vc{F}=
+\frac{\partial F_i}{\partial x_i}$$
+$$\vc{\nabla}\times\vc{F}
+=\epsilon_{ijk}\frac{\partial F_k}{\partial x_j}
+\vc{e}_i.$$
+
 \subsubsection*{Divergence theorem}
 Let surface $S$ enclose volume $V$. Then:
-$$\iiint_V \vc{\nabla}\cdot\vc{E}\dd V
-=\oint_S \vc{E}\cdot\dd\vc{S}$$
-where $\vc{E}$ is a vector field.
+$$\iiint_V \vc{\nabla}\cdot\vc{F}\dd V
+=\oint_S \vc{F}\cdot\dd\vc{S}$$
+where $\vc{F}$ is a vector field.
 
 \subsubsection*{Stokes' theorem}
 Let closed curve $C$ bound \underline{open} surface $S$
-and let $\vc{E}$ be a vector field. Then:
-$$\oint_C \vc{E}\cdot\dd\vc{r}
+and let $\vc{F}$ be a vector field. Then:
+$$\oint_C \vc{F}\cdot\dd\vc{r}
 =\iint_S (\vc{\nabla}\times\vc{F})\cdot\dd\vc{S}$$
 for $C$ is traversed in anticlockwise sense.
 
