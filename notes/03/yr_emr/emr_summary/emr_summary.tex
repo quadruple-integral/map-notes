@@ -601,14 +601,34 @@ Particularly for Cartesian coordinates
 we can apply the suffix notation:
 $$\vc{\nabla}f=
 \frac{\partial f}{\partial x_i}\vc{e}_i$$
-$$\frac{\partial x_i}{\partial x_j}=\delta_{ij}
-\hspace{0.05in}\text{and}\hspace{0.05in}
-\frac{\partial x_i}{\partial x_i}=\delta_{ii}=3$$
+$$(\vc{u}\cdot\vc{\nabla})\vc{F}
+=u_j\frac{\partial}{\partial x_j}F_i$$
 $$\vc{\nabla}\cdot\vc{F}=
 \frac{\partial F_i}{\partial x_i}$$
 $$\vc{\nabla}\times\vc{F}
 =\epsilon_{ijk}\frac{\partial F_k}{\partial x_j}
-\vc{e}_i.$$
+\vc{e}_i$$
+$$\frac{\partial x_i}{\partial x_j}=\delta_{ij}
+\hspace{0.05in}\text{and}\hspace{0.05in}
+\frac{\partial x_i}{\partial x_i}=\delta_{ii}=3.$$
+If $\psi$ is a scalar field
+and $\vc{v}$ a vector field:
+$$\vc{\nabla}\cdot(\psi\vc{v})
+=\vc{\nabla}\psi\cdot\vc{v}+\psi\vc{\nabla}\cdot\vc{v}$$
+$$\vc{\nabla}\times(\psi\vc{v})
+=\vc{\nabla}\psi\times\vc{v}+\psi\vc{\nabla}\times\vc{v}.$$
+Let $\vc{r}=x_i\vc{e}_i$ and $r=(x_i^2)^{1/2}$. Then:
+\begin{itemize}
+    \item $\displaystyle\vc{\nabla}r=\frac{\vc{r}}{r}$
+    
+    \item $\displaystyle\vc{\nabla}\cdot\vc{r}=3
+    \hspace{0.05in}\text{and}\hspace{0.05in}
+    \vc{\nabla}\times\vc{r}=\vc{0}$
+
+    \item $\displaystyle\vc{\nabla}\times
+    (\vc{c}\times\vc{r})=\vc{0}$
+    for constant $\vc{c}$.
+\end{itemize}
 
 \subsubsection*{Divergence theorem}
 Let surface $S$ enclose volume $V$. Then:
@@ -625,7 +645,7 @@ for $C$ is traversed in anticlockwise sense.
 
 \subsubsection*{Dirac delta function}
 The Dirac delta in $1$D is defined as:
-$$\delta(x-a)=\left\{\begin{array}{ll}
+$$\delta(x-a)\deq\left\{\begin{array}{ll}
     \infty & x=a \\
     0 & \text{otherwise}.
 \end{array}\right.$$
