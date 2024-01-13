@@ -611,8 +611,9 @@ $$\vc{\nabla}\times\vc{F}
 $$\frac{\partial x_i}{\partial x_j}=\delta_{ij}
 \hspace{0.05in}\text{and}\hspace{0.05in}
 \frac{\partial x_i}{\partial x_i}=\delta_{ii}=3.$$
-If $\psi$ is a scalar field
-and $\vc{v}$ a vector field:
+If $\psi$ is a scalar field and $\vc{v}$ a vector field:
+$$\vc{\nabla}\times(\vc{\nabla}\psi)=\vc{0}$$
+$$\vc{\nabla}\cdot(\vc{\nabla}\times\vc{v})=\vc{0}$$
 $$\vc{\nabla}\cdot(\psi\vc{v})
 =\vc{\nabla}\psi\cdot\vc{v}+\psi\vc{\nabla}\cdot\vc{v}$$
 $$\vc{\nabla}\times(\psi\vc{v})
@@ -621,12 +622,18 @@ Let $\vc{r}=x_i\vc{e}_i$ and $r=(x_i^2)^{1/2}$. Then:
 \begin{itemize}
     \item $\displaystyle\vc{\nabla}r=\frac{\vc{r}}{r}$
     
+    \item $\displaystyle\vc{\nabla}r^n
+    =n r^{n-2}\vc{r}$
+    
     \item $\displaystyle\vc{\nabla}\cdot\vc{r}=3
     \hspace{0.05in}\text{and}\hspace{0.05in}
     \vc{\nabla}\times\vc{r}=\vc{0}$
 
     \item $\displaystyle\vc{\nabla}\times
-    (\vc{c}\times\vc{r})=\vc{0}$
+    (\vc{c}\times\vc{r})=2\vc{c}$
+    
+    \item $\displaystyle\vc{\nabla}
+    \cdot(\vc{c}\times\vc{r})=\vc{0}$
     for constant $\vc{c}$.
 \end{itemize}
 
