@@ -620,7 +620,10 @@ $$\vc{\nabla}\times(\psi\vc{v})
 =\vc{\nabla}\psi\times\vc{v}+\psi\vc{\nabla}\times\vc{v}.$$
 Let $\vc{r}=x_i\vc{e}_i$ and $r=(x_i^2)^{1/2}$. Then:
 \begin{itemize}
-    \item $\displaystyle\vc{\nabla}r=\frac{\vc{r}}{r}$
+    \item $\displaystyle\vc{\nabla}r=\frac{\vc{r}}{r}
+    \hspace{0.05in}\text{and}\hspace{0.05in}
+    \vc{\nabla}\left(\frac{1}{r}\right)
+    =-\frac{\vc{r}}{r^3}$
     
     \item $\displaystyle\vc{\nabla}r^n
     =n r^{n-2}\vc{r}$
@@ -712,9 +715,48 @@ $$\therefore\vc{E}_1(\vc{r})
 For a set of charges $q_i$ at position $\vc{r}_i$
 the total electric field at $\vc{r}$ is:
 $$\vc{E}(\vc{r})=\frac{1}{4\pi\epsilon_0}
-\sum_i\frac{q_i(\vc{r}-\vc{r}_i)}{|\vc{r}-\vc{r}_i|^3}$$
+\sum_i\frac{q_i(\vc{r}-\vc{r}_i)}{|\vc{r}-\vc{r}_i|^3}.$$
+For object with \textbf{charge density}
+$\rho(\vc{r}')$ its overall electric field at $\vc{r}$ is:
+$$\vc{E}(\vc{r})=\frac{1}{4\pi\epsilon_0}
+\int_V\rho(\vc{r}')
+\frac{\vc{r}-\vc{r}'}{|\vc{r}-\vc{r}'|^3}\dd V'$$
+where $\rho(\vc{r}')$ is charge divided by volume.
 
 \subsubsection*{Electrostatic Maxwell's equations}
+Because $\displaystyle\vc{\nabla}\left(
+\frac{1}{|\vc{r}-\vc{r}'|}\right)
+=-\frac{\vc{r}-\vc{r}'}{|\vc{r}-\vc{r}'|^3}$:
+$$\vc{E}(\vc{r})=-\vc{\nabla}
+\left(\frac{1}{4\pi\epsilon_0}
+\int_V\frac{\rho(\vc{r}')}{|\vc{r}-\vc{r}'|}\dd V'\right)$$
+and therefore for all \underline{static} electric fields:
+$$\vc{\nabla}\times\vc{E}=\vc{0}.$$
+$\vc{E}$ is a \textbf{conservative} vector field
+where its line integral is \textcolor{red}{in}dependent of path.
+Furthermore it may be written as:
+$$\vc{E}(\vc{r})=-\vc{\nabla}\phi(\vc{r})$$
+for $\phi(\vc{r})$ is the potential of $\vc{E}$.
+$$\therefore\phi(\vc{r})=\frac{1}{4\pi\epsilon_0}
+\int_V\frac{\rho(\vc{r}')}{|\vc{r}-\vc{r}'|}\dd V'$$
+\begin{center}
+    \includegraphics[scale=0.3]{f1.png}
+\end{center}
+The \textbf{potential difference} between
+two points $A$ and $B$ is the energy per unit charge
+needed to move a small charge $q$ from $A$ to $B$:
+\begin{align*}
+    V_{A\rightarrow B}
+    &=\lim_{q\rightarrow0}\frac{1}{q}W_{A\rightarrow B} \\
+    &=-\frac{1}{q}\int_C\vc{F}\cdot\dd\vc{r} \\
+    &=\phi_B-\phi_A
+\end{align*}
+A charge distribution in an \underline{external}
+electric field has potential energy:
+$$W_{potential}=\int_V\rho(\vc{r})\phi_{ext}(\vc{r})\dd V.$$
+Because $\displaystyle\vc{\nabla}^2\left(
+\frac{1}{|\vc{r}-\vc{r}'|}\right)=-4\pi\delta(\vc{\vc{r}-\vc{r}'})$:
+$$\vc{\nabla}\cdot\vc{E}=\frac{\rho(\vc{r})}{\epsilon_0}.$$
 
 \subsubsection*{Electric dipoles}
 

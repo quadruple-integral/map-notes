@@ -184,10 +184,16 @@ INPUT ./f0.png
 INPUT ./f0.png
 INPUT ./f0.png
 INPUT ./f0.png
+INPUT ./f1.png
+INPUT ./f1.png
+INPUT ./f1.png
+INPUT ./f1.png
+INPUT ./f1.png
 INPUT emr_summary.aux
 INPUT ./emr_summary.out
 INPUT ./emr_summary.out
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
