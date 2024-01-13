@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1704800752 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s1_honours_analysis/han_summary/han_summary.tex" "han_summary.pdf" "han_summary" 1704800753 0
-  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s1_honours_analysis/han_summary/han_summary.tex" 1704800751 26167 10dee57a6e7af7e1becd456fc38bb760 ""
+["pdflatex"] 1705149979 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s1_honours_analysis/han_summary/han_summary.tex" "han_summary.pdf" "han_summary" 1705149980 0
+  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s1_honours_analysis/han_summary/han_summary.tex" 1705149978 26510 9bfb435ea772ec714ff03c667f72877f ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1693925241 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1693925632 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -83,10 +83,13 @@
   "c:/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1693926486 9327 42f235aa5042e39fdc94e4fc0343a2fa ""
   "c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1693926558 678 4792914a8f45be57bb98413425e4c7af ""
   "c:/texlive/2023/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty" 1693926592 5766 13a9e8766c47f30327caf893ece86ac8 ""
+  "c:/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty" 1693926830 62269 5c1837a5bc5db4c0d255eedc225ca44b ""
+  "c:/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1693926830 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
   "c:/texlive/2023/texmf-dist/tex/latex/parskip/parskip.sty" 1693927241 4288 94714aa7f535440f33181fec52a31963 ""
   "c:/texlive/2023/texmf-dist/tex/latex/physics/physics.sty" 1693927388 29610 a9597219b282d9c78b02393dcd7d4322 ""
   "c:/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty" 1693927811 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1693927832 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
+  "c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty" 1693928664 10214 75bcd28386d4b4b9f28b2aff3cea7b24 ""
   "c:/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty" 1693928664 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "c:/texlive/2023/texmf-dist/tex/latex/tools/xspace.sty" 1693928664 4545 9f5ea23ab1c91476c42749893f790666 ""
   "c:/texlive/2023/texmf-dist/tex/latex/url/url.sty" 1693928884 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
@@ -95,9 +98,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693929215 4703462 5df3913b339a4fb9b4dc6c57dc378863 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693929334 8183624 edc78c4bf2213c105a673cf72ac18bae ""
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
-  "han_summary.aux" 1704800753 554 1946bb2d40f231db7fb58bc3ffb28649 "pdflatex"
-  "han_summary.out" 1704800753 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "han_summary.tex" 1704800751 26167 10dee57a6e7af7e1becd456fc38bb760 ""
+  "han_summary.aux" 1705149980 554 1946bb2d40f231db7fb58bc3ffb28649 "pdflatex"
+  "han_summary.out" 1705149980 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "han_summary.tex" 1705149978 26510 9bfb435ea772ec714ff03c667f72877f ""
   (generated)
   "han_summary.aux"
   "han_summary.log"

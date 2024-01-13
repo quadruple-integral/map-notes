@@ -12,6 +12,13 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{hyperref}
 \usepackage{enumitem}
+\usepackage{mathtools}
+
+% commands
+\newcommand{\deq}{\vcentcolon=}
+\newcommand{\idd}{\text{đ}}
+\newcommand{\nimplies}{\centernot\implies}
+\newcommand{\vc}[1]{\boldsymbol{#1}}
 
 % margin settings
 \geometry{
@@ -656,10 +663,19 @@ Then $f$ is integrable on $(a,b)$ and:
 $$\int_{a}^{b}f=\lim_{n\rightarrow\infty}\int_{a}^{b}f_n.$$
 
 \subsubsection*{D5.1: $L^2$ space}
-The space $L^2([a,b])$ is the set of measurable functions 
-$f:[a,b]\rightarrow\mathbb{C}$ such that:
-$$||f||_2^2=\int_{a}^{b}|f(x)|^2\dd x<\infty.$$
-The quantity $||f||_2$ is the $L^2$-norm of $f$.
+$f\in L^2([a,b])$ if:
+\begin{enumerate}
+    \item $f:[a,b]\rightarrow\mathbb{C}$ is measurable
+
+    \item $x\mapsto|f(x)|^2$
+    is integrable:
+    $$||f||_2^{\textcolor{red}{2}}\deq
+    \int_{a}^{b}|f(x)|^2\dd x<\infty$$
+\end{enumerate}
+and $||f||_2$ is the $L^2$-norm of $f$.
+
+\subsubsection*{Remark}
+If $z\in\mathbb{C}$ then $z\bar{z}\deq|z|^2$.
 
 \subsubsection*{D5.2: Inner products}
 The inner product of $f,g\in L^2([a,b])$ is:
