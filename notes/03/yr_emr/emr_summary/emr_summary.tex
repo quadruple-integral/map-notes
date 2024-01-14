@@ -842,8 +842,52 @@ $\vc{E}_{ext}(\vc{r})=-\vc{\nabla}\phi_{ext}(\vc{r})$ is:
 and $\vc{F}=-\vc{\nabla}W$.
 
 \subsubsection*{Multipole expansion}
+Consider object with volume $V$ and charge distribution
+$\rho(\vc{r}')$. Let origin be in the object.
+Then the potential at $\vc{r}$ is:
+\begin{align*}
+    \phi(\vc{r})
+    &=\frac{1}{4\pi\epsilon_0}\int_V
+    \frac{\rho(\vc{r}')}{|\vc{r}-\vc{r}'|}\dd V' \\
+    &\approx\frac{1}{4\pi\epsilon_0}\left(
+    \frac{Q}{r}+\frac{\vc{p}\cdot\vc{r}}{r^3}
+    +\frac{Q_{ij}x_i x_j}{2r^5}\right)
+\end{align*}
+where $Q$ is the \textbf{total charge} in $V$:
+$$Q=\int_V\rho(\vc{r}')\dd V'$$
+$\vc{p}$ the \textbf{dipole moment} about the origin:
+$$\vc{p}=\int_V\vc{r}'\rho(\vc{r}')\dd V'$$
+and $Q_{ij}$ the \textbf{quadrupole tensor}:
+$$Q_{ij}=\int_V\rho(\vc{r}')
+\bigg[3x'_i x'_j-(r')^2\delta_{ij}\bigg]\dd V'$$
+If $Q\neq0$ then in the far zone ($r\gg r_0$)
+the first term (monopole term) dominates.
+
+If $Q=0$ and $\vc{p}=\vc{0}$ then
+the third term (quadruple term)
+dominates in the far zone and etc.
+
+\subsubsection*{Interaction energy}
+By expanding $\phi_{ext}(\vc{r})$ about $\vc{r}=\vc{0}$:
+\begin{align*}
+    W
+    &=\int_V\rho(\vc{r}')\phi_{ext}(\vc{r}')\dd V' \\
+    &=Q\phi_{ext}(\vc{0})-\vc{p}\cdot\vc{E}_{ext}(\vc{0}) \\
+    &\quad-\frac{1}{6}Q_{ij}\frac{\partial
+    \big(\vc{E}_{ext}(\vc{0})\big)_i}
+    {\partial x_j}+\dots
+\end{align*}
+and is the potential energy of a charge \\
+distribution $\rho(\vc{r})$ in $\vc{E}_{ext}$.
+
+\newcolumn
 
 \subsubsection*{Gauss' law}
+For object with charge distribution
+$\rho(\vc{r}')$ and volume $V$ enclosed by surface $S$:
+$$\int_S\vc{E}\cdot\dd\vc{S}=\frac{Q_{enc}}{\epsilon_0}$$
+where $Q_{enc}$ is total charge enclosed by $V$.
+
 boundaries and conductors
 
 \subsubsection*{Poisson's equation}
