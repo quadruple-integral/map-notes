@@ -891,9 +891,9 @@ where $Q_{enc}$ is total charge enclosed by $V$.
 The left hand side surface integral is greatly simplified
 for symmetric objects.
 
-\subsubsection*{Boundaries and conductors}
-Consider surface with charge density $\sigma$ separating
-electric fields $\vc{E}_1$ and $\vc{E}_2$.
+\subsubsection*{Boundaries and conductors ?}
+Let $\sigma$ be the charge density of a surface
+separating electric fields $\vc{E}_1$ and $\vc{E}_2$.
 \begin{enumerate}
     \item Normal component of electric field is
     \underline{discontinuous} across surface:
@@ -908,11 +908,63 @@ electric fields $\vc{E}_1$ and $\vc{E}_2$.
 \end{enumerate}
 Then on the charged surface we have:
 $$\vc{E}=\vc{E}_{\perp}+\vc{E}_{\parallel}.$$
+\begin{center}
+    \includegraphics[scale=0.25]{f4.png}
+\end{center}
+
+\subsubsection*{Conductors (Electrostatics)}
+Conductors have surplus electrons that can move freely
+when an electric field is applied. In electrostatics:
+\begin{enumerate}
+    \item For conductors in equilibrium,
+    all charges are at rest and reside on the
+    \underline{surface} of the conductor.
+
+    Hence inside a conductor
+    $\rho(\vc{r})=0$, $\vc{E}(\vc{r})=\vc{0}$
+    and $\phi=\text{constant}$.
+
+    \item An electric field is always \underline{normal}
+    to the surface of a conductor:
+    $$E_{\perp}=\frac{\sigma}{\epsilon_0}
+    \hspace{0.05in}\text{and}\hspace{0.05in}
+    E_{\parallel}=0.$$
+\end{enumerate}
+The presence of an external electric field induces
+a charge distribution $\sigma$ on the surface of our conductor.
+Consequently the external electric field
+is changed so that it is always normal to the
+surface of the conductor.
+
+\newcolumn
 
 \subsubsection*{Poisson's equation}
-method of images
+Because $\vc{E}=-\vc{\nabla}\phi$ and
+$\vc{\nabla}\cdot\vc{E}=\rho(\vc{r})/\epsilon_0$:
+$$\vc{\nabla}^2\phi=-\frac{\rho(\vc{r})}{\epsilon_0}.$$
+We can solve this by direct integration
+or using the method of images:
+\begin{enumerate}
+    \item Pick volume under consideration.
+    \item Place fictitious charge \underline{outside}
+    the volume such that the system still
+    satisfies Poisson's equation with boundary conditions.
+\end{enumerate}
 
 \subsubsection*{Electrostatic energy}
+Because the work done to move point charge $q$
+in electric field $\vc{E}$ is:
+$$W_{A\rightarrow B}=q V_{A\rightarrow B}$$
+then $W_{\infty\rightarrow B}=q\phi(\vc{r}_B)$.
+
+The energy needed to move a continuous
+charge distribution $\rho(\vc{r})$ from infinity is:
+\begin{align*}
+    W_e
+    &=\frac{1}{2}\int_V
+    \rho(\vc{r})\phi(\vc{r})\dd V \\
+    &=\frac{\epsilon_0}{2}\int_V|\vc{E}(\vc{r})|^2\dd V.
+\end{align*}
 
 \subsubsection*{Capacitors}
 
