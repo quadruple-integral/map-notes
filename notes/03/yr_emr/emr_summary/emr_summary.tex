@@ -751,9 +751,9 @@ needed to move a small charge $q$ from $A$ to $B$:
     &=-\frac{1}{q}\int_C\vc{F}\cdot\dd\vc{r} \\
     &=\phi_B-\phi_A.
 \end{align*}
-A charge distribution in an \underline{external}
+A charge distribution $\rho(\vc{r}')$ in an \underline{external}
 electric field has potential energy:
-$$W_{potential}=\int_V\rho(\vc{r})\phi_{ext}(\vc{r})\dd V.$$
+$$W=\int_V\rho(\vc{r}')\phi_{ext}(\vc{r}')\dd V'.$$
 Because $\displaystyle\vc{\nabla}^2\left(
 \frac{1}{|\vc{r}-\vc{r}'|}\right)=-4\pi\delta(\vc{\vc{r}-\vc{r}'})$:
 $$\vc{\nabla}\cdot\vc{E}=\frac{\rho(\vc{r})}{\epsilon_0}.$$
@@ -820,9 +820,26 @@ from external electric field $\vc{E}_{ext}(\vc{r})$ is:
 \begin{align*}
     \vc{F}
     &=-q\vc{E}_{ext}(\vc{r})+q\vc{E}_{ext}(\vc{r}+\vc{d}) \\
-    &\approx(\vc{p}\cdot\vc{\nabla})\vc{E}_{ext}(\vc{r})
+    &\approx(\vc{p}\cdot\vc{\nabla})\vc{E}_{ext}(\vc{r}).
 \end{align*}
-in the dipole limit.
+The \textbf{torque} \underline{on} a dipole at $\vc{r}$
+about the axis $\vc{r}$ due to $\vc{E}_{ext}(\vc{r})$ is:
+\begin{align*}
+    \vc{G}
+    &=\vc{\tau}_{-q}+\vc{\tau}_{q} \\
+    &=-q\vc{0}\times\vc{E}_{ext}(\vc{r})
+    +q\vc{d}\times\vc{E}_{ext}(\vc{r}+\vc{d}) \\
+    &\approx\vc{p}\times\vc{E}_{ext}(\vc{r}).
+\end{align*}
+The \textbf{energy} of a dipole at $\vc{r}$
+from external electric field 
+$\vc{E}_{ext}(\vc{r})=-\vc{\nabla}\phi_{ext}(\vc{r})$ is:
+\begin{align*}
+    W
+    &=-q\phi_{ext}(\vc{r})+q\phi_{ext}(\vc{r}+\vc{d}) \\
+    &\approx -\vc{p}\cdot\vc{E}_{ext}(\vc{r})
+\end{align*}
+and $\vc{F}=-\vc{\nabla}W$.
 
 \subsubsection*{Multipole expansion}
 
