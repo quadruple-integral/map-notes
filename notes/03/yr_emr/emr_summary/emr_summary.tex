@@ -859,7 +859,7 @@ $\vc{p}$ the \textbf{dipole moment} about the origin:
 $$\vc{p}=\int_V\vc{r}'\rho(\vc{r}')\dd V'$$
 and $Q_{ij}$ the \textbf{quadrupole tensor}:
 $$Q_{ij}=\int_V\rho(\vc{r}')
-\bigg[3x'_i x'_j-(r')^2\delta_{ij}\bigg]\dd V'$$
+\bigg[3x'_i x'_j-(r')^2\delta_{ij}\bigg]\dd V'.$$
 If $Q\neq0$ then in the far zone ($r\gg r_0$)
 the first term (monopole term) dominates.
 
@@ -888,7 +888,26 @@ $\rho(\vc{r}')$ and volume $V$ enclosed by surface $S$:
 $$\int_S\vc{E}\cdot\dd\vc{S}=\frac{Q_{enc}}{\epsilon_0}$$
 where $Q_{enc}$ is total charge enclosed by $V$.
 
-boundaries and conductors
+The left hand side surface integral is greatly simplified
+for symmetric objects.
+
+\subsubsection*{Boundaries and conductors}
+Consider surface with charge density $\sigma$ separating
+electric fields $\vc{E}_1$ and $\vc{E}_2$.
+\begin{enumerate}
+    \item Normal component of electric field is
+    \underline{discontinuous} across surface:
+    $$\vc{E}_{\perp}\deq
+    \hat{\vc{n}}\cdot(\vc{E}_2-\vc{E}_1)\hat{\vc{n}}
+    =\frac{\sigma}{\epsilon_0}\hat{\vc{n}}.$$
+
+    \item Tangential component of electric
+    field is continuous across surface:
+    $$\vc{E}_{\parallel}\deq\hat{\vc{n}}\times\vc{E}_1
+    =\hat{\vc{n}}\times\vc{E}_2.$$
+\end{enumerate}
+Then on the charged surface we have:
+$$\vc{E}=\vc{E}_{\perp}+\vc{E}_{\parallel}.$$
 
 \subsubsection*{Poisson's equation}
 method of images
