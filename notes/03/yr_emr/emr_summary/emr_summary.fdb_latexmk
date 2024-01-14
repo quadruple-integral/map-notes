@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1705237159 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/yr_emr/emr_summary/emr_summary.tex" "emr_summary.pdf" "emr_summary" 1705237160 0
-  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/yr_emr/emr_summary/emr_summary.tex" 1705237158 26409 9746233d47bce65d1e651ee5ecc56748 ""
+["pdflatex"] 1705242281 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/yr_emr/emr_summary/emr_summary.tex" "emr_summary.pdf" "emr_summary" 1705242282 0
+  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/yr_emr/emr_summary/emr_summary.tex" 1705242281 26933 04fc0c9a73560282d97cdbae5876687c ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1693925241 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1693925632 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -106,12 +106,13 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693929215 4703462 5df3913b339a4fb9b4dc6c57dc378863 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693929334 8183624 edc78c4bf2213c105a673cf72ac18bae ""
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
-  "emr_summary.aux" 1705237160 554 3a9fad3b6f2576a50b1e2f7054735a66 "pdflatex"
-  "emr_summary.out" 1705237160 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "emr_summary.tex" 1705237158 26409 9746233d47bce65d1e651ee5ecc56748 ""
+  "emr_summary.aux" 1705242282 554 3a9fad3b6f2576a50b1e2f7054735a66 "pdflatex"
+  "emr_summary.out" 1705242282 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "emr_summary.tex" 1705242281 26933 04fc0c9a73560282d97cdbae5876687c ""
   "f0.png" 1705074100 18898 439085613fb2e11ff876e155ffd32dc7 ""
   "f1.png" 1705180122 23739 0fdcf80da593b9b35f30acda1b68e9db ""
   "f2.png" 1705237097 29834 ca151a3988af46d8258e902ed5d02a00 ""
+  "f3.png" 1705241674 15610 5b0bfaa0a114be85426c61505be9ad13 ""
   (generated)
   "emr_summary.aux"
   "emr_summary.log"
