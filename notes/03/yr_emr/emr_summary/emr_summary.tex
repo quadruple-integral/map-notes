@@ -948,7 +948,15 @@ The work needed to move point charge $q$
 from $\vc{r}_A$ to $\vc{r}_B$ in $\vc{E}(\vc{r})$ is:
 $$W_{A\rightarrow B}=q V_{A\rightarrow B}.$$
 Then $W_{\infty\rightarrow B}=q\phi(\vc{r}_B)$
-since potential $\phi$ vanishes in the far zone.
+since potential $\phi$ vanishes at infinity.
+
+Generalising, the work needed to move a system of
+$n$ charges $q_i$ from infinity to $\vc{r}$
+is a double sum with overcounting as each charge 
+contributes to the electric field:
+$$W_e=\frac{1}{2}\frac{1}{4\pi\epsilon_0}
+\sum_{i,j (i\neq j)}^{n}\frac{q_i q_j}
+{|\vc{r}_j-\vc{r}_i|}.$$
 
 Furthermore the energy needed to move a continuous
 charge distribution $\rho(\vc{r}')$ from infinity 
@@ -963,15 +971,12 @@ to position $\vc{r}$ is:
 \subsubsection*{Capacitors}
 A capacitor is formed by two conductors 
 $1$ and $2$ with equal and opposite charges $Q$ and $-Q$.
-The \textbf{capacitance} ($1$CV$^{-1}$):
+The \textbf{capacitance} ($1$CV$^{-1}$) of a
+capacitor is defined as:
 $$C\deq\frac{Q}{V}$$
-where potential difference $V=\phi_1-\phi_2$ is
-formed by the polarised conductors and
-$$Q=\sigma A$$
-for $A$ is the surface area of 
-\textcolor{red}{one} conductor.
-
-
+where $Q=\sigma A$ for $A$ is the surface area of 
+\textcolor{red}{one} conductor and potential
+difference $V=\phi_1-\phi_2$ is from polarised conductors.
 
 \subsubsection*{Currents}
 
