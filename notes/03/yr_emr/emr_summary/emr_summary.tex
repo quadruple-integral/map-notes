@@ -886,31 +886,24 @@ distribution $\rho(\vc{r})$ in $\vc{E}_{ext}$.
 For object with charge distribution
 $\rho(\vc{r}')$ and volume $V$ enclosed by surface $S$:
 $$\int_S\vc{E}\cdot\dd\vc{S}=\frac{Q_{enc}}{\epsilon_0}$$
-where $Q_{enc}$ is total charge enclosed by $V$.
+where $Q_{enc}$ is total charge enclosed by $V$:
+$$Q_{enc}=\int_V\rho(\vc{r}')\dd V'$$
+useful for symmetric problems.
 
-The left hand side surface integral is greatly simplified
-for symmetric objects.
-
-\subsubsection*{Boundaries and conductors ?}
+\subsubsection*{Boundaries and conductors}
 Let $\sigma$ be the charge density of a surface
 separating electric fields $\vc{E}_1$ and $\vc{E}_2$.
 \begin{enumerate}
     \item Normal component of electric field is
-    \underline{discontinuous} across surface:
-    $$\vc{E}_{\perp}\deq
-    \hat{\vc{n}}\cdot(\vc{E}_2-\vc{E}_1)\hat{\vc{n}}
-    =\frac{\sigma}{\epsilon_0}\hat{\vc{n}}.$$
+    \underline{discontinuous} across surface by:
+    $$\hat{\vc{n}}\cdot(\vc{E}_2-\vc{E}_1)
+    =\frac{\sigma}{\epsilon_0}.$$
 
     \item Tangential component of electric
     field is continuous across surface:
     $$\vc{E}_{\parallel}\deq\hat{\vc{n}}\times\vc{E}_1
     =\hat{\vc{n}}\times\vc{E}_2.$$
 \end{enumerate}
-Then on the charged surface we have:
-$$\vc{E}=\vc{E}_{\perp}+\vc{E}_{\parallel}.$$
-\begin{center}
-    \includegraphics[scale=0.25]{f4.png}
-\end{center}
 
 \subsubsection*{Conductors (Electrostatics)}
 Conductors have surplus electrons that can move freely
@@ -932,33 +925,32 @@ when an electric field is applied. In electrostatics:
 \end{enumerate}
 The presence of an external electric field induces
 a charge distribution $\sigma$ on the surface of our conductor.
-Consequently the external electric field
-is changed so that it is always normal to the
-surface of the conductor.
-
-\newcolumn
+This changes the external electric field as it need to be normal to the surface of the conductor.
 
 \subsubsection*{Poisson's equation}
 Because $\vc{E}=-\vc{\nabla}\phi$ and
 $\vc{\nabla}\cdot\vc{E}=\rho(\vc{r})/\epsilon_0$:
 $$\vc{\nabla}^2\phi=-\frac{\rho(\vc{r})}{\epsilon_0}.$$
 We can solve this by direct integration
-or using the method of images:
-\begin{enumerate}
-    \item Pick volume under consideration.
-    \item Place fictitious charge \underline{outside}
-    the volume such that the system still
-    satisfies Poisson's equation with boundary conditions.
-\end{enumerate}
+or using the \textbf{method of images}.
+
+Given volume under consideration place fictitious
+charge \underline{outside} the volume such that the system
+still satisfies Poisson's equation with boundary conditions.
+
+This potential is our solution.
+
+\newcolumn
 
 \subsubsection*{Electrostatic energy}
 Because the work done to move point charge $q$
-in electric field $\vc{E}$ is:
+from $\vc{r}_A$ to $\vc{r}_B$ in $\vc{E}(\vc{r})$ is:
 $$W_{A\rightarrow B}=q V_{A\rightarrow B}$$
 then $W_{\infty\rightarrow B}=q\phi(\vc{r}_B)$.
 
-The energy needed to move a continuous
-charge distribution $\rho(\vc{r})$ from infinity is:
+Furthermore the energy needed to move a continuous
+charge distribution $\rho(\vc{r}')$ from infinity 
+to position $\vc{r}$ is:
 \begin{align*}
     W_e
     &=\frac{1}{2}\int_V
