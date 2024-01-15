@@ -1074,6 +1074,25 @@ since $\rho(\vc{r})=q\delta(\vc{r}-\vc{r}')$
 and $\vc{J}=\rho(\vc{r})\vc{v}$.
 
 \subsubsection*{Magnetostatic Maxwell's equations}
+Because $\displaystyle\vc{\nabla}\left(
+\frac{1}{|\vc{r}-\vc{r}'|}\right)
+=-\frac{\vc{r}-\vc{r}'}{|\vc{r}-\vc{r}'|^3}$:
+$$\vc{B}(\vc{r})=-\frac{\mu_0}{4\pi}\int_V
+\vc{J}(\vc{r}')\times\vc{\nabla}
+\left(\frac{1}{|\vc{r}-\vc{r}'|}\right)\dd V'$$
+therefore $\vc{\nabla}\cdot\vc{B}=\vc{0}$ due to:
+$$\vc{\nabla}\cdot(\vc{u}\times\vc{v})
+=(\vc{\nabla}\times\vc{u})\cdot\vc{v}
+-(\vc{\nabla}\times\vc{v})\cdot\vc{u}.$$
+This implies that magnetic fields always form
+\textbf{closed loops} --- there are no sources
+or sinks for magnetic fields.
+
+Similarly using the following identity:
+\begin{align*}
+    \vc{\nabla}\times(\vc{u}\times\vc{v})
+    =\vc{u}(\vc{\nabla}\cdot\vc{v})
+\end{align*}
 
 \subsubsection*{Amp\`ere's law}
 normal and tangent components of conducting surfaces
