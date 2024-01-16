@@ -54,6 +54,22 @@
 \noindent
 
 \subsubsection*{D1.1.1: Complex numbers}
+Let $z=x+iy$ and $w=a+ib$ where $x,y,a,b\in\mathbb{R}$.
+Then $z$ and $w$ are complex numbers. Furthermore:
+\begin{enumerate}
+    \item $z=w$ \textbf{if{}f} $x=a$ and $y=b$.
+    
+    \item $\Re(z)\deq x$ and $\Im(z)\deq y$.
+    
+    \item $|z|\deq\sqrt{x^2+y^2}$
+    
+    \item The \textbf{complex conjugate} of $z$ is:
+    $$\overline{z}\deq x-iy.$$
+
+    \item Addition and multiplication:
+    $$(x+iy)+(a+ib)\deq(x+a)+i(y+b)$$
+    $$(x+iy)(a+ib)\deq.$$
+\end{enumerate}
 
 \subsubsection*{L1.1.3}
 properties of complex numbers
@@ -136,15 +152,38 @@ Then $\displaystyle\lim_{n\rightarrow\infty}z_n=z$ if:
 \end{align*}
 
 \subsubsection*{L1.2.9}
+Let $z_n,z\in\mathbb{C}$ where $z_n=a_n+i b_n$.
+
+Then $\displaystyle\lim_{n\rightarrow\infty}z_n=z$ \textbf{if{}f}:
+$$\Re(z)=\lim_{n\rightarrow\infty}a_n
+\hspace{0.05in}\text{and}\hspace{0.05in}
+\Im(z)=\lim_{n\rightarrow\infty}b_n.$$
 
 \subsubsection*{L1.2.10}
+Let $S\subseteq\mathbb{C}$ and $z\in\mathbb{C}$.
+Then $z\in\overline{S}$ \textbf{if{}f}:
+$$\exists z_n\in S: z=\lim_{n\rightarrow\infty}z_n.$$
 
 \subsubsection*{D1.2.11: Cauchy sequences}
+$z_n$ is a Cauchy sequence if:
+\begin{align*}
+    &\forall\epsilon>0;\exists N\in\mathbb{N}:
+    \forall n,m\geq N \\
+    &\implies |z_n-z_m|<\epsilon.
+\end{align*}
 
 \subsubsection*{L1.2.12}
-seq conv iff cauchy
+$z_n$ is convergent \textbf{if{}f} $z_n$ is Cauchy.
+
+\subsubsection*{D1.2.14: Bounded sequences}
+$z_n$ is bounded if:
+$$\forall n\in\mathbb{N};\exists M>0:|z_n|\leq M.$$
 
 \subsubsection*{L1.2.15: Bolzano-Weierstrass}
+Let $z_n$ be a bounded sequence. Then:
+$$\exists (z_{n_k})_{k,n_k\in\mathbb{N}}:
+\lim_{k\rightarrow\infty}z_{n_k}=z\in\mathbb{C}$$
+or that $z_n$ has a convergent subsequence.
 
 \newcolumn
 
