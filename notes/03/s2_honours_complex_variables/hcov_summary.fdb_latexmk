@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1705418303 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_complex_variables/hcov_summary.tex" "hcov_summary.pdf" "hcov_summary" 1705418304 0
-  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_complex_variables/hcov_summary.tex" 1705418303 2753 20fc806db06f60c4c18b24180ac4bc98 ""
+["pdflatex"] 1705432480 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_complex_variables/hcov_summary.tex" "hcov_summary.pdf" "hcov_summary" 1705432481 0
+  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_complex_variables/hcov_summary.tex" 1705432479 3402 d5a4aa35ac034ee5289e7cb2577dcda3 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1693924610 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1693924610 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -12,7 +12,11 @@
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1693925228 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1693924610 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1693924610 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1693924610 36281 c355509802a035cadc5f15869451dcee ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1693924610 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1693924610 32762 7fee39e011c23b3589931effd97b9702 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1693924610 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1693924610 32716 08e384dc442464e7285e891af9f45947 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1693924610 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1693926983 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2023/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1693924728 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -86,9 +90,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693929215 4703462 5df3913b339a4fb9b4dc6c57dc378863 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693929334 8183624 edc78c4bf2213c105a673cf72ac18bae ""
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
-  "hcov_summary.aux" 1705418304 677 2a382f8b657878ce08f3de83eea01c5f "pdflatex"
-  "hcov_summary.out" 1705418304 83 94f042bff95211065b2834928d2ea0ba "pdflatex"
-  "hcov_summary.tex" 1705418303 2753 20fc806db06f60c4c18b24180ac4bc98 ""
+  "hcov_summary.aux" 1705432481 554 e6f85c6f44bbe194532b4fa1fd8ca02c "pdflatex"
+  "hcov_summary.out" 1705432480 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "hcov_summary.tex" 1705432479 3402 d5a4aa35ac034ee5289e7cb2577dcda3 ""
   (generated)
   "hcov_summary.aux"
   "hcov_summary.log"
