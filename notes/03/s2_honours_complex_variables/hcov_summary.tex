@@ -1,0 +1,135 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{physics}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{mathtools}
+
+% commands
+\newcommand{\deq}{\vcentcolon=}
+\newcommand{\idd}{\text{đ}}
+\newcommand{\nimplies}{\centernot\implies}
+\newcommand{\vc}[1]{\boldsymbol{#1}}
+
+% margin settings
+\geometry{
+    a4paper,
+    left=7mm,
+    right=7mm,
+    top=2cm,
+    bottom=7mm
+}
+
+% testing
+\usepackage{blindtext}
+
+% proof environments
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark} % unnumbered remarks
+
+% header and footer
+\pagestyle{fancy}
+\fancyfoot{} % removes footer
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyhead[L]{Honours complex variables}
+\fancyhead[R]{\thepage}
+
+\begin{document}
+
+\begin{multicols*}{3}
+% starred environment ensures text remains in same column
+\noindent
+
+\subsubsection*{D1.1.1: Complex numbers}
+
+\subsubsection*{L1.1.3}
+properties of complex numbers
+
+\subsubsection*{Remark}
+$\mathbb{C}$ is a field.
+
+\subsubsection*{D1.1.5 and D1.1.7}
+polar and exp forms
+
+\subsubsection*{L1.1.6}
+de moivre
+
+\subsubsection*{L1.1.9}
+conjugate properties
+
+\subsubsection*{L1.1.10 -- 11: Triangle inequalities}
+
+\subsubsection*{D1.1.12: Argument of $z$}
+
+\subsubsection*{P1.1.14}
+properties of arg z
+
+\subsubsection*{Remark}
+set addition
+
+\subsubsection*{D1.2.1: Open and closed 
+$\epsilon$-discs}
+include punctured discs
+
+\subsubsection*{D1.2.2: Open sets}
+neighbourhood of point
+
+\subsubsection*{L1.2.3}
+punctured disc is open?
+
+\subsubsection*{D1.2.4: Limit points}
+also include closure
+
+\subsubsection*{L1.2.6}
+
+\subsubsection*{D1.2.7: Bounded sets}
+
+\subsubsection{Remark}
+include bounded sequence (D1.2.14)
+
+\subsubsection*{D1.2.8: $\epsilon$-N convergence}
+
+\subsubsection*{L1.2.9}
+
+\subsubsection*{L1.2.10}
+
+\subsubsection*{D1.2.11: Cauchy sequences}
+
+\subsubsection*{L1.2.12}
+seq conv iff cauchy
+
+\subsubsection*{L1.2.15: Bolzano-Weierstrass}
+
+\subsubsection*{Remark}
+define a complex valued function
+
+\subsubsection*{D1.3.1: Bounded functions}
+
+\subsubsection*{D1.3.2: $\epsilon$-$\delta$ convergence}
+
+\subsubsection*{L1.3.3 ?}
+
+\subsubsection*{L1.3.4}
+results on function limits
+
+\subsubsection*{L1.3.5}
+limit algebra
+
+\subsubsection*{D1.3.6: $\epsilon$-$\delta$ continuity}
+
+\end{multicols*}
+
+\end{document}
