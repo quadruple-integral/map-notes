@@ -1139,6 +1139,21 @@ separate magnetic fields $\vc{B}_1$ and $\vc{B}_2$.
     $$\hat{\vc{n}}\times(\vc{B}_2-\vc{B}_1)=\mu_0\vc{K}.$$
 \end{enumerate}
 
+\subsubsection*{Magnetic vector potentials}
+Because $\vc{\nabla}\cdot(\vc{\nabla}\times\vc{v})=0$
+and $\vc{\nabla}\cdot\vc{B}=0$:
+$$\exists\vc{A}:\vc{B}=\vc{\nabla}\times\vc{A}$$
+known as the \textbf{vector potential}.
+Since $\vc{A}$ is invariant under transformation:
+$$\vc{\nabla}\cdot\vc{A}=0$$
+and is the Coulomb gauge. Therefore:
+$$\vc{\nabla}^2\vc{A}=-\mu_0\vc{J}$$
+with solutions:
+$$\vc{A}(\vc{r})=\frac{\mu_0}{4\pi}\int_V
+\frac{\vc{J}(\vc{r}')}{|\vc{r}-\vc{r}'|}\dd V'$$
+and boundary condition $\displaystyle\lim_{r\rightarrow\infty}
+\vc{A}(\vc{r})=\vc{0}$.
+
 \subsubsection*{Magnetic dipoles}
 
 \end{multicols*}
