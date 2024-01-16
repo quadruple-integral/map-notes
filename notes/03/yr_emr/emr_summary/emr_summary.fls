@@ -219,6 +219,11 @@ INPUT ./f8.png
 INPUT ./f8.png
 INPUT ./f8.png
 INPUT ./f8.png
+INPUT ./f9.png
+INPUT ./f9.png
+INPUT ./f9.png
+INPUT ./f9.png
+INPUT ./f9.png
 INPUT emr_summary.aux
 INPUT ./emr_summary.out
 INPUT ./emr_summary.out

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1705412068 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/yr_emr/emr_summary/emr_summary.tex" "emr_summary.pdf" "emr_summary" 1705412069 0
-  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/yr_emr/emr_summary/emr_summary.tex" 1705412067 38336 5ffbd3f31907d1a62bc1e259c358ff00 ""
+["pdflatex"] 1705413806 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/yr_emr/emr_summary/emr_summary.tex" "emr_summary.pdf" "emr_summary" 1705413808 0
+  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/yr_emr/emr_summary/emr_summary.tex" 1705413806 39034 653c7c4f6a35ab1febcb7c0290d271f5 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1693925241 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1693925632 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -106,9 +106,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693929215 4703462 5df3913b339a4fb9b4dc6c57dc378863 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693929334 8183624 edc78c4bf2213c105a673cf72ac18bae ""
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
-  "emr_summary.aux" 1705412069 554 199b5e648f89bced0dfadf827c38c11c "pdflatex"
-  "emr_summary.out" 1705412069 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "emr_summary.tex" 1705412067 38336 5ffbd3f31907d1a62bc1e259c358ff00 ""
+  "emr_summary.aux" 1705413808 554 199b5e648f89bced0dfadf827c38c11c "pdflatex"
+  "emr_summary.out" 1705413807 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "emr_summary.tex" 1705413806 39034 653c7c4f6a35ab1febcb7c0290d271f5 ""
   "f0.png" 1705074100 18898 439085613fb2e11ff876e155ffd32dc7 ""
   "f1.png" 1705180122 23739 0fdcf80da593b9b35f30acda1b68e9db ""
   "f2.png" 1705237097 29834 ca151a3988af46d8258e902ed5d02a00 ""
@@ -117,6 +117,7 @@
   "f6.png" 1705348437 26638 313bc04dc60c75d7e512a04b42ff188b ""
   "f7.png" 1705408005 191603 627cec5568c2c8012337ddb177cf4e62 ""
   "f8.png" 1705406895 23279 7139c9669e18a5257b8c05ffa7097469 ""
+  "f9.png" 1705413765 65840 0bb189126eed8dbcb857479e74fcb6e4 ""
   (generated)
   "emr_summary.aux"
   "emr_summary.log"

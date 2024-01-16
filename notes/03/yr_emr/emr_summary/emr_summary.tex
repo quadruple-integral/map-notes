@@ -1155,6 +1155,30 @@ and boundary condition $\displaystyle\lim_{r\rightarrow\infty}
 \vc{A}(\vc{r})=\vc{0}$.
 
 \subsubsection*{Magnetic dipoles}
+The vector potential for a current loop positioned
+at the origin in the far zone is:
+\begin{align*}
+    \vc{A}(\vc{r})
+    &=\frac{\mu_0}{4\pi}\oint_C
+    \frac{I\dd\vc{r}'}{|\vc{r}-\vc{r}'|} \\
+    &=\frac{\mu_0}{4\pi}\oint_C\frac{1}{r}\left(1+
+    \frac{\vc{r}\cdot\vc{r}'}{r^2}+\dots\right)\dd\vc{r}' \\
+    &\approx\frac{\mu_0}{4\pi}\frac{\vc{m}\times\vc{r}}{r^3}
+\end{align*}
+where $\vc{m}$ is the magnetic dipole moment:
+\begin{align*}
+    \vc{m}
+    &=I\int_S\dd\vc{S} \\
+    &=\frac{1}{2}\oint_C\vc{r}\times\dd\vc{I}
+\end{align*}
+via Stokes' theorem.
+\begin{center}
+    \includegraphics[scale=0.4]{f9.png}
+\end{center}
+
+\newcolumn
+
+\subsubsection*{Force and torque}
 
 \end{multicols*}
 
