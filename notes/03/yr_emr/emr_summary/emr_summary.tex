@@ -890,7 +890,7 @@ where $Q_{enc}$ is total charge enclosed by $V$:
 $$Q_{enc}=\int_V\rho(\vc{r}')\dd V'$$
 and is useful for symmetric problems.
 
-\subsubsection*{Boundaries}
+\subsubsection*{Boundaries in electrostatics}
 Let $\sigma$ be the charge density of a surface
 separating electric fields $\vc{E}_1$ and $\vc{E}_2$.
 \begin{enumerate}
@@ -1065,10 +1065,17 @@ However perpendicular currents do not induce force.
 Through physical experiments the \textbf{force density}
 on a charge distribution at $\vc{r}$
 in electric field $\vc{E}$ and magnetic field $\vc{B}$ is:
-$$\vc{f}\deq\rho\vc{E}+\vc{J}\times\vc{B}.$$
-Let point charge $q$ at $\vc{r}'$ be moving at $\vc{v}$.
-The net force on $q$ is the
-integral of the force density over volume $V$:
+$$\vc{f}\deq\rho\vc{E}+\vc{J}\times\vc{B}$$
+where $\vc{J}$ is the \textbf{current density}
+and \\ integrating yields the \textbf{right hand rule}.
+\begin{center}
+    \includegraphics[scale=0.05]{f7.png}
+\end{center}
+Current is the movement of charge.
+
+For point charge $q$ at $\vc{r}'$ with velocity $\vc{v}$
+in $\vc{E}$ and $\vc{B}$ its net force is the integral of the
+force density over volume $V$:
 $$\vc{F}=q(\vc{E}+\vc{v}\times\vc{B})$$
 since $\rho(\vc{r})=q\delta(\vc{r}-\vc{r}')$
 and $\vc{J}=\rho(\vc{r})\vc{v}$.
@@ -1101,6 +1108,20 @@ and $\displaystyle\vc{\nabla}^2\left(
 $$\vc{\nabla}\times\vc{B}=\mu_0\vc{J}.$$
 
 \subsubsection*{Amp\`ere's law}
+Using the divergence theorem, there is 
+no magnetic flux through a \textbf{closed} surface:
+$$\int_S\vc{B}\cdot\dd\vc{S}=0.$$
+From Stokes' theorem:
+$$\oint_C\vc{B}\cdot\dd\vc{r}=\mu_0 I$$
+which implies that the circulation of a magnetic field $\vc{B}$
+around a closed loop $C$ is proportional to
+the \underline{total} current $I$ that passes through
+the enclosed surface.
+
+\newcolumn
+
+\subsubsection*{Boundaries in magnetostatics}
+
 normal and tangent components of conducting surfaces
 
 \subsubsection*{Magnetic dipoles}
