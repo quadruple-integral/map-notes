@@ -1,4 +1,0 @@
-\contentsline {section}{Tutorial 3}{3}{section*.2}%
-\contentsline {section}{Tutorial 5}{4}{section*.3}%
-\contentsline {section}{Tutorial 7}{5}{section*.4}%
-\contentsline {section}{Tutorial 8}{11}{section*.5}%

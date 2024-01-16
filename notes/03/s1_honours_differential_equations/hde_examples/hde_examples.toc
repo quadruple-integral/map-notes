@@ -1,5 +1,0 @@
-\contentsline {section}{\numberline {1}ODE systems}{3}{section.1}%
-\contentsline {section}{\numberline {2}Fourier series}{3}{section.2}%
-\contentsline {section}{\numberline {3}PDEs}{3}{section.3}%
-\contentsline {section}{\numberline {4}Sturm-Liouville theory}{3}{section.4}%
-\contentsline {section}{\numberline {5}Laplace transforms}{4}{section.5}%

@@ -1,5 +1,0 @@
-\contentsline {section}{Workshop 6}{3}{section*.2}%
-\contentsline {section}{Workshop 7}{13}{section*.3}%
-\contentsline {section}{Workshop 8}{21}{section*.4}%
-\contentsline {section}{Workshop 9}{25}{section*.5}%
-\contentsline {section}{Workshop 10}{34}{section*.6}%
