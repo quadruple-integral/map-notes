@@ -1091,8 +1091,14 @@ or sinks for magnetic fields.
 Similarly using the following identity:
 \begin{align*}
     \vc{\nabla}\times(\vc{u}\times\vc{v})
-    =\vc{u}(\vc{\nabla}\cdot\vc{v})
+    &=\vc{u}(\vc{\nabla}\cdot\vc{v})
+    +\vc{v}\cdot\vc{\nabla}\vc{u} \\
+    &\quad-\vc{u}\cdot\vc{\nabla}\vc{v}
+    -\vc{v}(\vc{\nabla}\cdot\vc{u})
 \end{align*}
+and $\displaystyle\vc{\nabla}^2\left(
+\frac{1}{|\vc{r}-\vc{r}'|}\right)=-4\pi\delta(\vc{\vc{r}-\vc{r}'})$:
+$$\vc{\nabla}\times\vc{B}=\mu_0\vc{J}.$$
 
 \subsubsection*{Amp\`ere's law}
 normal and tangent components of conducting surfaces
