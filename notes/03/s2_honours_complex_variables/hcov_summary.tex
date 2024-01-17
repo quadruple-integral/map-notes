@@ -67,36 +67,98 @@ Then $z$ and $w$ are complex numbers. Furthermore:
     $$\overline{z}\deq x-iy.$$
 
     \item Addition and multiplication:
-    $$(x+iy)+(a+ib)\deq(x+a)+i(y+b)$$
-    $$(x+iy)(a+ib)\deq.$$
+    $$(x+iy)+(a+ib)=(x+a)+i(y+b)$$
+    $$(x+iy)(a+ib)=(xa-yb)+i(xb+ya).$$
+
+    \item $\mathbb{C}\deq\{x+iy:x,y\in\mathbb{R}\}$
 \end{enumerate}
+with rule $i^2=-1$.
 
 \subsubsection*{L1.1.3}
-properties of complex numbers
+Let $u,w,z\in\mathbb{C}$ where $z=x+iy$. Then:
+\begin{enumerate}
+    \item $z+w=w+z$ and $zw=wz$.
+    
+    \item $u+(z+w)=(u+z)+w$
+    
+    \item $u(zw)=(uz)w$
+    
+    \item $u(z+w)=uz+uw$
+    
+    \item $z+0=z$ and $1z=z$.
+    
+    \item $\exists\bigl(-z\deq-x+i(-y)\bigr)$:
+    $z+(-z)=0$.
 
-\subsubsection*{Remark}
-$\mathbb{C}$ is a field.
+    \item $\exists z^{-1}: zz^{-1}=1$ where:
+    $$z^{-1}\deq\frac{x}{x^2+y^2}+i\frac{-y}{x^2+y^2}.$$
+\end{enumerate}
 
-\subsubsection*{D1.1.5 and D1.1.7}
-polar and exp forms
+\subsubsection*{D1.1.5 and D1.1.7: Polar form}
+Let $z\in\mathbb{C}$ and $z=x+iy$. Then:
+\begin{align*}
+    z
+    &=r(\cos\theta+i\sin\theta) \\
+    &=re^{i\theta}
+\end{align*}
+for $r=\sqrt{x^2+y^2}$ in complex plane.
+\begin{center}
+    \includegraphics[scale=0.2]{f0.png}
+\end{center}
 
 \subsubsection*{L1.1.6}
-de moivre
+Let $\theta,\phi\in\mathbb{R}$ and $n\in\mathbb{Z}$. Then:
+\begin{enumerate}
+    \item $e^{i(\theta+\phi)}=e^{i\theta}e^{i\phi}$
+    
+    \item $e^{in\theta}=(e^{i\theta})^n$
+\end{enumerate}
+due to de Moivre's formula:
+$$\cos n\theta+i\sin n\theta=(\cos \theta+i\sin \theta)^n.$$
+
+\newcolumn
 
 \subsubsection*{L1.1.9}
-conjugate properties
+Let $z,w\in\mathbb{C}$. Then:
+\begin{enumerate}
+    \item $|z|=0$ \textbf{if{}f} $z=0$.
+    
+    \item $|\overline{z}|=|z|$
+    
+    \item $|zw|=|z||w|$
+    
+    \item $\overline{\overline{z}}=z$
+    
+    \item $|z|^2=z\overline{z}$
+    
+    \item $\overline{z+w}=\overline{z}+\overline{w}$
+    
+    \item $\overline{zw}=\overline{z}\hspace{0.02in}\overline{w}$
+    
+    \item $|\Re(z)|\leq|z|$ and $|\Im(z)|\leq|z|$.
+    
+    \item $\Re(z)=\frac{1}{2}(z+\overline{z})$
+    
+    \item $\Im(z)=\frac{1}{2i}(z-\overline{z})$.
+\end{enumerate}
 
 \subsubsection*{L1.1.10 -- 11: Triangle inequalities}
+Let $z,w\in\mathbb{C}$. Then:
+\begin{enumerate}
+    \item $|z+w|\leq|z|+|w|$
+    
+    \item $||z|-|w||\leq|z-w|$.
+\end{enumerate}
 
 \subsubsection*{D1.1.12: Argument of $z$}
+The argument of $z\in\mathbb{C}$ is:
+$$\arg(z)=\{\theta\in(-\pi,\pi]:z=|z|e^{i\theta}\}.$$
 
 \subsubsection*{P1.1.14}
 properties of arg z
 
 \subsubsection*{Remark}
 set addition
-
-\newcolumn
 
 \subsubsection*{D1.2.1: Open and closed $\epsilon$-discs}
 Let $z_0\in\mathbb{C}$ and $\epsilon>0$.
@@ -184,6 +246,8 @@ Let $z_n$ be a bounded sequence. Then:
 $$\exists (z_{n_k})_{k,n_k\in\mathbb{N}}:
 \lim_{k\rightarrow\infty}z_{n_k}=z\in\mathbb{C}$$
 or that $z_n$ has a convergent subsequence.
+
+A selection of a sequence is a subsequence.
 
 \newcolumn
 

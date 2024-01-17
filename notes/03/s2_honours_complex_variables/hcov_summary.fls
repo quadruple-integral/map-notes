@@ -172,6 +172,11 @@ INPUT c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./f0.png
+INPUT ./f0.png
+INPUT ./f0.png
+INPUT ./f0.png
+INPUT ./f0.png
 INPUT c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT hcov_summary.aux
 INPUT ./hcov_summary.out
