@@ -232,16 +232,41 @@ Then the following statements are equivalent:
     or that $E\hspace{0.02in}\backslash\hspace{0.02in}
     \{\vc{v}\}$ is not a basis for $\forall\vc{v}\in V$.
 
-    \item $E$ is maximal among all linearly independent subsets.
+    \item $E$ is maximal amongst all linearly independent subsets.
     i.e. $E\cup\{\vc{v}\}$ is not linearly independent.
 \end{enumerate}
 
 \subsubsection*{C1.5.13}
 Every finitely generated vector space has a finite basis.
+(any vector space too!)
 
 \subsubsection*{T1.5.14}
+Let $V$ be a vector space.
+\begin{enumerate}
+    \item Let $L\subseteq V$ be linearly independent and
+    set $E$ be minimal amongst all generating sets of $V$.
+    Let $L\subseteq E$.
+    Then $E$ is a basis of $V$.
+
+    \item Let $E\subseteq V$ be a generating set and
+    $L$ be maximal amongst all linearly independent
+    subsets of $V$. 
+    
+    Let $L\subseteq E$. Then $E$ is a basis of $V$.
+\end{enumerate}
 
 \subsubsection*{D1.5.15}
+Let $X$ be a set and $F$ a vector field. Then:
+$$\text{maps}(X,F)\deq\{f:(\forall f:X\rightarrow F)\}$$
+and is a $F$-vector space under pointwise addition and
+multiplication via scalars.
+
+\subsubsection*{Remark}
+The subset of all mappings which sends 
+almost all elements of $X$ to $0$ is defined:
+(all but finitely many)
+$$F\langle X\rangle\subseteq\text{maps}(X,F)$$
+and is a vector subspace.
 
 \subsubsection*{T1.5.16}
 
