@@ -56,7 +56,21 @@
 \noindent
 
 \subsubsection*{D: Functions}
-injections, surjections and bijections
+A function $f:X\rightarrow Y$ is an assignment
+of an element of $Y$ to \underline{each} element of $X$.
+\begin{enumerate}
+    \item $f$ is \textbf{injective} if:
+    \begin{align*}
+        &\forall x_1,x_2\in X;
+        f(x_1)=f(x_2) \\ &\implies x_1=x_2.
+    \end{align*}
+
+    \item $f$ is \textbf{surjective} if:
+    $$\forall y\in Y;\exists x\in X: y=f(x).$$
+
+    \item $f$ is \textbf{bijective}
+    if it is injective and surjective.
+\end{enumerate}
 
 \subsubsection*{D: Groups}
 
@@ -164,16 +178,77 @@ and is the linear combination of vectors in $T$
 over field $F$.
 
 \subsubsection*{D1.4.9: Power sets}
+The power set of set $X$ is:
+$$\mathcal{P}(X)\deq\{U:U\subseteq X\}.$$
+Let $\mathcal{U}\subseteq\mathcal{P}(X)$. Then:
+$$\bigcup_{U\in\mathcal{U}}U
+\deq\{x\in X:(\exists U\in\mathcal{U}:x\in U)\}$$
+$$\bigcap_{U\in\mathcal{U}}U
+\deq\{x\in X:\forall U\in\mathcal{U};x\in U\}.$$
 
 \subsubsection*{D1.5.1: Linear independence}
+Let $V$ be a $F$-vector space and $L\subseteq V$. \\
+$L$ is linearly independent if:
+\begin{align*}
+    &\alpha_1\vc{v}_1+\dots+\alpha_r\vc{v}_r=\vc{0} \\
+    &\implies \alpha_1=\dots=\alpha_r=0
+\end{align*}
+where $\vc{v}_i\in L$.
 
 \subsubsection*{D1.5.8: Basis}
+A basis of a vector space $V$ is a linearly independent
+generating set in $V$.
 
-\subsubsection*{T1.5.11: ???}
+\subsubsection*{T1.5.11}
+Let $V$ be a $F$-vector space.
 
-\subsubsection*{T1.5.12: ???}
+Then $\{\vc{v}_1,\dots,\vc{v}_r\}$ is a basis of $V$
+\textbf{if{}f}:
+$$\Phi:F^r\rightarrow V;$$
+$$(\alpha_1,\dots,\alpha_r)\mapsto
+\alpha_1\vc{v}_1+\dots+\alpha_r\vc{v}_r$$
+is a bijection.
+
+\subsubsection*{T1.5.12}
+Let $V$ be a vector space and $E\subseteq V$.
+Then the following statements are equivalent:
+\begin{enumerate}
+    \item $E$ is a basis of $V$.
+    
+    \item $E$ is minimal among all generating sets,
+    or that $E\hspace{0.02in}\backslash\hspace{0.02in}
+    \{\vc{v}\}$ is not a basis for $\forall\vc{v}\in V$.
+
+    \item $E$ is maximal among all linearly independent subsets.
+    i.e. $E\cup\{\vc{v}\}$ is not linearly independent.
+\end{enumerate}
 
 \subsubsection*{C1.5.13}
+Every finitely generated vector space has a finite basis.
+
+\subsubsection*{T1.5.14}
+
+\subsubsection*{D1.5.15}
+
+\subsubsection*{T1.5.16}
+
+\newcolumn
+
+\subsubsection*{T1.6.1}
+
+\subsubsection*{T1.6.2}
+
+\subsubsection*{L1.6.3}
+
+\subsubsection*{L1.6.4}
+
+\subsubsection*{D1.6.5}
+
+\subsubsection*{C1.6.7}
+
+\subsubsection*{C1.6.8}
+
+\subsubsection*{T1.6.10}
 
 \end{multicols*}
 
