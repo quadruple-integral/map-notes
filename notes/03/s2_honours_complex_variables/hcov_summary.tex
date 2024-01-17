@@ -294,21 +294,57 @@ and $\displaystyle\lim_{n\rightarrow\infty}w_n=z_0$
 then:
 $$\lim_{n\rightarrow\infty}f(w_n)=a_0.$$
 
-\subsubsection*{L1.3.5}
-limit algebra
+\subsubsection*{L1.3.5: Limit identities}
+Let $S\subseteq\mathbb{C}, z_0\in\overline{S}$ and $a_0,b_0\in\mathbb{C}$. \\
+Let $f,g:S\rightarrow\mathbb{C}$.
+
+If $\displaystyle\lim_{z\rightarrow z_0}f(z)=a_0$
+and $\displaystyle\lim_{z\rightarrow z_0}g(z)=b_0$
+then:
+\begin{enumerate}
+    \item $\displaystyle\lim_{z\rightarrow z_0}
+    (f(z)+g(z))=a_0+b_0$
+
+    \item $\displaystyle\lim_{z\rightarrow z_0}
+    (f(z)g(z))=a_0 b_0$
+
+    \item $\displaystyle\lim_{z\rightarrow z_0}
+    \left(\frac{f(z)}{g(z)}\right)=\frac{a_0}{b_0}$
+    if $b_0\neq0$.
+\end{enumerate}
 
 \subsubsection*{D1.3.6: $\epsilon$-$\delta$ continuity}
+Let $S\subseteq\mathbb{C}, f:S\rightarrow\mathbb{C}$
+and $z_0\in S$.
+Then $f$ is continuous at $z_0$ if:
+\begin{align*}
+    &\forall z\in S;\forall\epsilon>0;\exists\delta>0:
+    |z-z_0|<\delta \\
+    &\implies|f(z)-f(z_0)|<\epsilon.
+\end{align*}
 
 \subsubsection*{L1.3.7}
+Let $f:\mathbb{C}\rightarrow\mathbb{C}$ with rule $f=u+iv$
+and $z_0=x_0+iy_0\in\mathbb{C}$.
+
+Then $f$ is continuous at $z_0$ \textbf{if{}f}
+$u$ and $v$ are continuous at $(x_0,y_0)$.
 
 \subsubsection*{L1.3.8}
-composition of functions are also continuous
+If $f,g:\mathbb{C}\rightarrow\mathbb{C}$
+are continuous at $z_0$ then:
+\begin{enumerate}
+    \item $f+g$ is continuous at $z_0$.
+    
+    \item $fg$ is continuous at $z_0$.
+    
+    \item $f/g$ is continuous at $z_0$.
+    ($g\neq0$)
+\end{enumerate}
 
 \subsubsection*{L1.3.9}
 
 \subsubsection*{L1.3.10}
-
-\newcolumn
 
 \subsubsection*{D1.4.1: Differentiability}
 
