@@ -255,17 +255,44 @@ A selection of a sequence is a subsequence.
 
 \newcolumn
 
-\subsubsection*{Remark}
-define a complex valued function
-
 \subsubsection*{D1.3.1: Bounded functions}
+Let $S\subseteq\mathbb{C}$ and $f:S\rightarrow\mathbb{C}$.
+Then $f$ is a bounded function if:
+$$\forall z\in S;\exists M>0:|f(z)|\leq M.$$
 
 \subsubsection*{D1.3.2: $\epsilon$-$\delta$ convergence}
+Let $S\subseteq\mathbb{C}, z_0\in\overline{S},f:S\rightarrow\mathbb{C}$
+and $a_0\in\mathbb{C}$.
+Then $\displaystyle\lim_{z\rightarrow z_0}f(z)=a_0$ if:
+\begin{align*}
+    &\forall z\in S;\forall\epsilon>0;\exists\delta>0:
+    0<|z-z_0|<\delta \\
+    &\implies|f(z)-a_0|<\epsilon.
+\end{align*}
 
-\subsubsection*{L1.3.3 ?}
+\subsubsection*{L1.3.3}
+Let $S\subseteq\mathbb{C}, z_0\in\overline{S},
+f:S\rightarrow\mathbb{C}$ and $a_0\in\mathbb{C}$ where $z_0=x_0+iy_0$
+and $f=u+iv$.
+
+Then $\displaystyle\lim_{z\rightarrow z_0}f(z)=a_0$ \textbf{if{}f}:
+$$\Re(a_0)=\lim\limits_{\substack{
+    x \to x_0 \\
+    y \to y_0}}u(x,y)$$
+and
+$$\Im(a_0)=\lim\limits_{\substack{
+    x \to x_0 \\
+    y \to y_0}}v(x,y).$$
 
 \subsubsection*{L1.3.4}
-results on function limits
+Let $S\subseteq\mathbb{C}, z_0\in\overline{S},
+f:S\rightarrow\mathbb{C},a_0\in\mathbb{C}$ and sequence
+$w_n\in S\hspace{0.02in}\backslash\hspace{0.02in}\{z_0\}$.
+
+If $\displaystyle\lim_{z\rightarrow z_0}f(z)=a_0$
+and $\displaystyle\lim_{n\rightarrow\infty}w_n=z_0$
+then:
+$$\lim_{n\rightarrow\infty}f(w_n)=a_0.$$
 
 \subsubsection*{L1.3.5}
 limit algebra
@@ -281,7 +308,35 @@ composition of functions are also continuous
 
 \subsubsection*{L1.3.10}
 
-\newpage
+\newcolumn
+
+\subsubsection*{D1.4.1: Differentiability}
+
+\subsubsection*{L1.4.3}
+differentiability implies continuity
+
+\subsubsection*{L1.4.4}
+derivative rules
+
+\subsubsection*{L1.4.5: Chain rule}
+
+\subsubsection*{T1.4.6: Cauchy-Riemann equations}
+
+\subsubsection*{T1.4.8 ?}
+
+\subsubsection*{D1.4.9: Holomorphic functions}
+
+\subsubsection*{D1.4.13: Harmonic equations}
+
+\subsubsection*{L1.4.14}
+
+\subsubsection*{D1.4.15: Harmonic conjugates}
+
+\newcolumn
+
+\subsubsection*{D1.5.1: Complex polynomials}
+
+\subsubsection*{L1.5.2}
 
 \end{multicols*}
 
