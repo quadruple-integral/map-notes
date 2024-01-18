@@ -269,8 +269,13 @@ $$F\langle X\rangle\subseteq\text{maps}(X,F)$$
 and is a vector subspace.
 
 \subsubsection*{T1.5.16}
+Let $V$ be a $F$-vector space.
 
-\newcolumn
+Then $(\vc{v}_i)_{i\in I}$ is a basis for $V$ \textbf{if{}f}:
+\begin{align*}
+    \forall\vc{v}\in V;\exists!(a_i)_{i\in I}\subseteq F:
+    \vc{v}=\sum_{i\in I}a_i\vc{v}_i.
+\end{align*}
 
 \subsubsection*{T1.6.1}
 Let $V$ be a vector space.
@@ -278,11 +283,38 @@ Let $L\subset V$ be a linearly independent subset
 and $E\subseteq V$ a generating set.
 Then $|L|\leq|E|$.
 
-\subsubsection*{T1.6.2}
+\subsubsection*{T1.6.2: Steinitz exchange theorem}
+Let $V$ be a vector space, $L\subset V$ be a finite
+linearly independent subset and $E\subseteq V$
+be a generating set.
 
-\subsubsection*{L1.6.3}
+Then there exists an \textbf{injective} function
+$\phi:L\rightarrow E$ such that:
+$$\bigl(E\hspace{0.02in}\backslash\hspace{0.02in}
+\phi(L)\bigr)\cup L$$
+is also a generating set for $V$.
+
+\subsubsection*{L1.6.3: Exchange lemma}
+Let $V$ be a vector space. Let $M\subset V$ be a finite
+linearly independent subset and $E\subseteq V$
+be a generating set where $M\subseteq E$.
+
+If $\exists\vc{w}\in V\hspace{0.02in}\backslash\hspace{0.02in} M$
+such that set $M\cup\{\vc{w}\}$ is linearly independent then:
+$$\exists\vc{e}\in E\hspace{0.02in}\backslash\hspace{0.02in} M:
+\bigl(E\hspace{0.02in}\backslash\hspace{0.02in}
+\vc{e}\bigr)\cup\{\vc{w}\}\hspace{0.04in}\text{is generating.}$$
 
 \subsubsection*{C1.6.4}
+Let $V$ be a finitely generated vector space.
+\begin{enumerate}
+    \item $V$ has finite basis.
+    
+    \item $V$ cannot have infinite basis.
+    
+    \item Any two basis of $V$ have the
+    same number of elements.
+\end{enumerate}
 
 \subsubsection*{D1.6.5: Dimension}
 The dimension of finite $F$-vector space $V$ is the
