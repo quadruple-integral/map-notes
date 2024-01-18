@@ -256,7 +256,7 @@ Let $V$ be a vector space.
 \end{enumerate}
 
 \subsubsection*{D1.5.15}
-Let $X$ be a set and $F$ a vector field. Then:
+Let $X$ be a set and $F$ be a field. Then:
 $$\text{maps}(X,F)\deq\{f:(\forall f:X\rightarrow F)\}$$
 and is a $F$-vector space under pointwise addition and
 multiplication via scalars.
@@ -273,20 +273,46 @@ and is a vector subspace.
 \newcolumn
 
 \subsubsection*{T1.6.1}
+Let $V$ be a vector space.
+Let $L\subset V$ be a linearly independent subset
+and $E\subseteq V$ a generating set.
+Then $|L|\leq|E|$.
 
 \subsubsection*{T1.6.2}
 
 \subsubsection*{L1.6.3}
 
-\subsubsection*{L1.6.4}
+\subsubsection*{C1.6.4}
 
-\subsubsection*{D1.6.5}
+\subsubsection*{D1.6.5: Dimension}
+The dimension of finite $F$-vector space $V$ is the
+cardinality of one its basis. 
+
+For infinite vector spaces: $\dim(V)=\infty$.
 
 \subsubsection*{C1.6.7}
+Let $V$ be a finitely generated vector space.
+\begin{enumerate}
+    \item Every linearly independent $L\subseteq V$
+    has \textbf{at most} $\dim(V)$ elements and \\
+    if $|L|=\dim(V)$ then $L$ is a basis.
+
+    \item Every generating set $E\subseteq V$ has \\
+    \textbf{at least} $\dim(V)$ elements and \\
+    if $|E|=\dim(V)$ then $E$ is a basis.
+\end{enumerate}
 
 \subsubsection*{C1.6.8}
+A proper vector subspace of a vector space 
+with finite dimension has itself a strictly smaller dimension.
 
 \subsubsection*{T1.6.10}
+Let $V$ be a vector space and 
+$U,W\subseteq V$ be vector subspaces. Then:
+\begin{align*}
+    &\dim(U+W)+\dim(U\cap W) \\
+    &=\dim(U)+\dim(W).
+\end{align*}
 
 \end{multicols*}
 
