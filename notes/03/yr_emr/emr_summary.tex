@@ -1202,7 +1202,8 @@ point charge to circulate around a conductor loop:
     &=\oint_C\vc{f}\cdot\dd\vc{r} \\
     &=\oint_C(\vc{E}+\vc{v}\times\vc{B})\cdot\dd\vc{r}
 \end{align*}
-for $\vc{v}$ is the velocity of the charge.
+for $\vc{v}$ is the velocity of the charge
+and $f$ is the force density on point charge.
 
 \subsubsection*{Magnetic induction}
 Faraday's law of induction states that
@@ -1210,19 +1211,28 @@ a change in magnetic flux $\Phi$ induces an emf
 in a conductor loop:
 $$\mathcal{E}=-\dv{\Phi}{t}$$
 where magnetic flux is defined as the total
-magnetic field passing through the loop:
+magnetic field passing through the region
+bounded by the conductor loop:
 $$\Phi=\int_S\vc{B}\cdot\dd\vc{S}$$
-and surface $S$ bounds the conductor loop.
+and surface $S$ encloses the region.
+\begin{center}
+    \includegraphics[scale=0.55]{f10.png}
+\end{center}
 For \underline{static} charges in a conductor loop $C$:
 $$\mathcal{E}=\oint_C\vc{E}\cdot\dd\vc{r}
 =-\int_S\frac{\partial\vc{B}}{\partial t}
 \cdot\dd\vc{S}$$
 and using Stokes' theorem:
 $$\vc{\nabla}\times\vc{E}=-\frac{\partial\vc{B}}{\partial t}.$$
-In words, a time dependent magnetic field always
-accompanies a spatial and time dependent electric field.
+In words, a time dependent magnetic field \textbf{always
+accompanies} a spatial and time dependent electric field.
 
 \subsubsection*{Galilean relativity}
+If the velocity of frame $S'$ in $S$ is $\vc{v}$:
+$$\vc{r'}=\vc{r}-\vc{v}t$$
+$$\dd t'=\dd t$$
+for point $P$ has position $\vc{r}$ in frame $S$
+and position $\vc{r}'$ in frame $S'$.
 
 \subsubsection*{Mutual and self inductance}
 
