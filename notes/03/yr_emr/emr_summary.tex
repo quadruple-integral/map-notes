@@ -1195,9 +1195,22 @@ external magnetic field $\vc{B}$ is:
 \end{align*}
 
 \subsubsection*{Motional electromotive force}
+The electromotive force (emf) is the work needed for unit
+point charge to circulate around a conductor loop:
+\begin{align*}
+    \mathcal{E}
+    &=\oint_C\vc{f}\cdot\dd\vc{l} \\
+    &=\oint_C(\vc{E}+\vc{v}\times\vc{B})\cdot\dd\vc{l}
+\end{align*}
+for $\vc{v}$ is the velocity of the charge.
 
 \subsubsection*{Magnetic induction}
-Faraday's law
+Faraday's law of induction states that the presence of
+a magnetic flux $\Phi$ induces an electromotive
+force in a conductor:
+$$\mathcal{E}=-\dv{\Phi}{t}$$
+$$\Phi=\int_S\vc{B}\cdot\dd\vc{a}$$
+for surface $S$ bounds conductor loop.
 
 lenz's law
 
