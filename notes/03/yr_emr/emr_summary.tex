@@ -1199,18 +1199,32 @@ The electromotive force (emf) is the work needed for unit
 point charge to circulate around a conductor loop:
 \begin{align*}
     \mathcal{E}
-    &=\oint_C\vc{f}\cdot\dd\vc{l} \\
-    &=\oint_C(\vc{E}+\vc{v}\times\vc{B})\cdot\dd\vc{l}
+    &=\oint_C\vc{f}\cdot\dd\vc{r} \\
+    &=\oint_C(\vc{E}+\vc{v}\times\vc{B})\cdot\dd\vc{r}
 \end{align*}
 for $\vc{v}$ is the velocity of the charge.
 
 \subsubsection*{Magnetic induction}
-Faraday's law of induction states that the presence of
-a magnetic flux $\Phi$ induces an electromotive
-force in a conductor:
+Faraday's law of induction states that
+a change in magnetic flux $\Phi$ induces an emf
+in a conductor loop:
 $$\mathcal{E}=-\dv{\Phi}{t}$$
-$$\Phi=\int_S\vc{B}\cdot\dd\vc{a}$$
-for surface $S$ bounds conductor loop.
+where magnetic flux is defined as the total
+magnetic field passing through the loop:
+$$\Phi=\int_S\vc{B}\cdot\dd\vc{S}$$
+and surface $S$ bounds the conductor loop.
+For \underline{static} charges in a conductor loop $C$:
+$$\mathcal{E}=\oint_C\vc{E}\cdot\dd\vc{r}
+=-\int_S\frac{\partial\vc{B}}{\partial t}
+\cdot\dd\vc{S}$$
+and using Stokes' theorem:
+$$\vc{\nabla}\times\vc{E}=-\frac{\partial\vc{B}}{\partial t}.$$
+In words, a time dependent magnetic field always
+accompanies a spatial and time dependent electric field.
+
+\subsubsection*{Galilean relativity}
+
+\subsubsection*{Mutual and self inductance}
 
 lenz's law
 
