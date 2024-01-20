@@ -19,6 +19,7 @@
 \newcommand{\idd}{\text{đ}}
 \newcommand{\nimplies}{\centernot\implies}
 \newcommand{\vc}[1]{\boldsymbol{#1}}
+\newcommand{\pr}{\mathbb{P}}
 
 % margin settings
 \geometry{
@@ -54,9 +55,38 @@
 \noindent
 
 \subsubsection*{Probabilities}
+The probablity of an event in a trial is:
+$$\pr(\text{event})\deq\lim_{N\rightarrow\infty}\frac{n}{N}$$
+for $n$ is number of occurrences in $N$ trials.
+For discrete probabilities:
+$$\sum_{i=1}^{q}\pr(i)=1$$
+$$\pr(\text{$i$ or $j$})=\pr(i)+\pr(j)$$
+$$\pr(\text{$i$ and $j$})=\pr(i)\pr(j).$$
+Given continuous random variables:
+$$\pr([x,x+\dd x])=P(x)\dd x$$
+for $P$ is the probability density function:
+$$\int_{-\infty}^{\infty}P(x)\dd x=1.$$
+We define the \textbf{mean} and \textbf{variance} as:
+$$\overline{x}=\int_{-\infty}^{\infty}xP(x)\dd x$$
+$$\overline{\Delta x^2}=\int_{-\infty}^{\infty}
+(x-\overline{x})^2P(x)\dd x.$$
+The weight of a function is given by:
+$$\overline{f(x)}=\int_{-\infty}^{\infty}f(x)P(x)\dd x.$$
 
 \subsubsection*{Binomial distribution}
-include stirlings approx.
+The probability of observing $n$ events 
+each with probability $p$ in $N$ trials is:
+$$\pr_n=\begin{pmatrix}
+N \\ n\end{pmatrix}p^n(1-p)^{N-n}$$
+where
+$\displaystyle\begin{pmatrix}N \\ n\end{pmatrix}
+=\frac{N!}{n!(N-n)!}$ with:
+$$\overline{n}=Np
+\hspace{0.07in}\text{and}\hspace{0.07in}
+\overline{\Delta n^2}=Np(1-p).$$
+For large $N$:
+$$\ln(N!)\approx N\ln(N)-N$$
+and is \textbf{Stirling's approximation}.
 
 \subsubsection*{Poisson distribution}
 
