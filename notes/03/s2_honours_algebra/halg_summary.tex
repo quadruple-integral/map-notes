@@ -346,8 +346,6 @@ $U,W\subseteq V$ be vector subspaces. Then:
     &=\dim(U)+\dim(W).
 \end{align*}
 
-\newcolumn
-
 \subsubsection*{D1.7.1: Linear mappings}
 Let $V$ and $W$ be $F$-vector spaces. \\
 A mapping $f:V\rightarrow W$ is $F$-linear or a
@@ -374,7 +372,7 @@ $$X^f=\{x\in X:f(x)=x\}.$$
 
 \subsubsection*{D1.7.6: Complementary subspaces?}
 Vector subspaces $V_1,V_2$ of vector space $V$
-are \textbf{complementary} if:
+are \textbf{complementary} if the mapping:
 $$V_1\times V_2\rightarrow V$$
 is a bijection.
 
@@ -384,10 +382,31 @@ A $F$-vector space $V$ is isomorphic to $F^n$
 for $n\in\mathbb{N}$ and $F$ a field.
 
 \subsubsection*{L1.7.8}
+Let $V,W$ be $F$-vector spaces and let $B$
+be a basis of $V$. Then the following mapping:
+\begin{align*}
+    \hom_F(V,W)\rightarrow\text{maps}(B,W);
+    f\mapsto f_B
+\end{align*}
+is a bijection.
+
+\subsubsection*{Remark}
+Let $V,W$ be $F$-vector spaces.
+The set of all homomorphisms from $V$ to $W$ is:
+$$\hom_F(V,W)\subseteq\text{maps}(B,W).$$
 
 \subsubsection*{P1.7.9}
-
-\newcolumn
+Let $f:V\rightarrow W$ be a linear mapping,
+where $V,W$ are vector spaces.
+\begin{enumerate}
+    \item If $f$ is injective, there exists map
+    $g:W\rightarrow V$ such that $g\circ f=\text{id}_V$.
+    i.e. it has a \textbf{left inverse}.
+    
+    \item If $f$ is surjective, there exists map
+    $g:W\rightarrow V$ such that $f\circ g=\text{id}_W$.
+    i.e. it has a \textbf{right inverse}.
+\end{enumerate}
 
 \subsubsection*{D1.8.1: Image and kernel}
 Let $f:V\rightarrow W$ be a linear mapping. \\
@@ -411,9 +430,21 @@ $V,W$ are vector spaces. Then:
 $$\dim(V)=\dim\Bigl(\ker(f)\Bigr)
 +\dim\Bigl(\text{im}(f)\Bigr).$$
 
-\newcolumn
-
 \subsubsection*{T2.1.1}
+Let $F$ be a field and $m,n\in\mathbb{N}$.
+
+Then there exists a bijection:
+\begin{align*}
+    M:\hom_F(F^m,&F^n)\rightarrow\text{mat}(n\times m;F); \\
+    &f\mapsto[f]
+\end{align*}
+and attaches each linear mapping $f$ with its
+representing matrix $M(f)\deq[f]$.
+
+\subsubsection*{Remark}
+The set of matrices with $n$ rows and $m$ columns
+with entries in field $F$ is:
+$$\text{mat}(n\times m;F).$$
 
 \subsubsection*{D2.1.6}
 
