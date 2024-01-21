@@ -64,7 +64,7 @@ Then $z$ and $w$ are complex numbers. Furthermore:
     \item $|z|\deq\sqrt{x^2+y^2}$
     
     \item The \textbf{complex conjugate} of $z$ is:
-    $$\overline{z}\deq x-iy.$$
+    $$z^*\deq x-iy.$$
 
     \item Addition and multiplication:
     $$(x+iy)+(a+ib)=(x+a)+i(y+b)$$
@@ -127,19 +127,19 @@ Let $z,w\in\mathbb{C}$. Then:
     
     \item $|zw|=|z||w|$
     
-    \item $\overline{\overline{z}}=z$
+    \item $(z^*)^*=z$
     
-    \item $|z|^2=z\overline{z}$
+    \item $|z|^2=zz^*$
     
-    \item $\overline{z+w}=\overline{z}+\overline{w}$
+    \item $(z+w)^*=z^*+w^*$
     
-    \item $\overline{zw}=\overline{z}\hspace{0.02in}\overline{w}$
+    \item $(zw)^*=z^*\hspace{0.01in}w^*$
     
     \item $|\Re(z)|\leq|z|$ and $|\Im(z)|\leq|z|$.
     
-    \item $\Re(z)=\frac{1}{2}(z+\overline{z})$
+    \item $\Re(z)=\frac{1}{2}(z+z^*)$
     
-    \item $\Im(z)=\frac{1}{2i}(z-\overline{z})$.
+    \item $\Im(z)=\frac{1}{2i}(z-z^*)$.
 \end{enumerate}
 
 \subsubsection*{L1.1.10 -- 11: Triangle inequalities}
@@ -160,7 +160,7 @@ Let $z,w\in\mathbb{C}$. Then:
 \begin{enumerate}
     \item $\arg(zw)=\arg(z)+\arg(w)$
     
-    \item $\arg(\overline{z})=-\arg(z)$
+    \item $\arg(z^*)=-\arg(z)$
 \end{enumerate}
 and holds under modulo $2\pi$.
 
@@ -448,9 +448,12 @@ Then $P(z)$ is holomorphic on $\mathbb{C}$ and:
 $$P'(z_0)=\sum_{n=1}^{N}na_n z_0^{n-1}.$$
 
 \subsubsection*{L1.5.4}
+Let $\displaystyle P(z)=\sum_{n=0}^{N}a_n z^n$ where $a_i\in\mathbb{R}$
+and $P(z_0)=0$ for $z_0\in\mathbb{C}$.
+Then $P(z^*_0)=0$.
 
 \subsubsection*{D1.5.5: Rational functions}
-Let $P,Q:\mathbb{C}\rightarrow\mathbb{C}$. \\
+Let $P,Q:\mathbb{C}\rightarrow\mathbb{C}$ be complex functions.
 Then $R:\{z\in\mathbb{C}:Q(z)\neq0\}\rightarrow\mathbb{C}$
 with $R(z)=P(z)/Q(z)$ is a rational function.
 
