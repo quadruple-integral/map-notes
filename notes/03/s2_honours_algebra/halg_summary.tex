@@ -434,19 +434,27 @@ $$\dim(V)=\dim\Bigl(\ker(f)\Bigr)
 Let $F$ be a field and $m,n\in\mathbb{N}$.
 
 Then there exists a bijection:
-\begin{align*}
-    M:\hom_F(F^m,&F^n)\rightarrow\text{mat}(n\times m;F); \\
-    &f\mapsto[f]
-\end{align*}
+$$M:\hom_F(F^m,F^n)\rightarrow\text{mat}(n\times m;F);$$
+$$f\mapsto[f]$$
 and attaches each linear mapping $f$ with its
-representing matrix $M(f)\deq[f]$.
+\textbf{representing matrix} $M(f)\deq[f]$.
 
 \subsubsection*{Remark}
 The set of matrices with $n$ rows and $m$ columns
 with entries in field $F$ is:
 $$\text{mat}(n\times m;F).$$
 
-\subsubsection*{D2.1.6}
+\subsubsection*{D2.1.6: Matrix products}
+The product $A\circ B=AB$ is defined:
+$$(AB)_{ik}=\sum_{j=1}^{m}A_{ij}B_{jk}$$
+where $A\in\text{mat}(n\times m;F)$, $F$ a field,
+$B\in\text{mat}(m\times\ell;F)$ and $m,n,\ell\in\mathbb{N}$.
+This is matrix multiplication, with mapping:
+\begin{align*}
+    &\text{mat}(n\times m;F)\times\text{mat}(m\times\ell;F) \\
+    &\rightarrow\text{mat}(n\times\ell;F);
+\end{align*}
+$$(A,B)\mapsto AB.$$
 
 \subsubsection*{T2.1.8}
 
