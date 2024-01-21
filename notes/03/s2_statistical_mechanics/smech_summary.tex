@@ -76,7 +76,7 @@ $$\overline{f(x)}=\int_{-\infty}^{\infty}f(x)P(x)\dd x.$$
 \subsubsection*{Binomial distribution}
 The probability of observing $n$ events 
 each with probability $p$ in $N$ trials is:
-$$\pr_n=\begin{pmatrix}
+$$P_n=\begin{pmatrix}
 N \\ n\end{pmatrix}p^n(1-p)^{N-n}$$
 where
 $\displaystyle\begin{pmatrix}N \\ n\end{pmatrix}
@@ -86,9 +86,19 @@ $$\overline{n}=Np
 \overline{\Delta n^2}=Np(1-p).$$
 For large $N$:
 $$\ln(N!)\approx N\ln(N)-N$$
-and is \textbf{Stirling's approximation}.
+known as \textbf{Stirling's approximation}.
 
 \subsubsection*{Poisson distribution}
+Let $N\gg n$ and let $p$ be the probability of 
+an event in a trial. Assume that as $N\rightarrow\infty$,
+$p\rightarrow0$. Under such conditions
+the binomial probability of observing $n$ events 
+in $N$ trials is:
+\begin{align*}
+    P_n
+    &\approx(\overline{n})^n\frac{\exp(-\overline{n})}{n!}
+\end{align*}
+with mean and variance $Np$.
 
 \subsubsection*{Gaussian distribution}
 
