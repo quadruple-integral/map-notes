@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1705848698 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" "halg_summary.pdf" "halg_summary" 1705848699 0
-  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" 1705848698 11692 6c3eda167ec4d6d2a870c36a19d7169b ""
+["pdflatex"] 1705851315 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" "halg_summary.pdf" "halg_summary" 1705851316 0
+  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" 1705851314 12496 b639ead6eb43ca9fa790eeaadfc96cbe ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1693925241 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1693925632 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -32,6 +32,7 @@
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1693924610 32762 7fee39e011c23b3589931effd97b9702 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1693924610 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1693924610 32716 08e384dc442464e7285e891af9f45947 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1693924610 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1693925241 145408 bcd327f112f643a875638eafb48d1d8b ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1693925241 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1693926983 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -109,9 +110,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693929215 4703462 5df3913b339a4fb9b4dc6c57dc378863 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693929334 8183624 edc78c4bf2213c105a673cf72ac18bae ""
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
-  "halg_summary.aux" 1705848699 554 dd2b48f1aba1e3b725040b4d3abf7fbe "pdflatex"
-  "halg_summary.out" 1705848699 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "halg_summary.tex" 1705848698 11692 6c3eda167ec4d6d2a870c36a19d7169b ""
+  "halg_summary.aux" 1705851316 554 dd2b48f1aba1e3b725040b4d3abf7fbe "pdflatex"
+  "halg_summary.out" 1705851316 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "halg_summary.tex" 1705851314 12496 b639ead6eb43ca9fa790eeaadfc96cbe ""
   (generated)
   "halg_summary.aux"
   "halg_summary.log"

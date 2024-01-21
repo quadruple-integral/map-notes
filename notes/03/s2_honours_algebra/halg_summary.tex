@@ -366,11 +366,22 @@ is an \textbf{endomorphism}.
 An isomorphism of a vector space to itself
 is an \textbf{automorphism}.
 
-\subsubsection*{D1.7.5}
+\subsubsection*{D1.7.5: Fixed points}
+In a linear mapping a fixed point is sent to itself.
+For mapping $f:X\rightarrow X$
+the \textbf{set of fixed points} is:
+$$X^f=\{x\in X:f(x)=x\}.$$
 
-\subsubsection*{D1.7.6}
+\subsubsection*{D1.7.6: Complementary subspaces?}
+Vector subspaces $V_1,V_2$ of vector space $V$
+are \textbf{complementary} if:
+$$V_1\times V_2\rightarrow V$$
+is a bijection.
 
 \subsubsection*{T1.7.7}
+A $F$-vector space $V$ is isomorphic to $F^n$
+\textbf{if{}f} $\dim(V)=n$,
+for $n\in\mathbb{N}$ and $F$ a field.
 
 \subsubsection*{L1.7.8}
 
@@ -391,8 +402,14 @@ and is the preimage of the zero vector in
 linear mapping $f$.
 
 \subsubsection*{L1.8.2}
+A linear mapping $f:V\rightarrow W$ is injective
+\textbf{if{}f} $\ker(f)=\{\vc{0}\}$.
 
 \subsubsection*{T1.8.4: Rank-nullity theorem}
+Let $f:V\rightarrow W$ be a linear mapping and
+$V,W$ are vector spaces. Then:
+$$\dim(V)=\dim\Bigl(\ker(f)\Bigr)
++\dim\Bigl(\text{im}(f)\Bigr).$$
 
 \newcolumn
 
@@ -407,8 +424,11 @@ linear mapping $f$.
 \newcolumn
 
 \subsubsection*{D2.2.1: Invertible matrices}
+A matrix $A$ is \textbf{invertible} if:
+$$\exists B,C:
+BA=I\hspace{0.05in}\text{and}\hspace{0.05in}AC=I.$$
 
-\subsubsection*{D2.2.2}
+\subsubsection*{D2.2.2: Elementary matrices}
 
 \subsubsection*{T2.2.3}
 
