@@ -1213,7 +1213,7 @@ $$\mathcal{E}=-\dv{\Phi}{t}$$
 where magnetic flux is defined as the total
 magnetic field passing through the region
 bounded by the conductor loop:
-$$\Phi=\int_S\vc{B}\cdot\dd\vc{S}$$
+$$\Phi=\iint_S\vc{B}\cdot\dd\vc{S}$$
 and surface $S$ encloses the region.
 \begin{center}
     \includegraphics[scale=0.55]{f10.png}
@@ -1268,6 +1268,34 @@ $$\begin{pmatrix}\mathcal{E}_1 \\ \mathcal{E}_2\end{pmatrix}=
 \\[0.2em] \frac{\dd I_2}{\dd t}\end{pmatrix}$$
 where \textcolor{red}{$M=M_{21}=M_{12}$}.
 $L_1$ and $L_2$ are the self-inductance for each loop.
+
+\subsubsection*{Magnetic field energy}
+Consider an inductor generating field $\vc{B}$
+with current $I$ and self-inductance $L$:
+\begin{align*}
+    \dd W_m
+    &=i\dd t\cdot -\mathcal{E} \\
+    &=i\dd t\cdot\dv{\Phi_i}{t} \\
+    &=iL\dd i
+\end{align*}
+and since $\Phi_{1\rightarrow1}=IL$
+the energy stored our inductor is an integral over current:
+$$W_m=\int_{0}^{I}\dd W_m=\frac{\Phi_{1\rightarrow1}^2}{2L}
+\hspace{0.05in}\text{or}\hspace{0.05in}
+\frac{1}{2}\Phi_{1\rightarrow1} I.$$
+Because
+$\displaystyle\Phi_{1\rightarrow1}=\iint_S\vc{B}\cdot\dd\vc{S}$:
+$$W_m=\frac{1}{2}\oint_C\vc{A}\cdot I\dd\vc{r}$$
+and generalising this to volume integrals:
+$$W_m=\frac{1}{2}\iiint_V\vc{J}\cdot\vc{A}\dd V$$
+where $\vc{J}$ is the current density. Since:
+$$\vc{\nabla}\cdot(\vc{u}\times\vc{v})
+=(\vc{\nabla}\times\vc{u})\cdot\vc{v}
+-(\vc{\nabla}\times\vc{v})\cdot\vc{u}$$
+and assuming that the field vanish at $\infty$:
+$$W_m=\frac{1}{2\mu_0}\iiint_V B^2\dd V$$
+with \textbf{magnetic field density}:
+$$w_m=\frac{1}{2\mu_0}B^2.$$
 \end{multicols*}
 
 \end{document}
