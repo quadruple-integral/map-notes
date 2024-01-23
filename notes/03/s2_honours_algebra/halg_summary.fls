@@ -179,6 +179,11 @@ INPUT c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./f00.png
+INPUT ./f00.png
+INPUT ./f00.png
+INPUT ./f00.png
+INPUT ./f00.png
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm

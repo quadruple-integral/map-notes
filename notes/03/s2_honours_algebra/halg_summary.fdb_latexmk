@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1706050554 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" "halg_summary.pdf" "halg_summary" 1706050555 0
-  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" 1706050553 15453 0fa818ab88f6ef6c5d6f29904de11a88 ""
+["pdflatex"] 1706051199 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" "halg_summary.pdf" "halg_summary" 1706051200 0
+  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" 1706051198 15525 66f2323e32373f906c1cd565c95688ef ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1693925241 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1693925632 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -110,9 +110,10 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693929215 4703462 5df3913b339a4fb9b4dc6c57dc378863 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693929334 8183624 edc78c4bf2213c105a673cf72ac18bae ""
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
-  "halg_summary.aux" 1706050555 554 dd2b48f1aba1e3b725040b4d3abf7fbe "pdflatex"
-  "halg_summary.out" 1706050555 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "halg_summary.tex" 1706050553 15453 0fa818ab88f6ef6c5d6f29904de11a88 ""
+  "f00.png" 1706051137 73401 3b3049903baf9379101e5f10aeafb3db ""
+  "halg_summary.aux" 1706051199 554 dd2b48f1aba1e3b725040b4d3abf7fbe "pdflatex"
+  "halg_summary.out" 1706051199 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "halg_summary.tex" 1706051198 15525 66f2323e32373f906c1cd565c95688ef ""
   (generated)
   "halg_summary.aux"
   "halg_summary.log"
