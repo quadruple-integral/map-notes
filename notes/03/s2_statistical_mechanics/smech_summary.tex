@@ -54,10 +54,10 @@
 % starred environment ensures text remains in same column
 \noindent
 
-\subsubsection*{Probabilities}
+\subsubsection*{Probability distributions}
 The probablity of an event in a trial is:
 $$\pr(\text{event})\deq\lim_{N\rightarrow\infty}\frac{n}{N}$$
-for $n$ is number of occurrences in $N$ trials.
+given $n$ occurrences in $N$ trials. \\
 For discrete probabilities:
 $$\sum_{i=1}^{q}\pr(i)=1$$
 $$\pr(\text{$i$ or $j$})=\pr(i)+\pr(j)$$
@@ -67,11 +67,20 @@ $$\pr([x,x+\dd x])=P(x)\dd x$$
 for $P$ is the probability density function:
 $$\int_{-\infty}^{\infty}P(x)\dd x=1.$$
 We define the \textbf{mean} and \textbf{variance} as:
-$$\overline{x}=\int_{-\infty}^{\infty}xP(x)\dd x$$
-$$\overline{\Delta x^2}=\int_{-\infty}^{\infty}
-(x-\overline{x})^2P(x)\dd x.$$
-The weight of a function is given by:
-$$\overline{f(x)}=\int_{-\infty}^{\infty}f(x)P(x)\dd x.$$
+$$\overline{x}=\sum_{i=1}^{q}x_i P_i
+\hspace{0.05in}\text{or}\hspace{0.05in}
+\int_{-\infty}^{\infty}xP(x)\dd x$$
+\begin{align*}
+    \overline{\Delta x^2}
+    &=\sum_{i=1}^{q}(x_i-\overline{x})^2 P_i \\
+    &=\int_{-\infty}^{\infty}
+    (x-\overline{x})^2P(x)\dd x \\
+    &=\overline{x^2}-(\overline{x})^2.
+\end{align*}
+The \textbf{standard deviation} is the square root
+of the variance $\bigl(\overline{\Delta x^2}\bigr)^{1/2}$ and:
+$$\overline{f(x)}=
+\int_{-\infty}^{\infty}f(x)P(x)\dd x.$$
 
 \subsubsection*{Binomial distribution}
 The probability of observing $n$ events 
@@ -83,10 +92,36 @@ $\displaystyle\begin{pmatrix}N \\ n\end{pmatrix}
 =\frac{N!}{n!(N-n)!}$ with:
 $$\overline{n}=Np
 \hspace{0.07in}\text{and}\hspace{0.07in}
-\overline{\Delta n^2}=Np(1-p).$$
+\overline{\Delta n^2}=Np(1-p)$$
+since we have that:
+$$(a+b)^N=\sum_{n=0}^{N}
+\begin{pmatrix}N \\ n\end{pmatrix}a^n b^{N-n}$$
+\begin{align*}
+    f(\alpha)
+    &=\sum_{n=0}^{N}\begin{pmatrix}N \\ n\end{pmatrix}
+    (p\alpha)^n(1-p)^{N-n} \\
+    &=(p\alpha+1-p)^N.
+\end{align*}
+Note that $\begin{pmatrix}N \\ n\end{pmatrix}$
+denotes ways to pick $n$ items 
+from $N$ items.
 For large $N$:
 $$\ln(N!)\approx N\ln(N)-N$$
 known as \textbf{Stirling's approximation}.
+
+\newcolumn
+
+We also define the \textbf{fractional deviation}
+as the deviation on the scale of the mean:
+$$\frac{\bigl(\overline{\Delta x^2}\bigr)^{1/2}}{\overline{n}}
+=\frac{1}{N^{1/2}}.$$
+
+\subsubsection*{Taylor expansions}
+Let $s(n)$ be expanded at $n=a$:
+\begin{align*}
+    s(n)&=s(a)+s'(a)(n-a) \\
+    &\quad+\frac{1}{2}s''(a)(n-a)^2+\mathcal{O}[(n-a)^3].
+\end{align*}
 
 \subsubsection*{Poisson distribution}
 Let $N\gg n$ and let $p$ be the probability of 
@@ -101,7 +136,14 @@ in $N$ trials is:
 with mean and variance $Np$.
 
 \subsubsection*{Gaussian distribution}
+Let $N$ be very large. Then the binomial distribution
+becomes Gaussian:
+$$P_n\approx\frac{1}{\sqrt{2\pi\sigma^2}}
+\exp\left(-\frac{(n-Np)^2}{2\sigma^2}\right)$$
+via Stirling's approximation and Taylor expansions
+with variance $\sigma^2=Np(1-p)$ and mean $\mu=Np$.
 
+\subsubsection*{Microstates and macrostates}
 
 \end{multicols*}
 
