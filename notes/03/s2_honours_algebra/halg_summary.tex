@@ -122,6 +122,12 @@ A field $F$ is a set defined with:
     =\lambda\mu+\lambda\nu\in F$
 \end{enumerate}
 
+\subsubsection*{Remark}
+Let $n$ be prime or a prime power.
+Then $\mathbb{F}_n$ is a finite field with $n$ elements
+under modulo $n$.
+Also, $\mathbb{Q}$ and $\mathbb{R}$ are fields.
+
 \subsubsection*{D1.2.1(ii): Vector spaces}
 A vector space $V$ over a field $F$ is an Abelian group $V\deq(V,+)$
 with mapping:
@@ -154,11 +160,10 @@ Let $V$ be a $F$-vector space where $\vc{v}\in V$.
 \end{enumerate}
 
 \subsubsection*{D: Cartesian products}
-The Cartesian product of sets $X_1,\dots,X_n$
-is defined as:
+Given sets $X_1,\dots,X_n$:
 $$X_1\times\cdots\times X_n
 \deq\{(x_1,\dots,x_n):x_i\in X_i\}$$
-where $1\leq i\leq n$.
+with bijection $X^n\times X^m\rightarrow X^{n+m}$.
 
 The \underline{projection} of a Cartesian product is:
 \begin{align*}
@@ -188,7 +193,7 @@ or the span of $T$.
 
 \subsubsection*{D1.4.7: Generating set}
 Let $T\subset V$ where $V$ is a $F$-vector space.
-$T$ is a generating set of $V$ if:
+Set $T$ is a \textbf{generating set} of $V$ if:
 $$\text{span}(T)=V$$
 and is the linear combination of vectors in $T$
 over field $F$.
@@ -241,7 +246,6 @@ Then the following statements are equivalent:
 
 \subsubsection*{C1.5.13}
 Every finitely generated vector space has a finite basis.
-(any vector space too!)
 
 \subsubsection*{T1.5.14}
 Let $V$ be a vector space.
