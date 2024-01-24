@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  22 JAN 2024 22:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  24 JAN 2024 13:09
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -495,67 +495,67 @@ Overfull \hbox (2.78735pt too wide) detected at line 360
  []
 
 
-Overfull \hbox (6.81622pt too wide) detected at line 521
+Overfull \hbox (6.81622pt too wide) detected at line 522
 [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 r [] ^^R [] ^^^[][] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 r [] ^^R [] ^^^[][] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 r [] ^^R[][]
  []
 
 <f0.png, id=39, 395.22656pt x 275.52937pt>
 File: f0.png Graphic file (type png)
 <use f0.png>
-Package pdftex.def Info: f0.png  used on input line 531.
+Package pdftex.def Info: f0.png  used on input line 532.
 (pdftex.def)             Requested size: 118.56888pt x 82.65944pt.
 [2] [3 <./f0.png>]
 <f1.png, id=77, 453.94594pt x 309.40594pt>
 File: f1.png Graphic file (type png)
 <use f1.png>
-Package pdftex.def Info: f1.png  used on input line 743.
+Package pdftex.def Info: f1.png  used on input line 744.
 (pdftex.def)             Requested size: 136.18483pt x 92.8225pt.
 <f2.png, id=78, 532.99126pt x 466.74374pt>
 File: f2.png Graphic file (type png)
 <use f2.png>
-Package pdftex.def Info: f2.png  used on input line 772.
+Package pdftex.def Info: f2.png  used on input line 773.
 (pdftex.def)             Requested size: 117.25844pt x 102.68393pt.
 <f3.png, id=79, 461.47406pt x 409.53pt>
 File: f3.png Graphic file (type png)
 <use f3.png>
-Package pdftex.def Info: f3.png  used on input line 811.
+Package pdftex.def Info: f3.png  used on input line 812.
 (pdftex.def)             Requested size: 101.5246pt x 90.09688pt.
  [4 <./f1.png> <./f2.png> <./f3.png>]
 <f5.png, id=96, 598.235pt x 242.9075pt>
 File: f5.png Graphic file (type png)
 <use f5.png>
-Package pdftex.def Info: f5.png  used on input line 1051.
+Package pdftex.def Info: f5.png  used on input line 1052.
 (pdftex.def)             Requested size: 119.64487pt x 48.58063pt.
 <f6.png, id=97, 844.65562pt x 425.33907pt>
 File: f6.png Graphic file (type png)
 <use f6.png>
-Package pdftex.def Info: f6.png  used on input line 1058.
+Package pdftex.def Info: f6.png  used on input line 1059.
 (pdftex.def)             Requested size: 168.92813pt x 85.0663pt.
  [5 <./f5.png> <./f6.png>]
 <f7.png, id=118, 2569.6pt x 1430.34375pt>
 File: f7.png Graphic file (type png)
 <use f7.png>
-Package pdftex.def Info: f7.png  used on input line 1072.
+Package pdftex.def Info: f7.png  used on input line 1073.
 (pdftex.def)             Requested size: 128.48752pt x 71.52138pt.
 
-Overfull \hbox (3.2493pt too wide) detected at line 1089
+Overfull \hbox (3.2493pt too wide) detected at line 1090
 []\OT1/cmr/m/n/10 ([]) = \OMS/cmsy/m/n/10 ^^@[] [][] []\OT1/cmr/m/n/10 ([][]) \OMS/cmsy/m/n/10 ^^B [] [] \OT1/cmr/m/n/10 d\OML/cmm/m/it/10 V[]
  []
 
 <f8.png, id=119, 244.34143pt x 131.63464pt>
 File: f8.png Graphic file (type png)
 <use f8.png>
-Package pdftex.def Info: f8.png  used on input line 1125.
+Package pdftex.def Info: f8.png  used on input line 1126.
 (pdftex.def)             Requested size: 97.73483pt x 52.65291pt.
 <f9.png, id=120, 365.65178pt x 215.51947pt>
 File: f9.png Graphic file (type png)
 <use f9.png>
-Package pdftex.def Info: f9.png  used on input line 1176.
+Package pdftex.def Info: f9.png  used on input line 1177.
 (pdftex.def)             Requested size: 146.25812pt x 86.20625pt.
 <f10.png, id=121, 314.89072pt x 117.43875pt>
 File: f10.png Graphic file (type png)
 <use f10.png>
-Package pdftex.def Info: f10.png  used on input line 1219.
+Package pdftex.def Info: f10.png  used on input line 1220.
 (pdftex.def)             Requested size: 173.19041pt x 64.59149pt.
 [6 <./f7.png> <./f8.png> <./f9.png> <./f10.png>] [7] (./emr_summary.aux)
  ***********
@@ -574,7 +574,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  79i,15n,93p,608b,667s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on emr_summary.pdf (7 pages, 585583 bytes).
+Output written on emr_summary.pdf (7 pages, 585619 bytes).
 PDF statistics:
  238 PDF objects out of 1000 (max. 8388607)
  175 compressed objects within 2 object streams
