@@ -359,7 +359,7 @@ $U,W\subseteq V$ be vector subspaces. Then:
     &\dim(U+W)+\dim(U\cap W) \\
     &=\dim(U)+\dim(W)
 \end{align*}
-for $U+W\deq\langle U\hspace{0.02in}
+where $U+W\deq\langle U\hspace{0.02in}
 \cup\hspace{0.02in}W\rangle\subseteq V$.
 
 \subsubsection*{D1.7.1: Linear mappings}
@@ -386,16 +386,18 @@ For mapping $f:X\rightarrow X$
 the \textbf{set of fixed points} is:
 $$X^f=\{x\in X:f(x)=x\}.$$
 
-\subsubsection*{D1.7.6: Complementary subspaces?}
+\subsubsection*{D1.7.6: Complementary subspaces}
 Vector subspaces $V_1,V_2$ of vector space $V$
-are \textbf{complementary} if the mapping:
-$$V_1\times V_2\rightarrow V$$
-is a bijection.
+are \textbf{complementary} if the \textcolor{red}{direct sum}
+of vector subspaces is bijective:
+$$\oplus:V_1\times V_2\rightarrow V;
+(\vc{v}_1,\vc{v}_2)\mapsto\vc{v}_1+\vc{v}_2.$$
+i.e. $V_1\oplus V_2=V$.
 
 \subsubsection*{T1.7.7}
-A $F$-vector space $V$ is isomorphic to $F^n$
-\textbf{if{}f} $\dim(V)=n$,
-for $n\in\mathbb{N}$ and $F$ a field.
+Let $n\in\mathbb{N}$ and $V$ a $F$-vector space. \\
+$V$ is isomorphic to $F^n$
+\textbf{if{}f} $\dim(V)=n$.
 
 \subsubsection*{L1.7.8}
 Let $V,W$ be $F$-vector spaces and let $B$
