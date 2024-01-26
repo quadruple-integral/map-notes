@@ -382,7 +382,7 @@ is an \textbf{automorphism}.
 
 \subsubsection*{D1.7.5: Fixed points}
 In a linear mapping a fixed point is sent to itself.
-For mapping $f:X\rightarrow X$
+Given mapping $f:X\rightarrow X$
 the \textbf{set of fixed points} is:
 $$X^f=\{x\in X:f(x)=x\}.$$
 
@@ -407,10 +407,8 @@ be a basis of $V$. Then the following mapping:
     f\mapsto f_B
 \end{align*}
 is a bijection.
-
-\subsubsection*{Remark}
-Let $V,W$ be $F$-vector spaces.
-The set of all homomorphisms from $V$ to $W$ is:
+The set of all linear maps or
+homomorphisms from $V$ to $W$ is:
 $$\hom_F(V,W)\subseteq\text{maps}(B,W).$$
 
 \subsubsection*{P1.7.9}
@@ -429,14 +427,17 @@ where $V,W$ are vector spaces.
 \subsubsection*{D1.8.1: Image and kernel}
 Let $f:V\rightarrow W$ be a linear mapping. \\
 The \textbf{image} of this linear mapping $f$ is:
-$$\text{im}(f)\deq f(V)\subseteq W$$
+\begin{align*}
+    \text{im}(f)&\deq f(V) \\
+    &=\{\vc{w}\in W:
+    \forall\vc{v}\in V;\vc{w}=f(\vc{v})\}
+\end{align*}
 and is a vector subspace of $W$.
 
 The \textbf{kernel} of this linear mapping $f$ is:
 $$\ker(f)\deq f^{-1}(\vc{0})
 =\{\vc{v}\in V:f(\vc{v})=\vc{0}\}$$
-and is the preimage of the zero vector in
-linear mapping $f$.
+and is a vector subspace of $V$.
 
 \subsubsection*{L1.8.2}
 A linear mapping $f:V\rightarrow W$ is injective
@@ -458,8 +459,8 @@ and attaches each linear mapping $f$ with its
 \textbf{representing matrix} $M(f)\deq[f]$.
 
 \subsubsection*{Remark}
-The set of matrices with \textcolor{red}{$n$ rows}
-and \textcolor{red}{$m$ columns} with entries in field $F$ is:
+We define the set of matrices with \textcolor{red}{$n$ rows}
+and \textcolor{red}{$m$ columns} with entries in field $F$ as:
 $$\text{mat}(n\times m;F).$$
 
 \subsubsection*{D2.1.6: Matrix products}
@@ -470,9 +471,8 @@ $B\in\text{mat}(m\times\ell;F)$ and $m,n,\ell\in\mathbb{N}$.
 This is matrix multiplication, with mapping:
 \begin{align*}
     &\text{mat}(n\times m;F)\times\text{mat}(m\times\ell;F) \\
-    &\rightarrow\text{mat}(n\times\ell;F);
+    &\rightarrow\text{mat}(n\times\ell;F);(A,B)\mapsto AB.
 \end{align*}
-$$(A,B)\mapsto AB.$$
 
 \subsubsection*{T2.1.8}
 Let $g:F^{\ell}\rightarrow F^m$ and
@@ -480,11 +480,11 @@ $f:F^{m}\rightarrow F^{n}$ be linear mappings.
 Then $[f\circ g]=[f]\circ[g]$.
 
 \subsubsection*{P2.1.9}
-Let $A,A'\in\text{mat}(n\times m;F)$. \\
-Let $B,B'\in\text{mat}(m\times\ell;F)$. \\
-Let $C,C'\in\text{mat}(\ell\times k;F)$. \\
-Let $k,\ell,m,n\in\mathbb{N}$ and denote $I=I_m$
-as the $(m\times m)$ identity matrix. Then:
+Let $A,A'$ be $n\times m$,
+$B,B'$ be $m\times\ell$ and
+$C,C'$ be $\ell\times k$.
+Denote $I=I_m$
+as the $m\times m$ identity matrix. Then:
 \begin{enumerate}
     \item $(A+A')B=AB+A'B$
     \item $A(B+B')=AB+AB'$
