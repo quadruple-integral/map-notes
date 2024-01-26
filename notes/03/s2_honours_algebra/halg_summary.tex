@@ -76,18 +76,16 @@ of an element of $Y$ to \underline{each} element of $X$.
 \end{center}
 
 \subsubsection*{D: Groups}
-A group $G$ is a set defined with:
+A group $G$ is a set with a composition
+operator $(\circ)$ such that $\forall x,y,z,\in G$:
 \begin{enumerate}
-    \item Composition operator ($\cdot$) \\
-    such that $x\cdot y=xy$.
+    \item $x\circ y=xy$
     
-    \item $\forall x,y,z\in G$; $(xy)z=x(yz)$
+    \item $(xy)z=x(yz)$
     
-    \item $\exists e\in G: ex=xe=x$ \\
-    for $\forall x\in G$.
+    \item $\exists e\in G: ex=xe=x$
     
-    \item $\exists x^{-1}\in G: xx^{-1}=x^{-1}x=e$ \\
-    for $\forall x\in G$.
+    \item $\exists x^{-1}\in G: xx^{-1}=x^{-1}x=e$
 \end{enumerate}
 $G$ is \textbf{Abelian} if 
 $\forall x,y\in G; xy=yx$.
@@ -273,12 +271,13 @@ $$\text{maps}(X,F)\deq\{f:(\forall f:X\rightarrow F)\}$$
 and is a $F$-vector space under pointwise addition and
 multiplication via scalars.
 
-\subsubsection*{Remark}
-The subset of all mappings which sends 
-almost all elements of $X$ to $0$ is defined:
-(all but finitely many)
-$$F\langle X\rangle\subseteq\text{maps}(X,F)$$
-and is a vector subspace.
+Let $F\langle X\rangle\subseteq\text{maps}(X,F)$ be
+the subset of all mappings that sends all but finitely many
+elements of $X$ to $0$:
+$$F\langle X\rangle\deq
+\left\{f:\bigl(\forall f:X\rightarrow\{0\}\bigr)\right\}.$$
+It contains all linear combinations of $X$
+in $F$ and forms a vector subspace.
 
 \subsubsection*{T1.5.16}
 Let $V$ be a $F$-vector space.
