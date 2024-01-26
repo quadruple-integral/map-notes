@@ -209,12 +209,16 @@ $$\bigcap_{U\in\mathcal{U}}U
 
 \subsubsection*{D1.5.1: Linear independence}
 Let $V$ be a $F$-vector space and $L\subseteq V$. \\
-$L$ is linearly independent if:
+Subset $L$ is \textbf{linearly independent} if:
 \begin{align*}
     &\alpha_1\vc{v}_1+\dots+\alpha_r\vc{v}_r=\vc{0} \\
     &\implies \alpha_1=\dots=\alpha_r=0
 \end{align*}
-where $\vc{v}_i\in L$.
+for $\vc{v}_i\in L$
+and is pairwise distinct.
+
+\subsubsection*{Remark}
+$L$ is linearly dependent if some $\alpha_i\neq0$.
 
 \subsubsection*{D1.5.8: Basis}
 A basis of a vector space $V$ is a \textbf{linearly independent}
@@ -241,10 +245,11 @@ Then the following statements are equivalent:
     
     \item $E$ is minimal among all generating sets,
     or that $E\hspace{0.02in}\backslash\hspace{0.02in}
-    \{\vc{v}\}$ is not a basis for $\forall\vc{v}\in V$.
+    \{\vc{e}\}$ is not a basis for $\forall\vc{e}\in E$.
 
     \item $E$ is maximal amongst all linearly independent subsets.
-    i.e. $E\cup\{\vc{v}\}$ is not linearly independent.
+    i.e. $E\hspace{0.01in}\cup\hspace{0.01in}\{\vc{v}\}$
+    is linearly dependent for $\forall\vc{v}\in V$.
 \end{enumerate}
 
 \subsubsection*{C1.5.13}
