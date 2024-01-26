@@ -93,34 +93,30 @@ $G$ is \textbf{Abelian} if
 $\forall x,y\in G; xy=yx$.
 
 \subsubsection*{D1.2.1(i): Fields}
-A field $F$ is a set defined with:
+A field $F$ is a set defined with addition
+and multiplication such that:
 \begin{enumerate}
-    \item Addition function $(+)$:
-    \begin{align*}
-        (+):F\times F\rightarrow F;
-        (\lambda,\mu)\mapsto\lambda+\mu
-    \end{align*}
+    \item $(+):F\times F\rightarrow F;
+    (\lambda,\mu)\mapsto\lambda+\mu$
 
-    \item Multiplication function $(\cdot)$:
-    \begin{align*}
-        (\cdot):F\times F\rightarrow F;
-        (\lambda,\mu)\mapsto\lambda\cdot\mu
-    \end{align*}
-
-    \item $\exists 0_F,1_F\in F$
-    where $0_F\neq1_F$ such that 
-    $(F,+)$ and $(F\backslash\{0_F\},\cdot)$
-    form Abelian groups.
+    \item $(\cdot):F\times F\rightarrow F;
+    (\lambda,\mu)\mapsto\lambda\cdot\mu$
 
     \item $\exists (-\lambda)\in F:
     \lambda+(-\lambda)=0_F$
 
     \item $\exists (\lambda^{-1})\in F:
-    \lambda\cdot(\lambda^{-1})=1_F$
+    \lambda\cdot(\lambda^{-1})=1_F$ \\
+    except when $\lambda=0$.
 
-    \item $\lambda(\mu+\nu)
-    =\lambda\mu+\lambda\nu\in F$
+    \item $(+)$ and $(\cdot)$
+    are associative, \\ commutative
+    and distributive.
 \end{enumerate}
+
+\subsubsection*{Remark}
+$(F,+)$ and $(F\hspace{0.02in}\backslash
+\hspace{0.02in}\{0_F\},\cdot)$ are groups.
 
 \subsubsection*{Remark}
 Let $n$ be prime or a prime power.
@@ -131,9 +127,9 @@ Also, $\mathbb{Q}$ and $\mathbb{R}$ are fields.
 \subsubsection*{D1.2.1(ii): Vector spaces}
 A vector space $V$ over a field $F$ is an Abelian group $V\deq(V,+)$
 with mapping:
-$$F\times V\rightarrow V:
-(\lambda,\vc{v}\mapsto
-\lambda\vc{v})$$
+$$F\times V\rightarrow V;
+(\lambda,\vc{v})\mapsto
+\lambda\vc{v}$$
 where for $\forall\lambda, \mu\in F$ and
 $\forall\vc{v},\vc{w}\in V$:
 \begin{enumerate}
@@ -148,10 +144,10 @@ $\forall\vc{v},\vc{w}\in V$:
     
     \item $1_F\vc{v}=\vc{v}$
 \end{enumerate}
-and is a $F$-vector space.
+and is known as a \textcolor{red}{$F$-vector space}.
 
 \subsubsection*{Remark}
-Let $V$ be a $F$-vector space where $\vc{v}\in V$.
+Let $V$ be a $F$-vector space and $\vc{v}\in V$.
 \begin{enumerate}
     \item $0\vc{v}=0$
     \item $(-1)\vc{v}=-\vc{v}$
