@@ -538,6 +538,45 @@ Column and row ranks are equal.
 Let $A$ be $n\times m$ with entries in $F$. \\
 $A$ is \textbf{full rank} if $\rank(A)=\min(m,n)$.
 
+\subsubsection*{T2.3.1}
+Let $V$ and $W$ be $F$-vector spaces
+with bases $A=\{\vc{v}_1,\dots,\vc{v}_m\}$
+s.t. $\langle A\rangle=V$
+and $B=\{\vc{w}_1,\dots,\vc{w}_n\}$
+s.t. $\langle B\rangle=W$.
+
+Then for every linear map $f:V\rightarrow W$
+there exists a \textbf{representing matrix}:
+$$({}_{B}[f]_A)_{ij}=a_{ij}$$
+$$f(\vc{v}_j)=a_{1j}\vc{w}_1+\dots+a_{nj}\vc{w}_n\in W$$
+which produces the following bijection:
+$$M_B^A:\hom_F(V,W)\rightarrow\text{mat}(n\times m;F)$$
+$$f\mapsto{}_B[f]_A$$
+and $M_B^A(f)={}_B[f]_A$ is the representing matrix
+of linear mapping $f$ 
+with respect to bases $A$ and $B$.
+
+If $A$ and $B$ are standard bases then $[f]$.
+
+\subsubsection*{T2.3.2}
+
+\subsubsection*{D2.3.3}
+
+\subsubsection*{T2.3.4}
+
+\subsubsection*{D2.4.1}
+
+\subsubsection*{T2.4.3}
+
+\subsubsection*{C2.4.4}
+
+\subsubsection*{T2.4.5}
+
+\subsubsection*{D2.4.6: Trace}
+The trace of a $n\times n$ matrix $A$ is the sum of its diagonal
+entries:
+$$\tr(A)=\sum_{i=1}^{n}a_{ii}.$$
+
 \end{multicols*}
 
 \end{document}
