@@ -538,7 +538,7 @@ Column and row ranks are equal.
 Let $A$ be $n\times m$ with entries in $F$. \\
 $A$ is \textbf{full rank} if $\rank(A)=\min(m,n)$.
 
-\subsubsection*{T2.3.1}
+\subsubsection*{T2.3.1: Representing matrices}
 Let $V$ and $W$ be $F$-vector spaces
 with bases $A=\{\vc{v}_1,\dots,\vc{v}_m\}$
 s.t. $\langle A\rangle=V$
@@ -585,6 +585,18 @@ Then ${}_B[f(\vc{v})]={}_B[f]_A\circ {}_A[\vc{v}]$
 for $\forall\vc{v}\in V$.
 
 \subsubsection*{D2.4.1}
+Let $V$ be a $F$-vector space
+and let sets
+$A=\{\vc{v}_1,\dots,\vc{v}_n\}$
+and $B=\{\vc{w}_1,\dots,\vc{w}_n\}$
+be bases of $V$.
+The representation matrix of the identity mapping:
+$$\text{id}_V:V\rightarrow V;
+\vc{v}\mapsto\vc{v}$$
+is a \textbf{change of basis matrix}
+${}_B[\text{id}_V]_A$ with entries $a_{ij}$
+given by definition:
+$$\vc{v}_j=\sum_{i=1}^{n}a_{ij}\vc{w}_i.$$
 
 \subsubsection*{T2.4.3}
 
