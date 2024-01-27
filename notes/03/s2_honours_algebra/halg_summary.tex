@@ -64,11 +64,11 @@ of an element of $Y$ to \underline{each} element of $X$.
         &\forall x_1,x_2\in X;
         f(x_1)=f(x_2) \\ &\implies x_1=x_2
     \end{align*}
-    and this implies $|X|\leq|Y|$.
+    and this implies that $|X|\leq|Y|$.
 
     \item $f$ is \textbf{surjective} if:
     $$\forall y\in Y;\exists x\in X: y=f(x)$$
-    and this implies $|X|\geq|Y|$.
+    and this implies that $|X|\geq|Y|$.
 
     \item $f$ is \textbf{bijective}
     if it is injective and surjective.
@@ -87,7 +87,7 @@ operator $(\circ)$ such that $\forall x,y,z,\in G$:
     
     \item $\exists e\in G: ex=xe=x$
     
-    \item $\exists x^{-1}\in G: xx^{-1}=x^{-1}x=e$
+    \item $\exists x^{-1}\in G: xx^{-1}=x^{-1}x=e$.
 \end{enumerate}
 $G$ is \textbf{Abelian} if 
 $\forall x,y\in G; xy=yx$.
@@ -226,7 +226,7 @@ Let $V$ be a $F$-vector space.
 
 Then $A=\{\vc{v}_1,\dots,\vc{v}_r\}$ is a basis of $V$
 \textbf{if{}f} the following \textcolor{red}{evaluation mapping}:
-$$\Phi:F^r\rightarrow V;$$
+$$\Phi_A:F^r\rightarrow V;$$
 $$(\alpha_1,\dots,\alpha_r)\mapsto
 \alpha_1\vc{v}_1+\dots+\alpha_r\vc{v}_r$$
 is a bijection.
@@ -559,8 +559,19 @@ with respect to bases $A$ and $B$.
 If $A$ and $B$ are standard bases then $[f]$.
 
 \subsubsection*{T2.3.2}
+Let $U,V,W$ be $F$-vector spaces with finite dimension
+and bases $A,B,C$ respectively.
+
+If $f:U\rightarrow V$ and $g:V\rightarrow W$
+are linear mappings then
+${}_C[g\circ f]_A={}_C[g]_B\circ{}_B[g]_A$.
 
 \subsubsection*{D2.3.3}
+Let $V$ be a finite dimensional vector space
+with basis $A=\{\vc{v}_1,\dots,\vc{v}_m\}$.
+Then:
+$$\Phi_A^{-1}
+$$
 
 \subsubsection*{T2.3.4}
 
