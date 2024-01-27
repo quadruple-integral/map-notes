@@ -1299,6 +1299,33 @@ with \textbf{magnetic field density}:
 $$w_m=\frac{1}{2\mu_0}B^2.$$
 
 \subsubsection*{Circuits}
+Consider an LRC circuit with alternating current source
+and electromotive force:
+\begin{align*}
+    \mathcal{E}_S
+    &= V_S\cos(\phi+\omega t) \\
+    &= \Re[V_0 e^{i\omega t}]
+\end{align*}
+where $V_0=V_S e^{i\phi}$. Equating emfs:
+$$\mathcal{E}_S=L\dv{I}{t}+V_C(t)+IR$$
+$$I=C\dv{V_C}{t}$$
+and due to linearity we assume that:
+$$I(t)=\Re[I_0 e^{i\omega t}]$$
+$$V_C(t)=\Re[V_{C_0} e^{i\omega t}].$$
+After subsituting into our equations:
+$$V_0=i\omega L I_0+V_{C_0}+RI_0$$
+$$I_0=i\omega C V_0
+\hspace{0.05in}\text{and}\hspace{0.05in}
+Z\deq\frac{V_0}{I_0}$$
+which yields solutions:
+\begin{align*}
+    I(t)
+    &=\Re\left[\frac{V_0}{Z}e^{i\omega t}\right] \\
+    &=\frac{V_S\cos(\omega t+\phi-\psi)}
+    {\bigl[R^2+(\omega L-\frac{1}{\omega C})^2\bigr]^{1/2}}
+\end{align*}
+and $\displaystyle\psi=\arctan\left[
+\frac{\omega L-\frac{1}{\omega C}}{R}\right]$.
 \end{multicols*}
 
 \end{document}
