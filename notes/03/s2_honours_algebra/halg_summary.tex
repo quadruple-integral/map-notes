@@ -515,11 +515,11 @@ $$\begin{pmatrix}
     1 & 0 & 0 & 0 & 0 \\
     0 & 1 & 0 & 0 & 0 \\
     0 & 0 & 1 & 0 & 0
-\end{pmatrix}$$
+\end{pmatrix}.$$
 
 \subsubsection*{T2.2.5}
-For every $n\times m$ $A$
-there exists invertible matrices $P$ and $Q$ 
+If matrix $A$ is $n\times m$
+then there exists \\ invertible matrices $P$ and $Q$ 
 such that $PAQ$ is of Smith normal form.
 
 \subsubsection*{D2.2.7: Column and row rank}
@@ -550,7 +550,7 @@ there exists a \textbf{representing matrix}:
 $$({}_{B}[f]_A)_{ij}=a_{ij}$$
 $$f(\vc{v}_j)=a_{1j}\vc{w}_1+\dots+a_{nj}\vc{w}_n\in W$$
 which produces the following bijection:
-$$M_B^A:\hom_F(V,W)\rightarrow\text{mat}(n\times m;F)$$
+$$M_B^A:\hom_F(V,W)\rightarrow\text{mat}(n\times m;F);$$
 $$f\mapsto{}_B[f]_A$$
 and $M_B^A(f)={}_B[f]_A$ is the representing matrix
 of linear mapping $f$ 
@@ -566,14 +566,23 @@ If $f:U\rightarrow V$ and $g:V\rightarrow W$
 are linear mappings then
 ${}_C[g\circ f]_A={}_C[g]_B\circ{}_B[g]_A$.
 
-\subsubsection*{D2.3.3}
+\subsubsection*{D2.3.3: Vector representations}
 Let $V$ be a finite dimensional vector space
 with basis $A=\{\vc{v}_1,\dots,\vc{v}_m\}$.
 Then:
-$$\Phi_A^{-1}
-$$
+$$\Phi_A^{-1}:V\rightarrow F^r;
+\vc{v}\mapsto{}_A[\vc{v}]$$
+is a bijection and the column vector ${}_A[\vc{v}]$
+is known as the \textcolor{red}{representation
+of vector $\vc{v}$ with respect to basis $A$}.
 
 \subsubsection*{T2.3.4}
+Let $V,W$ be finite dimensional $F$-vector spaces
+with bases $A$ and $B$ respectively.
+
+Let $f:V\rightarrow W$ be a linear mapping.
+Then ${}_B[f(\vc{v})]={}_B[f]_A\circ {}_A[\vc{v}]$
+for $\forall\vc{v}\in V$.
 
 \subsubsection*{D2.4.1}
 
