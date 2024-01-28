@@ -594,14 +594,27 @@ $$\forall z\in D_{\phi};
 \text{Log}'_{\phi}(z)=\frac{1}{z}.$$
 
 \subsubsection*{L1.7.11}
-
-\newcolumn
+Let $\phi\in\mathbb{R}$, $U\subseteq\mathbb{C}$ be open
+and $g:U\rightarrow\mathbb{C}$ be holomorphic on $U$.
+Then $\text{Log}_{\phi}\bigl(g(z)\bigr)$ is holomorphic
+on $U\hspace{0.01in}\cap\hspace{0.01in}g^{-1}(D_{\phi})$.
 
 \subsubsection*{D1.8.1: $\alpha$-th power of $z$}
 Let $z,\alpha\in\mathbb{C}$. Then the $\alpha$-th power of $z$ is:
 $z^{\alpha}\deq\{\exp(\alpha w):w\in\log(z)\}$ for $z\neq0$.
 
 \subsubsection*{T1.8.4}
+Let $\alpha,z\neq0\in\mathbb{C}$.
+\begin{enumerate}
+    \item If $\alpha\in\mathbb{Z}$ there is
+    one value of $z^{\alpha}$.
+
+    \item If $\alpha=p/q\in\mathbb{Q}$ for $p,q$ are coprime
+    then there are $q$ values of $z^{\alpha}$.
+
+    \item If $\alpha$ is irrational or complex
+    then there are infinite values of $z^{\alpha}$.
+\end{enumerate}
 
 \subsubsection*{D1.8.5: Roots of unity}
 Let $q$ be a positive integer. Then:
@@ -610,11 +623,17 @@ $$1^{1/q}=1,\omega,\dots,\omega^{q-1};
 are the $q$ roots of unity.
 
 \subsubsection*{D1.8.7: Principle branch of $z^{\alpha}$}
-Let $z\in D$.
+Let $z\in D$ such that $\text{Log}(z)$ is defined.
+Then the principle branch of $z^{\alpha}$ is:
+$$z^{\alpha}\deq\exp\bigl(\alpha\text{Log}(z)\bigr).$$
 
 \subsubsection*{L1.8.8}
+Let $\alpha,\beta,z\in\mathbb{C}$ for $z\neq0$. Then:
+$$z^{\alpha}z^{\beta}=z^{\alpha+\beta}.$$
 
 \subsubsection*{L1.8.9}
+A branch of $z^{\alpha}$ is holomorphic on $D_{\phi}$ and:
+$$\forall z\in D_{\phi};(z^{\alpha})'=\alpha z^{\alpha-1}.$$
 
 \end{multicols*}
 
