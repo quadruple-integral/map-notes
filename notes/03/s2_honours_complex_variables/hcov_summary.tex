@@ -157,8 +157,9 @@ The set of all arguments of $z$ is:
     &\deq\{\theta:z=|z|e^{i\theta}\} \\
     &=\{\text{Arg}(z)+2\pi k:k\in\mathbb{Z}\}
 \end{align*}
-for $\text{Arg}(z)\in(-\pi,\pi]$ and
-$z=|z|e^{i\text{Arg}(z)}$
+for $z=|z|e^{i\text{Arg}(z)}$
+with
+$-\pi<\text{Arg}(z)\leq\pi$
 and is the \textcolor{red}
 {principle argument of $z$}.
 
@@ -551,13 +552,17 @@ $$\sinh(z)\deq\frac{1}{2}\Bigl(\exp(z)-\exp(-z)\Bigr)$$
 Let $z\in\mathbb{C}$. Then $\sinh(iz)=i\sin(z)$
 and $\cosh(iz)=\cos(z)$.
 
-\newcolumn
-
 \subsubsection*{D1.7.1: Logarithm function}
 Let $z\neq0\in\mathbb{C}$. Then:
 $$\log(z)\deq\{w\in\mathbb{C}:z=\exp(w)\}.$$
 
 \subsubsection*{L1.7.3}
+Let $z,w\in\mathbb{C}$ be nonzero. Then:
+\begin{enumerate}
+    \item $\log(z)=\ln|z|+i\arg(z)$
+    \item $\log(zw)=\log(z)+\log(w)$
+    \item $\log(1/z)=-\log(z)$.
+\end{enumerate}
 
 \subsubsection*{D1.7.5: Principle branch of $\log z$}
 The principle branch of the logarithm function
@@ -572,9 +577,21 @@ so that we may define
 a holomorphic branch of a multivalued function
 on $\mathbb{C}\hspace{0.01in}\backslash\hspace{0.01in}L$.
 
+The half-line from $z_0$ at angle $\phi$ is:
+$$L_{z_0,\phi}=\{z\in\mathbb{C}:z=z_0+re^{i\phi};r\geq0\}$$
+and $D_{z_0,\phi}=\mathbb{C}
+\hspace{0.01in}\backslash\hspace{0.01in}L_{z_0,\phi}$.
+
 \subsubsection*{D1.7.9}
+Let $\phi\in\mathbb{R}$. Then:
+$$\phi<\text{Arg}_{\phi}(z)\leq\phi+2\pi$$
+$$\text{Log}_{\phi}(z)=\ln|z|+i\text{Arg}_{\phi}(z).$$
 
 \subsubsection*{L1.7.10}
+$\text{Log}_{\phi}(z)$
+is holomorphic on $D_{\phi}$ and: 
+$$\forall z\in D_{\phi};
+\text{Log}'_{\phi}(z)=\frac{1}{z}.$$
 
 \subsubsection*{L1.7.11}
 
