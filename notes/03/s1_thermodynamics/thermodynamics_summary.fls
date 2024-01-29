@@ -190,6 +190,11 @@ INPUT ./f0.png
 INPUT ./f0.png
 INPUT ./f0.png
 INPUT ./f0.png
+INPUT ./f1.png
+INPUT ./f1.png
+INPUT ./f1.png
+INPUT ./f1.png
+INPUT ./f1.png
 INPUT thermodynamics_summary.aux
 INPUT ./thermodynamics_summary.out
 INPUT ./thermodynamics_summary.out
