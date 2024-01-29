@@ -1,8 +1,8 @@
-PWD c:/Users/1071t/Documents/Projects/map-notes/notes/03/s1_thermodynamics/thermodynamics_summary
+PWD c:/Users/1071t/Documents/Projects/map-notes/notes/03/s1_thermodynamics
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/1071t/Documents/Projects/map-notes/notes/03/s1_thermodynamics/thermodynamics_summary/thermodynamics_summary.tex
+INPUT c:/Users/1071t/Documents/Projects/map-notes/notes/03/s1_thermodynamics/thermodynamics_summary.tex
 OUTPUT thermodynamics_summary.log
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
