@@ -418,14 +418,15 @@ $$\frac{\partial u}{\partial y}(x_0,y_0)
 \subsubsection*{T1.4.8}
 Let $z_0\in\mathbb{C}$ and $U$ a neighbourhood of $z_0$
 for $z_0=x_0+i y_0$. Let $f:U\rightarrow\mathbb{C}$ where $f=u+iv$.
-Assume that real functions $u$ and $v$ are
-continuously differentiable on a neighbourhood of $(x_0,y_0)$.
 
+Assume that $u$ and $v$ have
+\textcolor{red}{continuous first derivatives}
+on a neighbourhood of $(x_0,y_0)$.
 Then $f$ is differentiable at $z_0$.
 
 \subsubsection*{Remark}
-$f$ is continuously differentiable if its first derivatives
-are continuous.
+For $f$ to be differentiable we need to check
+T1.4.8 and the contrapositive of T1.4.6.
 
 \subsubsection*{D1.4.9: Holomorphic functions}
 $f$ is \textbf{holomorphic} at $z_0$ if there exists a neighbourhood
@@ -571,17 +572,24 @@ $$\log(z)\deq\{w\in\mathbb{C}:z=\exp(w)\}.$$
 \subsubsection*{L1.7.3}
 Let $z,w\in\mathbb{C}$ be nonzero. Then:
 \begin{enumerate}
-    \item $\log(z)=\ln|z|+i\arg(z)$
+    \item $\log(z)=\{\ln|z|+i\text{Arg}(z)+i2\pi k\}$
     \item $\log(zw)=\log(z)+\log(w)$
-    \item $\log(1/z)=-\log(z)$.
+    \item $\log(1/z)=-\log(z)$
 \end{enumerate}
+where $k\in\mathbb{Z}$ and $\ln(x)$ denotes the
+real valued natural logarithm of $x$.
 
 \subsubsection*{D1.7.5: Principle branch of $\log z$}
 The principle branch of the logarithm function
 is defined as:
 $$\text{Log}:\mathbb{C}\hspace{0.01in}\backslash\hspace{0.01in}\{0\}
 \rightarrow\mathbb{C};$$
-$$\text{Log}(z)\deq\ln|z|+i\text{Arg}(z).$$
+$$\text{Log}(z)\deq\ln|z|+i\text{Arg}(z)$$
+and is discontinuous on the negative real axis
+since $\forall x,\epsilon>0;x\pm i\epsilon\rightarrow x$ yet:
+$$\lim_{\epsilon\rightarrow0}
+\text{Log}(-x\pm i\epsilon)=\ln|z|\pm i\pi.$$
+i.e. the limit on the axis does not exist.
 
 \subsubsection*{D1.7.7: Branch cuts}
 A branch cut $L\subset\mathbb{C}$ is removed
@@ -597,13 +605,15 @@ and $D_{z_0,\phi}=\mathbb{C}
 \subsubsection*{D1.7.9}
 Let $\phi\in\mathbb{R}$. Then:
 $$\phi<\text{Arg}_{\phi}(z)\leq\phi+2\pi$$
-$$\text{Log}_{\phi}(z)=\ln|z|+i\text{Arg}_{\phi}(z).$$
+$$\text{Log}_{\phi}(z)\deq\ln|z|+i\text{Arg}_{\phi}(z).$$
 
 \subsubsection*{L1.7.10}
-$\text{Log}_{\phi}(z)$
-is holomorphic on $D_{\phi}$ and: 
-$$\forall z\in D_{\phi};
-\text{Log}'_{\phi}(z)=\frac{1}{z}.$$
+Branch $\text{Log}_{\phi}(z)$
+is holomorphic on $D_{0,\phi}$: 
+$$\forall z\in D_{0,\phi};
+\dv{z}\text{Log}_{\phi}(z)=\frac{1}{z}.$$
+Also $\text{Log}_{\phi}\bigl[g(z)\bigr]$ is holomorphic on 
+all points $z\in g^{-1}(D_{0,\phi})$.
 
 \subsubsection*{L1.7.11}
 Let $\phi\in\mathbb{R}$, $U\subseteq\mathbb{C}$ be open
