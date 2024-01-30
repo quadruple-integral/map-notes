@@ -159,11 +159,13 @@ The set of all arguments of $z$ is:
     &=\{\text{Arg}(z)+2\pi k:k\in\mathbb{Z}\}.
 \end{align*}
 The \textcolor{red}
-{principle argument of $z$} is defined as
+{principle argument of $z$} satisfies \\
 $z=|z|e^{i\text{Arg}(z)}$ with
 $-\pi<\text{Arg}(z)\leq\pi$.
-
-$\therefore\text{Arg}(z)\equiv\arg(z)\mod 2\pi$
+$$\therefore\text{Arg}(z)\equiv\arg(z)\mod 2\pi$$
+$\text{Arg}(z)$ is discontinuous on the negative real axis
+since $\forall x,\epsilon>0;-x\pm i\epsilon\rightarrow x$:
+$$\lim_{\epsilon\rightarrow0}\text{Arg}(-x\pm i\epsilon)=\pm\pi.$$
 
 \subsubsection*{P1.1.14}
 Let $z,w\in\mathbb{C}$. Then:
@@ -413,7 +415,8 @@ Let $z_0=x_0+i y_0$ and $f=u+iv$. Then:
 $$\frac{\partial u}{\partial x}(x_0,y_0)
 =\frac{\partial v}{\partial y}(x_0,y_0)$$
 $$\frac{\partial u}{\partial y}(x_0,y_0)
-=-\frac{\partial v}{\partial x}(x_0,y_0).$$
+=-\frac{\partial v}{\partial x}(x_0,y_0)$$
+and are the Cauchy-Riemann equations.
 
 \subsubsection*{T1.4.8}
 Let $z_0\in\mathbb{C}$ and $U$ a neighbourhood of $z_0$
@@ -421,12 +424,11 @@ for $z_0=x_0+i y_0$. Let $f:U\rightarrow\mathbb{C}$ where $f=u+iv$.
 
 Assume that $u$ and $v$ have
 \textcolor{red}{continuous first derivatives}
-on a neighbourhood of $(x_0,y_0)$.
-Then $f$ is differentiable at $z_0$.
+on a neighbourhood of $(x_0,y_0)$ \textbf{and} also that they
+\textcolor{red}{satisfy the Cauchy Riemann equations}
+at $(x_0,y_0)$.
 
-\subsubsection*{Remark}
-For $f$ to be differentiable we need to check
-T1.4.8 and the contrapositive of T1.4.6.
+Then $f$ is differentiable at $z_0$.
 
 \subsubsection*{D1.4.9: Holomorphic functions}
 $f$ is \textbf{holomorphic} at $z_0$ if there exists a neighbourhood
@@ -505,7 +507,7 @@ $$\overline{\partial}\deq\frac{1}{2}\left(\frac{\partial}{\partial x}
 The complex exponential function is a function defined as
 $\exp:\mathbb{C}\rightarrow\mathbb{C}$ and rule:
 $$\exp(z)\deq e^x(\cos y+i\sin y)$$
-where $z=x+iy$.
+for $z=x+iy$ and $|z|=e^x$.
 
 \subsubsection*{P1.6.2}
 Let $z,w\in\mathbb{C}$.
@@ -585,8 +587,8 @@ is defined as:
 $$\text{Log}:\mathbb{C}\hspace{0.01in}\backslash\hspace{0.01in}\{0\}
 \rightarrow\mathbb{C};$$
 $$\text{Log}(z)\deq\ln|z|+i\text{Arg}(z)$$
-and is discontinuous on the negative real axis
-since $\forall x,\epsilon>0;x\pm i\epsilon\rightarrow x$ yet:
+and is \textcolor{red}{discontinuous on the negative real axis}
+since $\forall x,\epsilon>0;-x\pm i\epsilon\rightarrow x$ yet:
 $$\lim_{\epsilon\rightarrow0}
 \text{Log}(-x\pm i\epsilon)=\ln|z|\pm i\pi.$$
 i.e. the limit on the axis does not exist.
