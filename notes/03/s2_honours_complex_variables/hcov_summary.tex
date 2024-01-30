@@ -156,13 +156,12 @@ The set of all arguments of $z$ is:
 \begin{align*}
     \arg(z)
     &\deq\{\theta:z=|z|e^{i\theta}\} \\
-    &=\{\text{Arg}(z)+2\pi k:k\in\mathbb{Z}\}
+    &=\{\text{Arg}(z)+2\pi k:k\in\mathbb{Z}\}.
 \end{align*}
-for $z=|z|e^{i\text{Arg}(z)}$
-with
-$-\pi<\text{Arg}(z)\leq\pi$
-and is the \textcolor{red}
-{principle argument of $z$}.
+The \textcolor{red}
+{principle argument of $z$} is defined as
+$z=|z|e^{i\text{Arg}(z)}$ with
+$-\pi<\text{Arg}(z)\leq\pi$.
 
 $\therefore\text{Arg}(z)\equiv\arg(z)\mod 2\pi$
 
@@ -171,8 +170,9 @@ Let $z,w\in\mathbb{C}$. Then:
 \begin{enumerate}
     \item $\arg(zw)=\arg(z)+\arg(w)$
     
-    \item $\arg(z^*)=-\arg(z)$.
+    \item $\arg(z^*)=-\arg(z)$
 \end{enumerate}
+for these are set operations.
 
 \subsubsection*{D1.2.1: Open and closed $\epsilon$-discs}
 Let $z_0\in\mathbb{C}$ and $\epsilon>0$.
@@ -527,7 +527,7 @@ $$\sin(z)\deq\frac{1}{2i}\Bigl(\exp(iz)-\exp(-iz)\Bigr)$$
 Let $z\in\mathbb{C}$ where $z=x+iy$. Then:
 \begin{enumerate}
     \item $\cos(z)$ and $\sin(z)$ are holomorphic at $z$,
-    where $\cos'(z)=-\sin(z)$ and $\sin'(z)=\cos(z)$.
+    with $\cos'(z)=-\sin(z)$ and $\sin'(z)=\cos(z)$.
 
     \item $\cos^2(z)+\sin^2(z)=1$
     
@@ -611,7 +611,7 @@ $$\text{Log}_{\phi}(z)\deq\ln|z|+i\text{Arg}_{\phi}(z).$$
 Branch $\text{Log}_{\phi}(z)$
 is holomorphic on $D_{0,\phi}$: 
 $$\forall z\in D_{0,\phi};
-\dv{z}\text{Log}_{\phi}(z)=\frac{1}{z}.$$
+\dv{z}\left[\text{Log}_{\phi}(z)\right]=\frac{1}{z}.$$
 Also $\text{Log}_{\phi}\bigl[g(z)\bigr]$ is holomorphic on 
 all points $z\in g^{-1}(D_{0,\phi})$.
 
