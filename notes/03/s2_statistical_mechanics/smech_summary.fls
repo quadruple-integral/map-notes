@@ -1,8 +1,8 @@
-PWD c:/Users/1071t/Documents/map-notes/notes/03/s2_statistical_mechanics
+PWD c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_statistical_mechanics
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/1071t/Documents/map-notes/notes/03/s2_statistical_mechanics/smech_summary.tex
+INPUT c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_statistical_mechanics/smech_summary.tex
 OUTPUT smech_summary.log
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
