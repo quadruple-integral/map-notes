@@ -150,17 +150,30 @@ with respect to a microscopic model.
 
 A \textbf{macrostate} is a limited description
 by the values of observables, like pressure.
-Given any macrostate there correspond many
-microstates.
 
-The \textbf{Boltzmann law} defines entropy:
+Given $N$ molecules with total energy $E$
+the \textbf{Boltzmann law} defines entropy:
 $$S(N,E,\{\alpha\})\deq k_B\ln\Bigl[
 \Omega(N,E,\{\alpha\})\Bigr]$$
+$$k_B=1.381\times10^{-23}\text{J}\text{K}^{-1}$$
+where $\Omega$ is the number of corresponding
+microstates to a macrostate $N$, $E$ with a set of
+observables $\alpha$.
 
-The number of corresponding microstates
-is the \textbf{weight} of the macrostate:
+i.e. for any macrostate there correspond
+many microstates.
 
-\subsubsection*{Model magnets}
+\subsubsection*{Two-state model magnets}
+Consider an array of $N$ magnetic dipoles 
+and total energy $E$
+that is subject to a magnetic field $\vc{H}$.
+Define $n$ to be the number of
+dipoles with energy $\epsilon=+mH$
+and the remaining with energy $\epsilon=-mH$.
+
+Since we can write the total energy $E$ as:
+$$mH\bigl(n-(N-n)\bigr)=E$$
+$$n=\frac{1}{2}\left(N+\frac{E}{mH}\right)$$
 
 \end{multicols*}
 
