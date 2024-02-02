@@ -151,6 +151,10 @@ with respect to a microscopic model.
 A \textbf{macrostate} is a limited description
 by the values of observables, like pressure.
 
+Here it is assumed that the molecules are
+\textbf{weakly interacting}. i.e. that there is no
+interaction potentials.
+
 Given $N$ molecules with total energy $E$
 the \textbf{Boltzmann law} defines entropy:
 $$S(N,E,\{\alpha\})\deq k_B\ln\Bigl[
@@ -175,7 +179,7 @@ $$\{\uparrow\downarrow\uparrow\uparrow\dots
 Define $n$ to be the number of
 dipoles with energy $\epsilon_{\uparrow}=+mH$
 (excited state) and the remaining
-in ground state $\epsilon_{\downarrow}=-mH$.
+in $\epsilon_{\downarrow}=-mH$ (ground state).
 
 Since we can write the total energy $E$ as:
 $$mH\bigl(n-(N-n)\bigr)=E$$
@@ -194,13 +198,25 @@ For in the $s(x)$ plot above
 our end points are computed via limits.
 
 Now let the number of excited dipoles be
-$n=N/2$ and denote $n_L$ as the number of $n$ in the left,
-from the center of our array.
-$$\{\underbrace{\dots\uparrow\downarrow\uparrow\dots}
-_{\text{$n_L$}}|
+$n=N/2$ and denote $n_L$ as the number excited
+dipoles in the left.
+$$\{\underbrace{\dots\uparrow
+\downarrow\uparrow\dots}_{\text{$n_L$}}|
 \dots\downarrow\downarrow\uparrow\dots\}$$
 The weight of macrostate $n_L$ now is:
-$$\Omega(N,\textcolor{red}{E=0})$$
+$$\Omega(N,\textcolor{red}{E=0},n_L)=
+\begin{pmatrix}N/2 \\ n_L\end{pmatrix}
+\begin{pmatrix}N/2 \\ n-n_L\end{pmatrix}$$
+which under large $N$ becomes:
+$$\frac{1}{N}\ln\Bigl[\Omega(N,0,n_L)\Bigr]\approx s(y)$$
+for $y=n_L/(N/2)$. If $N\rightarrow\infty$:
+$$\Omega(N,0,n_L)=\left\{\begin{array}{ll}
+0 &y\neq0.5 \\ 2^N &y=0.5\end{array}\right.$$
+or that $n_L=N/4$ exactly for large $N$.
+
+\subsubsection*{Entropy}
+
+\subsubsection*{Boltzmann distribution}
 
 \end{multicols*}
 
