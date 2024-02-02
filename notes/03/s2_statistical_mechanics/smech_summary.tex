@@ -161,19 +161,46 @@ microstates to a macrostate $N$, $E$ with a set of
 observables $\alpha$.
 
 i.e. for any macrostate there correspond
-many microstates.
+many microstates. If one molecule
+has $k\propto V$ microstates
+in volume $V$ then $N$
+molecules have $k^N\propto V^N$ in $V$.
 
 \subsubsection*{Two-state model magnets}
 Consider an array of $N$ magnetic dipoles 
 and total energy $E$
 that is subject to a magnetic field $\vc{H}$.
+$$\{\uparrow\downarrow\uparrow\uparrow\dots
+\downarrow\downarrow\uparrow\uparrow\}$$
 Define $n$ to be the number of
-dipoles with energy $\epsilon=+mH$
-and the remaining with energy $\epsilon=-mH$.
+dipoles with energy $\epsilon_{\uparrow}=+mH$
+(excited state) and the remaining
+in ground state $\epsilon_{\downarrow}=-mH$.
 
 Since we can write the total energy $E$ as:
 $$mH\bigl(n-(N-n)\bigr)=E$$
-$$n=\frac{1}{2}\left(N+\frac{E}{mH}\right)$$
+$$\therefore n=\frac{1}{2}\left(N+\frac{E}{mH}\right)$$
+and the \textbf{weight} of this macrostate is:
+$$\Omega(N,E,n)=\begin{pmatrix}
+N \\ n\end{pmatrix}.$$
+If $N\gg1$ we use Stirling's approximation
+and define $x=n/N$: 
+$$\Omega(N,E,n)\approx\exp\Bigl[N s(x)\Bigr]$$
+$$s(x)=-(1-x)\ln(1-x)-x\ln x.$$
+\begin{center}
+    \includegraphics*[scale=0.5]{f00.png}
+\end{center}
+For in the $s(x)$ plot above
+our end points are computed via limits.
+
+Now let the number of excited dipoles be
+$n=N/2$ and denote $n_L$ as the number of $n$ in the left,
+from the center of our array.
+$$\{\underbrace{\dots\uparrow\downarrow\uparrow\dots}
+_{\text{$n_L$}}|
+\dots\downarrow\downarrow\uparrow\dots\}$$
+The weight of macrostate $n_L$ now is:
+$$\Omega(N,\textcolor{red}{E=0})$$
 
 \end{multicols*}
 
