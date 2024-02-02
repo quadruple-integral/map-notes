@@ -643,7 +643,7 @@ Let $\vc{r}=x_i\vc{e}_i$ and $r=(x_i^2)^{1/2}$. Then:
 
 \subsubsection*{Divergence theorem}
 Let surface $S$ enclose volume $V$. Then:
-$$\iiint_V \vc{\nabla}\cdot\vc{F}\dd V
+$$\int_V \vc{\nabla}\cdot\vc{F}\dd V
 =\oint_S \vc{F}\cdot\dd\vc{S}$$
 where $\vc{F}$ is a vector field.
 
@@ -651,7 +651,7 @@ where $\vc{F}$ is a vector field.
 Let closed curve $C$ bound \underline{open} surface $S$
 and let $\vc{F}$ be a vector field. Then:
 $$\oint_C \vc{F}\cdot\dd\vc{r}
-=\iint_S (\vc{\nabla}\times\vc{F})\cdot\dd\vc{S}$$
+=\int_S (\vc{\nabla}\times\vc{F})\cdot\dd\vc{S}$$
 for $C$ is traversed in anticlockwise sense.
 
 \subsubsection*{Dirac delta function}
@@ -1064,7 +1064,7 @@ No force is induced from perpendicular currents.
 
 \subsubsection*{Lozentz force}
 Through physical experiments the \textbf{force density}
-on a charge distribution at $\vc{r}$
+on a charge distribution $\rho(\vc{r})$
 in electric field $\vc{E}$ and magnetic field $\vc{B}$ is:
 $$\vc{f}\deq\rho\vc{E}+\vc{J}\times\vc{B}$$
 where $\vc{J}$ is the \textbf{current density}
@@ -1196,25 +1196,25 @@ external magnetic field $\vc{B}$ is:
 \end{align*}
 
 \subsubsection*{Motional electromotive force}
-The electromotive force (emf) is the work needed for unit
-point charge to circulate around a conductor loop:
+The electromotive force (emf) is the \textcolor{red}{work needed} 
+for unit point charge to circulate around a conductor loop:
 \begin{align*}
     \mathcal{E}
     &=\oint_C\vc{f}\cdot\dd\vc{r} \\
     &=\oint_C(\vc{E}+\vc{v}\times\vc{B})\cdot\dd\vc{r}
 \end{align*}
 for $\vc{v}$ is the velocity of the charge
-and $f$ is the force density on point charge.
+and $\vc{f}$ is the force density on point charge.
 
 \subsubsection*{Magnetic induction}
 Faraday's law of induction states that
-a change in magnetic flux $\Phi$ induces an emf
+a \textbf{change} in magnetic flux $\Phi$ induces an emf
 in a conductor loop:
 $$\mathcal{E}=-\dv{\Phi}{t}$$
-where magnetic flux is defined as the total
-magnetic field passing through the region
+where \textbf{magnetic flux} is defined as the 
+\textcolor{red}{total magnetic field passing through the region}
 bounded by the conductor loop:
-$$\Phi=\iint_S\vc{B}\cdot\dd\vc{S}$$
+$$\Phi=\int_S\vc{B}\cdot\dd\vc{S}$$
 and surface $S$ encloses the region.
 \begin{center}
     \includegraphics[scale=0.55]{f10.png}
@@ -1285,16 +1285,16 @@ $$W_m=\int_{0}^{I}\dd W_m=\frac{\Phi_{1\rightarrow1}^2}{2L}
 \hspace{0.05in}\text{or}\hspace{0.05in}
 \frac{1}{2}\Phi_{1\rightarrow1} I.$$
 Because
-$\displaystyle\Phi_{1\rightarrow1}=\iint_S\vc{B}\cdot\dd\vc{S}$:
+$\displaystyle\Phi_{1\rightarrow1}=\int_S\vc{B}\cdot\dd\vc{S}$:
 $$W_m=\frac{1}{2}\oint_C\vc{A}\cdot I\dd\vc{r}$$
 and generalising this to volume integrals:
-$$W_m=\frac{1}{2}\iiint_V\vc{J}\cdot\vc{A}\dd V$$
+$$W_m=\frac{1}{2}\int_V\vc{J}\cdot\vc{A}\dd V$$
 where $\vc{J}$ is the current density. Since:
 $$\vc{\nabla}\cdot(\vc{u}\times\vc{v})
 =(\vc{\nabla}\times\vc{u})\cdot\vc{v}
 -(\vc{\nabla}\times\vc{v})\cdot\vc{u}$$
 and assuming that the field vanish at $\infty$:
-$$W_m=\frac{1}{2\mu_0}\iiint_V B^2\dd V$$
+$$W_m=\frac{1}{2\mu_0}\int_V B^2\dd V$$
 with \textbf{magnetic field density}:
 $$w_m=\frac{1}{2\mu_0}B^2.$$
 
