@@ -602,8 +602,6 @@ Particularly for Cartesian coordinates
 we can apply the suffix notation:
 $$\vc{\nabla}f=
 \frac{\partial f}{\partial x_i}\vc{e}_i$$
-$$(\vc{u}\cdot\vc{\nabla})\vc{F}
-=u_j\frac{\partial}{\partial x_j}F_i$$
 $$\vc{\nabla}\cdot\vc{F}=
 \frac{\partial F_i}{\partial x_i}$$
 $$\vc{\nabla}\times\vc{F}
@@ -612,6 +610,9 @@ $$\vc{\nabla}\times\vc{F}
 $$\frac{\partial x_i}{\partial x_j}=\delta_{ij}
 \hspace{0.05in}\text{and}\hspace{0.05in}
 \frac{\partial x_i}{\partial x_i}=\delta_{ii}=3.$$
+The following operator acts on \textbf{both} scalar and vector fields:
+$$(\vc{u}\cdot\vc{\nabla})\vc{F}
+=u_j\frac{\partial}{\partial x_j}F_i.$$
 If $\psi$ is a scalar field and $\vc{v}$ a vector field:
 $$\vc{\nabla}\times(\vc{\nabla}\psi)=\vc{0}$$
 $$\vc{\nabla}\cdot(\vc{\nabla}\times\vc{v})=\vc{0}$$
@@ -642,7 +643,7 @@ Let $\vc{r}=x_i\vc{e}_i$ and $r=(x_i^2)^{1/2}$. Then:
 \end{itemize}
 
 \subsubsection*{Divergence theorem}
-Let surface $S$ enclose volume $V$. Then:
+Let surface $S$ \textcolor{red}{enclose} volume $V$. Then:
 $$\int_V \vc{\nabla}\cdot\vc{F}\dd V
 =\oint_S \vc{F}\cdot\dd\vc{S}$$
 where $\vc{F}$ is a vector field.
@@ -676,6 +677,7 @@ In orthogonal curvilinear coordinates:
 \end{align*}
 Importantly we have the \textbf{sift} property:
 $$\int_{-\infty}^{\infty}f(x)\delta(x-a)\dd x=f(a)$$
+$$\int_{-\infty}^{\infty}\delta(x)\dd x=1$$
 which yields:
 $$x\delta(x)=0
 \hspace{0.05in}\text{and}\hspace{0.05in}
@@ -711,6 +713,9 @@ where $q_1$ produces electric field $\vc{E}_1$.
 $$\therefore\vc{E}_1(\vc{r})
 =\frac{1}{4\pi\epsilon_0}
 \frac{q_1(\vc{r}-\vc{r}_1)}{|\vc{r}-\vc{r}_1|^3}$$
+$$\therefore\phi_1(\vc{r})
+=\frac{1}{4\pi\epsilon_0}
+\frac{q_1}{|\vc{r}-\vc{r}_1|}$$
 
 \subsubsection*{Principle of superposition}
 For a set of charges $q_i$ at position $\vc{r}_i$
@@ -723,6 +728,8 @@ $$\vc{E}(\vc{r})=\frac{1}{4\pi\epsilon_0}
 \int_V\rho(\vc{r}')
 \frac{\vc{r}-\vc{r}'}{|\vc{r}-\vc{r}'|^3}\dd V'$$
 where $\rho(\vc{r}')$ is charge divided by volume.
+The \textbf{type} of integral (surface or line) is
+dependent on the object in consideration.
 
 \subsubsection*{Electrostatic Maxwell's equations}
 Because $\displaystyle\vc{\nabla}\left(
@@ -808,11 +815,6 @@ $$\phi(\vc{r})=\frac{p}{4\pi\epsilon_0}\frac{\cos\theta}{r^2}$$
 $$\vc{E}(\vc{r})=\frac{p}{4\pi\epsilon_0}\left(
 \frac{2\cos\theta}{r^3}\vc{e}_r+\frac{\sin\theta}{r^3}
 \vc{e}_{\theta}\right).$$
-\begin{center}
-    \includegraphics[scale=0.22]{f03.png}
-\end{center}
-
-\newcolumn
 
 \subsubsection*{Force, torque and energy}
 The \textbf{force} \underline{on} a
@@ -881,8 +883,6 @@ By expanding $\phi_{ext}(\vc{r})$ about $\vc{r}=\vc{0}$:
 and is the potential energy of a charge \\
 distribution $\rho(\vc{r})$ in $\vc{E}_{ext}$.
 
-\newcolumn
-
 \subsubsection*{Gauss' law}
 For object with charge distribution
 $\rho(\vc{r}')$ and volume $V$ enclosed by surface $S$:
@@ -943,8 +943,6 @@ still satisfies Poisson's equation with boundary conditions.
 
 This potential is our solution.
 
-\newcolumn
-
 \subsubsection*{Electrostatic energy}
 The work needed to move point charge $q$
 from $\vc{r}_A$ to $\vc{r}_B$ in $\vc{E}(\vc{r})$ is:
@@ -1003,8 +1001,6 @@ The \textbf{line charge density} is:
 $$\vc{I}(\vc{r})\deq\lambda(\vc{r})\vc{v}$$
 for $\lambda(\vc{r})$ is the line charge density.
 
-\newcolumn
-
 The infinitesimal \textbf{current element} is:
 $$\dd\vc{I}(\vc{r})\deq\left\{\begin{array}{lll}
     \vc{J}(\vc{r})\dd V & \text{volume current} \\
@@ -1059,8 +1055,6 @@ $$\mu_0=1.25664\dots\times10^{-6}\text{N}\text{A}^{-2}.$$
     \includegraphics[scale=0.2]{f06.png}
 \end{center}
 No force is induced from perpendicular currents.
-
-\newcolumn
 
 \subsubsection*{Lozentz force}
 Through physical experiments the \textbf{force density}
@@ -1120,8 +1114,6 @@ around a closed loop $C$ is proportional to
 the \underline{total} current $I$ that passes through
 the enclosed surface.
 
-\newcolumn
-
 \begin{center}
     \includegraphics[scale=0.4]{f08.png}
 \end{center}
@@ -1176,8 +1168,6 @@ via Stokes' theorem.
 \begin{center}
     \includegraphics[scale=0.4]{f09.png}
 \end{center}
-
-\newcolumn
 
 \subsubsection*{Force and torque}
 The Lorentz force on a current loop due to an
