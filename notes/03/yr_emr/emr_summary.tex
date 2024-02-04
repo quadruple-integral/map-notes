@@ -1343,11 +1343,38 @@ Since in vacuum $\rho=0$ and $\vc{J}=\vc{0}$:
 $$\vc{\nabla}\times(\vc{\nabla}\times\vc{B})
 =\mu_0\epsilon_0\frac{\partial}
 {\partial t}(\vc{\nabla}\times\vc{E})$$
-$$\vc{\nabla}(\vc{\nabla}\cdot\vc{B})
--\vc{\nabla}^2\vc{B}=-\mu_0\epsilon_0\frac{\partial^2}
-{\partial t^2}\vc{B}$$
-and repeating this for $\vc{E}$:
-$$\vc{\nabla}^2$$
+and using $\displaystyle\vc{\nabla}\times\vc{E}
+=\frac{\partial\vc{B}}{\partial t}$:
+\begin{align*}
+    &\vc{\nabla}(\vc{\nabla}\cdot\vc{B})
+    -\vc{\nabla}^2\vc{B}=-\mu_0\epsilon_0\frac{\partial^2}
+    {\partial t^2}\vc{B} \\
+    &\implies\vc{\nabla}^2\vc{B}=\mu_0\epsilon_0
+    \frac{\partial^2\vc{B}}{\partial t^2}.
+\end{align*}
+Similarly for our electric field $\vc{E}$:
+\begin{align*}
+    &\vc{\nabla}(\vc{\nabla}\cdot\vc{E})
+    -\vc{\nabla}^2\vc{E}=-\mu_0\epsilon_0\frac{\partial^2}
+    {\partial t^2}\vc{E} \\
+    &\implies\vc{\nabla}^2\vc{E}=\mu_0\epsilon_0
+    \frac{\partial^2\vc{E}}{\partial t^2}.
+\end{align*}
+Let $F(t,x,y,z)$ a component of either $\vc{E}$ or $\vc{B}$.
+Then it satisfies the following:
+$$\vc{\nabla}^2F=\mu_0\epsilon_0\frac{\partial^2F}{\partial t^2}.$$
+Substituting solutions of form:
+\begin{align*}
+    &F(t,x,y,z)=f(\vc{k}\cdot\vc{x}-\omega t) \\
+    &\implies\vc{k}^2=\mu_0\epsilon_0\omega^2
+\end{align*}
+and with phase velocity:
+\begin{align*}
+    v_{phase}&=\frac{\omega}{|\vc{k}|}
+    =\frac{1}{\sqrt{\mu_0\epsilon_0}} \\
+    &=3.10\times10^8\text{ms}^{-1}=c
+\end{align*}
+which is the speed of light.
 
 \end{multicols*}
 
