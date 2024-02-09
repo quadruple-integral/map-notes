@@ -629,6 +629,40 @@ The trace of a $n\times n$ matrix $A$ is the sum of its diagonal
 entries:
 $$\tr(A)=\sum_{i=1}^{n}a_{ii}.$$
 
+\subsubsection*{D3.1.1: Rings}
+A \textbf{ring} $R$ is a set equipped with addition
+and multiplication that satisfy:
+\begin{enumerate}
+    \item $(R,+)$ is an Abelian group.
+    
+    \item $(R,\cdot)$ is a \textbf{monoid}, meaning that
+    $(\cdot):R\times R\rightarrow R$ is associative with
+    identity element $1=1_R\in R$:
+    $$\forall a,b,c\in R;(a\cdot b)\cdot c
+    =a\cdot(b\cdot c),$$
+    $$a\cdot1=1\cdot a=a$$
+    yet $a\cdot b\neq b\cdot a$ in general.
+
+    \item Multiplication in $R$ with respect to addition
+    is distributive:
+    $$a\cdot(b+c)=(a\cdot b)+(a\cdot c)$$
+    $$(b+c)\cdot a=(b\cdot a)+(c\cdot a)$$
+    for $\forall a,b,c\in R$.
+\end{enumerate}
+
+\subsubsection*{P3.1.7}
+A natural number is divisible by $3$ if
+the sum of its digits is divisble by $3$.
+
+\subsubsection*{D3.1.8: Fields}
+A \textbf{field} is a nondegenerate commutative ring $F$
+with inverse $a^{-1}\in F$ to every nonzero element.
+i.e. $aa^{-1}=a^{-1}a=1$.
+
+\subsubsection*{P3.1.11}
+$\mathbb{Z}/m\mathbb{Z}$
+is a field \textbf{if{}f} $m$ is prime.
+
 \end{multicols*}
 
 \end{document}
