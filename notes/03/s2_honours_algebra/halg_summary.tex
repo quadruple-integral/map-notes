@@ -724,13 +724,27 @@ If $|R|<\infty$ then $f:R\rightarrow R$ is surjective.
 $R[X]$ is a ring of polynomials over $R$ 
 with zero and identity: $0,1\in R$. If $P\in R[X]$:
 $$P=a_0+a_1 X+a_2 X^2+\dots+a_m X^m$$
-with $\deg(P)=m\in\mathbb{N}$ and $a_i\in R$.
+with $\deg(P)=m\geq0$ and $a_i\in R$.
 
 \subsubsection*{L3.3.3}
-Let $R$ be a ring. Then:
+Let $R$ be a ring and let $P,Q\neq0\in R[X]$.
 \begin{enumerate}
-    \item If $R$ is commutative then so is $R[X]$.
+    \item $\deg(PQ)=\deg(P)+\deg(Q)$
+    \item If $R$ is an integral domain then
+    so is polynomial ring $R[X]$.
 \end{enumerate}
+
+\subsubsection*{T3.3.4}
+Let $R$ be an integral domain and
+let $P,Q\in R[X]$ where $\deg(Q)\leq\deg(P)$
+and that polynomial $Q$ is a \textbf{monic}.
+Then $\exists!A,B\in R[X]:P=AQ+B$ and either
+$\deg(B)<\deg(Q)$ or $B=0$.
+
+\subsubsection*{Remark}
+A polynomial $Q$ is monic if:
+$$Q=q_0+\dots+q_m X^m$$
+where $q_m=1$.
 
 \end{multicols*}
 
