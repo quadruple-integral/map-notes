@@ -138,7 +138,7 @@ $\forall\vc{v},\vc{w}\in V$:
     =(\lambda\vc{v})+(\mu\vc{w})$
 
     \item $(\lambda+\mu)\vc{v}
-    =(\lambda\vc{v})+(\mu\vc{w})$
+    =(\lambda\vc{v})+(\mu\vc{v})$
 
     \item $\lambda(\mu\vc{v})=(\lambda\mu)\vc{v}$
     
@@ -636,8 +636,8 @@ and multiplication that satisfy:
     \item $(R,+)$ is an Abelian group.
     
     \item $(R,\cdot)$ is a \textbf{monoid}, meaning that
-    $(\cdot):R\times R\rightarrow R$ is associative with
-    identity element $1=1_R\in R$:
+    $$(\cdot):R\times R\rightarrow R;(a,b)\mapsto c$$
+    is associative with identity element $1=1_R\in R$ such that:
     $$\forall a,b,c\in R;(a\cdot b)\cdot c
     =a\cdot(b\cdot c),$$
     $$a\cdot1=1\cdot a=a$$
@@ -704,9 +704,9 @@ if $\exists s\in R$ s.t. either $rs=0$ or $sr=0$.
 
 \subsubsection*{D3.2.12: Integral domains}
 Intgeral domains are commutative rings
-with no divisors of zeros.
+with \textbf{no} divisors of zeros.
 
-\subsubsection*{P3.2.15}
+\subsubsection*{P3.2.15: Cancellation law}
 Let $a,b,c\in R$ for $R$ is an integral domain.
 If $ab=ac$ and $a\neq0$ then $b=c$.
 
@@ -716,6 +716,18 @@ is an integral domain \textbf{if{}f} $m$ is prime.
 
 \subsubsection*{T3.2.17}
 Every finite integral domain is a field.
+
+\subsubsection*{Remark}
+If $|R|<\infty$ then $f:R\rightarrow R$ is surjective.
+
+\subsubsection*{D3.3.2: Polynomial rings}
+$R[X]$ is a ring of polynomials over $R$ 
+with zero and identity $0,1\in R$. If $P\in R[X]$:
+$$P=a_0+a_1 X+a_2 X^2+\dots+a_m X^m$$
+with degree $m\in\mathbb{N}$ and $a_i\in R$.
+
+\subsubsection*{Remark}
+If $R$ is commutative then so is $R[X]$.
 
 \end{multicols*}
 
