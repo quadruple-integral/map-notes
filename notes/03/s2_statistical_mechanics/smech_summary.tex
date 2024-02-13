@@ -113,7 +113,7 @@ known as \textbf{Stirling's approximation}.
 
 We also define the \textbf{fractional deviation}
 as the deviation on the scale of the mean:
-$$\frac{\bigl(\overline{\Delta x^2}\bigr)^{1/2}}{\overline{n}}
+$$\frac{\bigl(\overline{\Delta x^2}\bigr)^{1/2}}{\overline{x}}
 =\frac{1}{N^{1/2}}.$$
 
 \subsubsection*{Taylor expansions}
@@ -151,24 +151,25 @@ with respect to a microscopic model.
 A \textbf{macrostate} is a limited description
 by the values of observables, like pressure.
 
-Here it is assumed that the molecules are
-\textbf{weakly interacting}. i.e. that there is no
-interaction potentials.
+We assume that the molecules are
+weakly interacting. (no interaction potentials)
 
-Given $N$ molecules with total energy $E$
-the \textbf{Boltzmann law} defines entropy:
+\subsubsection*{Boltzmann law}
+Consider a \textbf{microcanonical ensemble} with
+\textcolor{red}{fixed} $N$ and $E$.
+The Boltzmann law defines the entropy
+for isolated systems:
 $$S(N,E,\{\alpha\})\deq k_B\ln\Bigl[
 \Omega(N,E,\{\alpha\})\Bigr]$$
 $$k_B=1.381\times10^{-23}\text{J}\text{K}^{-1}$$
-where $\Omega$ is the number of corresponding
-microstates to a macrostate $N$, $E$ with a set of
-observables $\alpha$.
-
-i.e. for any macrostate there correspond
-many microstates. If one molecule
-has $k\propto V$ microstates
-in volume $V$ then $N$
-molecules have $k^N\propto V^N$ in $V$.
+where $\Omega$ is the corresponding number of microstates
+to a macrostate defined by a set of observables $\{\alpha\}$.
+It is assumed that every
+\underline{macrostate} is equally possible:
+$$\mathbb{P}(\alpha^*_i)=
+\frac{\Omega(\alpha^*_i)}{\Omega(\{\alpha\})}$$
+i.e. the equilibrium state maximises the entropy
+in a microcanonical ensemble.
 
 \subsubsection*{Two-state model magnets}
 Consider an array of $N$ magnetic dipoles 
