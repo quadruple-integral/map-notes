@@ -164,12 +164,14 @@ $$S(N,E,\{\alpha\})\deq k_B\ln\Bigl[
 $$k_B=1.381\times10^{-23}\text{J}\text{K}^{-1}$$
 where $\Omega$ is the corresponding number of microstates
 to a macrostate defined by a set of observables $\{\alpha\}$.
-It is assumed that every
-\underline{macrostate} is equally possible:
+The probability an isolated system with
+\underline{macrostate} is:
 $$\mathbb{P}(\alpha^*_i)=
-\frac{\Omega(\alpha^*_i)}{\Omega(\{\alpha\})}$$
-i.e. the equilibrium state maximises the entropy
-in a microcanonical ensemble.
+\frac{\Omega(\alpha^*_i)}{\Omega(\{\alpha\})}.$$
+Maximum entropy is at the equilibrium state 
+since it has the largest weight $\Omega$. Hence an
+isolated system is \underline{most likely}
+to be found at equilibrium.
 
 \subsubsection*{Two-state model magnets}
 Consider an array of $N$ magnetic dipoles 
@@ -216,6 +218,32 @@ $$\Omega(N,0,n_L)=\left\{\begin{array}{ll}
 or that $n_L=N/4$ exactly for large $N$.
 
 \subsubsection*{Entropy}
+Entropy is a \textbf{measure of disorder} in a system.
+For subsystems in \underline{equilibrium}:
+\begin{align*}
+    &\Omega(N,E)=\Omega(N_1,E_1)\Omega(N_2,E_2) \\
+    &\implies S=S_1+S_2.
+\end{align*}
+If $E_1\rightarrow E_1+\dd E_1$ and
+$E_2\rightarrow E_2-\dd E_1$:
+$$\dd S=\left(\frac{\partial S_1}{\partial E_1}
+-\frac{\partial S_2}{\partial E_2}\right)\dd E_1=0$$
+since overall we have an isolated system.
+i.e. objects in thermal equilibrium have the same temperature:
+\begin{align*}
+    &\dd E=T\dd S-P\dd V \\
+    &\implies\frac{\partial S_i}{\partial E_i}
+    \deq\frac{1}{T_i}
+\end{align*}
+since fixed number of particles $N$ 
+in an isolated system implies a fixed volume $V$.
+
+i.e. temperature is the \textcolor{red}{ratio of change}
+of $S$ and $E$ of a system!
+If there exists a temperature gradient:
+$$\dd S=\left(\frac{1}{T_1}-\frac{1}{T_2}\right)
+\dd E_1>0$$
+where $T_1>T_2$ implies negative $\dd E_1$.
 
 \subsubsection*{Boltzmann distribution}
 
