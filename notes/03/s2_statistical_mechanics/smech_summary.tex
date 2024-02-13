@@ -251,12 +251,33 @@ Within it, there exists a \textbf{canonical ensemble}
 with fixed $N_1$ but \textcolor{red}{changing energy $E_i$}
 in thermal equilibrium at temperature $T$.
 
-The Boltzmann distribution or
-canonical distribution then states:
+The probability of energy state $E_i$ for
+this canonical ensemble at equilibrium is:
 $$\mathbb{P}(E_i)=\frac{1}{Z}\exp(-\beta E_i)$$
 $$Z=\sum_j\exp(-\beta E_j)
 \hspace{0.05in}\text{and}\hspace{0.05in}
 \beta=\frac{1}{k_B T}.$$
+
+\subsubsection*{Free energy minimisation}
+The mean energy is computed as:
+\begin{align*}
+    \overline{E}
+    &=-\frac{1}{Z}\sum_i\left(\frac{\partial}{\partial\beta}
+    \exp(-\beta E_i)\right) \\
+    &=-\frac{1}{Z}\frac{\partial Z}{\partial\beta}
+    =-\frac{\partial\ln Z}{\partial\beta} \\
+    &=k_B T^2\frac{\partial\ln Z}{\partial T}
+\end{align*}
+and the \textbf{heat capacity} is defined:
+\begin{align*}
+    C
+    &\deq\frac{\partial\overline{E}}{\partial T}
+    =-\frac{1}{k_B T^2}
+    \frac{\partial\overline{E}}{\partial\beta} \\
+    &=\frac{\overline{(\Delta E)^2}}{k_B T^2}
+\end{align*}
+since $\overline{(\Delta E)^2}=\overline{E^2}
+-\overline{E}^2$.
 
 \end{multicols*}
 
