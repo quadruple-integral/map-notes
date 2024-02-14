@@ -268,7 +268,7 @@ The mean energy is computed as:
     =-\frac{\partial\ln Z}{\partial\beta} \\
     &=k_B T^2\frac{\partial\ln Z}{\partial T}
 \end{align*}
-and the \textbf{heat capacity} is defined:
+and \textbf{heat capacity} is defined as:
 \begin{align*}
     C
     &\deq\frac{\partial\overline{E}}{\partial T}
@@ -278,6 +278,21 @@ and the \textbf{heat capacity} is defined:
 \end{align*}
 since $\overline{(\Delta E)^2}=\overline{E^2}
 -\overline{E}^2$.
+
+\newcolumn
+
+For every macrostate $E$ 
+there corresponds $\Omega(E)$ microstates:
+$$\overline{E}=\sum_{E}\Bigl(\Omega(E)\cdot E\Bigr)
+\Bigl[\frac{1}{Z}\exp(-\beta E)\Bigr]$$
+and the probability of macrostate $E$ is:
+\begin{align*}
+    \mathbb{P}(E)
+    &=\frac{1}{Z}\Omega(E)\exp(-\beta E) \\
+    &=\frac{1}{Z}\exp(-\beta F)
+\end{align*}
+where $F=E-TS$. \textbf{Free energy} $F$ is
+\textcolor{red}{minimised} by the \underline{equilibrium} state.
 
 \end{multicols*}
 
