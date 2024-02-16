@@ -717,6 +717,11 @@ where we denote $z=x+iy=(x,y,0)$.
 
 The \textbf{stereographic projection} is the inverse mapping
 $\psi:S^2\rightarrow\widetilde{\mathbb{C}}$ of $\phi$ where:
+$$\psi(X,Y,Z)=\left\{\begin{array}{ll}
+    \frac{X+iY}{1-Z} & (X,Y,Z)\neq N \\
+    \infty & (X,Y,Z)=N
+\end{array}\right.$$
+since we define $\phi(\infty)\deq N$.
 
 \subsubsection*{L2.3.4}
 Stereographic projections maps a circle
