@@ -665,17 +665,17 @@ Let $U\subseteq\mathbb{C}$ be open and
 let $f:U\rightarrow\mathbb{C}$. \\
 $f$ is \textbf{conformal} if it preserves angles.
 
-i.e. that the angle between straight lines
+i.e. that the angle between \textcolor{red}{tangent} lines
 must remain invariant under mapping.
 
 \subsubsection*{T2.1.2}
 Let $U\subseteq\mathbb{C}$ be open and
 let $f:U\rightarrow\mathbb{C}$ be a holomorphic function.
-Define $C\subseteq U$:
-$$C=\{z_0\in U:f'(z_0)\neq0\}.$$
-Then $f$ preserves angles at every $z_0\in C$.
+Define $T\subseteq U$:
+$$T=\{z_0\in U:f'(z_0)\neq0\}.$$
+Then $f$ preserves angles at every $z_0\in T$.
 
-i.e. $f$ is a conformal mapping on $C$.
+i.e. $f$ is a conformal mapping on $T$.
 
 \subsubsection*{D2.2.1: M\"obius transformations}
 $f$ is a M\"obius transformation if:
@@ -683,12 +683,11 @@ $$f(z)=\frac{az+b}{cz+d}$$
 where $a,b,c,d\in\mathbb{C}$ and $ad\neq bc$.
 
 \subsubsection*{L2.2.3}
-A matrix $M$ with $\det(M)=1$ and:
-$$M\deq\begin{pmatrix}
-a & b \\ c & d\end{pmatrix}$$
-is associated with M\"obius transformation:
-$$f_M(z)=\frac{az+b}{cz+d}$$
-with properties $f_{M^{-1}}=f^{-1}_M$ and:
+Define $\displaystyle M\deq\begin{pmatrix}
+a & b \\ c & d\end{pmatrix}$ with $\det(M)=1$
+to be associated with the following:
+$$f_M(z)=\frac{az+b}{cz+d}.$$
+Then $f_{M^{-1}}=f^{-1}_M$ and:
 $$f_{M_1 M_2}=f_{M_1}\circ f_{M_2}.$$
 
 \subsubsection*{D2.3.1: Extended complex plane}
@@ -704,7 +703,7 @@ The Riemann sphere is the unit sphere $S^2$ in
 $\mathbb{R}^3$ defined by:
 $$S^2=\{(X,Y,Z)\in\mathbb{R}^3:
 X^2+Y^2+Z^2=1\}$$
-with north pole $N=(0,0,1)$.
+with north pole $N\deq(0,0,1)$.
 
 \subsubsection*{D2.3.2.2: Stereographic projections}
 
