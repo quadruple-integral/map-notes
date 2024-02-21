@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  21 FEB 2024 16:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  21 FEB 2024 20:44
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -558,7 +558,13 @@ File: f11.png Graphic file (type png)
 <use f11.png>
 Package pdftex.def Info: f11.png  used on input line 1329.
 (pdftex.def)             Requested size: 131.36545pt x 93.16031pt.
- [7 <./f10.png> <./f11.png>] [8] (./emr_summary.aux)
+ [7 <./f10.png> <./f11.png>]
+<f12.png, id=152, 284.39583pt x 197.73875pt>
+File: f12.png Graphic file (type png)
+<use f12.png>
+Package pdftex.def Info: f12.png  used on input line 1397.
+(pdftex.def)             Requested size: 170.63881pt x 118.64417pt.
+ [8 <./f12.png>] (./emr_summary.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -567,18 +573,18 @@ Package rerunfilecheck Info: File `emr_summary.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12743 strings out of 474934
- 190685 string characters out of 5763815
+ 12752 strings out of 474934
+ 190804 string characters out of 5763815
  1980801 words of memory out of 5000000
- 34037 multiletter control sequences out of 15000+600000
+ 34044 multiletter control sequences out of 15000+600000
  562860 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,16n,93p,608b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on emr_summary.pdf (8 pages, 598289 bytes).
+Output written on emr_summary.pdf (8 pages, 713177 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
- 90 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
