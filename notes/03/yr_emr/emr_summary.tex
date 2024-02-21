@@ -1108,7 +1108,7 @@ Using the divergence theorem, there is
 no magnetic flux through a \textbf{closed} surface:
 $$\oint_S\vc{B}\cdot\dd\vc{S}=0.$$
 From Stokes' theorem:
-$$\oint_C\vc{B}\cdot\dd\vc{r}=\mu_0 I$$
+$$\oint_C\vc{B}\cdot\dd\vc{r}=\mu_0 I_{enc}$$
 which implies that the circulation of a magnetic field $\vc{B}$
 around a closed loop $C$ is proportional to
 the \underline{total} current $I$ that passes through
@@ -1306,7 +1306,11 @@ and electromotive force:
     &= \Re[V_0 e^{i\omega t}]
 \end{align*}
 where $V_0=V_S e^{i\phi}$. Equating emfs:
-$$\mathcal{E}_S=L\dv{I}{t}+V_C(t)+IR$$
+\begin{align*}
+    \mathcal{E}_S
+    &=V_L+V_C+V_R \\
+    &=L\dv{I}{t}+V_C(t)+IR
+\end{align*}
 $$I=C\dv{V_C}{t}$$
 and due to linearity we assume that:
 $$I(t)=\Re[I_0 e^{i\omega t}]$$
