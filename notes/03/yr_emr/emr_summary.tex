@@ -1358,13 +1358,13 @@ Similarly for our electric field $\vc{E}$:
     &\implies\vc{\nabla}^2\vc{E}=\mu_0\epsilon_0
     \frac{\partial^2\vc{E}}{\partial t^2}.
 \end{align*}
-Let $F(t,x,y,z)$ a component of either $\vc{E}$ or $\vc{B}$.
-Then it satisfies the following:
+Let $F$ be any component of fields $\vc{E}(\vc{r},t)$
+or $\vc{B}(\vc{r},t)$. Then it satisfies the following:
 $$\vc{\nabla}^2F=\mu_0\epsilon_0\frac{\partial^2F}{\partial t^2}.$$
 Substituting solutions of form:
 \begin{align*}
     &F(t,x,y,z)=f(\vc{k}\cdot\vc{x}-\omega t) \\
-    &\implies\vc{k}^2=\mu_0\epsilon_0\omega^2
+    &\implies|\vc{k}|^2=\mu_0\epsilon_0\omega^2
 \end{align*}
 and with phase velocity:
 \begin{align*}
@@ -1372,9 +1372,28 @@ and with phase velocity:
     =\frac{1}{\sqrt{\mu_0\epsilon_0}} \\
     &=3.10\times10^8\text{ms}^{-1}=c
 \end{align*}
-which is the speed of light.
+which is the speed of light and implies that light
+is also an electromagnetic wave!
 
 \subsubsection*{Lorentz transformations}
+It is then postulated that:
+\begin{itemize}
+    \item The \textbf{speed of light is universal}. \\
+    $c$ is \textcolor{red}{frame invariant} and classically
+    only propagate \underline{forwards} in time.
+\end{itemize}
+In Minkowsky spacetime we have that:
+$$(\Delta S)^2=(\Delta S')^2$$
+between two frames $S$, $S'$ and:
+$$(\Delta S)^2\deq(c\Delta t)^2-(\Delta x)^2
+-(\Delta y)^2-(\Delta z)^2$$
+for events $A$ and $B$, $\Delta x=x_B-x_A$, etc.
+\begin{itemize}
+    \item $(\Delta S)^2=0$: light-like separated
+    \item $(\Delta S)^2>0$: time-like separated
+    \item $(\Delta S)^2<0$: space-like separated
+\end{itemize}
+
 spacetime diagrams
 
 \end{multicols*}
