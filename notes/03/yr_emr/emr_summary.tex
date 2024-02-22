@@ -1431,18 +1431,32 @@ physical quantities in frame $S'$.
 By considering the Lorentz force with:
 $$\dd W=\vc{F}\cdot\dd\vc{r}=\vc{F}\cdot\vc{v}\dd t$$
 and generalising to a charge distribution:
-$$\dv{W}{t}=\int_V\vc{J}\cdot\vc{E}\hspace{0.02in}\dd^3r.$$
+$$\dv{W}{t}=\int_V\vc{J}\cdot\vc{E}\hspace{0.02in}\dd^3\vc{r}.$$
 Using Maxwell's equations:
 $$\dv{W}{t}+\int_{\partial V}\vc{S}\cdot\dd\vc{a}
 +\dv{U_{em}}{t}=0$$
 $$U_{em}=\int_{V}\left(\frac{1}{\mu_0}|\vc{B}|^2
-+\epsilon_0|\vc{E}|^2\right)\dd^3r$$
++\epsilon_0|\vc{E}|^2\right)\dd^3\vc{r}$$
 where we define the \textbf{Poynting vector}:
 $$\vc{S}=\frac{1}{\mu_0}\vc{E}\times\vc{B}.$$
 If $\displaystyle\int_{\partial V}\vc{S}\cdot\dd\vc{a}<0$
 then power flows \textbf{into} the volume bounded by the surface.
 
 \subsubsection*{Maxwell's stress tensor}
+Since Newton's second law states that:
+$$\vc{F}=\dv{t}\vc{P}_{mech}$$
+using the Lorentz force we have that:
+$$\dv{\vc{P}_{mech}}{t}
+=-\dv{t}\int_V\epsilon_0
+\mu_0\vc{S}\hspace{0.02in}\dd^3\vc{r}
++\int_{\partial V}\vc{T}\cdot\dd\vc{a}$$
+where $\vc{T}$ is the \textbf{stress tensor}:
+\begin{align*}
+    T_{ij}&=\epsilon_0\left(E_i E_j-\frac{1}{2}
+    \delta_{ij}|\vc{E}|^2\right) \\
+    &\quad+\frac{1}{\mu_0}\left(B_i B_j-\frac{1}{2}
+    \delta_{ij}|\vc{B}|^2\right).
+\end{align*}
 
 \end{multicols*}
 
