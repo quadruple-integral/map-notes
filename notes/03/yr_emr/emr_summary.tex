@@ -1136,12 +1136,17 @@ separate magnetic fields $\vc{B}_1$ and $\vc{B}_2$.
 Because $\vc{\nabla}\cdot(\vc{\nabla}\times\vc{v})=0$
 and $\vc{\nabla}\cdot\vc{B}=0$:
 $$\exists\vc{A}:\vc{B}=\vc{\nabla}\times\vc{A}$$
-known as the \textbf{vector potential}.
-Since $\vc{A}$ is invariant under transformation:
-$$\vc{\nabla}\cdot\vc{A}=0$$
-and is the Coulomb gauge. Therefore:
-$$\vc{\nabla}^2\vc{A}=-\mu_0\vc{J}$$
-with solutions:
+known as the \textbf{vector potential}. Then:
+\begin{align*}
+    \vc{\nabla}\times\vc{B}
+    &=\vc{\nabla}\times
+    (\vc{\nabla}\times\vc{A}) \\
+    &=\vc{\nabla}(\vc{\nabla}\cdot\vc{A})
+    -\vc{\nabla}^2\vc{A} \\
+    &=\mu_0\vc{J}
+\end{align*}
+$$\therefore\vc{\nabla}^2\vc{A}=-\mu_0\vc{J}$$
+where we set $\vc{\nabla}\cdot\vc{A}=0$ and solution:
 $$\vc{A}(\vc{r})=\frac{\mu_0}{4\pi}\int_V
 \frac{\vc{J}(\vc{r}')}{|\vc{r}-\vc{r}'|}\dd V'$$
 and boundary condition $\displaystyle\lim_{r\rightarrow\infty}
@@ -1415,7 +1420,7 @@ to frame $S$ then:
 $$ct'=\gamma(ct-\beta x)$$
 $$x'=\gamma(-\beta ct+x)$$
 $$y'=y\hspace{0.05in}\text{and}\hspace{0.05in}z'=z$$
-where $\gamma=(1-\beta^2)^{1/2}$ and $\beta=v/c$.
+where $\gamma=(1-\beta^2)^{-1/2}$ and $\beta=v/c$.
 
 \subsubsection*{Time and length}
 Consider object in rest in frame $S'$, which is moving
