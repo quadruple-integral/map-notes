@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1709053534 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" "halg_summary.pdf" "halg_summary" 1709053535 0
-  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" 1709053533 25090 137e3c2f26d80831abd161ce05180609 ""
+["pdflatex"] 1709056772 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" "halg_summary.pdf" "halg_summary" 1709056773 0
+  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" 1709056772 25406 2db2c6323837484eda0ba8fb4593c6cb ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1693925241 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1693925632 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -33,6 +33,7 @@
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1693924610 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1693924610 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1693924610 32716 08e384dc442464e7285e891af9f45947 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1693924610 31764 459c573c03a4949a528c2cc7f557e217 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1693924610 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1693925241 145408 bcd327f112f643a875638eafb48d1d8b ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb" 1693925241 154599 111aa29c1b43dc5b4a8516224bf12bac ""
@@ -113,9 +114,9 @@
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693929334 8183624 edc78c4bf2213c105a673cf72ac18bae ""
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
   "f00.png" 1706051137 73401 3b3049903baf9379101e5f10aeafb3db ""
-  "halg_summary.aux" 1709053534 554 1946bb2d40f231db7fb58bc3ffb28649 "pdflatex"
-  "halg_summary.out" 1709053534 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "halg_summary.tex" 1709053533 25090 137e3c2f26d80831abd161ce05180609 ""
+  "halg_summary.aux" 1709056773 554 1946bb2d40f231db7fb58bc3ffb28649 "pdflatex"
+  "halg_summary.out" 1709056773 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "halg_summary.tex" 1709056772 25406 2db2c6323837484eda0ba8fb4593c6cb ""
   (generated)
   "halg_summary.aux"
   "halg_summary.log"
