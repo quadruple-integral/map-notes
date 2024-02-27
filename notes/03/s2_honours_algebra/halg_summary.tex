@@ -630,10 +630,11 @@ entries:
 $$\tr(A)=\sum_{i=1}^{n}a_{ii}.$$
 
 \subsubsection*{D3.1.1: Rings}
-A \textbf{ring} $R$ is a set equipped with addition
-and multiplication that satisfy:
+A \textbf{ring} $R$ is a set equipped with \underline{addition}
+and \underline{multiplication} that satisfy:
 \begin{enumerate}
-    \item $(R,+)$ is an Abelian group.
+    \item $(R,+)$ is an \textbf{Abelian group} with additive
+    identity $0_R\in R$.
     
     \item $(R,\cdot)$ is a \textbf{monoid}, meaning that
     $$(\cdot):R\times R\rightarrow R;(a,b)\mapsto c$$
@@ -649,6 +650,7 @@ and multiplication that satisfy:
     $$(b+c)\cdot a=(b\cdot a)+(c\cdot a)$$
     for $\forall a,b,c\in R$.
 \end{enumerate}
+For \textbf{nonzero} rings $0_R\neq1_R$.
 
 \subsubsection*{P3.1.7}
 A natural number is divisible by $3$ if
@@ -787,6 +789,28 @@ Let $R$ and $S$ be rings. $f:R\rightarrow S$ is a ring
 homomorphism if for all $x,y\in R$:
 $$f(x+y)=f(x)+f(y)$$
 $$f(xy)=f(x)f(y).$$
+
+\subsubsection*{L3.4.5}
+Let $R$ and $S$ be rings. Let $f:R\rightarrow S$ be a
+\textbf{ring homomorphism}.
+Then for all $x,y\in R$ and $m\in\mathbb{Z}$:
+\begin{enumerate}
+    \item $f(0_R)=0_S$
+    \item $f(-x)=-f(x)$
+    \item $f(x-y)=f(x)-f(y)$
+    \item $f(mx)=mf(x)$
+\end{enumerate}
+since $(R,+)$ is a group.
+
+\subsubsection*{D3.4.7: Ideals}
+Let $I\subset R$ where $R$ is a ring. Then
+$I$ is an \textbf{ideal} of ring $R$ if:
+\begin{enumerate}
+    \item $I\neq\emptyset$
+    \item $I$ is closed under subtraction.
+    \item $\forall i\in I;\forall r\in R;
+    ri,ir\in I$
+\end{enumerate}
 
 \end{multicols*}
 
