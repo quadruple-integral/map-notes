@@ -806,7 +806,7 @@ since $(R,+)$ is a group.
 Let $I\subset R$ where $R$ is a ring. Then
 $I$ is an \textbf{ideal} of ring $R$ if:
 \begin{enumerate}
-    \item $I\neq\emptyset$
+    \item $I\neq\emptyset$ and $0_R\in I$
     \item $I$ is closed under subtraction.
     \item $\forall i\in I;\forall r\in R;
     ri,ir\in I$
@@ -829,6 +829,30 @@ An ideal of a commutative ring $R$ is the
 \textbf{principle ideal} if:
 $$I={}_R\langle t\rangle\hspace{0.05in}\text{where}
 \hspace{0.05in}t\in R.$$
+
+\subsubsection*{P3.4.18}
+Let $f:R\rightarrow S$ be a ring homomorphism.
+Then $\ker(f)$ is an \underline{ideal} of ring $R$ where:
+$$\ker(f)=\{r\in R:f(r)=0_S\}$$
+and is a subgroup of $(R,+)$.
+
+\subsubsection*{L3.4.21 and L3.4.22}
+The set intersection and addition of ideals also form ideals.
+
+\subsubsection*{D3.4.23: Subrings}
+A subset $R'\subseteq R$ is a subring of ring $R$ if
+$R'$ also satisfies D3.1.1.
+
+\subsubsection*{P3.4.26: Subring test}
+$R'\subseteq R$ is a subring of $R$ \textbf{if{}f}
+$\forall a,b\in R'$:
+\begin{enumerate}
+    \item $R'$ has multiplicative identity.
+    \item $a-b\in R'$
+    \item $ab,ba\in R'$
+\end{enumerate}
+i.e. that $R'$ is closed under subtraction
+and multiplication.
 
 \end{multicols*}
 
