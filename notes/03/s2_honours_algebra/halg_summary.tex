@@ -518,9 +518,12 @@ $$\begin{pmatrix}
 \end{pmatrix}.$$
 
 \subsubsection*{T2.2.5}
-If matrix $A$ is $n\times m$
-then there exists \\ invertible matrices $P$ and $Q$ 
-such that $PAQ$ is of Smith normal form.
+Let $A$ be an $n\times m$ matrix. Then:
+$$PAQ\hspace{0.05in}\text{is of Smith normal form}$$
+where $P$ and $Q$ are invertible.
+
+\subsubsection*{Remark}
+$\rank(A)=\rank(PAQ)$.
 
 \subsubsection*{D2.2.7: Column and row rank}
 Let matrix $A\in\text{mat}(n\times m;F)$.
@@ -858,7 +861,7 @@ and multiplication.
 Let $f:R\rightarrow S$ be a ring homomorphism.
 \begin{enumerate}
     \item If $R'$ is a subring of $R$ then
-    $f(R')$ is a subring of $S$.
+    $f(R')$ and $\text{im}(f)$ are subrings of $S$.
 
     \item Let $f(1_R)=1_S$. Then:
     $$x\in R^{\times}\implies f(x)\in S^{\times}.$$
@@ -882,6 +885,15 @@ Then the \textbf{equivalence class} of $x\in X$ is:
 $$E(x)=\{z\in X:z\sim x\}\subseteq X$$
 where an element of an equivalence class is 
 a \textbf{representative} of the class.
+
+\subsubsection*{D3.5.5}
+Given an equivalence relation $\sim$ on set $X$,
+the \textbf{set of equivalence classes} is:
+$$(X\backslash\sim)\deq\{E(x):x\in X\}
+\subseteq\mathcal{P}(X).$$
+We also define a \underline{surjective} map:
+$$\text{can}:X\rightarrow(X\backslash\sim);x\mapsto E(x)$$
+known as the \textbf{canonical mapping}.
 
 \end{multicols*}
 
