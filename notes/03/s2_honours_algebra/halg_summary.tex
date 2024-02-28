@@ -892,8 +892,29 @@ the \textbf{set of equivalence classes} is:
 $$(X\backslash\sim)\deq\{E(x):x\in X\}
 \subseteq\mathcal{P}(X).$$
 We also define a \underline{surjective} map:
-$$\text{can}:X\rightarrow(X\backslash\sim);x\mapsto E(x)$$
+$$\text{can}:X\rightarrow(X/\sim);x\mapsto E(x)$$
 known as the \textbf{canonical mapping}.
+
+\subsubsection*{D3.6.1: Cosets}
+Let $I$ be an ideal of ring $R$. Then:
+$$x+I=\{x+i:i\in I\}\subseteq R$$
+is the coset of $x$ with respect to $I$ in $R$.
+
+\subsubsection*{Remark}
+\begin{enumerate}
+    \item $x+I$ is both a left and right coset of $x$
+    since $(R,+)$ is Abelian.
+
+    \item Ideals of rings are subgroups.
+\end{enumerate}
+
+\subsubsection*{D3.6.3: Factor rings}
+Let $I$ be an ideal of ring $R$. Define the following
+equivalence relation where:
+$$x\sim y\iff x-y\in I.$$
+Then the \textbf{factor ring} of $R$ by $I$ is the set
+of cosets of $I$ in $R$:
+$$R/I=(R/\sim).$$
 
 \end{multicols*}
 
