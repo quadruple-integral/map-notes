@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1709307530 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" "halg_summary.pdf" "halg_summary" 1709307530 0
-  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" 1709307529 29832 763ef1fd8adb38aca965a2db8f5b28ff ""
+["pdflatex"] 1709320459 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" "halg_summary.pdf" "halg_summary" 1709320460 0
+  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" 1709320458 29923 4f317eaf62c6e87a2f8f9e863ec08019 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1693925241 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1693925632 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -115,9 +115,9 @@
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
   "f00.png" 1706051137 73401 3b3049903baf9379101e5f10aeafb3db ""
   "f01.png" 1709152979 12721 f3fe935ae914f7969daf2730f1c58c81 ""
-  "halg_summary.aux" 1709307530 554 199b5e648f89bced0dfadf827c38c11c "pdflatex"
-  "halg_summary.out" 1709307530 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "halg_summary.tex" 1709307529 29832 763ef1fd8adb38aca965a2db8f5b28ff ""
+  "halg_summary.aux" 1709320460 554 199b5e648f89bced0dfadf827c38c11c "pdflatex"
+  "halg_summary.out" 1709320459 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "halg_summary.tex" 1709320458 29923 4f317eaf62c6e87a2f8f9e863ec08019 ""
   (generated)
   "halg_summary.aux"
   "halg_summary.log"
