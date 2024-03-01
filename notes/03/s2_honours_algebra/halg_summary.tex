@@ -639,7 +639,7 @@ and \underline{multiplication} that satisfy:
     \item $(R,+)$ is an \textbf{Abelian group} with additive
     identity $0_R\in R$.
     
-    \item $(R,\cdot)$ is a \textbf{monoid}, meaning that
+    \item $(R,\cdot)$ is a \textbf{monoid}, meaning that:
     $$(\cdot):R\times R\rightarrow R;(a,b)\mapsto a\cdot b$$
     is associative with identity element $1=1_R\in R$ such that:
     $$\forall a,b,c\in R;(a\cdot b)\cdot c
@@ -901,6 +901,14 @@ $$(X\backslash\sim)\deq\{E(x):x\in X\}
 We also define a \underline{surjective} map:
 $$\text{can}:X\rightarrow(X/\sim);x\mapsto E(x)$$
 known as the \textbf{canonical mapping}.
+
+\subsubsection*{Remark}
+A mapping $f:X\rightarrow Z$ is \textbf{well-defined} if
+there is an equivalence relation $\sim$ on $X$ such that
+$x\sim y\implies f(x)=f(y)$. Then:
+$$\overline{f}:(X/\sim)\rightarrow Z;
+\overline{f}(E(x))\mapsto f(x)$$
+where $f=\overline{f}\circ\text{can}$ and $\overline{f}$ is unique.
 
 \subsubsection*{D3.6.1: Cosets}
 Let $I$ be an ideal of ring $R$. Then:
