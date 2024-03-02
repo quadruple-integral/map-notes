@@ -750,6 +750,7 @@ Let $R$ be a ring and let $P,Q\neq0\in R[X]$.
 Let $R$ be an integral domain and
 let $P,Q\in R[X]$ where $\deg(Q)\leq\deg(P)$
 and that polynomial $Q$ is a \textbf{monic}.
+
 Then $\exists!A,B\in R[X]:P=AQ+B$ and either
 $\deg(B)<\deg(Q)$ or $B=0$.
 
@@ -930,8 +931,22 @@ $$x\sim y\iff x-y\in I.$$
 Then the \textbf{factor ring} of $R$ by $I$ is the
 \textcolor{red}{set of cosets} of $I$ in $R$
 and denoted as $R/I$:
-$$R/I=\{E(x):x\in R\}$$
-for each $E(x)=\{z\in R:z-x\in I\}$.
+$$R/I=(R/\sim)$$
+for each element is an equivalence class:
+\begin{align*}
+    E(x)
+    &=\{z\in R:z-x\in I\} \\
+    &=\{x+i\in R:i\in I\} \\
+    &=x+I
+\end{align*}
+
+\subsubsection*{T3.6.4}
+Let $I$ be an ideal of ring $R$. Then $R/I$
+is a ring where $\forall x,y\in R$:
+$$(x+I)\hspace{0.02in}\dot{+}\hspace{0.02in}
+(y+I)=(x+y)+I$$
+$$(x+I)\cdot(y+I)=xy+I$$
+where $x+I,y+I\in R/I$.
 
 \subsubsection*{T3.6.7}
 Let $I$ be an ideal of ring $R$. Then:
