@@ -941,7 +941,7 @@ for each element is an equivalence class:
     E(x)
     &=\{z\in R:z-x\in I\} \\
     &=\{x+i\in R:i\in I\} \\
-    &=x+I
+    &=x+I.
 \end{align*}
 
 \subsubsection*{T3.6.4}
@@ -970,12 +970,12 @@ Let $I$ be an ideal of ring $R$. Then:
     \includegraphics[scale=0.5]{f01.png}
 \end{center}
 
-\subsubsection*{T3.6.9}
+\subsubsection*{T3.6.9: FIT for rings}
 Every ring homomorphism $f:R\rightarrow S$ \\
 induces a ring isomorphism:
 $$\overline{f}:R/\ker(f)\rightarrow\text{im}(f)$$
-where $\overline{f}$ is a bijection. This is
-the \textbf{first isomorphism theorem} for rings.
+where $\overline{f}$ is a \textbf{bijection}. This is
+the first isomorphism theorem for rings.
 
 \subsubsection*{D3.7.1: Left modules}
 A left module $M$ over a ring $R$ is a \textbf{pair} consisting
@@ -989,6 +989,37 @@ $$(r+s)a=(ra)\hspace{0.03in}\dot{+}\hspace{0.03in}(sa)$$
 $$r(sa)=(rs)a$$
 $$1_R a=a$$
 also known as an \textbf{$R$-module}.
+
+\subsubsection*{L3.7.8}
+Let $R$ be a ring and $M$ be a $R$-module.
+Then $\forall r\in R$ and $\forall a\in M$:
+\begin{enumerate}
+    \item $0_R a=0_M$
+    \item $r0_M=0_M$
+    \item $(-r)a=r(-a)=-(ra)$.
+\end{enumerate}
+
+\subsubsection*{D3.7.11: Module homomorphisms}
+Let $R$ be a ring, $M$ and $N$ be $R$-modules. Then
+$f:M\rightarrow N$ is an \textcolor{red}{$R$-homomorphism}
+if $\forall r\in R$ and $\forall a,b\in M$:
+$$f(a+b)=f(a)+f(b)$$
+$$f(ra)=rf(a).$$
+$f$ is an \textbf{$R$-isomorphism} if it is \underline{bijective}
+and we denote that $M\cong N$.
+
+\subsubsection*{D3.7.15: Submodules}
+$M'\subseteq M$ is a submodule if it also satisfies D3.7.11
+but restricted to itself.
+
+\subsubsection*{P3.7.20: Submodule test}
+Let $M$ be a $R$-module. $M'$ is a submodule of 
+$M$ \textbf{if{}f} $\forall a,b\in M$ and $\forall r\in R$:
+\begin{enumerate}
+    \item $0_M\in M'$
+    \item $a-b\in M'$
+    \item $ra\in M'$.
+\end{enumerate}
 
 \end{multicols*}
 
