@@ -1036,7 +1036,25 @@ if $N={_R}\langle t\rangle$.
 
 \subsubsection*{L3.7.29 and L3.7.30}
 Intersecting and adding collections of submodules
-form submodules.
+also form submodules.
+
+\subsubsection*{D3.7.31: Factor modules}
+Let $R$ be a ring, $M$ be a $R$-module 
+and $N$ a submodule of $M$. Let $a\in M$. Then the
+\textbf{coset of $a$ with respect to $N$ in $M$} is:
+$$a+N=\{a+b:b\in N\}$$
+Every coset is an equivalent class of the following
+equivalence relation:
+$$\forall a,b\in M;a\sim b\iff 
+a-b\in N$$
+and we define the \textbf{factor module} of $M$
+by the submodule $N$ as:
+$$M/N=(M/\sim)$$
+with the following operators:
+$$(a+N)\hspace{0.02in}\dot{+}\hspace{0.02in}
+(b+N)=(a+b)+N$$
+$$r(a+N)=ra+N$$
+and additive identity $0_{M/N}=0_M+N$.
 
 \end{multicols*}
 
