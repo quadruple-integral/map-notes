@@ -1103,10 +1103,28 @@ is a group homomorphism if $\forall a,b\in G$:
 $$f(ab)=f(a)f(b).$$
 
 \subsubsection*{L4.1.5}
+$\text{sgn}:S_n\rightarrow\{+1,-1\}$, which is the sign of
+permutations, is a group homomorphism:
+$$\text{sgn}(\sigma\tau)=\text{sgn}(\sigma)\text{sgn}(\tau)$$
+for all $\sigma,\tau\in S_n$.
 
 \subsubsection*{D4.1.6: Alternating groups}
+The alternating group is a \underline{subgroup} of $S_n$
+and is the kernel of $\text{sgn}$ function:
+\begin{align*}
+    A_n &\deq \ker(\text{sgn}) \\
+    &=\{\sigma\in S_n:\text{sgn}=e_{\{\pm1\}}=+1\}.
+\end{align*}
 
 \subsubsection*{D4.2.1: Determinants}
+Let $R$ be a \underline{commutative} ring and $n\in\mathbb{N}$.
+The determinant map is defined:
+$$\text{det}:\text{mat}(n\times n; R)\rightarrow R;$$
+$$A\mapsto\sum_{\sigma\in S_n}\text{sgn}(\sigma)
+a_{1\sigma(1)}\dots a_{n\sigma(n)}$$
+where $(A)_{ij}=a_{ij}$.
+
+\newpage
 
 \subsubsection*{Remark}
 connection with area and volume
