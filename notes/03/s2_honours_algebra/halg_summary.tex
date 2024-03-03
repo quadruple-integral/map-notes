@@ -1078,8 +1078,8 @@ Given a permutation $\sigma\in S_n$, an inversion is
 a pair $(i,j)$ that is interchanged:
 $$i<j\hspace{0.05in}\text{and}
 \hspace{0.05in}\sigma(j)<\sigma(i)$$
-where $i,j\in\{1,\dots, n\}$. The \textbf{length} of $\sigma$
-is the number of inversions:
+where $i,j\in\{1,\dots, n\}$. The \textbf{length} of
+$\sigma$ is the number of inversions:
 $$\ell(\sigma)\deq|\{(i,j):i<j\hspace{0.05in}\text{and}
 \hspace{0.05in}\sigma(j)<\sigma(i)\}|.$$
 We define the \textbf{sign} of $\sigma$:
@@ -1088,9 +1088,16 @@ $$\text{sgn}(\sigma)=(-1)^{\ell(\sigma)}
 -1 & \text{odd.}\end{array}\right.$$
 
 \subsubsection*{Remark}
-cycle decompositions
+A cycle $(a_1\dots a_r)$ sends each element to its
+\underline{right} \textcolor{red}{except}
+$a_r$ which is sent to $a_1$.
+$$(a_1 a_2\dots a_r)=(a_1 a_r)(a_1 a_{r-1})\dots(a_1 a_2)$$
+Note that order may not be interchanged.
 
 \subsubsection*{D: Group homomorphisms}
+Let $G$ and $H$ be groups. Then $f:G\rightarrow H$
+is a group homomorphism if $\forall a,b\in G$:
+$$f(ab)=f(a)f(b).$$
 
 \subsubsection*{L4.1.5}
 
