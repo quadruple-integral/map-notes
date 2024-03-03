@@ -1063,12 +1063,27 @@ a $R$-isomorphism:
 $$\overline{f}:M/\ker(f)\rightarrow\text{im}(f)$$
 where $\overline{f}$ is a bijection.
 
-\subsubsection*{D4.1.1: $n^{th}$ symmetric group}
-transpositions
+\subsubsection*{D4.1.1: Symmetric group $S_n$}
+The set of bijections from $\{1,\dots,n\}$ to itself
+is a group under composition with $n!$ elements, denoted
+by $S_n$.
 
-inversions
+Each bijection $\sigma\in S_n$ is a \textbf{permutation}.
 
-length and sign
+\textbf{Transpositions} are permutations that swap
+\textcolor{red}{only two elements} in $\{1,\dots, n\}$.
+
+\subsubsection*{D4.1.2: Inversions}
+Given a permutation $\sigma\in S_n$, an inversion is
+a pair $(i,j)$ that is interchanged:
+$$i<j\hspace{0.05in}\text{and}
+\hspace{0.05in}\sigma(j)<\sigma(i)$$
+where $i,j\in\{1,\dots, n\}$. The \textbf{length} of $\sigma$
+is the number of inversions:
+$$\ell(\sigma)\deq|\{(i,j):i<j\hspace{0.05in}\text{and}
+\hspace{0.05in}\sigma(j)<\sigma(i)\}|.$$
+We define the \textbf{sign} of $\sigma$:
+$$\text{sgn}(\sigma)=(-1)^{\ell(\sigma)}.$$
 
 \subsubsection*{Remark}
 cycle decompositions
