@@ -1154,9 +1154,11 @@ is alternating provided $1_F+1_F\neq0_F$.
 Let $V_1,\dots,V_n,W$ be $F$-vector spaces. Then the map
 $H:V_1\times\dots\times V_n\rightarrow W$ is a
 \textbf{multilinear form} if every $V_j\rightarrow W$
-is linear for all $\vc{v}_j\in V_j$.
+is \textcolor{red}{linear} for all $\vc{m}_j\in V_j$.
 
-alternating forms
+$H$ is \textbf{alternating} if $\exists i\neq j:\vc{v}_i=\vc{v}_j$
+and:
+$$H(\vc{v}_1,\dots,\vc{v}_i,\dots,\vc{v}_j,\dots,\vc{v}_n)=0.$$
 
 \subsubsection*{T4.3.6}
 
