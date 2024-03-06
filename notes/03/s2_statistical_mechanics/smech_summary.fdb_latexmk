@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1709737286 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_statistical_mechanics/smech_summary.tex" "smech_summary.pdf" "smech_summary" 1709737287 0
-  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_statistical_mechanics/smech_summary.tex" 1709737285 10886 6e2734d8722506860ce23baba228fd25 ""
+["pdflatex"] 1709743002 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_statistical_mechanics/smech_summary.tex" "smech_summary.pdf" "smech_summary" 1709743002 0
+  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_statistical_mechanics/smech_summary.tex" 1709743001 11872 988f265aab6ba4c1c06fc9da0191612f ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1693924610 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1693924610 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -104,9 +104,9 @@
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693929334 8183624 edc78c4bf2213c105a673cf72ac18bae ""
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
   "f00.png" 1706874613 35048 46f67cea4f633d87105ecfefea82029c ""
-  "smech_summary.aux" 1709737287 554 04ae3964aa57b78538b565d0454a3de2 "pdflatex"
-  "smech_summary.out" 1709737287 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "smech_summary.tex" 1709737285 10886 6e2734d8722506860ce23baba228fd25 ""
+  "smech_summary.aux" 1709743002 554 04ae3964aa57b78538b565d0454a3de2 "pdflatex"
+  "smech_summary.out" 1709743002 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "smech_summary.tex" 1709743001 11872 988f265aab6ba4c1c06fc9da0191612f ""
   (generated)
   "smech_summary.aux"
   "smech_summary.log"

@@ -259,9 +259,10 @@ $$Z=\sum_j\exp(-\beta E_j)
 is the sum of \textcolor{red}{all} microstates $E_i$ of the ensemble.
 
 \subsubsection*{Free energy minimisation}
-The mean energy is computed as:
+The \textbf{mean energy} is computed as:
 \begin{align*}
     \overline{E}
+    &=\sum_i E_i\hspace{0.01in}\mathbb{P}(E_i) \\
     &=-\frac{1}{Z}\sum_i\left(\frac{\partial}{\partial\beta}
     \exp(-\beta E_i)\right) \\
     &=-\frac{1}{Z}\frac{\partial Z}{\partial\beta}
@@ -278,6 +279,8 @@ and \textbf{heat capacity} is defined as:
 \end{align*}
 since $\overline{(\Delta E)^2}=\overline{E^2}
 -\overline{E}^2$.
+
+\newcolumn
 
 For every macrostate $E$ 
 there corresponds $\Omega(E)$ microstates:
@@ -302,7 +305,7 @@ If $N_1$ is very large, $\mathbb{P}(\overline{E})\rightarrow1$ and:
     &=\exp(-\beta F)\cdot\mathcal{O}[N^{1/2}]
 \end{align*}
 for here $F=\overline{E}-T S(T)$. Importantly:
-$$F(T)=-k_B T\ln Z$$\
+$$F(T)=-k_B T\ln Z$$
 $$\overline{E}(T)=k_B T^2\frac{\partial\ln Z}{\partial T}$$
 $$S(T)=k_B\ln Z+\frac{\overline{E}(T)}{T}.$$
 
@@ -325,7 +328,30 @@ state $j$ is given by:
 \end{align*}
 assuming particles can be distinguished.
 
+\subsubsection*{Classical solids}
+A classical $3d$ solid with $N$ particles has
+spring oscillators which connects every particle.
+Every oscillator has energy:
+$$\epsilon=\frac{1}{2}k\vc{x}^2+\frac{1}{2}m\vc{v}^2$$
+with $6$ degrees of freedom. Then:
+$$\overline{E}=3Nk_B T$$
+and is known as the Dulong-Petit law.
+
 \subsubsection*{Einstein's model of solids}
+Consider a system of $N$ particles which are weakly interacting.
+If every particle is modelled after the \textbf{same}
+$3d$ quantum oscillator with frequency $\omega$ then:
+\begin{align*}
+    Z &= [Z_{1d}(1)]^{3N} \\
+    Z_{1d}(1) 
+    &=\sum_{n=0}^{\infty}\exp(-\beta\epsilon_n) \\
+    &=\frac{\exp(-\frac{x}{2})}{1-\exp(-x)}
+\end{align*}
+where $\epsilon_n$ is the one dimensional harmonic oscillator
+with ground state $\hbar\omega/2$:
+$$\epsilon_n=\left(n+\frac{1}{2}\right)\hbar\omega$$
+and $x=\beta\hbar\omega$. We have also used:
+$$\sum_{n=0}^{\infty}a^n=\frac{1}{1-a}.$$
 
 \subsubsection*{Ideal gases}
 
