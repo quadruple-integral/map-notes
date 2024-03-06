@@ -335,7 +335,7 @@ Every oscillator has energy:
 $$\epsilon=\frac{1}{2}k\vc{x}^2+\frac{1}{2}m\vc{v}^2$$
 with $6$ degrees of freedom. Then:
 $$\overline{E}=3Nk_B T$$
-and is known as the Dulong-Petit law.
+and is known as the Dulong--Petit law.
 
 \subsubsection*{Einstein's model of solids}
 Consider a system of $N$ particles which are weakly interacting.
@@ -348,10 +348,27 @@ $3d$ quantum oscillator with frequency $\omega$ then:
     &=\frac{\exp(-\frac{x}{2})}{1-\exp(-x)}
 \end{align*}
 where $\epsilon_n$ is the one dimensional harmonic oscillator
-with ground state $\hbar\omega/2$:
+at the $n^{th}$ energy state:
 $$\epsilon_n=\left(n+\frac{1}{2}\right)\hbar\omega$$
 and $x=\beta\hbar\omega$. We have also used:
-$$\sum_{n=0}^{\infty}a^n=\frac{1}{1-a}.$$
+$$\sum_{n=0}^{\infty}a^n=\frac{1}{1-a}
+\hspace*{0.05in}\text{where}\hspace*{0.05in}|a|<1.$$
+Then the system the following properties:
+\begin{align*}
+    \overline{E} &=3N\overline{\epsilon}
+    =3N\cdot-\frac{\partial}{\partial\beta}\ln\Bigl[
+    Z_{1d}(1)\Bigr] \\
+    &=3N\hbar\omega\left[\frac{\exp(-x)}
+    {1-\exp(-x)}+\frac{1}{2}\right] \\
+    C_V &=\left(\frac{\partial\overline{E}}{\partial T}\right)_V
+    =\left(\frac{\partial x}{\partial T}\right)_{\omega}
+    \left(\frac{\partial\overline{E}}{\partial x}\right)_{\omega} \\
+    &=3Nk_B\frac{x^2\exp(x)}{\bigl(\exp(x)-1\bigr)^2} \\
+    S_{vib} &=3Nk_B\left[\frac{x}{e^x-1}-\ln(1-e^{-x})\right]
+\end{align*}
+with \textbf{characteristic temperature} $T^*$:
+$$T^*=\frac{\hbar\omega}{k_B}$$
+and is weakly interacting when $T\gg T^*$.
 
 \subsubsection*{Ideal gases}
 
