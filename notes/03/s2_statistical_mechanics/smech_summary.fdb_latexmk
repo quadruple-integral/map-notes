@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1707942752 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_statistical_mechanics/smech_summary.tex" "smech_summary.pdf" "smech_summary" 1707942753 0
-  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_statistical_mechanics/smech_summary.tex" 1707942751 10060 b39d3612ea35ffac7adb0cad9608100b ""
+["pdflatex"] 1709737286 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_statistical_mechanics/smech_summary.tex" "smech_summary.pdf" "smech_summary" 1709737287 0
+  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_statistical_mechanics/smech_summary.tex" 1709737285 10886 6e2734d8722506860ce23baba228fd25 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1693924610 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1693924610 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -25,6 +25,7 @@
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1693924610 36281 c355509802a035cadc5f15869451dcee ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1693924610 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1693924610 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1693924610 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1693924610 32762 7fee39e011c23b3589931effd97b9702 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1693924610 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1693924610 32716 08e384dc442464e7285e891af9f45947 ""
@@ -103,9 +104,9 @@
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693929334 8183624 edc78c4bf2213c105a673cf72ac18bae ""
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
   "f00.png" 1706874613 35048 46f67cea4f633d87105ecfefea82029c ""
-  "smech_summary.aux" 1707942753 554 04ae3964aa57b78538b565d0454a3de2 "pdflatex"
-  "smech_summary.out" 1707942752 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "smech_summary.tex" 1707942751 10060 b39d3612ea35ffac7adb0cad9608100b ""
+  "smech_summary.aux" 1709737287 554 04ae3964aa57b78538b565d0454a3de2 "pdflatex"
+  "smech_summary.out" 1709737287 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "smech_summary.tex" 1709737285 10886 6e2734d8722506860ce23baba228fd25 ""
   (generated)
   "smech_summary.aux"
   "smech_summary.log"

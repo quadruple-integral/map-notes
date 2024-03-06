@@ -245,18 +245,18 @@ $$\dd S=\left(\frac{1}{T_1}-\frac{1}{T_2}\right)
 \dd E_1>0$$ where $T_1>T_2$ implies negative $\dd E_1$.
 
 \subsubsection*{Boltzmann distribution}
-Consider a microcanonical ensemble with fixed $N$ and $E$
-named composite.
-Within it, there exists a \textbf{canonical ensemble}
-with fixed $N_1$ but \textcolor{red}{changing energy $E_i$}
-in thermal equilibrium at temperature $T$.
+Consider a \textbf{canonical ensemble} with fixed particles $N$ but
+\textcolor{red}{changing energy $E$} in thermal equilibrium
+at temperature $T$.
 
-The probability of energy state $E_i$ for
-this canonical ensemble at equilibrium is:
+Then the \underline{probability} of \textbf{an} energy state $E_i$ for
+this canonical ensemble is:
 $$\mathbb{P}(E_i)=\frac{1}{Z}\exp(-\beta E_i)$$
 $$Z=\sum_j\exp(-\beta E_j)
 \hspace{0.05in}\text{and}\hspace{0.05in}
 \beta=\frac{1}{k_B T}.$$
+\textbf{Partition function} $Z$
+is the sum of \textcolor{red}{all} microstates $E_i$ of the ensemble.
 
 \subsubsection*{Free energy minimisation}
 The mean energy is computed as:
@@ -278,8 +278,6 @@ and \textbf{heat capacity} is defined as:
 \end{align*}
 since $\overline{(\Delta E)^2}=\overline{E^2}
 -\overline{E}^2$.
-
-\newcolumn
 
 For every macrostate $E$ 
 there corresponds $\Omega(E)$ microstates:
@@ -307,6 +305,29 @@ for here $F=\overline{E}-T S(T)$. Importantly:
 $$F(T)=-k_B T\ln Z$$\
 $$\overline{E}(T)=k_B T^2\frac{\partial\ln Z}{\partial T}$$
 $$S(T)=k_B\ln Z+\frac{\overline{E}(T)}{T}.$$
+
+\subsubsection*{Weakly interacting constituents}
+Consider a system of $N$ particles.
+In the absence of interaction potentials given a microstate
+$r$ with total energy $E_r$:
+$$E_r=\epsilon_{i_1}+\dots+\epsilon_{i_N}$$
+for $\epsilon_{i_j}$ is the $j^{th}$ particle in the $i^{th}$ state
+and has the following partition function:
+$$Z=[Z(1)]^N$$
+$$Z(1)=\sum_i\exp(-\beta\epsilon_i).$$
+The \textbf{probability} of particle $1$ to exist at 
+state $j$ is given by:
+\begin{align*}
+    \mathbb{P}(\epsilon_{j_1})
+    &=\sum_{i_2,\dots,i_N}\frac{\exp\Bigl[-\beta
+    (\epsilon_{j_1}+\epsilon_{i_2}+\dots)\Bigr]}{Z} \\
+    &=\frac{\exp(-\beta\epsilon_{j_1})}{Z(1)}
+\end{align*}
+assuming particles can be distinguished.
+
+\subsubsection*{Einstein's model of solids}
+
+\subsubsection*{Ideal gases}
 
 \end{multicols*}
 
