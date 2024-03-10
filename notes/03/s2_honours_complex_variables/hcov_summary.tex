@@ -800,6 +800,11 @@ properties of complex integrals
 A contour $\Gamma\subset\mathbb{C}$ is a curve that
 connects $z_0,z_1\in\mathbb{C}$.
 We define $\Gamma=\text{im}(\gamma)$ where:
+$$\gamma:[t_0,t_1]\rightarrow\mathbb{C};
+\gamma(t_0)=z_0\hspace{0.03in}
+\text{and}\hspace{0.03in}\gamma(t_1)=z_1.$$
+Contour $\Gamma$ is \textbf{regular} if its first derivative
+is continuous \underline{and} $\gamma'(t)\neq0$ for $\forall t$.
 
 \subsubsection*{D3.2.3: Contour integrals}
 add D3.2.13 here as well
@@ -828,6 +833,7 @@ $\exists F:D\rightarrow\mathbb{C}:\forall z\in D; F'(z)=f(z)$.
 \subsubsection*{C3.3.6}
 
 \subsubsection*{D3.3.7: Closed contours}
+$\Gamma$ is \textbf{closed} if its endpoints are the same.
 
 \subsubsection*{C3.3.8}
 
@@ -843,9 +849,18 @@ $D$ is a domain. The following are equivalent:
 \end{enumerate}
 
 \subsubsection*{D3.4.1: Loops}
-positively oriented loops
+$\Gamma$ is \textbf{simple} if it has no self intersections
+except at the endpoints.
+
+\textbf{Loops} are \underline{simple} and
+\underline{closed} contours.
 
 \subsubsection*{T3.4.2: Jordan curve theorem}
+
+\subsubsection*{D3.4.4: Positively oriented loops}
+Loop $\Gamma$ is \textbf{positively oriented} if
+$\text{Int}(\Gamma)$ is always remain on the \textcolor{red}{left} 
+hand side when traversing its parametrisation.
 
 \subsubsection*{D3.4.6: Simply connected domains}
 Domain $D$ is \textbf{simply connected} if: 
