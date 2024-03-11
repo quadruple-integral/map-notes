@@ -823,7 +823,14 @@ Contour $\Gamma$ is \textbf{regular} if its first derivative
 is continuous \underline{and} $\gamma'(t)\neq0$ for $\forall t$.
 
 \subsubsection*{D3.2.3: Contour integrals}
-add D3.2.13 here as well
+Let $\Gamma$ be a regular curve connecting points $z_0$ and $z_1$.
+Let $f:\Gamma\rightarrow\mathbb{C}$ be continuous. Then the integral
+of $f$ along $\Gamma$ is:
+$$\int_{\Gamma}f(z)\dd z=\int_{t_0}^{t_1}f(\gamma(t))\gamma'(t)\dd t.$$
+Let there exist $\gamma_i:[t_0^i,t_1^i]\rightarrow\mathbb{C}$ such that
+$\gamma_i(t_0^1)=z_0$, $\gamma_i(t_1^i)=\gamma_{i+1}(t_0^{i+1})$ and
+$\gamma_n(t_1^n)=z_1$ where $\Gamma_i=\text{im}(\gamma_i)$. Then:
+$$\int_{\Gamma}f(z)\dd z=\sum_{i=1}^{n}\int_{\Gamma_i}f(z)\dd z.$$
 
 \subsubsection*{D3.2.7: Contour arclengths}
 
