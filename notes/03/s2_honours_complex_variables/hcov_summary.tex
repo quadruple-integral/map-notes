@@ -814,7 +814,7 @@ and $\alpha,\beta\in\mathbb{C}$. Then:
 
 \subsubsection*{D3.2.1: Contours}
 A contour $\Gamma\subset\mathbb{C}$ is a curve that
-connects $z_0,z_1\in\mathbb{C}$.
+connects $z_0$ \textbf{to} $z_1\in\mathbb{C}$.
 We define $\Gamma=\text{im}(\gamma)$ where:
 $$\gamma:[t_0,t_1]\rightarrow\mathbb{C};
 \gamma(t_0)=z_0\hspace{0.03in}
@@ -878,13 +878,14 @@ $\Gamma$ is \textbf{closed} if its endpoints are the same.
 
 \subsubsection*{L3.3.9: Path independence}
 Let $f:D\rightarrow\mathbb{C}$ be continuous where
-$D$ is a domain. The following are equivalent:
+$D$ is a domain. The following are \underline{equivalent}:
 \begin{enumerate}
     \item $f$ has an antiderivative on $D$.
     \item For all \textbf{closed} contours $\Gamma\subset D$:
     $$\oint_{\Gamma}f(z)\dd z=0.$$
 
-    \item Integrals are independent of path.
+    \item Integrals are independent of path, regardless
+    of contour chosen in $D$.
 \end{enumerate}
 
 \subsubsection*{D3.4.1: Loops}
