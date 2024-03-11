@@ -866,15 +866,15 @@ $\exists F:D\rightarrow\mathbb{C}:\forall z\in D; F'(z)=f(z)$.
 \subsubsection*{T3.3.5: FTC}
 Let $D$ be a domain and let continuous $f:D\rightarrow\mathbb{C}$
 have an antiderivative $F$ on $D$. If contour $\Gamma\subset D$
-connects $z_0,z_1$:
+connects points $z_0,z_1$:
 $$\int_{\Gamma}f(z)\dd z=F(z_1)-F(z_0).$$
 
 \subsubsection*{C3.3.6}
+Let $f$ be holomorphic on domain $D$ and
+$f'(z)=0$ for $\forall z\in D$. Then $f$ is constant.
 
 \subsubsection*{D3.3.7: Closed contours}
 $\Gamma$ is \textbf{closed} if its endpoints are the same.
-
-\subsubsection*{C3.3.8}
 
 \subsubsection*{L3.3.9: Path independence}
 Let $f:D\rightarrow\mathbb{C}$ be continuous where
@@ -895,6 +895,14 @@ except at the endpoints.
 \underline{closed} contours.
 
 \subsubsection*{T3.4.2: Jordan curve theorem}
+Let $\Gamma$ be a loop in $\mathbb{C}$. Then $\Gamma$ defines 
+the two regions with $\Gamma$ as their boundary:
+\begin{enumerate}
+    \item bounded $\text{Int}(\Gamma)$
+    \item unbounded $\text{Ext}(\Gamma)$
+\end{enumerate}
+where $\mathbb{C}=\text{Int}(\Gamma)\cup\Gamma
+\cup\text{Ext}(\Gamma)$.
 
 \subsubsection*{D3.4.4: Positively oriented loops}
 Loop $\Gamma$ is \textbf{positively oriented} if
@@ -919,6 +927,8 @@ $$\text{for all \textcolor{red}{loops}}\hspace{0.05in}
 \subsubsection*{C3.5.5}
 
 \subsubsection*{T3.5.6}
+
+\subsubsection*{T3.5.12}
 
 \end{multicols*}
 
