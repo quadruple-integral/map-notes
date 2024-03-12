@@ -939,8 +939,18 @@ $$\text{Then}\hspace{0.05in}\int_{\Gamma_1}f(z)\dd z
 =\int_{\Gamma_2}f(z)\dd z.$$
 
 \subsubsection*{T3.5.1: Cauchy integral formula}
+Let $\Gamma$ be a loop. Let $z_0\in\text{Int}(\Gamma)$ and let
+$f$ be holomorphic on $\Gamma\cup\text{Int}(\Gamma)$. Then:
+$$f(z_0)=\frac{1}{2\pi i}\int_{\Gamma}\frac{f(z)}{z-z_0}\dd z.$$
 
 \subsubsection*{T3.5.3}
+Let $\Gamma$ be a contour on domain $D$. Let
+$g:D\rightarrow\mathbb{C}$ be continuous on $\Gamma$.
+Then the following $G:D\hspace{0.03in}\backslash
+\hspace{0.03in}\Gamma\rightarrow\mathbb{C}$ is holomorphic:
+$$G(z)=\int_{\Gamma}\frac{g(w)}{(w-z)^n}\dd w$$
+$$G'(z)=n\int_{\Gamma}\frac{g(w)}{(w-z)^{n+1}}\dd w$$
+given $n\in\{1,2,\dots\}$.
 
 \subsubsection*{C3.5.5}
 
