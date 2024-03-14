@@ -1191,17 +1191,42 @@ A square matrix $A$ with entries in a field $F$ \textit{is invertible}
 Let $R$ be a commutative ring. Then: \\
 $\det(A^T)=\det(A)$ for $A\in\text{mat}(n\times n; R)$.
 
-\subsubsection*{D4.4.6: Cofactor matrices}
+\subsubsection*{D4.4.6: Cofactors}
+Let $R$ be a commutative ring and that $A\in\text{mat}(n\times n; R)$.
+Let $i,j\in\{1,\dots,n\}$. We define a \textbf{cofactor} of $A$ as:
+$$C_{ij}=(-1)^{i+j}\det(M_{ij})$$
+where $M_{ij}$ is a \textit{minor} of $A$, obtained from removing the 
+$i^{\text{th}}$ row and $j^{\text{th}}$ column of $A$.
 
 \subsubsection*{T4.4.7: Laplace's expansion}
+Let $R$ be a commutative ring, $A=(a_{ij})$ where
+$A\in\text{mat}(n\times n; R)$. Then:
+\begin{align*}
+    \det(A)
+    &=\sum_{j=1}^{n}a_{ij}C_{ij} 
+    &&\text{($i^{\text{th}}$ row)} \\
+    &=\sum_{i=1}^{n}a_{ij}C_{ij}.
+    &&\text{($j^{\text{th}}$ column)}
+\end{align*}
 
 \subsubsection*{D4.4.8: Adjugate matrices}
+Let $R$ be a commutative ring and let $A\in\text{mat}(n\times n;R)$.
+Then the \textbf{adjugate matrix} $\text{adj}(A)$ is the $n\times n$
+matrix where:
+$$\text{adj}(A)_{ij}=C_{ji}.$$
 
 \subsubsection*{T4.4.9: Cramer's rule}
+Let $R$ be a commutative ring and let $A\in\text{mat}(n\times n;R)$.
+Then:
+$$A\cdot\text{adj}(A)=(\det A)I_n.$$
 
 \subsubsection*{C4.4.11}
+Let $R$ be a commutative ring and let $A\in\text{mat}(n\times n;R)$.
+Then $A$ is \textit{invertible} \textbf{if{}f} $\det(A)\in R^{\times}$.
 
 \subsubsection*{T4.4.14: Jacobi's formula}
+Let $A=(a_{ij})$ where $a_{ij}=a_{ij}(t)$. Then:
+$$\dv{t}\det(A)=\tr(\text{adj}\hspace{0.01in}A)\dv{A}{t}.$$
 
 \subsubsection*{D4.5.1: Eigenspaces}
 Let $f:V\rightarrow V$ be an endomorphism of $F$-vector space $V$.
