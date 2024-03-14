@@ -1251,6 +1251,25 @@ eigenvalues of the linear map $A:F^n\rightarrow F^n$ are the
 roots of $\chi_A$.
 
 \subsubsection*{P4.6.1: Triangularisability}
+Let $f:V\rightarrow V$ be an endomorphism of a \textit{finite} 
+$F$-vector space. Then the following two statements are equivalent:
+\begin{enumerate}
+    \item Vector space $V$ has an \textit{ordered} basis
+    $B=\{\vc{v}_1,\dots,\vc{v}_n\}$ such that:
+    \begin{align*}
+        f(\vc{v}_1) &=a_{11}\vc{v}_1 \\
+        &\dots \\
+        f(\vc{v}_n) &=a_{1n}\vc{v}_1+\dots+a_{nn}\vc{v}_n
+    \end{align*}
+    or that its representation matrix is:
+    $${}_B[f]_B=\begin{pmatrix} a_{11} & a_{12} & \dots & a_{1n} \\
+    0 & a_{22} & \dots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\
+    0 & 0 & \dots & a_{nn}\end{pmatrix}.$$
+    i.e. $f$ is \textbf{triangularisable}.
+
+    \item $\chi_f(x)$ may be written as a \textit{product of linear factors}
+    in $F[x]$.
+\end{enumerate}
 
 \subsubsection*{D4.6.6}
 
