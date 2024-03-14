@@ -1179,10 +1179,17 @@ under mapping. Furthermore:
 $$\text{det}(I_n)=1_F.$$
 
 \subsubsection*{T4.4.1}
+Let $A,B\in\text{mat}(n\times n;R)$ where $R$ is a
+commutative ring. Then:
+$$\det(AB)=\det(A)\det(B).$$
 
 \subsubsection*{T4.4.2}
+A square matrix $A$ with entries in a field $F$ \textit{is invertible}
+\textbf{if{}f} $\det(A)\neq0$.
 
 \subsubsection*{L4.4.4}
+Let $R$ be a commutative ring. Then: \\
+$\det(A^T)=\det(A)$ for $A\in\text{mat}(n\times n; R)$.
 
 \subsubsection*{D4.4.6: Cofactor matrices}
 
@@ -1196,8 +1203,6 @@ $$\text{det}(I_n)=1_F.$$
 
 \subsubsection*{T4.4.14: Jacobi's formula}
 
-\newcolumn
-
 \subsubsection*{D4.5.1: Eigenspaces}
 Let $f:V\rightarrow V$ be an endomorphism of $F$-vector space $V$.
 An \textbf{eigenvalue} $\lambda\in F$ of $f$ is a scalar such that
@@ -1208,7 +1213,7 @@ $$E(\lambda,f)=\{\vc{v}\in V:f(\vc{v})=\lambda\vc{v}\}.$$
 \subsubsection*{T4.5.4}
 Let $V$ be a nonzero \textit{finite} $F$-vector space 
 where $F$ is an algebraically closed field. Then each
-endomorphism of vector space $V$ has an eigenvalue.
+endomorphism of the vector space $V$ has an eigenvalue.
 
 \subsubsection*{D4.5.6: Characteristic polynomials}
 Let $R$ be a commutative ring and let $A\in\text{mat}(n\times n;R)$.
