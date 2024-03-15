@@ -1162,10 +1162,22 @@ $z_0$ is a \textit{removable} singularity. Then
 $\text{Res}(f,z_0)=0$.
 
 \subsubsection*{L5.1.5}
+Let $f$ be holomorphic on $D'_R(z_0)$ where $R>0$ and $z_0$
+a pole of order $m$. Then:
+$$\text{Res}(f,z_0)=\lim_{z\rightarrow z_0}\frac{\dd^{m-1}}{\dd z^{m-1}}
+\left[\frac{(z-z_0)^m f(z)}{(m-1)!}\right].$$
 
 \subsubsection*{L5.1.7}
+Let $g,h$ be holomorphic on $D'_R(z_0)$ where $R>0$.
+Let $z_0$ be a simple zero of $h$ but $g(z_0)\neq0$.
+Let $f=g/h$. Then:
+$$\text{Res}(f,z_0)=\frac{g(z_0)}{h'(z_0)}.$$
 
 \subsubsection*{T5.1.10: Cauchy residue theorem}
+Let $\Gamma$ be a loop. If $f$ is holomorphic on
+$\Gamma$ and $\text{Int}(\Gamma)$ except for a \textit{finite} number of
+isolated singularities $z_1,\dots,z_k\in\text{Int}(\Gamma)$:
+$$\int_{\Gamma}f(z)\dd z=2\pi i\sum_{j=1}^{k}\text{Res}(f,z_j).$$
 
 \newcolumn
 
