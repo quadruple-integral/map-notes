@@ -1077,7 +1077,7 @@ such that $f$ is holomorphic on $D'_R(z_0)$.
 Let $U$ be a neighbourhood of $z_0$ and let $f$ be holomorphic on $U$.
 $z_0$ is a \textbf{zero} of $f$ if $f(z_0)=0$.
 $z_0$ is a \textit{zero of order $m$} if:
-$$\exists m\in\mathbb{N}:f(z_0)=\dots=f^{(m-1)}(z_0)=0$$
+$$\exists m\in\mathbb{Z}_{>0}:f(z_0)=\dots=f^{(m-1)}(z_0)=0$$
 but $f^{(m)}(z_0)\neq0$. A \textbf{simple zero} is a zero of order $1$.
 An \textbf{isolated zero} $z_0$ is if $\exists R>0:f(z)\neq0$ for all
 $z\in D'_R(z_0)$.
@@ -1088,6 +1088,11 @@ on $U$. Let $z_0$ be a zero of \textit{finite} order.
 Then $z_0$ is isolated.
 
 \subsubsection*{C4.5.5}
+Let $U$ be a neighbourhood of $z_0$ and let $f$ be holomorphic
+on $U$. Let there exist sequence $(z_n)_{n\in\mathbb{N}}\subset U$
+such that $z_n\rightarrow z_0$ and $f(z_n)=0$. 
+
+Then $f$ is \underline{zero} on a disc centred at $z_0$.
 
 \subsubsection*{C4.5.6}
 
