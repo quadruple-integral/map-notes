@@ -1060,7 +1060,15 @@ $$A_{r,R}(z_0)=\{z\in\mathbb{C}:r<|z-z_0|<R\}$$
 $$\overline{A}_{r,R}(z_0)=\{z\in\mathbb{C}:r\leq|z-z_0|\leq R\}.$$
 
 \subsubsection*{T4.4.4: Laurent series}
-use of laurent series
+Let $f$ be holomorphic on $A_{r,R}(z_0)$ where $0\leq r<R\leq\infty$.
+Then $f$ can be written as a \textbf{Laurent series} centred at $z_0$:
+$$\sum_{j=-\infty}^{\infty}a_j(z-z_0)^j$$
+which converges to $f(z)$ on $A_{r,R}(z_0)$ and \textit{uniformly}
+on $\overline{A}_{r_1,R_1}(z_0);\forall r_1,R_1\in(r,R)$.
+
+Given \textcolor{red}{loop} $\Gamma\subset A_{r,R}(z_0)$
+and $z_0\in\text{Int}(\Gamma)$:
+$$a_j=\frac{1}{2\pi i}\int_{\Gamma}\frac{f(z)}{(z-z_0)^{j+1}}\dd z.$$
 
 \subsubsection*{T4.4.7}
 uniqueness of laurent series
