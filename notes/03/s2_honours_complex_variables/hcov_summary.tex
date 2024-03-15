@@ -1101,11 +1101,21 @@ Let $z_0$ be a singularity of rational function $f=P/Q$.
 Then $z_0$ is isolated.
 
 \subsubsection*{D4.5.7}
-removable singularity
+Let $f$ be holomorphic on $D'_R(z_0)$ where $R>0$
+and $z_0$ an isolated singularity. Then $f$ has a Laurent
+expansion centred at $z_0$ which is valid on $A_{0,R}(z_0)$:
+$$f(z)=\sum_{j=-\infty}^{\infty}a_j(z-z_0)^j.$$
+Furthermore we define that:
+\begin{enumerate}
+    \item $z_0$ is a \textbf{removable singularity} if
+    $a_j=0$ for all $j<0$.
 
-poles
+    \item $z_0$ is a \textbf{pole} \textit{of order $m$} if
+    $a_j=0$ for $j<-m$ and $a_{-m}\neq0$.
 
-essential singularity
+    \item $z_0$ is an \textbf{essential singularity} if $a_j\neq0$
+    for infinitely many $j<0$.
+\end{enumerate}
 
 \subsubsection*{T4.5.8}
 
