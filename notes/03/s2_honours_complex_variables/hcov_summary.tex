@@ -1283,10 +1283,41 @@ traversed from $R$ to $-R$ in the upper and lower half planes
 respectively.
 
 \subsubsection*{D5.5.1: Improper integrals}
+Let $c\in(a,b)$ and $f:[a,b]\hspace{0.02in}\backslash\hspace{0.02in}
+\{c\}\rightarrow\mathbb{R}$ be continuous. Then:
+\begin{align*}
+    \int_{a}^{c}f(x)\dd x &=\lim_{r\downarrow0}
+    \int_{a}^{c-r}f(x)\dd x \\
+    \int_{c}^{b}f(x)\dd x &=\lim_{s\downarrow0}
+    \int_{c+s}^{b}f(x)\dd x \\
+    \int_{a}^{b}f(x)\dd x &=\lim_{r\downarrow0}
+    \int_{a}^{c-r}f(x)\dd x \\ &\quad+\lim_{s\downarrow0}
+    \int_{c+s}^{b}f(x)\dd x
+\end{align*}
+where $r\downarrow0$ indicates that $r\rightarrow0$
+through the positive values only.
 
 \subsubsection*{D5.5.2: Principle value of integrals}
+Let $c\in\mathbb{R}$ and that $f:\mathbb{R}\hspace{0.02in}\backslash
+\hspace{0.02in}\{c\}\rightarrow\mathbb{R}$ is continuous. Then the
+\textbf{principle value} of an integral is defined as:
+\begin{align*}
+    &\text{p.v.}\int_{-\infty}^{\infty}f(x)\dd x \\
+    &=\lim_{\substack{R\rightarrow\infty \\ r\downarrow0}}
+    \left(\int_{-R}^{c-r}f(x)\dd x
+    +\int_{c+r}^{R}f(x)\dd x\right)
+\end{align*}
+if the two limits \textit{exist} independently.
 
 \subsubsection*{L5.5.3}
+Let $f$ be meromorphic on domain $D$ with simple pole
+at $z=c\in D$.
+Let $S_r$ be a circular arc with parametrisation:
+$$\gamma(\theta)=c+r\exp(i\theta)$$
+where $0\leq\theta_0\leq\theta\leq\theta_1\leq2\pi$.
+Then:
+$$\lim_{r\downarrow0}\int_{S_r}f(z)\dd z
+=i(\theta_1-\theta_0)\text{Res}(f,c).$$
 
 \subsubsection*{L5.6.3}
 Let $0\leq k\leq n$ be integers. Let $\Gamma$ be a loop
