@@ -1042,14 +1042,32 @@ $$\sum_{j=0}^{\infty}\frac{f^{(j)}(z_0)}{j!}(z-z_0)^j$$
 converges to $f(z)$ for all $z\in D_R(z_0)$ and \textit{uniformly}
 on $\overline{D}_r(z_0)$ for all $r\in[0,R)$.
 
+The Taylor development is \textit{unique}.
+
 \subsubsection*{D4.3.4: Analytic functions}
+Let $U$ be open and $f:U\rightarrow\mathbb{C}$. Then $f$
+is \textbf{analytic} on $U$ if for all $z\in U$, $f$ can be written
+as a \textit{convergent power series} valid on some disc centred at $z$.
 
 \subsubsection*{P4.3.8}
+Let $f$ be holomorphic on $D_R(z_0)$ where $R>0$.
+Then $\forall z\in D_R(z_0)$:
+$$f'(z)=\sum_{j=0}^{\infty}\frac{f^{(j+1)}(z_0)}{j!}(z-z_0)^j.$$
 
 \subsubsection*{L4.3.9}
+Let $R>0$, let $f,g$ be holomorphic on $D_R(z_0)$ and let
+$\alpha,\beta\in\mathbb{C}$. Then:
+\begin{enumerate}
+    \item The Taylor series for $\alpha f+\beta g$ valid on $D_R(z_0)$
+    and centred at $z_0$ is:
+    $$\sum_{j=0}^{\infty}
+    \frac{\alpha f^{(j)}(z_0)+\beta g^{(j)}(z_0)}{j!}(z-z_0)^j.$$
 
-\subsubsection*{T4.3.11}
-uniqueness of taylor series
+    \item The Taylor series for $fg$ valid on $D_R(z_0)$
+    and centred at $z_0$ is:
+    $$\sum_{j=0}^{\infty}\frac{\psi_j}{j!}(z-z_0)^j$$
+    $$\psi_j=\sum_{k=0}^{j}\binom{j}{k}f^{(k)}(z_0)g^{(j-k)}(z_0).$$
+\end{enumerate}
 
 \newcolumn
 
