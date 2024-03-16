@@ -1249,14 +1249,27 @@ Then $f$ has a \textit{finite number} of poles and zeros
 on the interior of $\Gamma$.
 
 \subsubsection*{D5.2.3}
+Let $\Gamma$ be a loop. Let $f$ be meromorphic on $\text{Int}(\Gamma)$
+with \textit{zeros} $w_1,\dots,w_l$ and poles $z_1,\dots,z_k$ in
+$\text{Int}(\Gamma)$. Then:
+$$N_0(f)\deq\sum_{j=1}^{l}(\text{order of zero $w_j$})$$
+$$N_\infty(f)\deq\sum_{j=1}^{k}(\text{order of pole $z_j$}).$$
 
 \subsubsection*{T5.2.5: Argument principle}
-
-\subsubsection*{C5.2.6}
+Let $\Gamma$ be a loop. Consider meromorphic $f$ on $\text{Int}(\Gamma)$
+which is also holomorphic and nonzero on $\Gamma$. Then:
+$$\frac{1}{2\pi i}\int_{\Gamma}\frac{f'(z)}{f(z)}\dd z
+=N_0(f)-N_\infty(f).$$
 
 \subsubsection*{T5.2.7: Rouch\'e's theorem}
+Let $\Gamma$ be a loop. Let $f,g$ be holomorphic on $\text{Int}(\Gamma)
+\cup\Gamma$. Assume that $\forall z\in\Gamma$:
+$$|f(z)-g(z)|<|f(z)|.$$
+Then $N_0(f)=N_0(g)$.
 
 \subsubsection*{T5.2.14: Open mapping theorem}
+Let $f$ be non-constant and holomorphic on domain $D$.
+Then $f(D)$ is open.
 
 \subsubsection*{L5.4.5: Jordan's lemma}
 Let $P$ and $Q$ be polynomials such that $\deg(Q)\geq\deg(P)+1$.
