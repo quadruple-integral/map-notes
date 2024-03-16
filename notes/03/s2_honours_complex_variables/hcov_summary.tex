@@ -1172,14 +1172,32 @@ order $m$. Then:
 \end{enumerate}
 
 \subsubsection*{D4.6.1: Analytic continuations}
+Let $D\subseteq\tilde{D}$ be domains. Let $f:D\rightarrow\mathbb{C}$
+be holomorphic. A holomorphic function $F:\tilde{D}\rightarrow\mathbb{C}$
+is an \textbf{analytic continuation} of $f$ if $F(z)=f(z)$ for $\forall z\in D$.
 
 \subsubsection*{T4.6.4: Identity theorem}
+Let $D$ be a domain. Let $f$ be holomorphic on $D$ and let $z_0\in D$.
+Assume that:
+$$\exists R>0:\forall z\in D_R(z_0);f(z)=0.$$
+Then $f(z)=0$ for all $z\in D$.
 
 \subsubsection*{C4.6.5}
+Let $f,g$ be holomorphic on domain $D$ and let $z_0\in D$.
+Let $\exists R>0$ such that $f(z)=g(z)$ for all $z\in D_R(z_0)$. Then:
+$$\forall z\in D; f(z)=g(z).$$
 
 \subsubsection*{C4.6.7}
+Let $f$ be holomorphic on domain $D$ and let $z_0\in D$. Let
+$\exists (z_n)_{n\in\mathbb{N}}\subset\mathbb{C}$ such that
+$z_n\rightarrow z_0$ and $f(z_n)=0$. Then:
+$$\forall z\in D;f(z)=0.$$
 
 \subsubsection*{C4.6.8}
+Let $f,g$ be holomorphic on domain $D$ and let $z_0\in D$. Let
+$\exists (z_n)_{n\in\mathbb{N}}\subset\mathbb{C}$ such that
+$z_n\rightarrow z_0$ and $f(z_n)=g(z_n)$. Then:
+$$\forall z\in D;f(z)=g(z).$$
 
 \subsubsection*{T5.1.1}
 Let $f$ be holomorphic on $D'_R(z_0)$ where $R>0$ and
@@ -1220,13 +1238,15 @@ $\Gamma$ and $\text{Int}(\Gamma)$ except for a \textit{finite} number of
 isolated singularities $z_1,\dots,z_k\in\text{Int}(\Gamma)$:
 $$\int_{\Gamma}f(z)\dd z=2\pi i\sum_{j=1}^{k}\text{Res}(f,z_j).$$
 
-\newcolumn
-
 \subsubsection*{D5.2.1: Meromorphic functions}
 Let $D$ be a domain. $f$ is \textbf{meromorphic} on $D$ if $\forall z\in D$,
 $f$ has a \textit{pole of finite order} at $z$ or $f$ is holomorphic at $z$.
 
 \subsubsection*{L5.2.2}
+Let $\Gamma$ be a loop in domain $D$ and let $f$ be
+meromorphic on $D$ for $f$ is \textit{not identically zero}.
+Then $f$ has a \textit{finite number} of poles and zeros
+on the interior of $\Gamma$.
 
 \subsubsection*{D5.2.3}
 
@@ -1248,8 +1268,6 @@ $$\text{if $a<0$;}\hspace{0.05in}\lim_{R\rightarrow\infty}
 for $C_R^+$ and $C_R^-$ are \textit{semicircular contours}
 traversed from $R$ to $-R$ in the upper and lower half planes
 respectively.
-
-\newcolumn
 
 \subsubsection*{D5.5.1: Improper integrals}
 
