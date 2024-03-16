@@ -1001,20 +1001,61 @@ If there exists $z_0\in D$
 such that $|f(z_0)|$ is maximised then $f$ is constant on $D$.
 
 \subsubsection*{D4.1.1: Infinite series}
+Let $(z_n)_{n\in\mathbb{N}}\subset\mathbb{C}$ be a sequence. Then an
+\textbf{infinite series} $\sum_{j=0}^{\infty}z_j$ converges if the
+limit of $S_n=\sum_{j=0}^{n}z_j\in\mathbb{C}$ exists.
 
 \subsubsection*{L4.1.4}
+If $\sum_{j=0}^{\infty}z_j$ is an convergent infinite series then
+$z_n\rightarrow0$ as $n\rightarrow\infty$.
 
 \subsubsection*{L4.1.8: Comparison test}
+Let $z_n$ be a \textit{complex} sequence and let:
+$$\exists n_0\in\mathbb{N}:\forall n\geq n_0;|z_n|\leq M_n$$
+for $M_n$ is a real sequence.
+Let $\sum_{j=0}^{\infty}M_j$ be convergent. Then:
+$$\sum_{j=0}^{\infty}z_j\hspace{0.05in}
+\text{is also convergent.}$$
 
 \subsubsection*{L4.1.9}
+Let $c\in\mathbb{C}$. Then:
+$$\sum_{j=0}^{\infty}c^j\hspace{0.05in}
+\text{is convergent}\iff |c|<1.$$
 
 \subsubsection*{L4.1.11: Ratio test}
+Let $(z_n)_{n\in\mathbb{N}}\subset\mathbb{C}$ and assume that:
+$$\lim_{n\rightarrow\infty}\left|\frac{z_{n+1}}{z_n}\right|
+=L\in\mathbb{R}.$$
+Then depending on the value of $L$:
+\begin{enumerate}
+    \item $L<1\implies\sum_{j=0}^{\infty}z_j$ converges.
+    
+    \item $L>1\implies\sum_{j=0}^{\infty}z_j$ diverges.
+\end{enumerate}
+Finally if $L=1$, then test is inconclusive.
 
 \subsubsection*{D4.1.12: Pointwise convergence}
+$f_n\rightarrow f$ \textbf{pointwise} on $S$ if:
+\begin{align*}
+    &\forall z\in S;\forall\epsilon>0;\exists N\in\mathbb{N}:
+    \forall n\geq N \\
+    &\implies |f_n(z)-f(z)|<\epsilon
+\end{align*}
+where $f_n,f:S\rightarrow\mathbb{C}$.
 
 \subsubsection*{D4.1.14: Uniform convergence}
+$f_n\rightarrow f$ \textbf{uniformly} on $S$ if:
+\begin{align*}
+    &\forall\epsilon>0;\exists N\in\mathbb{N}:
+    \forall n\geq N\hspace{0.05in}\text{and}\hspace{0.05in}
+    \forall z\in S \\
+    &\implies |f_n(z)-f(z)|<\epsilon
+\end{align*}
+where $f_n,f:S\rightarrow\mathbb{C}$.
 
 \subsubsection*{L4.1.17}
+If $f_n$ is continuous and $f_n\rightarrow f$ uniformly on $S$
+then $f$ is also continuous on $S$.
 
 \subsubsection*{L4.1.19: Weierstrass M-test}
 
@@ -1023,8 +1064,6 @@ such that $|f(z_0)|$ is maximised then $f$ is constant on $D$.
 \subsubsection*{L4.1.22}
 
 \subsubsection*{T4.1.23}
-
-\newcolumn
 
 \subsubsection*{T4.2.2: Power series}
 Let $(a_n)_{n\in\mathbb{N}}\subset\mathbb{C}$ be a complex sequence.
