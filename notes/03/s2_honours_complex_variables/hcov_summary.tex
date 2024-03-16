@@ -1026,14 +1026,31 @@ such that $|f(z_0)|$ is maximised then $f$ is constant on $D$.
 
 \newcolumn
 
-\subsubsection*{D4.2.1: Power series}
+\subsubsection*{T4.2.2: Power series}
+Let $(a_n)_{n\in\mathbb{N}}\subset\mathbb{C}$ be a complex sequence.
+Then a \textbf{power series} is an infinite series of 
+the following form:
+$$\sum_{j=0}^{\infty}a_j (z-z_0)^j$$
+with \textit{complex coefficients} $a_j\in\mathbb{C}$.
+There also exists $R\in[0,\infty)\cup\{\infty\}$ such that:
+\begin{enumerate}
+    \item The series converges on $D_R(z_0)$.
+    
+    \item The series converges \textit{uniformly} on
+    $\overline{D}_r(z_0)$ for $\forall r\in[0,R)$.
 
-\subsubsection*{T4.2.2: Radius of convergence}
-include t4.2.4
+    \item The series diverges on $\mathbb{C}\hspace{0.03in}\backslash
+    \hspace{0.03in}\overline{D}_R(z_0)$.
+\end{enumerate}
+and is the \textbf{radius of convergence} of the power series.
+Further if there exists $M\in\mathbb{R}$ such that:
+$$\lim_{j\rightarrow\infty}\left|\frac{a_j}{a_{j+1}}\right|=M$$
+then $R=M$. (T4.2.4)
 
 \subsubsection*{T4.2.6}
-
-\newcolumn
+Let $f$ have a power series expansion with radius of convergence $R$:
+$$f(z)=\sum_{j=0}^{\infty}a_j (z-z_0)^j.$$
+Then $f$ is holomorphic on $D_R(z_0)$.
 
 \subsubsection*{T4.3.2: Taylor series}
 Let $f$ be holomorphic on $D_R(z_0)$ where $R>0$. Then the
@@ -1068,8 +1085,6 @@ $\alpha,\beta\in\mathbb{C}$. Then:
     $$\sum_{j=0}^{\infty}\frac{\psi_j}{j!}(z-z_0)^j$$
     $$\psi_j=\sum_{k=0}^{j}\binom{j}{k}f^{(k)}(z_0)g^{(j-k)}(z_0).$$
 \end{enumerate}
-
-\newcolumn
 
 \subsubsection*{D4.4.3: Annuluses}
 Let $r,R\in[0,\infty)\cup\{\infty\}$. Then we define the
