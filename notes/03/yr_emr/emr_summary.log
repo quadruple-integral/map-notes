@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  13 MAR 2024 21:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  21 MAR 2024 21:51
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -508,61 +508,61 @@ Package pdftex.def Info: f00.png  used on input line 532.
 <f01.png, id=76, 453.94594pt x 309.40594pt>
 File: f01.png Graphic file (type png)
 <use f01.png>
-Package pdftex.def Info: f01.png  used on input line 751.
+Package pdftex.def Info: f01.png  used on input line 759.
 (pdftex.def)             Requested size: 136.18483pt x 92.8225pt.
 <f02.png, id=77, 532.99126pt x 466.74374pt>
 File: f02.png Graphic file (type png)
 <use f02.png>
-Package pdftex.def Info: f02.png  used on input line 780.
+Package pdftex.def Info: f02.png  used on input line 788.
 (pdftex.def)             Requested size: 117.25844pt x 102.68393pt.
  [4 <./f01.png> <./f02.png>]
 <f05.png, id=93, 598.235pt x 242.9075pt>
 File: f05.png Graphic file (type png)
 <use f05.png>
-Package pdftex.def Info: f05.png  used on input line 1048.
+Package pdftex.def Info: f05.png  used on input line 1056.
 (pdftex.def)             Requested size: 119.64487pt x 48.58063pt.
 <f06.png, id=94, 844.65562pt x 425.33907pt>
 File: f06.png Graphic file (type png)
 <use f06.png>
-Package pdftex.def Info: f06.png  used on input line 1055.
+Package pdftex.def Info: f06.png  used on input line 1063.
 (pdftex.def)             Requested size: 168.92813pt x 85.0663pt.
  [5]
 <f07.png, id=113, 2569.6pt x 1430.34375pt>
 File: f07.png Graphic file (type png)
 <use f07.png>
-Package pdftex.def Info: f07.png  used on input line 1067.
+Package pdftex.def Info: f07.png  used on input line 1075.
 (pdftex.def)             Requested size: 128.48752pt x 71.52138pt.
 
-Overfull \hbox (3.2493pt too wide) detected at line 1084
+Overfull \hbox (3.2493pt too wide) detected at line 1092
 []\OT1/cmr/m/n/10 ([]) = \OMS/cmsy/m/n/10 ^^@[] [][] []\OT1/cmr/m/n/10 ([][]) \OMS/cmsy/m/n/10 ^^B [] [] \OT1/cmr/m/n/10 d\OML/cmm/m/it/10 V[]
  []
 
 <f08.png, id=114, 244.34143pt x 131.63464pt>
 File: f08.png Graphic file (type png)
 <use f08.png>
-Package pdftex.def Info: f08.png  used on input line 1118.
+Package pdftex.def Info: f08.png  used on input line 1126.
 (pdftex.def)             Requested size: 97.73483pt x 52.65291pt.
 <f09.png, id=115, 365.65178pt x 215.51947pt>
 File: f09.png Graphic file (type png)
 <use f09.png>
-Package pdftex.def Info: f09.png  used on input line 1174.
+Package pdftex.def Info: f09.png  used on input line 1182.
 (pdftex.def)             Requested size: 146.25812pt x 86.20625pt.
 <f10.png, id=116, 314.89072pt x 117.43875pt>
 File: f10.png Graphic file (type png)
 <use f10.png>
-Package pdftex.def Info: f10.png  used on input line 1220.
+Package pdftex.def Info: f10.png  used on input line 1228.
 (pdftex.def)             Requested size: 173.19041pt x 64.59149pt.
 [6 <./f05.png> <./f06.png> <./f07.png> <./f08.png> <./f09.png>]
 <f11.png, id=137, 525.46312pt x 372.64218pt>
 File: f11.png Graphic file (type png)
 <use f11.png>
-Package pdftex.def Info: f11.png  used on input line 1338.
+Package pdftex.def Info: f11.png  used on input line 1346.
 (pdftex.def)             Requested size: 131.36545pt x 93.16031pt.
  [7 <./f10.png> <./f11.png>]
 <f12.png, id=152, 284.39583pt x 197.73875pt>
 File: f12.png Graphic file (type png)
 <use f12.png>
-Package pdftex.def Info: f12.png  used on input line 1406.
+Package pdftex.def Info: f12.png  used on input line 1414.
 (pdftex.def)             Requested size: 170.63881pt x 118.64417pt.
  [8 <./f12.png>] (./emr_summary.aux)
  ***********
@@ -573,18 +573,18 @@ Package rerunfilecheck Info: File `emr_summary.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12758 strings out of 474934
- 190869 string characters out of 5763815
+ 12759 strings out of 474934
+ 190880 string characters out of 5763815
  1980801 words of memory out of 5000000
  34045 multiletter control sequences out of 15000+600000
  563206 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,16n,93p,608b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on emr_summary.pdf (8 pages, 727074 bytes).
+Output written on emr_summary.pdf (8 pages, 727714 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 191 compressed objects within 2 object streams
- 96 named destinations out of 1000 (max. 500000)
+ 261 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 97 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
