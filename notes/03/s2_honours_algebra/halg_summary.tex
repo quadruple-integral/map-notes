@@ -1297,9 +1297,24 @@ column sums to $1$.
 $1$ is an eigenvalue of any Markov matrix.
 
 \subsubsection*{D5.1.1: Inner product spaces}
-real and complex
+Let $V$ be a $\mathbb{C}$-vector space. An \textbf{inner product}
+on $V$ is a mapping:
+$$(-,-):V\times V\rightarrow\mathbb{C}$$
+such that $\forall\vc{x},\vc{y},\vc{z}\in V$ and
+$\forall\lambda,\mu\in\mathbb{C}$:
+\begin{enumerate}
+    \item $(\lambda\vc{x}+\mu\vc{y},\vc{z})
+    =\lambda(\vc{x},\vc{z})+\mu(\vc{y},\vc{z})$
+
+    \item $(\vc{x},\vc{y})=(\vc{y},\vc{x})^*$
+    
+    \item $(\vc{x},\vc{x})\geq0$ \textbf{if{}f} $\vc{x}=\vc{0}$.
+\end{enumerate}
 
 \subsubsection*{D5.1.5: Inner product norm}
+The \textbf{norm} of a vector $\vc{v}\in V$ in a real or complex
+inner product space is:
+$$||\vc{v}||=\sqrt{(\vc{v},\vc{v})}$$
 
 \subsubsection*{D5.1.7: Orthonormal family}
 include explicit calculation
@@ -1321,6 +1336,37 @@ include explicit calculation
 \subsubsection*{T5.2.7}
 
 \subsubsection*{Remark: Gram-Schmidt}
+
+\newcolumn
+
+\subsubsection*{D6.2.1: Jordan blocks}
+Let $F$ be an algebraically closed field. We define a
+\textbf{nilpotent Jordan block} as:
+$$J_{ij}(r)=\left\{\begin{array}{ll}1 & j=i+1 \\ 0 &\text{else}
+\end{array}\right.$$
+where $1\leq i,j\leq r$. For example:
+$$J(r)=\begin{pmatrix}
+    0 & 1 & 0 & \cdots & 0 & 0 \\
+    0 & 0 & 1 & \cdots & 0 & 0 \\
+    0 & 0 & 0 & \cdots & 0 & 0 \\
+    \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\
+    0 & 0 & 0 & \cdots & 0 & 1 \\
+    0 & 0 & 0 & \cdots & 0 & 0
+\end{pmatrix}.$$
+i.e. $J(r)\in\text{mat}(r\times r;F)$. Then:
+$$J(r,\lambda)\deq\lambda I_r+J(r)=D+N$$
+given an eigenvalue $\lambda\in F$ such that:
+$$DN=ND.$$
+
+\subsubsection*{Remark}
+Matrix $N$ is \textbf{nilpotent} if it is \textit{square} and
+there exists $k\in\mathbb{N}$ such that $N^k=0$.
+
+\subsubsection*{T6.2.2}
+
+\subsubsection*{L6.3.1}
+There exists $Q_j(x)\in F[x]$ such that:
+$$\sum_{j=1}^{s}P_j(x)Q_j(x)=1$$
 
 \end{multicols*}
 
