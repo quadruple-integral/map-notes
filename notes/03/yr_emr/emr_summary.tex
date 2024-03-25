@@ -1479,6 +1479,32 @@ where $\vc{T}$ is the \textbf{stress tensor}:
 \subsubsection*{Relativistic kinematics}
 
 \subsubsection*{Monochromatic plane waves}
+In \textit{vacuum}, the Maxwell's equations may be recast into
+a classical wave equation:
+$$\vc{\nabla}^2\{\vc{E},\vc{B}\}=\frac{1}{c^2}
+\frac{\partial^2}{\partial t^2}\{\vc{E},\vc{B}\}$$
+$$\mu_0\epsilon_0=c^{-2}.$$
+We then look for solutions of linear form:
+$$\vc{E}=\Re\Bigl\{\vc{E}_0 e^{i(\omega t-\vc{k}\cdot\vc{x})}\Bigr\}$$
+$$\vc{B}=\Re\Bigl\{\vc{B}_0 e^{i(\omega t-\vc{k}\cdot\vc{x})}\Bigr\}$$
+known as \textbf{plane wave} solutions:
+$$|\vc{k}|=\frac{\omega}{c}$$
+from subsituting into our wave equation.
+Since $\rho=0$ and $\vc{J}=\vc{0}$ we have that:
+$$\vc{k}\cdot\vc{E}=0,\hspace{0.2in}\vc{k}\cdot\vc{B}=0,$$
+$$\vc{k}\times\vc{E}=\omega\vc{B}\hspace{0.1in}\text{and}
+\hspace{0.1in}-\vc{k}\times\vc{B}=\frac{\omega}{c^2}\vc{E}.$$
+i.e. that $(\hat{\vc{k}},\hat{\vc{E}},\hat{\vc{B}})$ forms a
+right-handed \textit{orthonormal basis} and:
+\begin{align*}
+    \vc{E}
+    &=\Bigl(a_1 e^{i\delta_1}\hat{\vc{\epsilon}_1}
+    +a_2 e^{i\delta_2}\hat{\vc{\epsilon}_2}\Bigr)
+    e^{i(\omega t-\vc{k}\cdot\vc{x})}
+\end{align*}
+where $a_1,a_2,\delta_1,\delta_2\in\mathbb{R}$. The unit vectors
+$\hat{\vc{\epsilon}_1}$ and $\hat{\vc{\epsilon}_2}$ are
+perpendicular to each other.
 
 \subsubsection*{Radiation}
 compute electric field potential
