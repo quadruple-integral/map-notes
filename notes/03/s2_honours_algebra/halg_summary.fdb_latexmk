@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1711389590 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" "halg_summary.pdf" "halg_summary" 1711389591 0
-  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" 1711389589 43933 0284c76f8a140ad138fd4cafbe54b07e ""
+["pdflatex"] 1711392324 "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" "halg_summary.pdf" "halg_summary" 1711392325 0
+  "c:/Users/1071t/Documents/Projects/map-notes/notes/03/s2_honours_algebra/halg_summary.tex" 1711392324 44370 d72dd3d5d510d3ead4cf848c0a06b587 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1693925241 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693925933 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1693925632 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -31,6 +31,7 @@
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1693924610 36281 c355509802a035cadc5f15869451dcee ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1693924610 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1693924610 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1693924610 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1693924610 32762 7fee39e011c23b3589931effd97b9702 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1693924610 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1693924610 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
@@ -118,9 +119,9 @@
   "c:/texlive/2023/texmf.cnf" 1693929193 713 e69b156964470283e0530f5060668171 ""
   "f00.png" 1706051137 73401 3b3049903baf9379101e5f10aeafb3db ""
   "f01.png" 1709152979 12721 f3fe935ae914f7969daf2730f1c58c81 ""
-  "halg_summary.aux" 1711389590 554 e8393b76032b83677e5fe70f9c517626 "pdflatex"
-  "halg_summary.out" 1711389590 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "halg_summary.tex" 1711389589 43933 0284c76f8a140ad138fd4cafbe54b07e ""
+  "halg_summary.aux" 1711392325 554 e8393b76032b83677e5fe70f9c517626 "pdflatex"
+  "halg_summary.out" 1711392325 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "halg_summary.tex" 1711392324 44370 d72dd3d5d510d3ead4cf848c0a06b587 ""
   (generated)
   "halg_summary.aux"
   "halg_summary.log"
