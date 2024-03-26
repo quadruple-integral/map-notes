@@ -1453,7 +1453,7 @@ electric and magnetic fields:
 $$U_{em}=\int_{V}\left(\frac{1}{\mu_0}|\vc{B}|^2
 +\epsilon_0|\vc{E}|^2\right)\dd^3\vc{r}$$
 and we define the \textbf{Poynting vector}:
-$$\vc{S}=\frac{1}{\mu_0}\vc{E}\times\vc{B}.$$
+$$\vc{S}\deq\frac{1}{\mu_0}\vc{E}\times\vc{B}.$$
 Likewise its surface integral denotes the \textit{rate}
 at which energy flows.
 
@@ -1548,6 +1548,21 @@ as a superposition of polarised monochromatic transverse waves.
 \newcolumn
 
 \subsubsection*{Energy in electromagnetic waves}
+Given an arbitrary plane wave solution:
+$$\vc{E}=\vc{E}_0\cos(\omega t-\vc{k}\cdot\vc{r}+\phi)$$
+the corresponding electromagnetic wave energy
+\underline{density} enclosed by a volume is:
+\begin{align*}
+    u_{em}
+    &=u_e+u_m \\
+    &=\frac{\epsilon_0}{2}|\vc{E}|^2
+    +\frac{1}{2\mu_0}|\vc{B}|^2 \\
+    &=\epsilon_0|\vc{E}_0|^2\cos^2(\omega t-\vc{k}\cdot\vc{r}+\phi)
+\end{align*}
+where $u_e=u_m$ for all space and time.
+$$\therefore\langle u_{em}\rangle=\epsilon_0|\vc{E}_0|^2$$
+The Poynting vector can be interpreted as the flux of energy
+in an unit area:
 
 \subsubsection*{Radiation}
 compute electric field potential
