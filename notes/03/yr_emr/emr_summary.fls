@@ -235,6 +235,11 @@ INPUT ./f12.png
 INPUT ./f12.png
 INPUT ./f12.png
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT ./f13.png
+INPUT ./f13.png
+INPUT ./f13.png
+INPUT ./f13.png
+INPUT ./f13.png
 INPUT emr_summary.aux
 INPUT ./emr_summary.out
 INPUT ./emr_summary.out
