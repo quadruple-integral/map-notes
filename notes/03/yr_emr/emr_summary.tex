@@ -1462,9 +1462,9 @@ then power flows \textbf{into} the bounded surface and vice versa.
 
 \subsubsection*{Maxwell's stress tensor}
 Since Newton's second law states that:
-$$\vc{F}=\dv{t}\vc{P}_{mech}$$
+$$\vc{F}=\dv{\vc{P}}{t}$$
 using the Lorentz force we have that:
-$$\dv{\vc{P}_{mech}}{t}
+$$\dv{\vc{P}}{t}
 =-\dv{t}\int_V\epsilon_0
 \mu_0\vc{S}\hspace{0.02in}\dd^3\vc{r}
 +\int_{\partial V}\vc{T}\cdot\dd\vc{a}$$
@@ -1477,6 +1477,22 @@ where $\vc{T}$ is the \textbf{stress tensor}:
 \end{align*}
 
 \subsubsection*{Relativistic kinematics}
+Now we interpret particles of \textit{constant} motion
+under the context of \underline{inertial} frames.
+Define frame $S'$ to be moving at $v\vc{e}_x$ with respect to frame $S$.
+
+If a particle is moving at $\vc{u}'=(u'_x,u'_y,u'_z)$
+with respect to frame $S'$ then:
+$$c\dd t'=\gamma(c\dd t-\beta \dd x)$$
+$$\dd x'=\gamma(-\beta c\dd t+\dd x)
+\hspace{0.05in}\text{and so on...}$$
+which yields the following relation:
+$$\frac{1}{c}u'_x\deq\frac{\dd x'}{c\dd t'}
+\implies\frac{-\beta c+u_x}{c-\beta u_x}$$
+where $\vc{u}=(u_x,u_y,u_z)$ is the velocity of the particle
+with respect to frame $S$.
+
+\subsubsection*{Instantaneous rest frames}
 
 \newcolumn
 
@@ -1555,14 +1571,23 @@ the corresponding electromagnetic wave energy
 \begin{align*}
     u_{em}
     &=u_e+u_m \\
-    &=\frac{\epsilon_0}{2}|\vc{E}|^2
+    &\deq\frac{\epsilon_0}{2}|\vc{E}|^2
     +\frac{1}{2\mu_0}|\vc{B}|^2 \\
     &=\epsilon_0|\vc{E}_0|^2\cos^2(\omega t-\vc{k}\cdot\vc{r}+\phi)
 \end{align*}
 where $u_e=u_m$ for all space and time.
 $$\therefore\langle u_{em}\rangle=\epsilon_0|\vc{E}_0|^2$$
-The Poynting vector can be interpreted as the flux of energy
-in an unit area:
+The Poynting vector can be interpreted as the
+\textit{flux of energy} in an unit area:
+\begin{align*}
+    \vc{S}
+    &=\frac{1}{\mu_0}\vc{E}\times\vc{B} \\
+    &=\frac{1}{\mu_0\omega}\vc{E}\times(\vc{k}\times\vc{E}) \\
+    &=\frac{\vc{k}}{\omega}\frac{1}{\mu_0}|\vc{E}|^2 \\
+    &\implies (c\hspace{0.01in}u_{em})\hat{\vc{k}}.
+\end{align*}
+
+\subsubsection*{Gauge freedoms}
 
 \subsubsection*{Radiation}
 compute electric field potential
