@@ -1624,16 +1624,17 @@ poynting vector
 \subsubsection*{Electric fields in matter}
 The presence of an electric field induces a small dipole moment
 on the constituent atoms of a material that all point in the direction
-of the field. The material is now \textbf{polarised}, with a net dipole:
-$$\vc{p}(\vc{r}')=\sum_{k}\vc{p}_k\delta(\vc{r}'-\vc{r}_k)$$
+of the field. The material is now has a \textbf{polarisation}
+or dipole \textit{density}:
+$$\vc{P}(\vc{r}')=\sum_{k}\vc{p}_k\delta(\vc{r}'-\vc{r}_k)$$
 where $\vc{p}_k$ is the dipole moment of the $k^{th}$ atom. Then
 superposition gives that:
 \begin{align*}
     \phi(\vc{r})
     &=\frac{1}{4\pi\epsilon_0}\int_V
-    \frac{\vc{p}(\vc{r}')\cdot(\vc{r}-\vc{r}')}
+    \frac{\vc{P}(\vc{r}')\cdot(\vc{r}-\vc{r}')}
     {|\vc{r}-\vc{r}'|^3}\dd^3\vc{r}' \\
-    &=\frac{1}{4\pi\epsilon_0}\int_V\vc{p}(\vc{r}')
+    &=\frac{1}{4\pi\epsilon_0}\int_V\vc{P}(\vc{r}')
     \cdot\vc{\nabla'}\left(\frac{1}{|\vc{r}-\vc{r}'|}\right)
     \dd^3\vc{r}'
 \end{align*}
@@ -1645,11 +1646,17 @@ and using the divergence chain rule:
     &\quad+\frac{1}{4\pi\epsilon_0}\int_V
     \frac{\rho_b(\vc{r}')}{|\vc{r}-\vc{r}'|}\dd^3\vc{r}'
 \end{align*}
-where we define $\sigma_b(\vc{r}')=\vc{p}(\vc{r}')\cdot\hat{\vc{n}}$
+where we define $\sigma_b(\vc{r}')=\vc{P}(\vc{r}')\cdot\hat{\vc{n}}$
 as the \textcolor{red}{bounded} \textit{volume} charge density and
-that similarly $\rho_b(\vc{r}')=-\vc{\nabla}'\cdot\vc{p}(\vc{r}')$ is our
+that similarly $\rho_b(\vc{r}')=-\vc{\nabla}'\cdot\vc{P}(\vc{r}')$ is our
 \textcolor{red}{bounded} \textit{surface} charge density.
 
+This potential also generates an electric field, and is consistent
+with Gauss' law:
+$$\epsilon_0\vc{\nabla}\cdot\vc{E}=\rho_f+\rho_b
+\implies\vc{\nabla}\cdot\vc{D}=\rho_f$$
+where $\vc{D}=\epsilon_0\vc{E}+\vc{P}$ is the \textbf{displacement field}
+and $\rho_f$ the \textit{free} charge distribution.
 
 \subsubsection*{Magnetic materials}
 
