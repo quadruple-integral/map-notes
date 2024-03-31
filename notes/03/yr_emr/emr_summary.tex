@@ -1617,18 +1617,51 @@ magnetic field vector potential
 
 poynting vector
 
+\newcolumn
+
 \subsubsection*{4-vectors}
+We define the \textbf{contravariant vector} as:
+$$x^{\mu}\deq(ct,x,y,z)=(x^0,x^1,x^2,x^3)$$
+$$\overline{x}^{\mu}=\Lambda^{\mu}{}_\nu x^{\nu}$$
+where $\Lambda^{\mu}{}_\nu$ is a Lorentz transformation
+with row $\mu$ and column $\nu$, going from frame $S$ to
+frame $\overline{S}$. Given a boost $\beta$:
+$$\overline{x}^{\mu}=\Lambda^{\mu}{}_\nu(\beta) x^{\nu}$$
+$$x^{\nu}=\Lambda^{\nu}{}_{\sigma}(-\beta)\overline{x}^{\sigma}$$
+and combining these yields:
+$$\Lambda^{\mu}{}_\nu(\beta)\Lambda^{\nu}{}_{\sigma}(-\beta)
+=\delta^{\mu}{}_\sigma.$$
+The \textbf{covariant vector} is defined as:
+\begin{align*}
+    x_{\mu}
+    &\deq(x_0,x_1,x_2,x_3) \\
+    &=(x^0,-x^1,-x^2,-x^3)
+\end{align*}
+which allows us to write the invariant quantity in
+Minkowsky spacetime as:
+$$(\Delta S)^2=x^{\mu}x_{\mu}=x_{\mu}x^{\mu}.$$
+The contravariant and covariant vectors
+are related by the \textit{metric tensor}:
+$$x_{\mu}=g_{\mu\nu}x^{\nu}.$$
+In Minkowsky spacetime this is:
+$$g_{\mu\nu}=\begin{pmatrix}
+1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\
+0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1\end{pmatrix}_{\mu\nu}.$$
+Since $x^{\mu}x_{\mu}=\overline{x}^{\nu}\overline{x}_{\nu}$:
+$$\Lambda^{\mu}{}_{\nu}g_{\mu\sigma}\Lambda^{\sigma}{}_{\rho}
+=g_{\nu\rho}$$
 
 \newcolumn
 
 \subsubsection*{Electric fields in matter}
 The presence of an electric field induces a small dipole moment
 on the constituent atoms of a material that all point in the direction
-of the field. The material is now has a \textbf{polarisation}
+of the field. The material now has a \textbf{polarisation}
 or dipole \textit{density}:
 $$\vc{P}(\vc{r}')=\sum_{k}\vc{p}_k\delta(\vc{r}'-\vc{r}_k)$$
-where $\vc{p}_k$ is the dipole moment of the $k^{th}$ atom. Then
-superposition gives that:
+where $\vc{p}_k$ is the dipole moment of the $k^{th}$ atom. Materials
+that are \textit{poor} conductors of electricity and can support an
+electric field is a \textbf{dielectric}. From superposition:
 \begin{align*}
     \phi(\vc{r})
     &=\frac{1}{4\pi\epsilon_0}\int_V
@@ -1642,26 +1675,34 @@ and using the divergence chain rule:
 \begin{align*}
     \phi(\vc{r})
     &=\frac{1}{4\pi\epsilon_0}\int_{\partial V}
-    \frac{\sigma_b(\vc{r}')}{|\vc{r}-\vc{r}'|}\dd a \\
+    \frac{\sigma_b(\vc{r}')}{|\vc{r}-\vc{r}'|}\dd a' \\
     &\quad+\frac{1}{4\pi\epsilon_0}\int_V
     \frac{\rho_b(\vc{r}')}{|\vc{r}-\vc{r}'|}\dd^3\vc{r}'
 \end{align*}
-where we define $\sigma_b(\vc{r}')=\vc{P}(\vc{r}')\cdot\hat{\vc{n}}$
-as the \textcolor{red}{bounded} \textit{volume} charge density and
-that similarly $\rho_b(\vc{r}')=-\vc{\nabla}'\cdot\vc{P}(\vc{r}')$ is our
-\textcolor{red}{bounded} \textit{surface} charge density.
+where $\dd\vc{a}'=\hat{\vc{n}}\dd a'$ and define:
+\begin{itemize}
+    \item \textcolor{red}{Bound} \textit{surface} charge density:
+    $$\sigma_b(\vc{r}')=\vc{P}(\vc{r}')\cdot\hat{\vc{n}}$$
 
-This potential also generates an electric field, and is consistent
-with Gauss' law:
+    \item \textcolor{red}{Bound} \textit{bulk} charge density:
+    $$\rho_b(\vc{r}')=-\vc{\nabla}'\cdot\vc{P}(\vc{r}').$$
+\end{itemize}
+Bound charges cannot move freely. Under the presence of an external
+electric field, the charges of the material redistribute themselves,
+resulting in bound charges on the \underline{surface} of the material.
+
+This potential also generates an electric field,
+which is consistent with Gauss' law:
 $$\epsilon_0\vc{\nabla}\cdot\vc{E}=\rho_f+\rho_b
 \implies\vc{\nabla}\cdot\vc{D}=\rho_f$$
 for $\vc{D}\deq\epsilon_0\vc{E}+\vc{P}$ is the \textbf{displacement field}
 and $\rho_f$ the \textit{free} charge distribution.
 In the case of \textit{linear dielectric materials}:
 $$\vc{P}(\vc{r})=\chi_e\epsilon_0\vc{E}$$
-$$\vc{D}=\epsilon_0(1+\chi_e)\vc{E}$$
+$$\vc{D}=\epsilon_0(1+\chi_e)\vc{E}=\epsilon\vc{E}$$
 where $\chi_e$ is the electric susceptibility of the material
-and field $\vc{E}$ is not too strong.
+and $\epsilon$ the \textit{permittivity} of the material.
+($\epsilon=\epsilon_0$ in vacuum)
 
 \subsubsection*{Magnetic materials}
 
